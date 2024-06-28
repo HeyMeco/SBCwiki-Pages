@@ -45,3 +45,11 @@ boards:
 ## Available OS images
 
 {{< list-board-available-os >}}
+
+## Documentation / Links
+
+## Benchmarks
+
+## Guides
+
+## Articles
