@@ -4,4 +4,4 @@ weight: 1
 tags:
 - SOC-Broadcom
 ---
-{{< redirect "url=/docs/soc-manufactores/broadcom/bcm2712/boards/rasperrypi-5/" >}}
+{{< redirect "url=/docs/soc-manufactures/broadcom/bcm2712/boards/rasperrypi-5/" >}}
