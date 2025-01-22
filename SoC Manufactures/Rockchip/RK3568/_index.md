@@ -12,7 +12,7 @@ tags:
 # Rockchip RK3568
 
 ## General Specifications
-{{< details title="Specs" open=true >}}
+{{% details title="Specs" open=true %}}
 
 | **SoC** | **Rockchip RK3568**                                                                                            |
 |---------|----------------------------------------------------------------------------------------------------------------|
@@ -22,13 +22,13 @@ tags:
 | **VPU** | 4Kp60 H.264/H.265/VP9 decoder <br> 1080p60 H.264/H.265 encoder |
 | **NPU** | 1TOPs, supports INT8/INT16/FP16/BFP16                                                                           |
 
-{{< /details >}}
+{{% /details %}}
 <br>
-{{< details title="Block Diagram" open=false >}}
+{{% details title="Block Diagram" open=false %}}
 
 ![RK3568 Block Diagram](images/RK3568-Block-Diagram.jpeg?f=webp)
 
-{{< /details >}}
+{{% /details %}}
 
 ---
 

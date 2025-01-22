@@ -22,6 +22,6 @@ bookCollapseSection: true
 
 ---
 
-{{< expand "Archive" "..." >}}
+{{% details "Archive" "..." %}}
 Empty
-{{< /expand >}}
+{{% /details %}}

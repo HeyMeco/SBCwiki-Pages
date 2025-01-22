@@ -15,7 +15,7 @@ boards:
 {{< gallery match="images/*" sortOrder="asc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true >}}
 
 ## Hardware
-{{< details title="Specs" open=true >}}
+{{% details title="Specs" open=true %}}
 | **SoC**     	| **Rockchip RK3588**                                                                                                  	|
 |-------------	|----------------------------------------------------------------------------------------------------------------------	|
 | **CPU**     	| Quad-core ARM Cortex-A76 (up to 2.4GHz) and <br>Quad-core ARM Cortex-A55 (up to 1.8GHz)                              	|
@@ -40,7 +40,7 @@ boards:
 | **MIPI**     	| 1x 4 lane DSI<br>2x 2 lane CSI for camera up to 48M                                                                                                                  	|
 | **RTC**      	| powered from external battery                                                                                                                                        	|
 
-{{< /details >}}
+{{% /details %}}
 
 ## Available OS images
 

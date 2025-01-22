@@ -12,7 +12,7 @@ tags:
 # Rockchip RK3588
 
 ## General Specifications
-{{< details title="Specs" open=true >}}
+{{% details title="Specs" open=true %}}
 
 | **SoC** | **Rockchip RK3588**                                                                                            |
 |---------|----------------------------------------------------------------------------------------------------------------|
@@ -22,18 +22,18 @@ tags:
 | **VPU** | 8K@60fps H.265 and VP9 decoder <br> 8K@30fps H.264 decoder <br> 4K@60fps AV1 decoder <br> 8K@30fps H.264 and H.265 encoder |
 | **NPU** | 6TOPs, supports INT4/INT8/INT16/FP16                                                                           |
 
-{{< /details >}}
+{{% /details %}}
 <br>
-{{< details title="Block Diagram" open=false >}}
+{{% details title="Block Diagram" open=false %}}
 
 ![RK3588 Block Diagram](images/RK3588-Block-Diagram.jpg?f=webp)
 
-{{< /details >}}
+{{% /details %}}
 
 ---
 
 ## Linux Support
-{{< columns >}}
+{{% columns %}}
 ### Vendor BSP
 - Current Version based on: 6.1
 - Legacy: 5.10 <br>(versions do not compare to mainline)
@@ -46,7 +46,7 @@ tags:
 
 See [Mainline Status](https://gitlab.collabora.com/hardware-enablement/rockchip-3588/notes-for-rockchip-3588/-/blob/main/mainline-status.md?ref_type=heads)
 
-{{< /columns >}}
+{{% /columns %}}
 
 ---
 

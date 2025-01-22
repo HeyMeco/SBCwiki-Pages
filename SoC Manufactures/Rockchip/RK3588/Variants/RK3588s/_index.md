@@ -12,9 +12,9 @@ tags:
 
 Cost optimized [RK3588](/docs/soc-manufactores/rockchip/rk3588) with reduced I/O
 
-{{< details title="Block Diagram" open=true >}}
+{{% details title="Block Diagram" open=true %}}
 ![RK3588 Block Diagram](RK3588S-Block-Diagram.jpeg?f=webp)
-{{< /details >}}
+{{% /details %}}
 
 ---
 

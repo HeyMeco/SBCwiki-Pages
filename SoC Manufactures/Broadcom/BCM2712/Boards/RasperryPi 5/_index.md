@@ -16,7 +16,7 @@ boards:
 {{< gallery match="images/*" sortOrder="asc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true >}}
 
 ## Hardware
-{{< details title="Specs" open=true >}}
+{{% details title="Specs" open=true %}}
 | **SoC**     	| **Broadcom BCM2712**                                                                                                        	|
 |-------------	|-----------------------------------------------------------------------------------------------------------------------------	|
 | **CPU**     	| Quad-core ARM Cortex-A76(up to 2.4GHz) <br>with cryptography extensions, 512KB per-core L2 caches and a 2MB shared L3 cache 	|
@@ -38,7 +38,7 @@ boards:
 | **PCIe**     	| 2.0x1 (3.0 mode possible)<br>interface for fast peripherals (requires separate M.2 HAT or other adapter) 	|
 | **MIPI**     	| 4-lane MIPI camera/display transceivers                                                                  	|
 | **RTC**      	| powered from external battery                                                                            	|
-{{< /details >}}
+{{% /details %}}
 
 ## Available OS images
 
