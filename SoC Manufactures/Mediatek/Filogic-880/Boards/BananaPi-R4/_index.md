@@ -37,7 +37,7 @@ Current Board Revision: 1.1
 | **Storage**   | 8GB EMMC <br> 128MB SPI NAND Flash                                                                                                            |
 | **Power**    	| USB Type‑C™ PD Version 2.0 with up to PD 20V <br> 12V/5.2A DC input (5521)                                                                                             	|
 | **GPIO**     	| 26-pin header                                                                                                                                  	|
-| **PCIe**     	| 1x M.2 KEY-M slot with PCIe3.0 1lane interface for NVME SSD <br 1x M.2 KEY-B slot with USB3.2/PCIe3.0 interface for 5G                                                                                 	|
+| **PCIe**     	| 1x M.2 KEY-M slot with PCIe3.0 1lane interface for NVME SSD <br> 1x M.2 KEY-B slot with USB3.2/PCIe3.0 interface for 5G                                                                                 	|
 | **MIPI**     	| n/a                                                                                                                  	|
 | **RTC**      	| powered from external battery                                                                                                                                        	|
 
