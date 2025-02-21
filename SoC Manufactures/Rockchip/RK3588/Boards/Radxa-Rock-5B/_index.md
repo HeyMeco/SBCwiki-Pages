@@ -7,6 +7,11 @@ tags:
 - RK3588
 boards:
 - Radxa-Rock-5B
+board-vendor:
+- Radxa
+summary: "Radxa Rock 5B on SBCwiki.com"
+images:
+- images/Rock-5b-01.png
 ---
 
 # Radxa Rock 5B

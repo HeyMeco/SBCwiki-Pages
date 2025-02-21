@@ -9,6 +9,11 @@ tags:
 - BCM2712
 boards:
 - RPI-5
+board-vendor:
+- RaspberryPi
+summary: "Raspberry Pi 5 on SBCwiki.com"
+images:
+- images/raspberry-pi-5-01.png
 ---
 # Broadcom BCM2712 | RaspberryPi 5
 

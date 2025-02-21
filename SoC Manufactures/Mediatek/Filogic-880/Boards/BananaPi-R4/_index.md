@@ -7,6 +7,11 @@ tags:
 - Filogic-880
 boards:
 - BananaPi-R4
+board-vendor:
+- BananaPi
+summary: "BananaPi R4 on SBCwiki.com"
+images:
+- images/bpi_r4_v1.0_1.png
 ---
 
 # BananaPi R4
