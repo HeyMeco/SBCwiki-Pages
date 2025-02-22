@@ -33,9 +33,9 @@ tags:
 ---
 
 ## Linux Support
-{{< columns >}}
+{{% columns %}}
 ### Vendor BSP
-- Current Version based on: 6.1
+- Current Version (rkr5) based on: 6.1
 - Legacy: 5.10 <br>(versions do not compare to mainline)
 
 <--->
@@ -44,7 +44,7 @@ tags:
 - [ ] Fully supported
 - [x] Works but not all features are implemented.
 
-{{< /columns >}}
+{{% /columns %}}
 
 ---
 

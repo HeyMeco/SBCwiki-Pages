@@ -35,7 +35,7 @@ tags:
 ## Linux Support
 {{% columns %}}
 ### Vendor BSP
-- Current Version based on: 6.1
+- Current Version (rkr5) based on: 6.1
 - Legacy: 5.10 <br>(versions do not compare to mainline)
 
 <--->
