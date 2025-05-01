@@ -39,6 +39,7 @@ tags:
 - [x] Works but not all features are implemented.
 
 See [Mailing list](http://lore.kernel.org/lkml/?q=Cix+P1)
+See [Community support status tracker](https://github.com/System64fumo/linux/blob/main/hardware/orion-o6.md)
 
 
 ---
