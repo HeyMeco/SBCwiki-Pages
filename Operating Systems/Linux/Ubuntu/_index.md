@@ -27,6 +27,6 @@ As of April 2024, the most-recent long-term support release is 24.04 ("Noble Num
 
 ## Variants for SBC's
 
-- [Armbian](/docs/operarting-systems/linux/armbian/) (Jammy)
+- [Armbian](/docs/operating-systems/linux/armbian/) (Jammy)
 - [Ubuntu-Rockchip](https://github.com/Joshua-Riek/ubuntu-rockchip)
 - [Canonical Ubuntu Certified](https://ubuntu.com/certified/socs)
