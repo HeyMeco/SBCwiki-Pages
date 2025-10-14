@@ -1,15 +1,16 @@
 ---
 weight: 1
-title: CD8180 / P1
+title: CD8180 / CD8160 / P1
 #bookCollapseSection: true
 soc-series:
 - Filogic
 soc:
 - CD8180
+- CD8160
 tags: 
 - SOC-Cix
 ---
-# CD8180 / P1
+# CD8180 / CD8160 / P1
 
 ## General Specifications
 {{% details title="Specs" open=true %}}
@@ -49,3 +50,16 @@ See [Community support status tracker](https://github.com/System64fumo/linux/blo
 List of boards:
 
 {{< taglist CD8180 >}}
+
+---
+
+## CD8160
+
+| **SoC** | **CD8160 (binned variant)**                                                                                                                  |
+|---------|----------------------------------------------------------------------------------------------------------------------------------|
+| **CPU** | 4x Cortex®-A720 (Big cores) up to **2.6GHz**<br>4x Cortex®‑A720 (Medium cores) up to 2.4GHz<br>4x Cortex®‑A520 (LITTLE cores) 1.8GHz |
+| **Other differences** | Possibly less I/O like PCIe lanes (needs to be confirmed) |
+
+## Boards with CD8160
+- Radxa Orion O6N
+- OrangePi 6 Plus
