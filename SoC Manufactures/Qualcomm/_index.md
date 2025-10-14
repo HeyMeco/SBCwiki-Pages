@@ -6,6 +6,7 @@ categories:
 soc-vendors:
 - Qualcomm
 bookCollapseSection: true
+summary: All Qualcomm SoC's on sbcwiki.com
 ---
 
 ![Qualcomm Logo](assets/qualcomm/Qualcomm-Logo.png?h=100)

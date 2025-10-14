@@ -6,6 +6,7 @@ categories:
 soc-vendors:
 - Rockchip
 bookCollapseSection: true
+summary: All Rockchip SoC's on sbcwiki.com
 ---
 
 ![Rockchip Logo](assets/rockchip/Rockchip-Logo.png?h=100)
