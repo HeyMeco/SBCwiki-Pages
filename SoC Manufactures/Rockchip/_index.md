@@ -13,7 +13,9 @@ bookCollapseSection: true
 ## Current Rockchip SoC's
 
 {{< taglist SOC-RK >}}
-
+- Rockchip RK3576
+- Rockchip RK3566
+- Rockchip RK3528A
 ## Tutorials
 
 - Coming soon!
@@ -23,5 +25,10 @@ bookCollapseSection: true
 ---
 
 {{% details "Archive" "..." %}}
-Empty
+
+## Archived SoC's
+
+- Rockchip RK3399
+- Rockchip RK3328
+
 {{% /details %}}
