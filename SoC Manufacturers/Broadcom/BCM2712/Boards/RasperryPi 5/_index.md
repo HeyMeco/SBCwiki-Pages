@@ -11,7 +11,7 @@ boards:
 - RPI-5
 board-vendor:
 - RaspberryPi
-summary: "Raspberry Pi 5 on SBCwiki.com"
+summary: "Raspberry Pi 5 single-board computer - BCM2712 quad-core ARM Cortex-A76, up to 8GB RAM, VideoCore VII GPU, dual 4K HDMI, USB 3.0, PCIe 2.0, PoE+ support."
 images:
 - images/raspberry-pi-5-01.png
 ---

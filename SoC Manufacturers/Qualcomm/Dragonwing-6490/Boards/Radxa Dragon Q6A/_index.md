@@ -9,7 +9,7 @@ boards:
 - Dragon-Q6A
 board-vendor:
 - Radxa
-summary: "Radxa Dragon Q6A on SBCwiki.com"
+summary: "Radxa Dragon Q6A single-board computer - QCS6490 8-core ARM processor, up to 32GB LPDDR5, Adreno 643 GPU, M.2 NVMe, WiFi 6E, Bluetooth 5.2."
 images:
 - images/1-q6a_top.webp
 ---

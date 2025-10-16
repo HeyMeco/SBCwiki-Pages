@@ -6,7 +6,7 @@ categories:
 soc-vendors:
 - Mediatek
 bookCollapseSection: true
-summary: All Mediatek SoC's on sbcwiki.com
+summary: All Mediatek SoC's, boards, and development resources on sbcwiki.com
 ---
 
 ![Mediatek Logo](assets/mediatek/MediaTek-Logo.png?h=100)

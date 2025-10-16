@@ -9,7 +9,7 @@ boards:
 - Radxa-Rock-5B
 board-vendor:
 - Radxa
-summary: "Radxa Rock 5B on SBCwiki.com"
+summary: "Radxa Rock 5B single-board computer - RK3588 8-core ARM processor, up to 32GB RAM, Mali-G610 GPU, M.2 NVMe, dual HDMI 4K. High-performance SBC for AI development, media servers, and embedded computing projects."
 images:
 - images/Rock-5b-01.png
 ---

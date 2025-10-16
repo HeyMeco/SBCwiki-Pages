@@ -8,7 +8,7 @@ soc:
 - Filogic-880
 tags: 
 - SOC-MTK-Router
-summary: MediaTek Filogic 880 (MT7988) - Quad-core Cortex-A73 router SoC with hardware networking acceleration
+summary: MediaTek Filogic 880 (MT7988) networking ARM processor - Quad-core Cortex-A73 up to 1.8GHz, hardware NAT acceleration, WiFi 7 ready, IPSec/SSL offload, tunneling support.
 ---
 # Filogic 880 / MT7988
 

@@ -5,7 +5,7 @@ title: Rockchip RK3588s
 bookHidden: true
 tags: 
 - SOC-RK
-summary: Rockchip RK3588s - Cost-optimized variant of RK3588 with reduced I/O capabilities
+summary: Rockchip RK3588S cost-optimized variant - Same CPU and GPU as RK3588 but with reduced I/O.
 ---
 # Rockchip RK3588s
 

@@ -9,7 +9,7 @@ boards:
 - BananaPi-R4
 board-vendor:
 - BananaPi
-summary: "BananaPi R4 on SBCwiki.com"
+summary: "BananaPi R4 router board - MediaTek Filogic 880 (MT7988) quad-core ARM processor, hardware NAT acceleration, 2.5 / 5 / 10 GbE Ethernet / SFP+ ports, WiFi 7 ready, M.2 slots.
 images:
 - images/bpi_r4_v1.0_1.png
 ---

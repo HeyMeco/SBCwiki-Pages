@@ -6,7 +6,7 @@ categories:
 soc-vendors:
 - Cix
 bookCollapseSection: true
-summary: All Cix SoC's on sbcwiki.com
+summary: All Cix SoC's, boards, and development resources on sbcwiki.com
 ---
 
 ![Cix Logo](assets/cix/Cix-Logo.png?h=100)

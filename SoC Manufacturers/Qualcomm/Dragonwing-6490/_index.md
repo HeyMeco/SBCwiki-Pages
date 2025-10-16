@@ -8,7 +8,7 @@ soc:
 - QC6490
 tags: 
 - SOC-Qualcomm
-summary: Qualcomm QCS6490/QCM6490 - Octa-core SoC with Adreno 643 GPU and 6th gen AI Engine
+summary: Qualcomm QCS6490/QCM6490 Dragonwing ARM processor - octa-core CPU up to 2.7GHz, Adreno 643 GPU, 6th gen hexagon AI Engine, 4K VPU, Windows on ARM support.
 ---
 # QCS6490 / QCM6490
 

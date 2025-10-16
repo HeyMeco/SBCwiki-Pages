@@ -8,7 +8,7 @@ soc:
 - RK3588
 tags: 
 - SOC-RK
-summary: Rockchip RK3588 - Octa-core SoC with 4x A76 + 4x A55, Mali-G610 GPU, and 6 TOPS NPU
+summary: Rockchip RK3588 flagship ARM processor - 8-core CPU (4x Cortex-A76 + 4x A55), Mali-G610 MP4 GPU, 6 TOPS NPU, 8K video decode, PCIe 3.0, USB 3.0.
 ---
 # Rockchip RK3588
 

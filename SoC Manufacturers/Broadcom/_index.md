@@ -6,7 +6,7 @@ categories:
 soc-vendors:
 - Broadcom
 bookCollapseSection: true
-summary: All Broadcom SoC's on sbcwiki.com
+summary: All Broadcom SoC's, boards, and development resources on sbcwiki.com
 ---
 ![Broadcom Logo](assets/broadcom-rpi/Broadcom_Logo.png?h=100&f=webp)
 ![Raspberry Pi Logo](assets/broadcom-rpi/Raspberry_Pi_Logo.png?h=100&f=webp)
