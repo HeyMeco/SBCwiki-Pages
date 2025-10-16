@@ -8,6 +8,7 @@ soc:
 - RK3568
 tags: 
 - SOC-RK
+summary: Rockchip RK3568 - Quad-core Cortex-A55 SoC with Mali-G52 GPU and 1 TOPS NPU
 ---
 # Rockchip RK3568
 

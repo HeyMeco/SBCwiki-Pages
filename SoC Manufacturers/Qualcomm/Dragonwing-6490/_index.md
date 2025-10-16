@@ -8,6 +8,7 @@ soc:
 - QC6490
 tags: 
 - SOC-Qualcomm
+summary: Qualcomm QCS6490/QCM6490 - Octa-core SoC with Adreno 643 GPU and 6th gen AI Engine
 ---
 # QCS6490 / QCM6490
 

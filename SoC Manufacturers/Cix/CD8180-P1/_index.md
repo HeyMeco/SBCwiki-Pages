@@ -9,6 +9,7 @@ soc:
 - CD8160
 tags: 
 - SOC-Cix
+summary: Cix CD8180/P1 - High-performance 12-core SoC with Immortalis G720 GPU and 30 TOPS NPU
 ---
 # CD8180 / CD8160 / P1
 
