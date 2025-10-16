@@ -15,6 +15,16 @@ summary: All Cix SoC's on sbcwiki.com
 
 {{< taglist SOC-Cix >}}
 
+## Ressources
+
+- Official Website:
+  - https://en.cixtech.com/
+- Official GitHub Account:
+  - https://github.com/cixtech
+- Cix AI Model Hub:
+  - https://github.com/cixtech/ai_model_hub
+
+
 ## Tutorials
 
 - Coming soon!
