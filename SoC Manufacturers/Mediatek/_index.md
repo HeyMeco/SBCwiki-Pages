@@ -30,6 +30,7 @@ summary: All Mediatek SoC's, boards, and development resources on sbcwiki.com
 {{< taglist SOC-MTK-Router >}}
 - Filogic 860
 - Filogic 850
+- Filogic 820 (OpenWRT one)
 
 ## Tutorials
 
