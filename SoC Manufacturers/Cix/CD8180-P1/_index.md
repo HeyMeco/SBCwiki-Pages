@@ -24,6 +24,9 @@ summary: Cix CD8180/P1 - High-performance 12-core SoC with Immortalis G720 GPU a
 | **VPU** | Arm-China Linlon V8<br>- 8K@60fps decoder AV1, H.265, H.264, VP9, VP8, H.263, MPEG‑4, MPEG‑2<br>- 8K@30fps encoder H.265, H.264, VP9, VP8               |
 | **NPU** | Arm-China Zhouyi<br>- Computing Power: 30 TOPs<br>- Precision Support: INT4 / INT8 / INT16 / FP16 / TF32             |
 
+>[!NOTE]
+>Every Cix P1 has been limited up to 2.6GHz afterwards while the original target was 2.8GHz
+
 {{% /details %}}
 <br>
 {{% details title="Block Diagram" open=false %}}
@@ -50,7 +53,9 @@ See [Community support status tracker](https://github.com/System64fumo/linux/blo
 
 List of boards:
 
-{{< taglist CD8180 >}}
+{{< taglist CD8180 >}} 
+
+- Minisforum MS-R1
 
 ---
 
