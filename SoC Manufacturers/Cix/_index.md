@@ -19,6 +19,8 @@ summary: All Cix SoC's, boards, and development resources on sbcwiki.com
 
 - Official Website:
   - https://en.cixtech.com/
+- Cix Developer Hub (TRM, Documentation, Ressources):
+  - https://developer.cixtech.com/
 - Official GitHub Account:
   - https://github.com/cixtech
 - Cix AI Model Hub:

@@ -31,7 +31,7 @@ summary: Cix CD8180/P1 - High-performance 12-core SoC with Immortalis G720 GPU a
 <br>
 {{% details title="Block Diagram" open=false %}}
 
-![P1 Block Diagram](images/P1-system-block-diagram.webp)
+![P1 Block Diagram](images/Cix-P1-Blockdiagram.webp)
 
 {{% /details %}}
 
@@ -44,28 +44,37 @@ summary: Cix CD8180/P1 - High-performance 12-core SoC with Immortalis G720 GPU a
 - [x] Works but not all features are implemented.
 
 See [Mailing list](http://lore.kernel.org/lkml/?q=Cix+P1)
-See [Community support status tracker](https://github.com/System64fumo/linux/blob/main/hardware/devices/arm/radxa/orion/orion.md)
+| Component                                                                                   | Status      |
+|---------------------------------------------------------------------------------------------|-------------|
+| [Basic DT](https://lore.kernel.org/all/20250721144500.302202-1-peter.chen@cixtech.com/)     | **Merged**  |
+| [MAILBOX/UART/Clock](https://lore.kernel.org/all/20250721144500.302202-1-peter.chen@cixtech.com/) | **Merged**  |
+| [I2C & I3C](https://lore.kernel.org/all/20250903084713.3221907-1-jun.guo@cixtech.com/)      | **Merged**  |
+| [SPI](https://lore.kernel.org/r/20250919013118.853078-1-jun.guo@cixtech.com/)               | v6.19-rc1   |
+| [Pinctrl](https://lore.kernel.org/all/20251021070410.3585997-1-gary.yang@cixtech.com/)      | v6.19-rc1   |
+| [PCIe](https://lore.kernel.org/linux-pci/20251020042857.706786-1-hans.zhang@cixtech.com/)   | v6.19-rc1   |
+| [HDA](https://lore.kernel.org/r/20251029093840.876483-4-joakim.zhang@cixtech.com/)          | Reviewing   |
+| [Reset](https://lore.kernel.org/all/20251113075935.774359-1-gary.yang@cixtech.com/)         | Reviewing   |
+
+
 
 
 ---
 
-## Boards with CD8180 / P1
+## Boards with Cix P1
 
 List of boards:
 
 {{< taglist CD8180 >}} 
 
 - Minisforum MS-R1
+- Radxa Orion O6N
+- OrangePi 6 Plus
+- MetaComputing ARM AI PC
 
 ---
 
-## CD8160
+## What variant is CD8160?
 
-| **SoC** | **CD8160 (binned variant)**                                                                                                                  |
-|---------|----------------------------------------------------------------------------------------------------------------------------------|
-| **CPU** | 4x Cortex®-A720 (Big cores) up to **2.6GHz**<br>4x Cortex®‑A720 (Medium cores) up to 2.4GHz<br>4x Cortex®‑A520 (LITTLE cores) 1.8GHz |
-| **Other differences** | Possibly less I/O like PCIe lanes (needs to be confirmed) |
+> “CD8160 was the silkscreen used in early mass production. As PC/server models entered production, all silkscreen numbers were standardized to C*8180. CD8160 is no longer supplied.”
 
-## Boards with CD8160
-- Radxa Orion O6N
-- OrangePi 6 Plus
+Cix P1 variants like CD8160 are all the same SoC from different batches in production. There are **no differences**.
