@@ -9,7 +9,7 @@ bookCollapseSection: true
 summary: All Cix SoC's, boards, and development resources on sbcwiki.com
 ---
 
-![Cix Logo](assets/cix/Cix-Logo.png?h=100)
+![Cix Logo](assets/cix/Cix-Logo-Blue.webp?h=100)
 
 ## Current Cix SoC's
 
