@@ -50,7 +50,7 @@ summary: Qualcomm QCS6490/QCM6490 Dragonwing ARM processor - octa-core CPU up to
 ## Linux Support
 
 ### Mainline kernel
-- [x] Fully supported
+- [x] Fully supported. Driver Support Matrix available [here](https://linux-msm.github.io/mainline-status/soc/kodiak)
 
 ### Mesa GPU support
 - [x] Available with [Freedreno](https://docs.mesa3d.org/drivers/freedreno.html) (Reported as: FD643)
