@@ -47,4 +47,4 @@ See [Mailing list](http://lore.kernel.org/lkml/?q=MT7988)
 
 List of boards:
 
-{{< taglist Filogic-880 >}}
+{{< taglist tag="Filogic-880" style="cards">}}

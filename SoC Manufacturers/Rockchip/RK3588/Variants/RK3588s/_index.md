@@ -23,4 +23,4 @@ Cost optimized [RK3588](/docs/soc-manufacturers/rockchip/rk3588) with reduced I/
 
 List of boards:
 
-{{< taglist RK3588s >}}
+{{< taglist tag="RK3588s" style="cards" >}}

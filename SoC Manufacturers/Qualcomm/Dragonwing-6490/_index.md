@@ -68,6 +68,6 @@ See [Mailing list](http://lore.kernel.org/lkml/?q=QCS6490)
 
 List of boards:
 
-{{< taglist QCS6490 >}}
+{{< taglist tag="QCS6490" style="cards" >}}
 
-{{< taglist QCM6490 >}}
+{{< taglist tag="QCM6490" style="cards" >}}

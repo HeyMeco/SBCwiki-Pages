@@ -62,4 +62,4 @@ summary: Rockchip RK3588 flagship ARM processor - 8-core CPU (4x Cortex-A76 + 4x
 
 List of boards:
 
-{{< taglist RK3588 >}}
+{{< taglist tag="RK3588" style="cards" >}}

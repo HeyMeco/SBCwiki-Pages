@@ -12,19 +12,22 @@ summary: All Broadcom SoC's, boards, and development resources on sbcwiki.com
 ![Broadcom Logo](assets/broadcom-rpi/Broadcom_Logo.png?h=100&f=webp)
 ![Raspberry Pi Logo](assets/broadcom-rpi/Raspberry_Pi_Logo.png?h=100&f=webp)
 
-## Current Broadcom SoC's
-
-{{< taglist SOC-Broadcom >}}
-- Broadcom RP3A0
 
 ## Raspberry Pi's
 
-{{< taglist RPI >}}
+{{< taglist tag="RPI" style="cards">}}
+
+---
+
 - Raspberry Pi 500
 - Raspberry Pi 500+
 - Raspberry Pi Compute Module 5 (CM5)
 - Raspberry Pi Zero 2W
 
+## Current Broadcom SoC's
+
+{{< taglist SOC-Broadcom >}}
+- Broadcom RP3A0
 
 ## Older Broadcom SoC'S
 

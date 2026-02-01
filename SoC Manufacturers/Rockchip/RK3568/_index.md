@@ -60,4 +60,4 @@ summary: Rockchip RK3568 mid-range ARM processor - Quad-core Cortex-A55 up to 2G
 
 List of boards:
 
-{{< taglist RK3568 >}}
+{{< taglist tag="RK3568" style="cards" >}}
