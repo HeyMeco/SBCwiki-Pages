@@ -1,6 +1,7 @@
 ---
 weight: 10
 title: Rockchip
+icon: /assets/rockchip/Rockchip-Logo.png
 categories:
 - soc-vendors
 soc-vendors:

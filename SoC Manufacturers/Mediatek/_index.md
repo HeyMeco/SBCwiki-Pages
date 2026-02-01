@@ -1,6 +1,7 @@
 ---
 weight: 10
 title: Mediatek
+icon: /assets/mediatek/MediaTek-Logo.png
 categories:
 - soc-vendors
 soc-vendors:

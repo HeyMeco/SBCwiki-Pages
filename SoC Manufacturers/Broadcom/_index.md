@@ -1,6 +1,7 @@
 ---
 weight: 1
 title: Broadcom / RaspberryPi
+icon: /assets/broadcom-rpi/Raspberry_Pi_Logo.png
 categories:
 - soc-vendors
 soc-vendors:

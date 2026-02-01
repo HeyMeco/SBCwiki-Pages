@@ -1,6 +1,8 @@
 ---
 weight: 2
 title: Ubuntu
+icon: Ubuntu-Logo.png
+summary: Official Ubuntu Linux distribution for ARM platforms with Desktop, Server, and Core editions
 categories:
 - os
 #Supported Boards:

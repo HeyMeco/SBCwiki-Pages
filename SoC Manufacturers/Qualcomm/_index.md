@@ -1,6 +1,7 @@
 ---
 weight: 10
 title: Qualcomm
+icon: /assets/qualcomm/Qualcomm-Logo.png
 categories:
 - soc-vendors
 soc-vendors:

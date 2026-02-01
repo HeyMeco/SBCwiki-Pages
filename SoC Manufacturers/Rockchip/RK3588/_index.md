@@ -35,17 +35,15 @@ summary: Rockchip RK3588 flagship ARM processor - 8-core CPU (4x Cortex-A76 + 4x
 
 ## Linux Support
 {{% columns %}}
-### Vendor BSP
-- Current Version (rkr5) based on: 6.1
-- Legacy: 5.10 <br>(versions do not compare to mainline)
+- ### Vendor BSP
+  - Current Version (rkr5) based on: 6.1
+  - Legacy: 5.10 <br>(versions do not compare to mainline)
 
-<--->
+- ### Mainline kernel
+  - [ ] Fully supported
+  - [x] Works but not all features are implemented.
 
-### Mainline kernel
-- [ ] Fully supported
-- [x] Works but not all features are implemented.
-
-See [Mainline Status](https://gitlab.collabora.com/hardware-enablement/rockchip-3588/notes-for-rockchip-3588/-/blob/main/mainline-status.md?ref_type=heads)
+  See [Mainline Status](https://gitlab.collabora.com/hardware-enablement/rockchip-3588/notes-for-rockchip-3588/-/blob/main/mainline-status.md?ref_type=heads)
 
 {{% /columns %}}
 

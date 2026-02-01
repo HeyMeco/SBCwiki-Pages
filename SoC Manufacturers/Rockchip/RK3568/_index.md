@@ -35,15 +35,13 @@ summary: Rockchip RK3568 mid-range ARM processor - Quad-core Cortex-A55 up to 2G
 
 ## Linux Support
 {{% columns %}}
-### Vendor BSP
-- Current Version (rkr5) based on: 6.1
-- Legacy: 5.10 <br>(versions do not compare to mainline)
+- ### Vendor BSP
+  - Current Version (rkr5) based on: 6.1
+  - Legacy: 5.10 <br>(versions do not compare to mainline)
 
-<--->
-
-### Mainline kernel
-- [ ] Fully supported
-- [x] Works but not all features are implemented.
+- ### Mainline kernel
+  - [ ] Fully supported
+  - [x] Works but not all features are implemented.
 
 {{% /columns %}}
 

@@ -1,6 +1,8 @@
 ---
 weight: 1
 title: Armbian
+icon: Armbian-Logo.png
+summary: Lightweight Debian/Ubuntu-based Linux distribution specialized for ARM development boards
 categories:
 - os
 #Supported Boards:

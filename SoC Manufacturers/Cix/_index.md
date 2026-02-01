@@ -1,6 +1,7 @@
 ---
 weight: 10
 title: Cix
+icon: /assets/cix/Cix-Logo-Blue.webp
 categories:
 - soc-vendors
 soc-vendors:

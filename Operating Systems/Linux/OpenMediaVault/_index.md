@@ -1,6 +1,9 @@
 ---
 weight: 3
 title: OpenMediaVault
+icon: OMV-Logo.png
+iconBg: "#8ed1fc"
+summary: Network-attached storage (NAS) solution based on Debian Linux for home and small office use
 categories:
 - os
 #Supported Boards:
@@ -18,20 +21,20 @@ Openmediavault is the next generation network attached storage (NAS) solution ba
 
 ## Features
 {{% columns %}}
-- Running out-of-the-box
-- Debian Linux OS
-- Web based administration
-- Easy system updates via Debian package management
-- Volume management
-- S.M.A.R.T.
-<--->
-- Link aggregation
-- Wake On Lan
-- IPv6 support
-- Email notifications
-- File sharing
-- Snapshot support of shared folders
-- Extendible via plugins
+- - Running out-of-the-box
+  - Debian Linux OS
+  - Web based administration
+  - Easy system updates via Debian package management
+  - Volume management
+  - S.M.A.R.T.
+
+- - Link aggregation
+  - Wake On Lan
+  - IPv6 support
+  - Email notifications
+  - File sharing
+  - Snapshot support of shared folders
+  - Extendible via plugins
 {{% /columns %}}
 
 ## Supported Boards
