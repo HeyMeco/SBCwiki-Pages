@@ -40,23 +40,9 @@ summary: Cix CD8180/P1 - High-performance 12-core SoC with Immortalis G720 GPU a
 ## Linux Support
 
 ### Mainline kernel
-- [ ] Fully supported
+- [ ] Fully supported.
 - [x] Works but not all features are implemented.
-
-See [Mailing list](http://lore.kernel.org/lkml/?q=Cix+P1)
-| Component                                                                                   | Status      |
-|---------------------------------------------------------------------------------------------|-------------|
-| [Basic DT](https://lore.kernel.org/all/20250721144500.302202-1-peter.chen@cixtech.com/)     | **Merged**  |
-| [MAILBOX/UART/Clock](https://lore.kernel.org/all/20250721144500.302202-1-peter.chen@cixtech.com/) | **Merged**  |
-| [I2C & I3C](https://lore.kernel.org/all/20250903084713.3221907-1-jun.guo@cixtech.com/)      | **Merged**  |
-| [SPI](https://lore.kernel.org/r/20250919013118.853078-1-jun.guo@cixtech.com/)               | v6.19-rc1   |
-| [Pinctrl](https://lore.kernel.org/all/20251021070410.3585997-1-gary.yang@cixtech.com/)      | v6.19-rc1   |
-| [PCIe](https://lore.kernel.org/linux-pci/20251020042857.706786-1-hans.zhang@cixtech.com/)   | v6.19-rc1   |
-| [HDA](https://lore.kernel.org/r/20251029093840.876483-4-joakim.zhang@cixtech.com/)          | Reviewing   |
-| [Reset](https://lore.kernel.org/all/20251113075935.774359-1-gary.yang@cixtech.com/)         | Reviewing   |
-
-
-
+- Driver support status available [here](https://github.com/cixtech/linux-mainline/wiki)
 
 ---
 
