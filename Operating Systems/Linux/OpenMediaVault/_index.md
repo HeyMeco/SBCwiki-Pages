@@ -37,6 +37,19 @@ Openmediavault is the next generation network attached storage (NAS) solution ba
   - Extendible via plugins
 {{% /columns %}}
 
+## Versions
+
+| OMV Version | Codename | Debian Base | Status |
+|-------------|----------|-------------|--------|
+| 5.x | Usul | Debian 10 (Buster) | EOL (Jun 2022) |
+| 6.x | Shaitan | Debian 11 (Bullseye) | EOL (Jul 2024) |
+| 7.x | Sandworm | Debian 12 (Bookworm) | Stable |
+| 8.x | Synchrony | Debian 13 (Trixie) | Current (Dec 2025) |
+
 ## Supported Boards
 
-**All boards that have minimal Debian 11 (OMV6) or Debian 12 (OMV7) available for example through Armbian with [the install script](https://github.com/OpenMediaVault-Plugin-Developers/installScript)**
+**All boards that have minimal Debian 12 (OMV7) or Debian 13 (OMV8) available for example through Armbian with [the install script](https://github.com/OpenMediaVault-Plugin-Developers/installScript)**
+
+{{< hint info >}}
+OMV 8.x only supports AMD64 and ARM64 architectures.
+{{< /hint >}}
