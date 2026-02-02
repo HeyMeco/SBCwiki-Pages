@@ -50,6 +50,9 @@ images:
 
 ## Available OS images
 - Radxa official images
+- Windows 11 on Arm
+  - Drivers supplied from vendor [here](https://forum.radxa.com/t/windows-on-radxa-dragon-q6a/29913?u=meco) not Qualcomm
+  - Boots regular ARM ISO's from Microsoft (LTSC and other versions possible)
 - [Armbian](https://www.armbian.com/radxa-dragon-q6a/)
 
 ## Documentation / Links
@@ -69,3 +72,5 @@ images:
 ## Articles
 
 - [SBCwiki - Radxa Dragon Q6A First-Look](https://sbcwiki.com/news/articles/radxa-dragon-q6a-unboxing-and-first-look/)
+- [SBCwiki - Radxa Dragon Q6A Full Review](https://sbcwiki.com/news/articles/radxa-dragon-q6a-full-review/)
+- [Anton Maltsev - Radxa Dragon Q6A for Edge AI](https://medium.com/@zlodeibaal/inside-the-radxa-dragon-q6a-a-deep-dive-into-qualcomms-new-edge-ai-platform-34b61a4f2918)
