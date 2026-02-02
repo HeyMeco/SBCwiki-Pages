@@ -1,7 +1,7 @@
 ---
 weight: 1
 title: ARM
-icon: /assets/ARM/ARM_Logo.png
+icon: /assets/arm/Arm_Logo.png
 iconBg: "#098DAD"
 categories:
 - soc-vendors
