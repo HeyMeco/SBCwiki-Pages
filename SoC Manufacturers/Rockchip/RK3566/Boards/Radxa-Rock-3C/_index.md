@@ -11,8 +11,8 @@ board-vendor:
 - Radxa
 summary: "Radxa Rock 3C single-board computer - RK3566 4-core ARM processor, High-Performance, Low-Cost, RK3566 Inside!"
 images:
-- images/radxa-rock-3c-01.png
-- images/radxa-rock-3c-02.png
+- images/radxa-rock-3c-01.webp
+- images/radxa-rock-3c-02.webp
 ---
 
 # Radxa Rock 3C

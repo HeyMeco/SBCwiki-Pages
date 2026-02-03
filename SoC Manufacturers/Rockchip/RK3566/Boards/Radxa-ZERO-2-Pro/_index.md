@@ -11,8 +11,8 @@ board-vendor:
 - Radxa
 summary: "Radxa ZERO 2 Pro single-board computer - RK3566 4-core ARM processor, A Ultra Tiny High Performance SBC"
 images:
-- images/radxa-zero-2-pro-01.png
-- images/radxa-zero-2-pro-02.png
+- images/radxa-zero-2-pro-01.webp
+- images/radxa-zero-2-pro-02.webp
 ---
 
 # Radxa ZERO 2 Pro

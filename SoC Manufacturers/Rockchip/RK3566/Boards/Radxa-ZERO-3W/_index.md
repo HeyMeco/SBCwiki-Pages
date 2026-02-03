@@ -11,8 +11,8 @@ board-vendor:
 - Radxa
 summary: "Radxa ZERO 3W single-board computer - RK3566 4-core ARM processor, A Light, Compact and Tiny SBC"
 images:
-- images/radxa-zero-3w-01.png
-- images/radxa-zero-3w-02.png
+- images/radxa-zero-3w-01.webp
+- images/radxa-zero-3w-02.webp
 ---
 
 # Radxa ZERO 3W

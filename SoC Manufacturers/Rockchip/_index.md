@@ -17,7 +17,7 @@ summary: All Rockchip SoC's, boards, and development resources on sbcwiki.com
 {{< taglist SOC-RK >}}
 - Rockchip RK3576
 - Rockchip RK3566
-- Rockchip RK3528A
+- Rockchip RK3528
 ## Tutorials
 
 - Coming soon!

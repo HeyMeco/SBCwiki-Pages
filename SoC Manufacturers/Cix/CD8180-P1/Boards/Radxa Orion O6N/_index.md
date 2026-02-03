@@ -11,8 +11,8 @@ board-vendor:
 - Radxa
 summary: "Radxa Orion O6N single-board computer - The World's First Open Source Arm v9 Motherboard, Now Even Smaller"
 images:
-- images/radxa-orion-o6n-01.png
-- images/radxa-orion-o6n-02.png
+- images/radxa-orion-o6n-01.webp
+- images/radxa-orion-o6n-02.webp
 ---
 
 # Radxa Orion O6N

@@ -12,8 +12,8 @@ board-vendor:
 - Radxa
 summary: "Radxa Rock 3A single-board computer - RK3568 4-core ARM processor, A Credit Card Sized SBC with Rich Interfaces"
 images:
-- images/radxa-rock-3a-01.png
-- images/radxa-rock-3a-02.png
+- images/radxa-rock-3a-01.webp
+- images/radxa-rock-3a-02.webp
 ---
 
 # Radxa Rock 3A

@@ -11,8 +11,8 @@ board-vendor:
 - Radxa
 summary: "Radxa Rock 5T single-board computer - RK3588 8-core ARM processor, 8K Industrial-Grade Single Board Computer"
 images:
-- images/radxa-rock-5t-01.png
-- images/radxa-rock-5t-02.png
+- images/radxa-rock-5t-01.webp
+- images/radxa-rock-5t-02.webp
 ---
 
 # Radxa Rock 5T

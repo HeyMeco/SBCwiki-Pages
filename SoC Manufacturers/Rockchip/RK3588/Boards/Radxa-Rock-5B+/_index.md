@@ -11,8 +11,8 @@ board-vendor:
 - Radxa
 summary: "Radxa Rock 5B+ single-board computer - RK3588 8-core ARM processor, New Upgrade Version of ROCK 5B"
 images:
-- images/radxa-rock-5bp-01.png
-- images/radxa-rock-5bp-02.png
+- images/radxa-rock-5bp-01.webp
+- images/radxa-rock-5bp-02.webp
 ---
 
 # Radxa Rock 5B+

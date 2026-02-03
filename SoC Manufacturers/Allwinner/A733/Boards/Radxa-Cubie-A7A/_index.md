@@ -11,8 +11,8 @@ board-vendor:
 - Radxa
 summary: "Radxa Cubie A7A single-board computer - Allwinner A733 8-core ARM processor, The New Standard for Affordable Edge AI Innovation"
 images:
-- images/radxa-cubie-a7a-01.png
-- images/radxa-cubie-a7a-02.png
+- images/radxa-cubie-a7a-01.webp
+- images/radxa-cubie-a7a-02.webp
 ---
 
 # Radxa Cubie A7A

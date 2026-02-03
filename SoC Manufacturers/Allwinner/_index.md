@@ -1,6 +1,7 @@
 ---
-weight: 10
+weight: 1
 title: Allwinner
+icon: /assets/allwinner/Allwinner_Logo.png
 categories:
 - soc-vendors
 soc-vendors:
@@ -8,6 +9,7 @@ soc-vendors:
 bookCollapseSection: true
 summary: All Allwinner SoC's, boards, and development resources on sbcwiki.com
 ---
+![Allwinner Logo](assets/allwinner/Allwinner_Logo.png?h=100)
 
 ## Current Allwinner SoC's
 

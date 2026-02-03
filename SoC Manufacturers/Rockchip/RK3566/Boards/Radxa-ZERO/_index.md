@@ -11,8 +11,8 @@ board-vendor:
 - Radxa
 summary: "Radxa ZERO single-board computer - RK3566 4-core ARM processor, An Ultra Tiny SBC Supports 4K Display"
 images:
-- images/radxa-zero-01.png
-- images/radxa-zero-02.png
+- images/radxa-zero-01.webp
+- images/radxa-zero-02.webp
 ---
 
 # Radxa ZERO
