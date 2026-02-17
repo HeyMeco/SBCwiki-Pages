@@ -5,7 +5,6 @@ categories:
 - board
 tags:
 - iMX93
-- IMX-9
 boards:
 - Debix-Model-C
 board-vendor:

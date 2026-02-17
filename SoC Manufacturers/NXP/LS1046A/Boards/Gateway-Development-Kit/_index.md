@@ -5,7 +5,6 @@ categories:
 - board
 tags:
 - LS1046A
-- Layerscape
 boards:
 - Gateway-Development-Kit
 board-vendor:

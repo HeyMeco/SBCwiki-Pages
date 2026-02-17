@@ -5,7 +5,6 @@ categories:
 - board
 tags:
 - iMX8M-Plus
-- IMX-8
 boards:
 - Debix-Model-A
 board-vendor:
