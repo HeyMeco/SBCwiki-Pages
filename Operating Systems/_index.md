@@ -12,4 +12,3 @@ Find the right operating system for your Single Board Computer. We cover popular
 ## Linux Distributions
 
 {{< category-list path="operating-systems/linux" >}}
-
