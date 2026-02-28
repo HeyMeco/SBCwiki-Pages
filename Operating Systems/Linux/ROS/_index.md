@@ -45,9 +45,8 @@ ROS 2 is the current actively developed version with significant improvements ov
 |--------------|--------------|-----|----------------|
 | **Noetic Ninjemys** | May 2020 | May 2025 | Ubuntu 20.04 |
 
-{{< hint warning >}}
-**Note:** ROS 1 Noetic reached End of Life in May 2025. New projects should use ROS 2.
-{{< /hint >}}
+> [!WARNING]
+> **Note:** ROS 1 Noetic reached End of Life in May 2025. New projects should use ROS 2.
 
 ## Installation on SBCs
 

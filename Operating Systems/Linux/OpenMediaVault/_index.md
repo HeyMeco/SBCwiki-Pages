@@ -50,6 +50,5 @@ Openmediavault is the next generation network attached storage (NAS) solution ba
 
 **All boards that have minimal Debian 12 (OMV7) or Debian 13 (OMV8) available for example through Armbian with [the install script](https://github.com/OpenMediaVault-Plugin-Developers/installScript)**
 
-{{< hint info >}}
-OMV 8.x only supports AMD64 and ARM64 architectures.
-{{< /hint >}}
+> [!NOTE]
+> OMV 8.x only supports AMD64 and ARM64 architectures.
