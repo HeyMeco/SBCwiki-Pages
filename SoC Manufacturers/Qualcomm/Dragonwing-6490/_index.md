@@ -1,5 +1,5 @@
 ---
-weight: 1
+weight: 3
 title: QCS6490 / QCM6490
 #bookCollapseSection: true
 soc-series:
