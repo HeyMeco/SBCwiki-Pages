@@ -66,10 +66,10 @@ images:
 - [Arduino Ventuno Q Product Page](https://www.arduino.cc/product-ventuno-q)
 
 ## Benchmarks
-*No benchmarks available yet.*
+- Pre-release CPU and GPU benchmarks: [Arduino Ventuno Q First Look: Benchmarks](/news/articles/arduino-ventuno-q-first-look-ew26/)
 
 ## Guides
 *No guides available yet.*
 
 ## Articles
-*No articles available yet.*
+- [Arduino Ventuno Q First Look: Benchmarks, Specs and Mainline Linux](/news/articles/arduino-ventuno-q-first-look-ew26/)
