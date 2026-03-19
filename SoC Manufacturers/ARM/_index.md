@@ -150,3 +150,7 @@ All ARMv8-A and newer cores
 |-----|------|-------|
 | ARMv8-A | Cortex-A57 | Performance |
 | ARMv8-A | Cortex-A53 | Efficiency |
+
+## ARM Mali GPUs
+
+For more information about Arm Mali GPU Generations and Drivers check the following subpage: [Mali-GPU](./mali-gpu)
