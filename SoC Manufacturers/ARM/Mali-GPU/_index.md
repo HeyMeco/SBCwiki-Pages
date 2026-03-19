@@ -55,7 +55,7 @@ Mali is ARM's family of graphics processing units (GPUs) designed for mobile and
 
 {{% /columns %}}
 
-> The propietary driver stack is at version r54 sice August 2025.
+> The propietary driver stack is at version r54 since August 2025.
 
 ## Mali GPU Kernel Driver
 
