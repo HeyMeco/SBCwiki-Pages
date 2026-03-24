@@ -35,6 +35,11 @@ bookToc: true
 
 Arm Holdings is a semiconductor and software design company based in Cambridge, England, whose primary business is the design of central processing unit (CPU) cores that implement the ARM architecture family of instruction sets. They also design their own GPUs called Mali / Immortalis as well as NPUs called Ethos.
 
+## [Arm Silicon](./ARM-Silicon)
+
+While Arm primarily licenses CPU and GPU designs to other manufacturers, they started to produce their own silicon for specific datacenter and AI infrastructure applications starting in 2026.
+{{< taglist SOC-ARM >}}
+
 ## ARM CPU Cores
 
 All ARMv8-A and newer cores
