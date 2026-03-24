@@ -5,6 +5,8 @@ linktitle: ARM Silicon
 summary: Explore the ARM AGI CPU family, Arm's first production silicon for AI infrastructure. View specs and datasheets for these Neoverse V3 datacenter processors.
 keywords: ["ARM Silicon", "Arm AGI CPU", "specifications", "data sheet", "datasheet", "Neoverse V3", "AI infrastructure", "datacenter processor"]
 description: Explore the ARM AGI CPU family, Arm's first production silicon for AI infrastructure. View specs and datasheets for these Neoverse V3 datacenter processors.
+images:
+- Arm-Silicon-Header.png
 ---
 
 # ARM Silicon
