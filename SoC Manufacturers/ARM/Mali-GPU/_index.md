@@ -118,9 +118,9 @@ Mali is ARM's family of graphics processing units (GPUs) designed for mobile and
 
 | Micro Architecture | Name | Class |
 |-------------------|------|-------|
-| 5th Gen (v12) | Immortalis-G720 | Flagship |
-| 5th Gen (v12) | Mali-G720 | Sub-Premium |
-| 5th Gen (v12) | Mali-G620 | Mid-Range |
+| 5th Gen / Avalon (v12) | Immortalis-G720 | Flagship |
+| 5th Gen / Avalon (v12) | Mali-G720 | Sub-Premium |
+| 5th Gen / Avalon (v12) | Mali-G620 | Mid-Range |
 
 ### 2022
 
