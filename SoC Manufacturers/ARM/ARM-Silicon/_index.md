@@ -2,7 +2,9 @@
 weight: 3
 title: ARM Silicon
 linktitle: ARM Silicon
-summary: ARM Silicon including the ARM AGI CPU
+summary: Explore the ARM AGI CPU family, Arm's first production silicon for AI infrastructure. View specs and datasheets for these Neoverse V3 datacenter processors.
+keywords: ["ARM Silicon", "Arm AGI CPU", "specifications", "data sheet", "datasheet", "Neoverse V3", "AI infrastructure", "datacenter processor"]
+description: Explore the ARM AGI CPU family, Arm's first production silicon for AI infrastructure. View specs and datasheets for these Neoverse V3 datacenter processors.
 ---
 
 # ARM Silicon
@@ -10,6 +12,9 @@ summary: ARM Silicon including the ARM AGI CPU
 While Arm primarily licenses CPU and GPU designs to other manufacturers, they also produce their own silicon for specific datacenter and AI infrastructure applications.
 
 ## ARM AGI CPU
+
+![Arm Silicon Hero](Arm-Silicon-Header.png?w=1280&format=webp)
+
 
 Announced at the Arm Everywhere Keynote on March 24, 2026, the ARM AGI CPU is Arm's first production silicon, designed for AI infrastructure at scale. It delivers a new class of CPU with high performance and extreme rack-level density support for agentic AI operations across modern data centers.
 

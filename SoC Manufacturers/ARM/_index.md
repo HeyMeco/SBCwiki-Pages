@@ -8,7 +8,8 @@ categories:
 soc-vendors:
 - ARM
 bookCollapseSection: true
-summary: All ARM CPU cores & GPUs and other resources on sbcwiki.com
+keywords: ["ARM", "ARM CPU cores", "ARM Mali GPUs", "Cortex", "Neoverse", "specifications", "data sheet", "datasheet", "SoC vendors"]
+summary: Explore all ARM CPU cores, Mali GPUs, and custom silicon like the Arm AGI CPU. Find specifications, architectures, and resources on sbcwiki.com.
 bookToc: true
 ---
 <style>
