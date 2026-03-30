@@ -54,7 +54,7 @@ summary: Qualcomm QCS6490/QCM6490 Dragonwing ARM processor - octa-core CPU up to
 
 ### Mesa GPU support
 - [x] Available with [Freedreno](https://docs.mesa3d.org/drivers/freedreno.html) (Reported as: FD643)
-  - Turnip Vulkan 1.4 Driver
+  - Turnip Vulkan 1.3 Driver
   - Freedreno OpenGL / OpenCL support
 
 See [Mailing list](http://lore.kernel.org/lkml/?q=QCS6490)
