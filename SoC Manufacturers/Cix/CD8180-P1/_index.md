@@ -46,6 +46,12 @@ summary: Cix CD8180/P1 - High-performance 12-core SoC with Immortalis G720 GPU a
 
 ---
 
+## Available OS
+- [Ubuntu Concept](https://discourse.ubuntu.com/t/ubuntu-concept-goes-cix-p1/82213)
+- Vendor Releases (see board page)
+
+---
+
 ## Boards with Cix P1
 
 List of boards:
