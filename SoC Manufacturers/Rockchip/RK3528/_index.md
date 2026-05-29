@@ -1,5 +1,5 @@
 ---
-weight: 5
+weight: 8
 title: Rockchip RK3528
 #bookCollapseSection: true
 soc-series:

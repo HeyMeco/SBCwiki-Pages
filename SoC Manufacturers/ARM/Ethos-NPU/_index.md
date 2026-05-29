@@ -1,5 +1,5 @@
 ---
-weight: 3
+weight: 2
 title: Ethos NPU
 images: 
 - Arm-EthosU-Logo.png
@@ -7,7 +7,6 @@ categories:
 - soc-vendors
 soc-vendors:
 - ARM
-bookCollapseSection: true
 keywords: ["ARM", "Ethos NPU", "Ethos-U55", "Ethos-U65", "Ethos-U85", "AI", "NPU", "Machine Learning", "SoC vendors"]
 summary: Overview of the Arm Ethos-U Processor Series, including Ethos-U55, Ethos-U65, and Ethos-U85 specifications and features.
 bookToc: true

@@ -2,6 +2,7 @@
 weight: 30
 title: Arm AGI CPU SP113012A - 64 Core Data Center Processor
 linktitle: Arm AGI CPU SP113012A
+bookHidden: true
 soc-series:
 - ARM AGI CPU
 soc:

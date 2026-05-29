@@ -1,5 +1,5 @@
 ---
-weight: 2
+weight: 4
 title: Rockchip RK3576
 #bookCollapseSection: true
 soc-series:

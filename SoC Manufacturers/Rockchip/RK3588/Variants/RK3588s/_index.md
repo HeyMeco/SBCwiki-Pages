@@ -1,5 +1,5 @@
 ---
-weight: 1
+weight: 3
 title: Rockchip RK3588s
 #bookCollapseSection: true
 bookHidden: true

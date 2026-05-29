@@ -16,6 +16,10 @@ summary: All Rockchip SoC's, boards, and development resources on sbcwiki.com
 
 {{< taglist SOC-RK >}}
 
+## Upcoming Rockchip SoCs
+
+{{< taglist SOC-RK-Upcoming >}}
+
 ## Tutorials
 
 - Coming soon!

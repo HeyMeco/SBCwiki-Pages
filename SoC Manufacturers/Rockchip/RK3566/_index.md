@@ -1,5 +1,5 @@
 ---
-weight: 3
+weight: 7
 title: Rockchip RK3566
 #bookCollapseSection: true
 soc-series:

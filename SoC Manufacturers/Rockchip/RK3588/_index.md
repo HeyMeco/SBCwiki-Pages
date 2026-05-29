@@ -1,5 +1,5 @@
 ---
-weight: 1
+weight: 2
 title: Rockchip RK3588
 #bookCollapseSection: true
 soc-series:

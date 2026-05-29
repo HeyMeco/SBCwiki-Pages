@@ -1,5 +1,5 @@
 ---
-weight: 2
+weight: 1
 linktitle: Arm Mali GPU
 title: ARM Mali GPU Architecture, Userspace Drivers (Mali UMD/DDK, Panfrost) and Kernel Drivers (Panfrost, Panthor)
 summary: ARM Mali GPU architecture, userspace drivers (proprietary Mali UMD/DDK and open-source Panfrost), and kernel drivers (Panfrost and Panthor)
