@@ -88,7 +88,7 @@ Mali is ARM's family of graphics processing units (GPUs) designed for mobile and
 
 ## ARM Mali GPUs & Generations
 
-### Upcoming
+### 2026
 
 | Micro Architecture | Name | Class |
 |-------------------|------|-------|
