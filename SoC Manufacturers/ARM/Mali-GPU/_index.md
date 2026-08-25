@@ -92,16 +92,17 @@ Mali is ARM's family of graphics processing units (GPUs) designed for mobile and
 
 | Micro Architecture | Name | Class |
 |-------------------|------|-------|
-| "6th Gen" Magni (v15) | Mali TMAX Immortalis | Flagship |
-| "6th Gen" Magni (v15) | Mali G2-Ultra NX | Flagship |
-| "6th Gen" Magni (v15) | Mali G2-Premium | Mid-Range |
-| "6th Gen" Magni (v15) | Mali G2-Pro | Entry |
+| "6th Gen" Magni (v15) | Mali G2-Ultra-NX | Flagship |
+| "6th Gen" Magni (v15) | Mali G2-Premium-NX | Mid-Range |
+| "6th Gen" Magni (v15) | Mali G2-Pro-NX | Entry |
+| "6th Gen" Magni (v15) | Mali TMEX (Immortalis) | Entry? |
 
-> Names are a guess for the upcoming Magni v15 Generation
-> 
+ 
 > The Mali G2 Ultra NX (will exist as a 12 and 16 core variant) according to Genshin Impact's Vulkan whitelist
 >
-> The Mali TMAX Immortalis also comes from the GI's Vulkan whitelist and there is no further information about it yet
+> The Mali TMAX / TMEX Immortalis also comes from the GI's Vulkan whitelist and there is no further information about it yet
+>
+> Names are confirmed by [Android 17 Kernel 6.18 Panthor Driver SDK](https://gitlab.arm.com/gpu/arm-mali-gpu-for-linux/-/blob/4b41d1102eaf1064ea0445215e4b52383add2342/drivers/gpu/drm/panthor/panthor_props.c#L255-266) and NX stands for Neural present and is a suffix like Immortalis
 
 ### 2025
 
