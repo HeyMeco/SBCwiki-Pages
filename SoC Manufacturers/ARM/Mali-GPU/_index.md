@@ -92,11 +92,16 @@ Mali is ARM's family of graphics processing units (GPUs) designed for mobile and
 
 | Micro Architecture | Name | Class |
 |-------------------|------|-------|
-| "6th Gen" Magni (v15) | Mali G2-Ultra | Flagship |
+| "6th Gen" Magni (v15) | Mali TMAX Immortalis | Flagship |
+| "6th Gen" Magni (v15) | Mali G2-Ultra NX | Flagship |
 | "6th Gen" Magni (v15) | Mali G2-Premium | Mid-Range |
 | "6th Gen" Magni (v15) | Mali G2-Pro | Entry |
 
 > Names are a guess for the upcoming Magni v15 Generation
+> 
+> The Mali G2 Ultra NX (will exist as a 12 and 16 core variant) according to Genshin Impact's Vulkan whitelist
+>
+> The Mali TMAX Immortalis also comes from the GI's Vulkan whitelist and there is no further information about it yet
 
 ### 2025
 
