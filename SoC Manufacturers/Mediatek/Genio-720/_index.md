@@ -3,7 +3,6 @@ weight: 2
 title: Genio 720 / 520 / Kompanio 540
 soc-series:
 - Genio
-- Kompanio
 soc:
 - Genio-720
 - Genio-520
@@ -13,7 +12,6 @@ soc:
 - MT8189
 tags:
 - SOC-MTK
-- Kompanio
 summary: MediaTek Genio 720 (MT8391), Genio 520 (MT8371), and Kompanio 540 (MT8189). Shared 2x A78 + 6x A55 cluster on 6 nm, with up to 10 TOPS platform AI on the Genio parts.
 ---
 # Genio 720 / 520 / Kompanio 540

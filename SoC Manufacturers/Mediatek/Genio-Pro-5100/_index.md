@@ -3,7 +3,6 @@ weight: 0
 title: Genio Pro 5100 / Kompanio Ultra 910
 soc-series:
 - Genio
-- Kompanio
 soc:
 - Genio-Pro-5100
 - Kompanio-Ultra-910
@@ -11,7 +10,6 @@ soc:
 - MT8196
 tags:
 - SOC-MTK
-- Kompanio
 summary: MediaTek Genio Pro 5100 (MT8894) and Kompanio Ultra 910 (MT8196). Same Dimensity 9400-class silicon — IoT and Chromebook grades with 1x X925 + 3x X4 + 4x A720, Immortalis-G925 MC11, and 50+ TOPS NPU.
 ---
 # Genio Pro 5100 / Kompanio Ultra 910

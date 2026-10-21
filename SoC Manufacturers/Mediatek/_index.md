@@ -26,12 +26,6 @@ Genio is MediaTek's IoT and edge AI brand. Longevity windows are typically about
 
 {{< taglist SOC-MTK >}}
 
-## Kompanio
-
-Kompanio is MediaTek's Chromebook and laptop brand. Some SKUs are the same silicon as Genio parts.
-
-{{< taglist Kompanio >}}
-
 ## Filogic
 
 Filogic is MediaTek's Wi-Fi router and gateway brand. OpenWrt targets these parts under the `mediatek/filogic` platform.
