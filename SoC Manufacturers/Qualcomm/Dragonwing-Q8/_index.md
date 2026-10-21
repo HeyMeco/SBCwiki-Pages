@@ -25,11 +25,11 @@ The Qualcomm Dragonwing Q8 series is the top of the commercial Q family. Qualcom
 
 | **Part** | **CPU** | **GPU** | **Memory** | **AI** |
 |----------|---------|---------|------------|--------|
-| **Q-8750** | 8x Oryon up to 4.32 GHz<br>Custom Qualcomm cores, 3 nm | Adreno 830 @ 1.1 GHz | LPDDR5x @ 4800 MHz<br>4x 16-bit, up to 24 GB | Hexagon V79<br>77 dense TOPS |
-| **QCM8550 / QCS8550** | 1x Cortex-X3 @ 3.2 GHz<br>2x Cortex-A715 @ 2.8 GHz<br>2x Cortex-A710 @ 2.8 GHz<br>3x Cortex-A510 @ 2.0 GHz<br>4 nm | Adreno 740 @ 680 MHz | LPDDR5x @ 4200 MHz | — |
-| **QCS8250** | 4x Cortex-A77 @ 2.85 GHz<br>4x Cortex-A55 @ 1.8 GHz<br>7 nm | Adreno 650 | Quad-channel PoP LPDDR5/LPDDR4x @ 2750 MHz | Hexagon V66Q @ 1.5 GHz<br>15 TOPS |
-| **SDA845** | 4x Cortex-A75 @ 2.8 GHz<br>4x Cortex-A55 @ 1.8 GHz<br>10 nm | Adreno 630 | LPDDR4x @ 1866 MHz | Hexagon 685 |
-| **QCS8275 / QCS8300** | Octa-core Kryo Gen 6<br>2x Kryo Gold Prime @ 2.35 GHz<br>2x Kryo Gold @ 2.1 GHz<br>4x Kryo Silver @ 1.95 GHz<br>Codename Monaco | Adreno 623 | 4x 16-bit LPDDR5/5x @ 3200 MHz<br>Up to 32 GB with inline ECC | Hexagon<br>20–40 dense INT8 TOPS |
+| **Q-8750** | 8x Oryon up to 4.32 GHz<br>Custom Qualcomm cores, 3 nm | [Adreno 830](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-800-series-20242026) @ 1.1 GHz | LPDDR5x @ 4800 MHz<br>4x 16-bit, up to 24 GB | Hexagon V79<br>77 dense TOPS |
+| **QCM8550 / QCS8550** | 1x Cortex-X3 @ 3.2 GHz<br>2x Cortex-A715 @ 2.8 GHz<br>2x Cortex-A710 @ 2.8 GHz<br>3x Cortex-A510 @ 2.0 GHz<br>4 nm | [Adreno 740](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-700-series-20212024) @ 680 MHz | LPDDR5x @ 4200 MHz | — |
+| **QCS8250** | 4x Cortex-A77 @ 2.85 GHz<br>4x Cortex-A55 @ 1.8 GHz<br>7 nm | [Adreno 650](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-600-series-20182023) | Quad-channel PoP LPDDR5/LPDDR4x @ 2750 MHz | Hexagon V66Q @ 1.5 GHz<br>15 TOPS |
+| **SDA845** | 4x Cortex-A75 @ 2.8 GHz<br>4x Cortex-A55 @ 1.8 GHz<br>10 nm | [Adreno 630](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-600-series-20182023) | LPDDR4x @ 1866 MHz | Hexagon 685 |
+| **QCS8275 / QCS8300** | Octa-core Kryo Gen 6<br>2x Kryo Gold Prime @ 2.35 GHz<br>2x Kryo Gold @ 2.1 GHz<br>4x Kryo Silver @ 1.95 GHz<br>Codename Monaco | [Adreno 623](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-600-series-20182023) | 4x 16-bit LPDDR5/5x @ 3200 MHz<br>Up to 32 GB with inline ECC | Hexagon<br>20–40 dense INT8 TOPS |
 
 {{% /details %}}
 

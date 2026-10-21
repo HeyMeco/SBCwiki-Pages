@@ -19,7 +19,7 @@ summary: Qualcomm Snapdragon 8cx Gen 3 (SC8280XP) compute platform - 4x Cortex-X
 |---------|----------------------------------------------------------------------------------------------------------------------------------|
 | **CPU** | 4x Arm Cortex-X1 up to 3.0 GHz<br>4x Arm Cortex-A78 up to 2.4 GHz<br>- 64-bit<br>- 5 nm process |
 | **RAM** | LPDDR4X up to 4266 MT/s<br>- 128-bit bus (8 channels, 16-bit per channel)<br>- Up to 32GB |
-| **GPU** | Adreno 690<br>- OpenGL ES 3.2<br>- Vulkan 1.3<br>- OpenCL 2.0<br>- DirectX<br>- DirectML |
+| **GPU** | [Adreno 690](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-600-series-20182023)<br>- OpenGL ES 3.2<br>- Vulkan 1.3<br>- OpenCL 2.0<br>- DirectX<br>- DirectML |
 | **VPU** | Adreno VPU (5th generation)<br>- Decode up to 4K120: H.265 Main 10, H.265 Main, H.264 High, VP9 Profile 2<br>- Encode up to 4K60: H.265 Main 10, H.265 Main, H.264 High |
 | **NPU** | Qualcomm Hexagon processor and Sensing Hub<br>- Qualcomm AI Engine up to 29+ TOPS |
 

@@ -22,7 +22,7 @@ Part of the [Dragonwing Q6 / IQ6](/docs/soc-manufacturers/qualcomm/dragonwing-q6
 |---------|----------------------------------------------------------------------------------------------------------------------------------|
 | **CPU** | 1x Cortex-A78 up to 2.7 GHz<br>3x Cortex-A78 @ 2.4 GHz<br>4x Cortex-A55 @ 1.9 GHz<br>- 6 nm |
 | **RAM** | Dual-channel non-PoP high-speed memory, LPDDR5/LPDDR4x SDRAM<br>- LPDDR5 SDRAM designed for 3200 MHz clock (2 x 16-bit)<br>- LPDDR4X SDRAM designed for 2133 MHz clock (2 x 16-bit) |
-| **GPU** | Adreno 643 GPU @ 812 MHz            |
+| **GPU** | [Adreno 643](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-600-series-20182023) GPU @ 812 MHz            |
 | **VPU** | - 4K@60fps decode for H.264/H.265/VP9<br>- 4K@30fps encode for H.264/H.265                |
 | **NPU** | 6th gen Qualcomm® AI Engine:<br>- Compute Hexagon DSP with dual Hexagon Vector eXtensions (HVX)<br>- Hexagon Co-processor (Hexagon CP) 2.0<br>- Hexagon Tensor Accelerator                                                                |
 

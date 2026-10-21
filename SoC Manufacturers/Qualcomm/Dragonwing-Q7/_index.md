@@ -21,7 +21,7 @@ The Qualcomm Dragonwing Q7 series is the commercial tier under Q8. Qualcomm curr
 |---------|------------|
 | **CPU** | 1x Cortex-A720 @ 2.8 GHz<br>4x Cortex-A720 @ 2.4 GHz<br>3x Cortex-A520 @ 1.8 GHz |
 | **RAM** | LPDDR5x @ 4200 MHz<br>Also 2x16-bit LPDDR5 @ 3200 MHz and 2x16-bit LPDDR4x @ 2133 MHz |
-| **GPU** | Adreno 722 up to 1.15 GHz |
+| **GPU** | [Adreno 722](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-700-series-20212024) up to 1.15 GHz |
 | **Display** | 2x DSI, DisplayPort, HDMI |
 | **Wireless** | 2x2 Wi-Fi 7, 2x2 Wi-Fi 6E, Bluetooth 5.4 and Bluetooth 6.0 |
 | **OS** | Android, Linux |

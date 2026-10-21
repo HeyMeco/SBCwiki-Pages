@@ -14,7 +14,7 @@ summary: All Qualcomm SoC's, boards, and development resources on sbcwiki.com
 
 ## Summary
 
-Qualcomm designs wireless and computing semiconductors from San Diego, California. For IoT and single-board computers the current brand is **Dragonwing**, with industrial **IQ** parts and commercial **Q** parts. Some of those names are two grades of one SoC. CPUs are Qualcomm Oryon cores, or Arm Cortex designs sold as Kryo. GPUs are Adreno.
+Qualcomm designs wireless and computing semiconductors from San Diego, California. For IoT and single-board computers the current brand is **Dragonwing**, with industrial **IQ** parts and commercial **Q** parts. Some of those names are two grades of one SoC. CPUs are Qualcomm Oryon cores, or Arm Cortex designs sold as Kryo. GPUs are [Adreno](./adreno-gpu).
 
 Part numbers use a few prefixes. **QCS** is the application processor without an integrated cellular modem, **QCM** adds that modem, and **QRB** marks robotics parts. Industrial parts are also sold under **IQ-** names, such as IQ-9075 in the IQ9 series. Newer parts use a **Q-** number, such as Q-6690 in the Q6 series.
 
@@ -47,6 +47,10 @@ Snapdragon is Qualcomm's mobile phone SoC, and the brand on its PC processors, i
 | [Q5](/docs/soc-manufacturers/qualcomm/dragonwing-q5/) | Commercial | 9 TOPS, 8-core CPU. Android, Windows, Linux, and Ubuntu | -30°C to 95°C, supported until 2036 | Ruggedized handhelds, tablets, industrial scanners and HMIs, cameras and edge AI boxes, kiosks and POS systems, and autonomous mobile robots |
 | [Q4](/docs/soc-manufacturers/qualcomm/dragonwing-q4/) | Commercial | 1.1 TOPS, 4-core CPU. Android, Linux, and Ubuntu | -30°C to 95°C, supported until 2033–2036 | Industrial handhelds, smart retail, edge AI cameras, industrial computing, healthcare devices, and robotics and automation |
 | [Q2 / IQ2](/docs/soc-manufacturers/qualcomm/dragonwing-q2/) | Commercial and industrial. Q-2390 and IQ-2390 are one SoC. QRB2210, QCS2290, and QCM2290 are a Cortex-A53 SoC | Up to 1.1 TOPS. Android, Linux, Ubuntu, and Zephyr | -30°C to 115°C, supported until 2036 | HMIs, small PLCs, machine vision, panels, handhelds, POS, robotics, and entry IoT. QRB2210 is the part on the Arduino Uno Q |
+
+## Qualcomm Adreno GPUs
+
+For more information about Qualcomm Adreno GPU Generations and Drivers check the following subpage: [Adreno-GPU](./adreno-gpu)
 
 ## Tutorials
 

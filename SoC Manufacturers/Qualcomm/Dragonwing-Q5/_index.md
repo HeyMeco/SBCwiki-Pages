@@ -21,9 +21,9 @@ The Qualcomm Dragonwing Q5 series covers rugged handhelds, scanners, cameras, ki
 
 | **Part** | **CPU** | **GPU** | **Memory** | **AI** |
 |----------|---------|---------|------------|--------|
-| **QCS5430** | Cortex-A78 and Cortex-A55, 6 cores up to 2.1 GHz<br>6 nm | Adreno 643L @ 812 MHz | LPDDR5 @ 3200 MHz<br>LPDDR4x @ 2133 MHz | Hexagon 770<br>3.5 INT8 TOPS on feature pack 1, up to 9 TOPS with software SKUs |
-| **QCM5430** | 4x Cortex-A78 + 4x Cortex-A55, up to 2.7 GHz<br>6 nm | Adreno 642L / Adreno 643 @ 812 MHz | LPDDR5 / LPDDR4x, up to 4200 MHz | Same Kodiak platform as QCS5430 |
-| **QRB5165** | 4x Cortex-A77 up to 2.84 GHz<br>4x Cortex-A55<br>7 nm | Adreno 650 | LPDDR5 @ 2750 MHz<br>LPDDR4x @ 2133 MHz | 5th gen AI Engine, 15 TOPS<br>Hexagon 698 |
+| **QCS5430** | Cortex-A78 and Cortex-A55, 6 cores up to 2.1 GHz<br>6 nm | [Adreno 643L](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-600-series-20182023) @ 812 MHz | LPDDR5 @ 3200 MHz<br>LPDDR4x @ 2133 MHz | Hexagon 770<br>3.5 INT8 TOPS on feature pack 1, up to 9 TOPS with software SKUs |
+| **QCM5430** | 4x Cortex-A78 + 4x Cortex-A55, up to 2.7 GHz<br>6 nm | [Adreno 642L / Adreno 643](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-600-series-20182023) @ 812 MHz | LPDDR5 / LPDDR4x, up to 4200 MHz | Same Kodiak platform as QCS5430 |
+| **QRB5165** | 4x Cortex-A77 up to 2.84 GHz<br>4x Cortex-A55<br>7 nm | [Adreno 650](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-600-series-20182023) | LPDDR5 @ 2750 MHz<br>LPDDR4x @ 2133 MHz | 5th gen AI Engine, 15 TOPS<br>Hexagon 698 |
 
 {{% /details %}}
 

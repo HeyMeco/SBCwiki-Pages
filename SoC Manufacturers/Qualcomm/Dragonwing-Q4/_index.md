@@ -25,11 +25,11 @@ The Qualcomm Dragonwing Q4 series is for handhelds, smart retail, edge cameras, 
 
 | **Part** | **CPU** | **GPU** | **Memory** | **Process** |
 |----------|---------|---------|------------|-------------|
-| **Q-4390** | 2x Cortex-A78 up to 2.2 GHz<br>6x Cortex-A55 | Adreno 613 @ 738 MHz | LPDDR5 @ 2750 MHz and LPDDR4x @ 2100 MHz, 2x16 | 4 nm |
-| **QCM4490 / QCS4490** | 2x Cortex-A78 up to 2.4 GHz<br>6x Cortex-A55 | Adreno 613 @ 1.01 GHz | LPDDR5 @ 3200 MHz and LPDDR4x @ 2100 MHz, 2x16 | 4 nm |
-| **QCS4290 / QCM4290** | 4x Cortex-A73 up to 2.0 GHz<br>4x Cortex-A53 | Adreno 610 | LPDDR4x @ 1866 MHz (2x16)<br>LPDDR3 @ 933 MHz (1x32) | 11 nm |
-| **QCS410** | 2x Cortex-A76 up to 2.2 GHz<br>6x Cortex-A55 | Adreno 612 | LPDDR4x @ 1804 MHz | 11 nm |
-| **QRB4210** | 4x Cortex-A73 @ 2.0 GHz<br>4x Cortex-A53 @ 1.8 GHz | Adreno 610 @ 950 MHz | LPDDR4x @ 1866 MHz (2x16)<br>LPDDR3 @ 933 MHz (1x32) | 11 nm |
+| **Q-4390** | 2x Cortex-A78 up to 2.2 GHz<br>6x Cortex-A55 | [Adreno 613](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-600-series-20182023) @ 738 MHz | LPDDR5 @ 2750 MHz and LPDDR4x @ 2100 MHz, 2x16 | 4 nm |
+| **QCM4490 / QCS4490** | 2x Cortex-A78 up to 2.4 GHz<br>6x Cortex-A55 | [Adreno 613](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-600-series-20182023) @ 1.01 GHz | LPDDR5 @ 3200 MHz and LPDDR4x @ 2100 MHz, 2x16 | 4 nm |
+| **QCS4290 / QCM4290** | 4x Cortex-A73 up to 2.0 GHz<br>4x Cortex-A53 | [Adreno 610](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-600-series-20182023) | LPDDR4x @ 1866 MHz (2x16)<br>LPDDR3 @ 933 MHz (1x32) | 11 nm |
+| **QCS410** | 2x Cortex-A76 up to 2.2 GHz<br>6x Cortex-A55 | [Adreno 612](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-600-series-20182023) | LPDDR4x @ 1804 MHz | 11 nm |
+| **QRB4210** | 4x Cortex-A73 @ 2.0 GHz<br>4x Cortex-A53 @ 1.8 GHz | [Adreno 610](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-600-series-20182023) @ 950 MHz | LPDDR4x @ 1866 MHz (2x16)<br>LPDDR3 @ 933 MHz (1x32) | 11 nm |
 
 {{% /details %}}
 

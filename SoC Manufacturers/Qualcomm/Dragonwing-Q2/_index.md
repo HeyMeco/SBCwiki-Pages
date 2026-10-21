@@ -23,8 +23,8 @@ The Qualcomm Dragonwing Q2 series is the entry tier of Dragonwing IoT processors
 
 | **Part** | **CPU** | **GPU** | **Memory** | **AI** |
 |----------|---------|---------|------------|--------|
-| **QRB2210 / QCS2290 / QCM2290** | 4x Cortex-A53 @ 2.0 GHz<br>Codename Agatti | Adreno 702 @ 845 MHz | LPDDR4x @ 1804 MHz (2x 16-bit)<br>LPDDR3 @ 933 MHz (1x 32-bit) | — |
-| **Q-2390 / IQ-2390** | 1x Cortex-A78 @ 1.9 GHz<br>3x Cortex-A55 @ 1.8 GHz | Adreno 704 @ 1.1 GHz | 2x 16-bit LPDDR4x @ 1.8 GHz<br>Up to 8 GB | Hexagon V66<br>Up to 1.1 INT8 TOPS |
+| **QRB2210 / QCS2290 / QCM2290** | 4x Cortex-A53 @ 2.0 GHz<br>Codename Agatti | [Adreno 702](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-700-series-20212024) @ 845 MHz | LPDDR4x @ 1804 MHz (2x 16-bit)<br>LPDDR3 @ 933 MHz (1x 32-bit) | — |
+| **Q-2390 / IQ-2390** | 1x Cortex-A78 @ 1.9 GHz<br>3x Cortex-A55 @ 1.8 GHz | [Adreno 704](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-700-series-20212024) @ 1.1 GHz | 2x 16-bit LPDDR4x @ 1.8 GHz<br>Up to 8 GB | Hexagon V66<br>Up to 1.1 INT8 TOPS |
 
 {{% /details %}}
 

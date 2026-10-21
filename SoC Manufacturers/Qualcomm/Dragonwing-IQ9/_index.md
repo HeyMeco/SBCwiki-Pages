@@ -23,7 +23,7 @@ The Qualcomm Dragonwing IQ9 series represents the premium tier of industrial IoT
 |---------|-----------------------|
 | **CPU** | **Octa-Core Kryo Gen 6**:<br>Up to 2.36 GHz |
 | **RAM** | 6x16bit LPDDR5 @ 3200 MHz<br>- Up to 36 GB with inline ECC |
-| **GPU** | Adreno 663 GPU @ 800 MHz |
+| **GPU** | [Adreno 663](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-600-series-20182023) GPU @ 800 MHz |
 | **VPU** | **Decode**: 1x 8K60, 2x 8K30, 4x 4K60<br>- AV1, H.264, H.265, VP9, MPEG2<br>**Encode**: 2x 4K60, 4x 4K30<br>- H.264, H.265 |
 | **NPU** | Hexagon:<br>- 100 dense TOPS<br>- Llama 2 7B: 22 tokens/sec |
 | **Other** | 8x CAN-FD, 2x 2.5 GbE |

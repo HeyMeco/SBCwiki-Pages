@@ -24,11 +24,11 @@ The Qualcomm Dragonwing Q6 series is the commercial tier for retail, logistics, 
 
 | **Part** | **CPU** | **GPU** | **Memory** | **Notes** |
 |----------|---------|---------|------------|-----------|
-| **Q-6690** | 1x Cortex-A715 @ 2.9 GHz<br>3x Cortex-A715 @ 2.7 GHz<br>4x Cortex-A510 @ 2.0 GHz<br>4 nm | Adreno @ 1.15 GHz | 2x16-bit LPDDR5 @ 3200 MHz | Hexagon, 6 TOPS. Android. Wi-Fi 7 and Wi-Fi 6E, 2x2. Bluetooth 5.4 and Bluetooth 6.0 |
-| **[QCS6490 / QCM6490](/docs/soc-manufacturers/qualcomm/dragonwing-6490/)** | Cortex-A78 and Cortex-A55, 6 nm | Adreno 643 | LPDDR5 / LPDDR4x | Full specifications are on the [chip page](/docs/soc-manufacturers/qualcomm/dragonwing-6490/) |
-| **QCS610** | 2x Cortex-A76 up to 2.2 GHz<br>6x Cortex-A55<br>11 nm | Adreno 612 | LPDDR4x @ 1804 MHz | Hexagon 685. Android and Linux. Wi-Fi 5 and Wi-Fi 4, 1x1. Bluetooth 5.0. 10-year longevity |
-| **QCS6125** | 4x Cortex-A73 @ 2.0 GHz<br>4x Cortex-A53 @ 1.8 GHz<br>11 nm | Adreno 610 | LPDDR4x @ 1804 MHz (2x16)<br>LPDDR3 @ 933 MHz (1x32) | Hexagon 686. Snapdragon X12 LTE modem. Android and Linux. Wi-Fi 5 1x1. Bluetooth 5.0 |
-| **IQ-615** | 2x Cortex-A76 and 6x Cortex-A55, up to 1.9 GHz | Adreno 612 @ 845 MHz | 2x 16-bit LPDDR4x @ 1555 MHz<br>Up to 8 GB | Hexagon V66 @ 1.0 GHz. Yocto Linux and Ubuntu. Industrial grade |
+| **Q-6690** | 1x Cortex-A715 @ 2.9 GHz<br>3x Cortex-A715 @ 2.7 GHz<br>4x Cortex-A510 @ 2.0 GHz<br>4 nm | [Adreno](/docs/soc-manufacturers/qualcomm/adreno-gpu/) @ 1.15 GHz | 2x16-bit LPDDR5 @ 3200 MHz | Hexagon, 6 TOPS. Android. Wi-Fi 7 and Wi-Fi 6E, 2x2. Bluetooth 5.4 and Bluetooth 6.0 |
+| **[QCS6490 / QCM6490](/docs/soc-manufacturers/qualcomm/dragonwing-6490/)** | Cortex-A78 and Cortex-A55, 6 nm | [Adreno 643](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-600-series-20182023) | LPDDR5 / LPDDR4x | Full specifications are on the [chip page](/docs/soc-manufacturers/qualcomm/dragonwing-6490/) |
+| **QCS610** | 2x Cortex-A76 up to 2.2 GHz<br>6x Cortex-A55<br>11 nm | [Adreno 612](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-600-series-20182023) | LPDDR4x @ 1804 MHz | Hexagon 685. Android and Linux. Wi-Fi 5 and Wi-Fi 4, 1x1. Bluetooth 5.0. 10-year longevity |
+| **QCS6125** | 4x Cortex-A73 @ 2.0 GHz<br>4x Cortex-A53 @ 1.8 GHz<br>11 nm | [Adreno 610](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-600-series-20182023) | LPDDR4x @ 1804 MHz (2x16)<br>LPDDR3 @ 933 MHz (1x32) | Hexagon 686. Snapdragon X12 LTE modem. Android and Linux. Wi-Fi 5 1x1. Bluetooth 5.0 |
+| **IQ-615** | 2x Cortex-A76 and 6x Cortex-A55, up to 1.9 GHz | [Adreno 612](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-600-series-20182023) @ 845 MHz | 2x 16-bit LPDDR4x @ 1555 MHz<br>Up to 8 GB | Hexagon V66 @ 1.0 GHz. Yocto Linux and Ubuntu. Industrial grade |
 
 {{% /details %}}
 

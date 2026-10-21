@@ -25,13 +25,13 @@ The Qualcomm Snapdragon X2 Elite is the second Snapdragon X Elite generation. Th
 
 | **Part** | **CPU** | **GPU** | **NPU** | **Memory** |
 |----------|---------|---------|---------|------------|
-| **X2E-96-100** | 12x Oryon prime @ 4.4 GHz all-core, boost 5.0 GHz<br>6x Oryon performance @ 3.6 GHz<br>53 MB cache, 3 nm | Adreno X2-90 @ 1.85 GHz | Hexagon<br>80 INT8 TOPS | LPDDR5x @ 9523 MT/s<br>192-bit, up to 228 GB/s |
-| **X2E-94-100** | 18x Oryon up to 4.7 GHz<br>53 MB cache, 3 nm | Adreno X2-90 @ 1.85 GHz | Hexagon<br>80 INT8 TOPS | LPDDR5x<br>Up to 228 GB/s |
-| **X2E-90-100** | 18x Oryon up to 5.0 GHz<br>53 MB cache, 3 nm | Adreno X2-90 @ 1.70 GHz | Hexagon<br>85 INT8 TOPS | LPDDR5x<br>Up to 152 GB/s |
-| **X2E-88-100** | 12x Oryon prime @ 4.0 GHz all-core, boost 4.7 GHz<br>6x Oryon performance @ 3.4 GHz<br>53 MB cache, 3 nm | Adreno X2-90 @ 1.70 GHz | Hexagon<br>80 INT8 TOPS | LPDDR5x @ 9523 MT/s<br>128-bit, up to 152 GB/s |
-| **X2E-84-100** | 6x Oryon prime @ 4.0 GHz all-core, boost 4.7 GHz<br>6x Oryon performance @ 3.4 GHz<br>34 MB cache, 3 nm | Adreno X2-85 @ 1.70 GHz | Hexagon<br>85 INT8 TOPS | LPDDR5x @ 9523 MT/s<br>128-bit, up to 152 GB/s |
-| **X2E-80-100** | 6x Oryon prime @ 4.0 GHz all-core, single-core boost 4.7 GHz, dual-core boost 4.4 GHz<br>6x Oryon performance @ 3.4 GHz<br>34 MB cache, 3 nm | Adreno X2-85 @ 1.70 GHz | Hexagon<br>80 INT8 TOPS | LPDDR5x @ 9523 MT/s<br>128-bit, up to 152 GB/s |
-| **X2E-78-100** | 6x Oryon prime @ 4.0 GHz<br>6x Oryon performance @ 3.4 GHz<br>34 MB cache, 3 nm | Adreno X2-85 @ 1.35 GHz | Hexagon<br>80 INT8 TOPS | LPDDR5x @ 9523 MT/s<br>128-bit, up to 152 GB/s |
+| **X2E-96-100** | 12x Oryon prime @ 4.4 GHz all-core, boost 5.0 GHz<br>6x Oryon performance @ 3.6 GHz<br>53 MB cache, 3 nm | [Adreno X2-90](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-x-series-pc--compute) @ 1.85 GHz | Hexagon<br>80 INT8 TOPS | LPDDR5x @ 9523 MT/s<br>192-bit, up to 228 GB/s |
+| **X2E-94-100** | 18x Oryon up to 4.7 GHz<br>53 MB cache, 3 nm | [Adreno X2-90](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-x-series-pc--compute) @ 1.85 GHz | Hexagon<br>80 INT8 TOPS | LPDDR5x<br>Up to 228 GB/s |
+| **X2E-90-100** | 18x Oryon up to 5.0 GHz<br>53 MB cache, 3 nm | [Adreno X2-90](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-x-series-pc--compute) @ 1.70 GHz | Hexagon<br>85 INT8 TOPS | LPDDR5x<br>Up to 152 GB/s |
+| **X2E-88-100** | 12x Oryon prime @ 4.0 GHz all-core, boost 4.7 GHz<br>6x Oryon performance @ 3.4 GHz<br>53 MB cache, 3 nm | [Adreno X2-90](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-x-series-pc--compute) @ 1.70 GHz | Hexagon<br>80 INT8 TOPS | LPDDR5x @ 9523 MT/s<br>128-bit, up to 152 GB/s |
+| **X2E-84-100** | 6x Oryon prime @ 4.0 GHz all-core, boost 4.7 GHz<br>6x Oryon performance @ 3.4 GHz<br>34 MB cache, 3 nm | [Adreno X2-85](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-x-series-pc--compute) @ 1.70 GHz | Hexagon<br>85 INT8 TOPS | LPDDR5x @ 9523 MT/s<br>128-bit, up to 152 GB/s |
+| **X2E-80-100** | 6x Oryon prime @ 4.0 GHz all-core, single-core boost 4.7 GHz, dual-core boost 4.4 GHz<br>6x Oryon performance @ 3.4 GHz<br>34 MB cache, 3 nm | [Adreno X2-85](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-x-series-pc--compute) @ 1.70 GHz | Hexagon<br>80 INT8 TOPS | LPDDR5x @ 9523 MT/s<br>128-bit, up to 152 GB/s |
+| **X2E-78-100** | 6x Oryon prime @ 4.0 GHz<br>6x Oryon performance @ 3.4 GHz<br>34 MB cache, 3 nm | [Adreno X2-85](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-x-series-pc--compute) @ 1.35 GHz | Hexagon<br>80 INT8 TOPS | LPDDR5x @ 9523 MT/s<br>128-bit, up to 152 GB/s |
 
 {{% /details %}}
 
