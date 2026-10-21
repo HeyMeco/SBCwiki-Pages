@@ -1,5 +1,5 @@
 ---
-weight: 1
+weight: 3
 title: Dragonwing IQ9 Series
 #bookCollapseSection: true
 soc-series:
@@ -9,6 +9,7 @@ soc:
 - QCS9075
 tags: 
 - SOC-Qualcomm
+- Dragonwing-IQ
 summary: Qualcomm Dragonwing IQ9 Series (QCS9100, QCS9075) premium industrial IoT SoCs featuring up to 100 dense TOPS AI performance, SIL3-capable safety island, and support for up to 16 cameras.
 ---
 # Dragonwing IQ9 Series
@@ -52,8 +53,10 @@ The Qualcomm Dragonwing IQ9 series represents the premium tier of industrial IoT
 
 ## Resources
 
-- [Qualcomm Introduces Industrial-Grade IQ Series](hhttps://www.qualcomm.com/news/releases/2024/10/qualcomm-introduces-industrial-grade-iq-series-and-iot-solutions)
+- [IQ9 series](https://www.qualcomm.com/internet-of-things/products/iq9-series)
+- [Qualcomm Introduces Industrial-Grade IQ Series](https://www.qualcomm.com/news/releases/2024/10/qualcomm-introduces-industrial-grade-iq-series-and-iot-solutions)
 - [IQ9 Product Brief](https://docs.qualcomm.com/doc/87-83840-1/87-83840-1_REV_A_Qualcomm_IQ9_Series_Product_Brief.pdf)
+- [Product longevity program](https://www.qualcomm.com/internet-of-things/products/product-longevity-program)
 
 ---
 

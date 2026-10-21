@@ -10,6 +10,7 @@ boards:
 - RPI-5
 - Radxa-Rock-5B
 - Dragon-Q6A
+- Dragon-Q8B
 ---
 ![Armbian Logo](Armbian-Logo.png?h=150)
 

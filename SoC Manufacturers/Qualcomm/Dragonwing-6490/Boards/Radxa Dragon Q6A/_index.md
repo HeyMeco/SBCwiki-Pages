@@ -24,7 +24,7 @@ images:
 
 | **SoC** | **Qualcomm QCS6490**                                                                                                                      |
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| **CPU** | 1x Kryo Gold Plus @2.7GHz<br>3x Kryo Gold @2.4GHz<br>4x Kryo Silver @1.9GHz                                                             |
+| **CPU** | 1x Cortex-A78 @ 2.7 GHz<br>3x Cortex-A78 @ 2.4 GHz<br>4x Cortex-A55 @ 1.9 GHz                                                             |
 | **RAM** | LPDDR5<br>- Configurations: 4GB / 6GB / 8GB / 12GB / 16GB                                                                                |
 | **GPU** | Qualcomm® Adreno 643<br>- OpenGL ES 3.2<br>- Vulkan 1.3<br>- OpenCL 2.2<br>- DirectX 12                                                 |
 | **AI**  | Hexagon DSP + Hexagon Tensor Accelerator<br>- Combined AI computing power: up to 12 TOPS                                                 |
@@ -71,6 +71,6 @@ images:
 
 ## Articles
 
-- [SBCwiki - Radxa Dragon Q6A First-Look](https://sbcwiki.com/news/articles/radxa-dragon-q6a-unboxing-and-first-look/)
-- [SBCwiki - Radxa Dragon Q6A Full Review](https://sbcwiki.com/news/articles/radxa-dragon-q6a-full-review/)
+- [SBCwiki - Radxa Dragon Q6A First-Look](/news/articles/radxa-dragon-q6a-unboxing-and-first-look/)
+- [SBCwiki - Radxa Dragon Q6A Full Review](/news/articles/radxa-dragon-q6a-full-review/)
 - [Anton Maltsev - Radxa Dragon Q6A for Edge AI](https://medium.com/@zlodeibaal/inside-the-radxa-dragon-q6a-a-deep-dive-into-qualcomms-new-edge-ai-platform-34b61a4f2918)

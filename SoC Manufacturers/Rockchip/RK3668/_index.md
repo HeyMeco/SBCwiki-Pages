@@ -48,7 +48,7 @@ Rockchip lists target applications as Android servers, interactive large-format 
 
 ## Rockchip comparison charts
 
-Figures are from the [October 2026 brief](https://dl.radxa.com/rock6/6b/RK3668-SoC-Application-REL02-20261009.pdf). They are Rockchip’s projections for RK3668 (and Rockchip’s own numbers for the other SoCs), so they will not match independent Geekbench runs such as the [RK3572 EVB results](https://sbcwiki.com/news/articles/exclusive-rk3572-benchmarked-at-ew26/).
+Figures are from the [October 2026 brief](https://dl.radxa.com/rock6/6b/RK3668-SoC-Application-REL02-20261009.pdf). They are Rockchip’s projections for RK3668 (and Rockchip’s own numbers for the other SoCs), so they will not match independent Geekbench runs such as the [RK3572 EVB results](/news/articles/exclusive-rk3572-benchmarked-at-ew26/).
 
 Rockchip states a per-core DMIPS ratio of A725/A76 = **1.51**, and a Geekbench 6 single-core ratio of A725/A76 = **1.40**. Multi-core DMIPS on the chart is a linear sum across cores.
 
@@ -78,8 +78,8 @@ No public BSP or mainline support yet. Engineering samples are scheduled for Q1 
 
 ## Further reading
 
-- [State of Embedded: Q4 2025 Overview](https://sbcwiki.com/news/articles/state-of-embedded-q4-25/) — RKDC 2025 aggregation (superseded by the October 2026 brief)
-- [Exclusive: RK3572 First look & Geekbench results](https://sbcwiki.com/news/articles/exclusive-rk3572-benchmarked-at-ew26/) — earlier Q4 2026 outlook for RK3668
+- [State of Embedded: Q4 2025 Overview](/news/articles/state-of-embedded-q4-25/) — RKDC 2025 aggregation (superseded by the October 2026 brief)
+- [Exclusive: RK3572 First look & Geekbench results](/news/articles/exclusive-rk3572-benchmarked-at-ew26/) — earlier Q4 2026 outlook for RK3668
 
 ---
 
