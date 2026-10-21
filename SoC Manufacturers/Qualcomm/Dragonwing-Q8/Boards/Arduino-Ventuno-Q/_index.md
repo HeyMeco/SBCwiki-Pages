@@ -1,8 +1,6 @@
 ---
 weight: 1
 title: Arduino Ventuno Q
-aliases:
-- /docs/soc-manufacturers/qualcomm/dragonwing-iq8/boards/arduino-ventuno-q/
 categories:
 - board
 tags: 

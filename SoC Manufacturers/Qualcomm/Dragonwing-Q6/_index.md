@@ -13,8 +13,6 @@ soc:
 tags:
 - SOC-Qualcomm
 - Dragonwing-Q
-aliases:
-- /docs/soc-manufacturers/qualcomm/dragonwing-iq6/
 summary: Qualcomm Dragonwing Q6 and IQ6. Commercial parts include Q-6690, QCS6490, QCM6490, QCS610, and QCS6125, rated up to 12 TOPS. IQ-615 is the industrial part.
 ---
 # Dragonwing Q6 / IQ6

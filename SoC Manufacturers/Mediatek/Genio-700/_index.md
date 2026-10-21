@@ -10,8 +10,6 @@ soc:
 - MT8370
 tags:
 - SOC-MTK
-aliases:
-- /docs/soc-manufacturers/mediatek/genio-510/
 summary: MediaTek Genio 700 (MT8390) and Genio 510 (MT8370). Pin-compatible 6 nm IoT pair with up to 4.0 TOPS NPU, Mali-G57 GPU, and dual 4K display.
 ---
 # Genio 700 / 510

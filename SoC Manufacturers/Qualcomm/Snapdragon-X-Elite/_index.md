@@ -14,8 +14,6 @@ soc:
 tags:
 - SOC-Qualcomm
 - Snapdragon
-aliases:
-- /docs/soc-manufacturers/qualcomm/dragonwing-iq-x/
 summary: Qualcomm Snapdragon X Elite and Dragonwing IQ-X, one Hamoa SoC. Commercial parts are 12 Oryon cores. IQ-X7181 is the industrial grade of X1E-78-100, and IQ-X5121 is the 8-core industrial part.
 ---
 # Snapdragon X Elite / IQ-X

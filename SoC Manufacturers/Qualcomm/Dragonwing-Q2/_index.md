@@ -12,8 +12,6 @@ soc:
 tags:
 - SOC-Qualcomm
 - Dragonwing-Q
-aliases:
-- /docs/soc-manufacturers/qualcomm/dragonwing-iq2/
 summary: Qualcomm Dragonwing Q2 and IQ2. QRB2210, QCS2290, and QCM2290 are quad Cortex-A53 parts. Q-2390 and IQ-2390 are one Cortex-A78 SoC in commercial and industrial grades.
 ---
 # Dragonwing Q2 / IQ2
