@@ -30,3 +30,7 @@ Useful resources for SBC development:
 - [AArch64 SoC Feature List](https://gpages.juszkiewicz.com.pl/arm-socs-table/arm-socs.html)
 - [Boot Flow Guides](https://platform-system-interface.github.io/psi-spec/platform-initialization.html)
 - [sbc.compare](https://sbc.compare) - Compare SBC specifications and benchmarks
+
+### Rankings
+
+{{< category-list path="rankings" >}}
