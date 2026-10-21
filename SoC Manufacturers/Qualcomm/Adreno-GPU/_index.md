@@ -6,6 +6,7 @@ description: "Complete guide to Qualcomm Adreno GPUs (600, 700, 800, X1 & X2 ser
 summary: "Complete guide to Qualcomm Adreno GPUs (600, 700, 800, X1 & X2 series): specifications, Vulkan support timeline, proprietary Adreno UMD/KGSL, and open-source Mesa Freedreno, Turnip, and Linux drm/msm drivers."
 images:
 - Qualcomm_official_adreno_logo.jpeg
+icon: Qualcomm_official_adreno_logo.jpeg
 categories:
 - gpu
 soc-vendors:

@@ -159,4 +159,8 @@ All ARMv8-A and newer cores
 
 ## ARM Mali GPUs
 
-For more information about Arm Mali GPU Generations and Drivers check the following subpage: [Mali-GPU](./mali-gpu)
+{{< category-list path="soc-manufacturers/arm/mali-gpu" >}}
+
+## ARM Ethos NPUs
+
+{{< category-list path="soc-manufacturers/arm/ethos-npu" >}}

@@ -3,6 +3,7 @@ weight: 2
 title: Ethos NPU
 images: 
 - Arm-EthosU-Logo.png
+icon: Arm-EthosU-Logo.png
 categories:
 - soc-vendors
 soc-vendors:
