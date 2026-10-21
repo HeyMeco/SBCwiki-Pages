@@ -12,4 +12,6 @@ cascade:
 
 # Rankings
 
+Compare boards and SoCs by benchmark. Each chart ranks the highest stored score for that test.
+
 {{< category-list >}}
