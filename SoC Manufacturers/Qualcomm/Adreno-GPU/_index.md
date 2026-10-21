@@ -1,11 +1,16 @@
 ---
 weight: 1
 linktitle: Adreno GPU
-title: Qualcomm Adreno GPU Architecture, Userspace Drivers (Adreno UMD, Freedreno / Turnip) and Kernel Drivers (KGSL, MSM)
-summary: Qualcomm Adreno GPU architecture, userspace drivers (proprietary Adreno UMD and open-source Freedreno/Turnip), and kernel drivers (KGSL and drm/msm)
+title: "Qualcomm Adreno GPU Architecture, Specs & Drivers (Adreno UMD, Mesa Freedreno / Turnip, KGSL, drm/msm)"
+description: "Complete guide to Qualcomm Adreno GPUs (600, 700, 800, X1 & X2 series): specifications, Vulkan support timeline, proprietary Adreno UMD/KGSL, and open-source Mesa Freedreno, Turnip, and Linux drm/msm drivers."
+summary: "Complete guide to Qualcomm Adreno GPUs (600, 700, 800, X1 & X2 series): specifications, Vulkan support timeline, proprietary Adreno UMD/KGSL, and open-source Mesa Freedreno, Turnip, and Linux drm/msm drivers."
+images:
+- Qualcomm_official_adreno_logo.jpeg
 categories:
 - gpu
-keywords: ["Qualcomm", "Adreno", "Adreno GPU", "Freedreno", "Turnip", "KGSL", "drm/msm", "Adreno 600", "Adreno 700", "Adreno 800", "Adreno X1", "Adreno X2", "specifications"]
+soc-vendors:
+- Qualcomm
+keywords: ["Qualcomm", "Adreno", "Adreno GPU", "Freedreno", "Turnip", "Mesa", "Vulkan", "KGSL", "drm/msm", "Adreno UMD", "Adreno 600", "Adreno 700", "Adreno 800", "Adreno X1", "Adreno X2", "Snapdragon", "Dragonwing", "GPU specifications", "Linux GPU driver"]
 ---
 
 <style>
