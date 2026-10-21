@@ -1,5 +1,5 @@
 ---
-weight: 0
+weight: 1
 title: Genio 1200 / MT8395
 #bookCollapseSection: true
 soc-series:

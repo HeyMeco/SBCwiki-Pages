@@ -26,7 +26,7 @@ images:
 
 | **SoC** | **Qualcomm Dragonwing™ IQ8 (IQ-8275)** |
 |:--- |:--- |
-| **CPU** | Octa-Core:<br>2x Gold Prime @ 2.35 GHz <br>2x Gold @ 2.1 GHz <br>4x Silver @ 1.95 GHz) |
+| **CPU** | Octa-Core:<br>2x Gold Prime @ 2.35 GHz <br>2x Gold @ 2.1 GHz <br>4x Silver @ 1.95 GHz |
 | **GPU/VPU** | Adreno 623 @ 877 MHz |
 | **NPU** | Hexagon Tensor AI Processor: up to 40 dense TOPS |
 | **ISP** | Qualcomm Spectra 692 ISP |

@@ -1,5 +1,5 @@
 ---
-weight: 1
+weight: 10
 title: Filogic 880 / MT7988
 #bookCollapseSection: true
 soc-series:

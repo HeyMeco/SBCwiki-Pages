@@ -72,6 +72,10 @@ List of boards:
 
 {{< taglist tag="Q-6690" style="cards" >}}
 
+{{< taglist tag="QCS6490" style="cards" >}}
+
+{{< taglist tag="QCM6490" style="cards" >}}
+
 {{< taglist tag="QCS610" style="cards" >}}
 
 {{< taglist tag="QCS6125" style="cards" >}}
