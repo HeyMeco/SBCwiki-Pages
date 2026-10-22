@@ -1,4 +1,11 @@
 ---
+menu:
+  after:
+    name: Rankings
+    weight: 5
+    params:
+      class: menu-divider-above menu-top-level
+bookHidden: true
 weight: 0
 bookFlatSection: true
 bookCollapseSection: true
