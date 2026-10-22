@@ -75,6 +75,8 @@ Adreno GPUs support OpenGL ES, OpenCL, Vulkan, and DirectX 11/12 on the propriet
 {{% /columns %}}
 
 > Turnip (`vulkan.freedreno`) is widely used both on mainline Linux SBCs/laptops and inside Android containers/emulators (via the `kgsl` backend) for DirectX-to-Vulkan translation layers like DXVK and VKD3D-Proton.
+>
+> **Note:** Newer DXVK versions require the `storageBuffer8BitAccess` Vulkan feature, which on Turnip is only exposed on `a7xx`-class Adreno GPUs — `a6xx`-class parts (Adreno 600 series) lack it. For games on `a6xx`-class hardware, use **Proton 11** (or another build bundling an older DXVK that predates the `storageBuffer8BitAccess` requirement) to avoid the gap.
 
 ### Vulkan Support Timeline
 
