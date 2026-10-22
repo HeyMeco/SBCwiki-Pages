@@ -13,6 +13,13 @@ summary: Rockchip RK3588S cost-optimized variant - Same CPU and GPU as RK3588 bu
 
 Cost optimized [RK3588](/docs/soc-manufacturers/rockchip/rk3588) with reduced I/O
 
+## General Specifications
+{{% details title="Specs" open=true %}}
+
+{{< soc-specs >}}
+
+{{% /details %}}
+<br>
 {{% details title="Block Diagram" open=true %}}
 ![RK3588 Block Diagram](RK3588S-Block-Diagram.jpeg?f=webp)
 {{% /details %}}

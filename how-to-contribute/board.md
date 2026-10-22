@@ -110,8 +110,41 @@ Other optional fields:
 | `audio`, `cooling`, `sensors`, `debugging`, `enclosure`, `form_factor`, `temperature` | text or list |
 | `other` | `[{ name: "Throughput", value: "Up to 26 Gbps" }]` – rows the schema lacks |
 
-The full list is at the top of `layouts/shortcodes/board-specs.html` in the SBCwiki repository.
+### Field reference
+
+`board-specs.yaml` uses the same fields and units as an SoC part (see the [SoC field reference]({{< relref "soc#field-reference" >}})), filled in with the board's actual configuration, plus these board-only fields:
+
+```yaml
+name: "Radxa Rock 5B"            # board table header (default: page title)
+revision: "1.1"
+soc:
+  page: "/docs/soc-manufacturers/rockchip/rk3588"   # default: nearest parent page with a specs.yaml
+  part: "QCS8275 / QCS8300"      # which part of a multi-part SoC file
+  name: "Rockchip RK3588S"       # SoC table header override
+  notes: ["CPU clocked at up to 1.6 GHz on this board"]
+memory:   { types: [{ type: "LPDDR4X", mts: 4266 }], bus_bits: 64, sizes_gb: [4, 8, 16] }
+storage:  ["eMMC module connector", "microSD (SDR104)"]
+pcie:     [{ count: 1, slot: "M.2 M-Key", gen: 3, lanes: 4, note: "2280 NVMe" }]
+usb:      [{ count: 2, version: "3.1 Gen1", connector: "Type-A" }]
+ethernet: [{ count: 1, gbps: 2.5, note: "RTL8125, PoE with HAT" }]
+display:  { outputs: ["1× HDMI 2.1 (8K@60)"], inputs: ["1× HDMI 2.1 (4K@60)"] }
+can:      { count: 4, fd: true }
+dimensions_mm: { w: 85, h: 56, d: 20 }
+weight_g: 46
+mcu:      { name: "STM32U585", core: "Cortex-M33", max_mhz: 160, flash: "2 MB",
+            ram: "786 KB SRAM", os: "Arduino Core on Zephyr" }
+other:    [{ name: "Throughput", value: "Up to 26 Gbps" }]
+# text or list: wifi, bluetooth, camera, audio, gpio, power, rtc, cooling, sensors,
+#               debugging, enclosure, form_factor, temperature
+```
 
 ## Benchmark scores
 
-Benchmark results are stored in `data/scores/<board-id>.yaml` in the SBCwiki repository and feed the [Rankings]({{< relref "/docs/rankings" >}}). Open an issue or pull request with your results and the exact OS, kernel and driver versions used.
+Benchmark results feed the [Rankings]({{< relref "/docs/rankings" >}}). They are kept in the private SBCwiki repository, so they cannot be added with a pull request here. Instead, [open an issue on SBCwiki-Pages](https://github.com/HeyMeco/SBCwiki-Pages/issues) with:
+
+- the board and its RAM size
+- the benchmark name and version, and the full result (a link to the result page where the benchmark has one, e.g. Geekbench)
+- the exact OS image, kernel and driver versions used
+- cooling and power setup, if not stock
+
+A maintainer adds the results and links your issue as the source.

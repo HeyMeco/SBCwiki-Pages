@@ -1,0 +1,48 @@
+# Rockchip/RK3588s specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+# Source: Rockchip RK3588S datasheet, as summarised by CNX Software
+# (https://www.cnx-software.com/2022/01/12/rockchip-rk3588s-cost-optimized-cortex-a76-a55-processor/).
+
+parts:
+  - name: "Rockchip RK3588S"
+    process_nm: 8
+    process_note: "LP"
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A76", max_ghz: 2.4 }
+        - { cores: 4, core: "Cortex-A55", max_ghz: 1.8 }
+    memory:
+      types: ["LPDDR4", "LPDDR4X", "LPDDR5"]
+      bus_bits: 64
+      max_gb: 32
+    gpu:
+      name: "Mali-G610 MP4"
+      vendor_apis: { opengl_es: "1.1/2.0/3.2", vulkan: "1.2", opencl: "2.2" }
+    npu:
+      tops: 6
+      datatypes: ["INT4", "INT8", "INT16", "FP16"]
+    vpu:
+      decode:
+        - { res: "8K", fps: 60, codecs: ["H.265", "VP9", "AVS2"] }
+        - { res: "8K", fps: 30, codecs: ["H.264"] }
+        - { res: "4K", fps: 60, codecs: ["AV1"] }
+      encode:
+        - { res: "8K", fps: 30, codecs: ["H.264", "H.265"] }
+    camera: ["2× MIPI D-PHY/C-PHY CSI", "4× MIPI CSI-2 (2-lane)", "DVP", "HDMI 2.0 RX (4K@60, HDCP 2.3)"]
+    display:
+      max: "8K@60, up to 4 displays"
+      outputs: ["HDMI 2.1 / eDP 1.3", "DP 1.4a (shared with USB 3.1)", "MIPI DSI", "BT.1120"]
+    storage: ["eMMC 5.1", "SD 3.0", "FSPI"]
+    pcie:
+      - { count: 2, gen: "2.1", lanes: 1, note: "combo PHYs, shared with SATA / USB 3.1; no PCIe 3.0" }
+    sata: { gen: "3.0", note: "on the PCIe 2.1 combo PHYs" }
+    usb:
+      - { count: 1, version: "3.1 Gen1", note: "OTG, shared with DP" }
+      - { count: 1, version: "3.1 Gen1", note: "host, shared with a combo PHY" }
+      - { count: 2, version: "2.0" }
+    ethernet:
+      - { count: 1, gbps: 1, note: "RGMII" }
+    can: { count: 3 }
+    audio: ["2× 8-channel I2S", "2× 2-channel I2S", "2× S/PDIF", "2× 8-channel PDM", "VAD"]
+    io: ["5× SPI", "9× I2C", "10× UART", "12-bit SARADC"]
+    package: "FCCSP1253L, 17 × 17 mm"

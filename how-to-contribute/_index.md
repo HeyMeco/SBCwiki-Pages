@@ -82,7 +82,7 @@ Rules for all spec files:
 - Every field is optional except `name` in `specs.yaml`. Leave out what you cannot source.
 - Text values are inline Markdown, so links, **bold** and `<br>` work.
 - If an SoC uses a CPU core or GPU that is not in the generation files yet, add it there instead of hard-coding a link.
-- The full field lists are documented at the top of `layouts/shortcodes/soc-specs.html` and `layouts/shortcodes/board-specs.html` in the SBCwiki repository.
+- The full field lists are in the [SoC field reference]({{< relref "soc#field-reference" >}}) and the [board field reference]({{< relref "board#field-reference" >}}).
 
 ## Writing guidelines
 
@@ -91,17 +91,28 @@ Rules for all spec files:
 - Images: use WebP or AVIF, crop to the board, no watermarks, and only upload pictures you own or are allowed to share.
 - One board or SoC per pull request makes review faster.
 
-## Previewing locally (optional)
+## What is public and what is not
 
-The site is built with [Hugo](https://gohugo.io/) (extended). Clone the main [SBCwiki](https://github.com/HeyMeco/SBCwiki) repository with submodules, then run the dev server:
+SBCwiki is built from two repositories:
 
-```bash
-git clone --recurse-submodules https://github.com/HeyMeco/SBCwiki.git
-cd SBCwiki
-hugo server
-```
+- **[SBCwiki-Pages](https://github.com/HeyMeco/SBCwiki-Pages)** (public) holds everything under `/docs/`: the Markdown pages, images and the spec data files (`specs.yaml`, `board-specs.yaml`, `cpus.yaml`, `gpus.yaml`, `mesa.yaml`, `links.json`). This is the repository you edit.
+- **SBCwiki** (private) holds the site itself: the Hugo theme and layouts, the shortcodes that render spec tables, news articles, and the benchmark data behind the [Rankings]({{< relref "/docs/rankings" >}}). It pulls SBCwiki-Pages in as a submodule.
 
-Your page appears at `http://localhost:1313/docs/...`. Make your edits inside `content/docs`, which is the SBCwiki-Pages repository.
+You never need access to the private repository. Everything a page can use is documented on these pages. If you need something that lives there, open an issue on [SBCwiki-Pages](https://github.com/HeyMeco/SBCwiki-Pages/issues) and a maintainer will handle it:
+
+- **A missing spec field or a rendering bug:** describe the field or the page and what you expected. Until a field exists, put the value in `other` (`[{ name: "…", value: "…" }]`), which every spec table renders.
+- **A new shortcode or layout change:** describe what the page needs and link an example.
+- **Benchmark results:** see [Benchmark scores]({{< relref "board#benchmark-scores" >}}).
+
+## Checking your changes
+
+The site build lives in the private repository, so you cannot run it locally. Before opening a pull request:
+
+- Use the **Preview** tab on GitHub to check the Markdown. Shortcodes such as `{{</* soc-specs */>}}` appear as plain text there, which is expected.
+- Check that your YAML parses, e.g. with an online YAML validator or `python3 -c 'import yaml,sys; yaml.safe_load(open(sys.argv[1]))' specs.yaml`.
+- Compare your files with an existing page of the same kind, e.g. RK3576 for an SoC or Radxa Rock 4D for a board.
+
+A maintainer builds the site with your changes before merging and will comment on the pull request if anything does not render.
 
 ## Templates
 
