@@ -1,0 +1,62 @@
+# Imagination PowerVR GPUs: the single source for the tables on this page (rendered by
+# {{< generation-table "<anchor>" >}} under each heading) and for GPU links, tooltips and
+# Mesa lookups in every SoC spec table (layouts/partials/soc/linkdb.html in the SBCwiki repo).
+#
+# `anchor` must equal the id of the heading the table sits under (the build warns if not).
+# `name` is the canonical GPU name SoC specs match against (longest prefix wins, so
+# "Imagination BXM-4-64 MC1" finds the "Imagination BXM-4-64" alias); `aliases` are extra
+# names that match the same entry. `bvnc` lists the core IDs Mesa knows; the first one
+# selects the block in mesa.yaml.
+
+columns:
+  - { key: name, label: "Name" }
+  - { key: series, label: "Series" }
+  - { key: bvnc, label: "BVNC" }
+
+groups:
+  - anchor: "actively-developed"
+    entries:
+      - name: "AXE-1-16M"
+        aliases: ["Imagination AXE-1-16M", "PowerVR AXE-1-16M", "IMG AXE-1-16M"]
+        series: "A-Series"
+        bvnc: "33.15.11.3"
+      - name: "BXM-4-64"
+        aliases: ["Imagination BXM-4-64", "PowerVR BXM-4-64", "IMG BXM-4-64"]
+        series: "B-Series"
+        bvnc: "36.52.104.182, 36.56.104.183"
+      - name: "BXS-4-64"
+        aliases: ["Imagination BXS-4-64", "PowerVR BXS-4-64", "IMG BXS-4-64"]
+        series: "B-Series"
+        bvnc: "36.53.104.796"
+  - anchor: "partially-supported"
+    entries:
+      - name: "GX6250"
+        aliases: ["Imagination GX6250", "PowerVR GX6250", "IMG GX6250"]
+        series: "Series 6XT"
+        bvnc: "4.40.2.51 (4.45.2.58 unsupported)"
+  - anchor: "unsupported"
+    entries:
+      - name: "G6110"
+        aliases: ["Imagination G6110", "PowerVR G6110", "IMG G6110"]
+        series: "Series 6XE"
+        bvnc: "5.9.1.46"
+      - name: "GX6650"
+        aliases: ["Imagination GX6650", "PowerVR GX6650", "IMG GX6650"]
+        series: "Series 6XT"
+        bvnc: "4.46.6.62"
+      - name: "GE7800"
+        aliases: ["Imagination GE7800", "PowerVR GE7800", "IMG GE7800"]
+        series: "Series 7XE"
+        bvnc: "15.5.1.64"
+      - name: "GE8300"
+        aliases: ["Imagination GE8300", "PowerVR GE8300", "IMG GE8300"]
+        series: "Series 8XE"
+        bvnc: "22.67.54.30, 22.68.54.30, 22.102.54.38"
+      - name: "BXE-2-32"
+        aliases: ["Imagination BXE-2-32", "PowerVR BXE-2-32", "IMG BXE-2-32"]
+        series: "B-Series"
+        bvnc: "36.29.52.182"
+      - name: "BXE-4-32"
+        aliases: ["Imagination BXE-4-32", "PowerVR BXE-4-32", "IMG BXE-4-32"]
+        series: "B-Series"
+        bvnc: "36.50.54.182"

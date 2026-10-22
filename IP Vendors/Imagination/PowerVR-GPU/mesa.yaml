@@ -1,0 +1,28 @@
+# Mesa (open-source driver) API support for Imagination PowerVR GPUs: the single source for
+# the "Mesa" line in every SoC spec table. Edit here, not in the SoC specs.yaml files.
+#
+# A GPU is matched by its BVNC, taken from the `bvnc` field of its gpus.yaml entry (the
+# first one listed, e.g. "36.52.104.182, 36.56.104.183" → 36.52.104.182). GPUs Mesa lists
+# as unsupported have no block here, so SoC tables show no Mesa line for them.
+# Read by layouts/partials/soc/mesa.html in the SBCwiki repo.
+
+source: "https://docs.mesa3d.org/drivers/powervr.html"
+checked: "2026-10-22"
+key_from: { field: "bvnc", pattern: "[0-9]+\\.[0-9]+\\.[0-9]+\\.[0-9]+" }
+
+drivers: { vulkan: "PowerVR" }
+kernel: "powervr"
+
+arch:
+  "33.15.11.3":     # AXE-1-16M
+    apis: { vulkan: "1.2" }
+    note: "not yet conformant"
+  "36.52.104.182":  # BXM-4-64 (36.56.104.183 is also actively developed)
+    apis: { vulkan: "1.2" }
+    conformance: ["Vulkan 1.2 (BXM-4-64 36.52.104.182)"]
+  "36.53.104.796":  # BXS-4-64
+    apis: { vulkan: "1.2" }
+    conformance: ["Vulkan 1.2 (BXS-4-64)"]
+  "4.40.2.51":      # GX6250
+    apis: { vulkan: "1.2" }
+    note: "partial support, expect instability and corruption"

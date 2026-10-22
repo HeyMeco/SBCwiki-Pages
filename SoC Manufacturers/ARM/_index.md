@@ -8,7 +8,7 @@ categories:
 soc-vendors:
 - ARM
 bookCollapseSection: true
-keywords: ["ARM", "ARM CPU cores", "ARM Mali GPUs", "Cortex", "Neoverse", "specifications", "data sheet", "datasheet", "SoC vendors"]
+keywords: ["ARM", "ARM CPU cores", "ARM Mali GPUs", "Cortex", "Neoverse", "specifications", "data sheet", "datasheet", "SoC vendors", "Arm-China", "Zhouyi NPU"]
 summary: Explore all ARM CPU cores, Mali GPUs, and custom silicon like the Arm AGI CPU. Find specifications, architectures, and resources on sbcwiki.com.
 bookToc: true
 ---
@@ -35,6 +35,10 @@ bookToc: true
 ## Summary
 
 Arm Holdings is a semiconductor and software design company based in Cambridge, England, whose primary business is the design of central processing unit (CPU) cores that implement the ARM architecture family of instruction sets. They also design their own GPUs called Mali / Immortalis as well as NPUs called Ethos.
+
+## Arm-China
+
+Arm Technology (China) Co., Ltd., better known as Arm-China, is an independently operated joint venture formed in 2018, when Arm sold a 51% majority stake in its China business to Chinese investors. Besides licensing Arm CPU and GPU IP to Chinese chip makers, Arm-China develops its own IP, including the [Zhouyi NPU](./zhouyi-npu/) and the Linlon video and display processors.
 
 ## [Arm Silicon](./ARM-Silicon)
 
@@ -114,3 +118,7 @@ All ARMv8-A and newer cores, plus the Cortex-M microcontroller cores used in SoC
 ## ARM Ethos NPUs
 
 {{< category-list path="soc-manufacturers/arm/ethos-npu" >}}
+
+## Arm-China Zhouyi NPUs
+
+{{< category-list path="soc-manufacturers/arm/zhouyi-npu" >}}

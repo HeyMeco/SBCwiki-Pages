@@ -17,6 +17,12 @@ Find documentation organized by chip manufacturer including detailed SoC specifi
 
 {{< category-list path="soc-manufacturers" >}}
 
+### IP Vendors
+
+Companies that license GPU, CPU and NPU designs to SoC manufacturers, with their driver support:
+
+{{< category-list path="ip-vendors" >}}
+
 ### Operating Systems
 
 Explore compatible Linux distributions and their installation guides:
