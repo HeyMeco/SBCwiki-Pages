@@ -29,7 +29,7 @@ parts:
         - { cores: 18, core: "Oryon", max_ghz: 4.7 }
       cache: [{ level: "Total", mb: 53 }]
     memory:
-      types: ["LPDDR5X"]
+      types: [{ type: "LPDDR5X", mts: 9523 }]
       bandwidth_gbs: 228
     gpu:
       name: "Adreno X2-90"
@@ -45,7 +45,7 @@ parts:
         - { cores: 18, core: "Oryon", max_ghz: 5.0 }
       cache: [{ level: "Total", mb: 53 }]
     memory:
-      types: ["LPDDR5X"]
+      types: [{ type: "LPDDR5X", mts: 9523 }]
       bandwidth_gbs: 152
     gpu:
       name: "Adreno X2-90"

@@ -34,3 +34,7 @@ Useful resources for SBC development:
 ### Rankings
 
 {{< category-list path="rankings" >}}
+
+### Compare
+
+Put boards and SoCs side by side: [Compare](compare/).

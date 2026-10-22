@@ -4,7 +4,7 @@
 soc:
   name: "Rockchip RK3588S2 / RK3582"
 memory:
-  types: [{ type: "LPDDR4X", mts: 2133 }]
+  types: [{ type: "LPDDR4X", mts: 4266 }]
   bus_bits: 64
   channels: 2
 storage: ["eMMC module connector (up to 512 GB)", "16 MB SPI flash (bootloader)", "microSD (SDR104)"]

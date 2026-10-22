@@ -27,6 +27,19 @@ summary: Rockchip RK3588 flagship ARM processor - 8-core CPU (4x Cortex-A76 + 4x
 
 ---
 
+## Memory Speed
+
+Board pages list the data rate of the RAM chips, e.g. LPDDR4X-4266. The speed the memory actually runs at is set by the DDR init blob from Rockchip's [rkbin](https://github.com/rockchip-linux/rkbin/tree/master/bin/rk35), which is built into U-Boot:
+
+| rkbin DDR blob | LPDDR4/4X | LPDDR5 |
+|---|---|---|
+| `rk3588_ddr_lp4_2112MHz_lp5_2400MHz` (default) | 2112 MHz = 4224 MT/s | 2400 MHz = 4800 MT/s |
+| `rk3588_ddr_lp4_1848MHz_lp5_2112MHz` | 1848 MHz = 3696 MT/s | 2112 MHz = 4224 MT/s |
+
+So an LPDDR4X-4266 board on the default blob runs at 4224 MT/s. The frequency is in the blob's file name, so check which blob your board's U-Boot uses.
+
+---
+
 ## Linux Support
 {{% columns %}}
 - ### Vendor BSP

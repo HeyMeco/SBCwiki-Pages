@@ -55,7 +55,7 @@ parts:
         - { cores: 4, core: "Cortex-A75", max_ghz: 2.8 }
         - { cores: 4, core: "Cortex-A55", max_ghz: 1.8 }
     memory:
-      types: [{ type: "LPDDR4X", mts: 3732 }]
+      types: [{ type: "LPDDR4X", mts: 3733 }]
     gpu:
       name: "Adreno 630"
     npu:
@@ -64,10 +64,10 @@ parts:
     codename: "Monaco"
     cpu:
       clusters:
-        - { cores: 2, core: "Kryo Gold Prime", max_ghz: 2.35 }
-        - { cores: 2, core: "Kryo Gold", max_ghz: 2.1 }
-        - { cores: 4, core: "Kryo Silver", max_ghz: 1.95 }
-      notes: "Kryo Gen 6"
+        - { cores: 2, core: "Cortex-A78C", max_ghz: 2.35 }
+        - { cores: 2, core: "Cortex-A78C", max_ghz: 2.1 }
+        - { cores: 4, core: "Cortex-A55", max_ghz: 1.95 }
+      notes: "Sold as Kryo Gen 6"
     memory:
       types: [{ type: "LPDDR5", mts: 6400 }, { type: "LPDDR5X", mts: 6400 }]
       bus_bits: 64

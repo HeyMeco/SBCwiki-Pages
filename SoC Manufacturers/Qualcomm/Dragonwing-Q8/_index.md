@@ -18,7 +18,7 @@ summary: Qualcomm Dragonwing Q8 and IQ8. Commercial parts run from the Oryon Q-8
 ---
 # Dragonwing Q8 / IQ8
 
-The Qualcomm Dragonwing Q8 series is the top of the commercial Q family. Qualcomm rates it at up to 77 TOPS, for smart displays, video conferencing, wearables, body and motion cameras, and set-top boxes. IQ8 is the industrial series, codename Monaco, for fleet cameras, machine vision, gateways, PLCs, and robotics. These parts do not share one CPU. Q-8750 uses Qualcomm's custom Oryon cores. QCS8550 and QCM8550 are the SM8550 cluster. QCS8250 and SDA845 are older Cortex-A77 and Cortex-A75 designs. QCS8275 and QCS8300 are Kryo Gen 6.
+The Qualcomm Dragonwing Q8 series is the top of the commercial Q family. Qualcomm rates it at up to 77 TOPS, for smart displays, video conferencing, wearables, body and motion cameras, and set-top boxes. IQ8 is the industrial series, codename Monaco, for fleet cameras, machine vision, gateways, PLCs, and robotics. These parts do not share one CPU. Q-8750 uses Qualcomm's custom Oryon cores. QCS8550 and QCM8550 are the SM8550 cluster. QCS8250 and SDA845 are older Cortex-A77 and Cortex-A75 designs. QCS8275 and QCS8300 use Cortex-A78C and Cortex-A55 cores, which Qualcomm sells as Kryo Gen 6.
 
 ## General Specifications
 {{% details title="Specs" open=true %}}

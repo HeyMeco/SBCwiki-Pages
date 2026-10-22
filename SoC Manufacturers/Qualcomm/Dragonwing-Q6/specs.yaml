@@ -29,7 +29,7 @@ parts:
     cpu:
       core: "Cortex-A78 and Cortex-A55"
     memory:
-      types: ["LPDDR5", "LPDDR4X"]
+      types: [{ type: "LPDDR5", mts: 6400 }, { type: "LPDDR4X", mts: 4266 }]
     gpu:
       name: "Adreno 643"
     other:

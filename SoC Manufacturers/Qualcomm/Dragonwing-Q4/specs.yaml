@@ -35,7 +35,7 @@ parts:
         - { cores: 4, core: "Cortex-A73", max_ghz: 2.0 }
         - { cores: 4, core: "Cortex-A53" }
     memory:
-      types: [{ type: "LPDDR4X", mts: 3732 }, { type: "LPDDR3", mts: 1866 }]
+      types: [{ type: "LPDDR4X", mts: 3733 }, { type: "LPDDR3", mts: 1866 }]
       bus_bits: 32
       notes: "LPDDR4X 2× 16-bit, LPDDR3 1× 32-bit"
     gpu:
@@ -57,7 +57,7 @@ parts:
         - { cores: 4, core: "Cortex-A73", max_ghz: 2.0 }
         - { cores: 4, core: "Cortex-A53", max_ghz: 1.8 }
     memory:
-      types: [{ type: "LPDDR4X", mts: 3732 }, { type: "LPDDR3", mts: 1866 }]
+      types: [{ type: "LPDDR4X", mts: 3733 }, { type: "LPDDR3", mts: 1866 }]
       bus_bits: 32
       notes: "LPDDR4X 2× 16-bit, LPDDR3 1× 32-bit"
     gpu:

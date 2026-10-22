@@ -2,7 +2,7 @@
 # Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
 
 memory:
-  types: [{ type: "LPDDR4X", mts: 4267 }]
+  types: [{ type: "LPDDR4X", mts: 4266 }]
   sizes_gb: [4, 8]
 storage: ["microSD (SDR104)"]
 pcie:

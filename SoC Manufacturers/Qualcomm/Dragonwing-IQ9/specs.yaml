@@ -7,7 +7,8 @@ parts:
     codename: "Lemans"
     cpu:
       clusters:
-        - { cores: 8, core: "Kryo Gen 6", max_ghz: 2.36 }
+        - { cores: 8, core: "Cortex-A78C", max_ghz: 2.36 }
+      notes: "Sold as Kryo Gen 6"
     memory:
       types: [{ type: "LPDDR5", mts: 6400 }]
       bus_bits: 96
