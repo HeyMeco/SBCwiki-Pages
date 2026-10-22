@@ -1,0 +1,33 @@
+# Qualcomm/Dragonwing-6490 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+# DRAM speeds are data rates in MT/s. Qualcomm quotes LPDDR clocks in MHz, so their figures are doubled here.
+
+parts:
+  - name: "QCS6490 / QCM6490"
+    process_nm: 6
+    cpu:
+      clusters:
+        - { cores: 1, core: "Cortex-A78", max_ghz: 2.7 }
+        - { cores: 3, core: "Cortex-A78", max_ghz: 2.4 }
+        - { cores: 4, core: "Cortex-A55", max_ghz: 1.9 }
+    memory:
+      types: [{ type: "LPDDR5", mts: 6400 }, { type: "LPDDR4X", mts: 4266 }]
+      bus_bits: 32
+      notes: "Dual-channel (2× 16-bit) non-PoP"
+    gpu:
+      name: "Adreno 643"
+      max_mhz: 812
+      vendor_apis: { opengl_es: "3.2", vulkan: "1.3", opencl: "2.2", directx: "12" }
+    npu:
+      name: "6th gen Qualcomm AI Engine"
+      tops: 12
+      notes:
+        - "Combined Hexagon DSP + Tensor Accelerator figure (from the Radxa Dragon Q6A)"
+        - "Compute Hexagon DSP with dual Hexagon Vector eXtensions (HVX)"
+        - "Hexagon Co-processor (Hexagon CP) 2.0"
+        - "Hexagon Tensor Accelerator"
+    vpu:
+      decode:
+        - { res: "4K", fps: 60, codecs: ["H.264", "H.265", "VP9"] }
+      encode:
+        - { res: "4K", fps: 30, codecs: ["H.264", "H.265"] }

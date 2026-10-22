@@ -17,16 +17,7 @@ summary: NXP i.MX 8 ARM processor - Advanced multicore processor with 2x Cortex-
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **SoC** | **NXP i.MX 8 (i.MX 8QuadMax / 8QuadPlus)**                                                                                            |
-|---------|----------------------------------------------------------------------------------------------------------------|
-| **CPU** | Octa-core hybrid: <br> 2× ARM Cortex-A72 (up to 1.3GHz) <br> 4× ARM Cortex-A53 <br> 2× ARM Cortex-M4F            |
-| **RAM** | LPDDR4                                                                                     |
-| **GPU** | Dual 32-bit GPU subsystems, 3D graphics acceleration               |
-| **VPU** | 4K H.265 video decode, H.264 decode <br> Dual failover-ready display controllers |
-| **DSP** | Tensilica HiFi 4 DSP for audio processing                                                                           |
-| **Display** | 4K displays with MIPI-DSI, HDMI, eDP/DP, LVDS outputs |
-| **Storage** | Quad/Octal SPI, eMMC 5.1, SD 3.0 |
-| **Ethernet** | Dual Gigabit Ethernet with AVB |
+{{< soc-specs >}}
 
 {{% /details %}}
 

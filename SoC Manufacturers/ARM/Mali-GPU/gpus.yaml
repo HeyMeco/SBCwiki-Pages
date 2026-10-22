@@ -1,0 +1,227 @@
+# Arm Mali GPU generations: the single source for the tables on this page (rendered by
+# {{< generation-table "<anchor>" >}} under each heading) and for GPU links, tooltips and
+# Mesa lookups in every SoC spec table (layouts/partials/soc/linkdb.html in the SBCwiki repo).
+#
+# `anchor` must equal the id of the heading the table sits under (the build warns if not).
+# `name` is the canonical GPU name SoC specs match against (longest prefix wins, so
+# "Mali-G610 MP4" finds "Mali-G610"); `aliases` are extra names that match the same entry;
+# `display` overrides what the table shows when it differs from the name.
+
+columns:
+  - { key: arch, label: "Micro Architecture" }
+  - { key: name, label: "Name" }
+  - { key: class, label: "Class" }
+
+groups:
+  - anchor: "2026"
+    year: 2026
+    entries:
+      - name: "Mali G2-Ultra-NX"
+        aliases: ["Mali G2-Ultra", "Mali-G2 Ultra", "Mali-G2-Ultra"]
+        display: "Mali G2-Ultra-NX"
+        arch: "\"6th Gen\" Magni (v15)"
+        class: "Flagship"
+      - name: "Mali G2-Premium-NX"
+        aliases: ["Mali G2-Premium", "Mali-G2 Premium", "Mali-G2-Premium"]
+        display: "Mali G2-Premium-NX"
+        arch: "\"6th Gen\" Magni (v15)"
+        class: "Mid-Range"
+      - name: "Mali G2-Pro-NX"
+        aliases: ["Mali G2-Pro", "Mali-G2 Pro", "Mali-G2-Pro"]
+        display: "Mali G2-Pro-NX"
+        arch: "\"6th Gen\" Magni (v15)"
+        class: "Entry"
+      - name: "Mali TMEX (Immortalis)"
+        arch: "\"6th Gen\" Magni (v15)"
+        class: "Entry?"
+  - anchor: "2025"
+    year: 2025
+    entries:
+      - name: "Mali G1-Ultra"
+        arch: "\"5th Gen\" (v14)"
+        class: "Flagship"
+      - name: "Mali G1-Premium"
+        arch: "\"5th Gen\" (v14)"
+        class: "Mid-Range"
+      - name: "Mali G1-Pro"
+        arch: "\"5th Gen\" (v14)"
+        class: "Entry"
+  - anchor: "2024"
+    year: 2024
+    entries:
+      - name: "Immortalis-G925"
+        arch: "5th Gen (v13)"
+        class: "Flagship"
+      - name: "Mali-G725"
+        arch: "5th Gen (v13)"
+        class: "Mid-Range"
+      - name: "Mali-G625"
+        arch: "5th Gen (v13)"
+        class: "Entry"
+  - anchor: "2023"
+    year: 2023
+    entries:
+      - name: "Immortalis-G720"
+        arch: "5th Gen / Avalon (v12)"
+        class: "Flagship"
+      - name: "Mali-G720"
+        arch: "5th Gen / Avalon (v12)"
+        class: "Sub-Premium"
+      - name: "Mali-G620"
+        arch: "5th Gen / Avalon (v12)"
+        class: "Mid-Range"
+  - anchor: "2022"
+    year: 2022
+    entries:
+      - name: "Immortalis-G715"
+        arch: "Valhall (v11)"
+        class: "Flagship"
+      - name: "Mali-G715"
+        arch: "Valhall (v11)"
+        class: "Sub-Premium"
+      - name: "Mali-G615"
+        arch: "Valhall (v11)"
+        class: "Mid-Range"
+  - anchor: "2021"
+    year: 2021
+    entries:
+      - name: "Mali-G710"
+        arch: "Valhall (v10)"
+        class: "High-End"
+      - name: "Mali-G610"
+        arch: "Valhall (v10)"
+        class: "Sub-Premium"
+      - name: "Mali-G510"
+        arch: "Valhall (v10)"
+        class: "Mid-Range"
+      - name: "Mali-G310"
+        arch: "Valhall (v10)"
+        class: "Entry"
+  - anchor: "2020"
+    year: 2020
+    entries:
+      - name: "Mali-G78"
+        arch: "Valhall (v9)"
+        class: "High-End"
+      - name: "Mali-G68"
+        arch: "Valhall (v9)"
+        class: "Mid-Range"
+      - name: "Mali-G78AE"
+        arch: "Valhall (v9)"
+        class: "Automotive"
+  - anchor: "2019"
+    year: 2019
+    entries:
+      - name: "Mali-G77"
+        arch: "Valhall (v9)"
+        class: "High-End"
+      - name: "Mali-G57"
+        arch: "Valhall (v9)"
+        class: "Mid-Range"
+  - anchor: "2018"
+    year: 2018
+    entries:
+      - name: "Mali-G76"
+        arch: "Bifrost (v7)"
+        class: "High-End"
+      - name: "Mali-G52"
+        arch: "Bifrost (v7)"
+        class: "Mid-Range"
+      - name: "Mali-G31"
+        arch: "Bifrost (v7)"
+        class: "Entry"
+  - anchor: "2017"
+    year: 2017
+    entries:
+      - name: "Mali-G72"
+        arch: "Bifrost (v6)"
+        class: "High-End"
+  - anchor: "2016"
+    year: 2016
+    entries:
+      - name: "Mali-G71"
+        arch: "Bifrost (v6)"
+        class: "High-End"
+      - name: "Mali-T880"
+        arch: "Midgard (v5)"
+        class: "High-End"
+      - name: "Mali-G51"
+        arch: "Bifrost (v6)"
+        class: "Mid-Range"
+  - anchor: "2015"
+    year: 2015
+    entries:
+      - name: "Mali-T860"
+        arch: "Midgard (v5)"
+        class: "High-End"
+      - name: "Mali-T830"
+        arch: "Midgard (v5)"
+        class: "Mid-Range"
+      - name: "Mali-470"
+        arch: "Utgard"
+        class: "Mid-Range"
+      - name: "Mali-T820"
+        arch: "Midgard (v5)"
+        class: "Entry"
+  - anchor: "2013"
+    year: 2013
+    entries:
+      - name: "Mali-T760"
+        arch: "Midgard (v5)"
+        class: "High-End"
+      - name: "Mali-T720"
+        arch: "Midgard (v4)"
+        class: "Mid-Range"
+      - name: "Mali-T622"
+        arch: "Midgard (v4)"
+        class: "Entry"
+  - anchor: "2012"
+    year: 2012
+    entries:
+      - name: "Mali-T678"
+        arch: "Midgard (v4)"
+        class: "High-End"
+      - name: "Mali-T628"
+        arch: "Midgard (v4)"
+        class: "High-End"
+      - name: "Mali-T624"
+        arch: "Midgard (v4)"
+        class: "Mid-Range"
+      - name: "Mali-450"
+        arch: "Utgard"
+        class: "Mid-Range"
+  - anchor: "2011"
+    year: 2011
+    entries:
+      - name: "Mali-T658"
+        arch: "Midgard (v4)"
+        class: "High-End"
+  - anchor: "2010"
+    year: 2010
+    entries:
+      - name: "Mali-T604"
+        arch: "Midgard (v4)"
+        class: "High-End"
+      - name: "Mali-300"
+        arch: "Utgard"
+        class: "Entry"
+  - anchor: "2008"
+    year: 2008
+    entries:
+      - name: "Mali-400"
+        arch: "Utgard"
+        class: "Entry"
+  - anchor: "2007"
+    year: 2007
+    entries:
+      - name: "Mali-200"
+        arch: "Utgard"
+        class: "Entry"
+  - anchor: "2005"
+    year: 2005
+    entries:
+      - name: "Mali-55"
+        aliases: ["Mali-110"]
+        display: "Mali-55 / Mali-110"
+        arch: "Utgard"
+        class: "Entry"

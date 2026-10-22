@@ -19,10 +19,7 @@ The MediaTek Genio Pro 5100 and Kompanio Ultra 910 are the IoT and Chromebook gr
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **Part** | **CPU** | **GPU** | **Memory** | **AI** |
-|----------|---------|---------|------------|--------|
-| **Genio Pro 5100 / MT8894** | Industrial: 1x Cortex-X925 @ 3.1 GHz<br>3x Cortex-X4 @ 2.8 GHz<br>4x Cortex-A720 @ 2.3 GHz<br>3 nm | Immortalis-G925 MC11 @ 1.1 GHz<br>3.1 TFLOPs | x64 LPDDR5X-8533<br>Up to 30 GB | 8th-gen NPU, 53 TOPS<br>(4x MDLA5.5 + 2x MVPU) |
-| **Kompanio Ultra 910 / MT8196** | 1x Cortex-X925 up to 3.62 GHz<br>3x Cortex-X4<br>4x Cortex-A720<br>12 MB L3 + 10 MB SLC<br>3 nm | Immortalis-G925 MC11 | LPDDR5X up to 8533 Mbps | MediaTek NPU 890<br>Same GenAI-class NPU as Genio Pro 5100 |
+{{< soc-specs >}}
 
 {{% /details %}}
 

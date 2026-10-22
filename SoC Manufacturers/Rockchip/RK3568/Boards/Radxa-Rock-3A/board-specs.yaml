@@ -1,0 +1,16 @@
+# Radxa-Rock-3A board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+storage: ["microSD", "Optional eMMC"]
+usb:
+  - { version: "3.0" }
+  - { version: "2.0" }
+ethernet:
+  - { gbps: 1 }
+wifi: "Varies by model"
+bluetooth: "Varies by model"
+display:
+  outputs: ["HDMI (4K@60)"]
+camera: "MIPI CSI"
+gpio: "40-pin header"
+power: "USB Type-C"

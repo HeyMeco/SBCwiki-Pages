@@ -1,0 +1,22 @@
+# Qualcomm/Dragonwing-Q7 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+# DRAM speeds are data rates in MT/s. Qualcomm quotes LPDDR clocks in MHz, so their figures are doubled here.
+
+parts:
+  - name: "Q-7790"
+    cpu:
+      clusters:
+        - { cores: 1, core: "Cortex-A720", max_ghz: 2.8 }
+        - { cores: 4, core: "Cortex-A720", max_ghz: 2.4 }
+        - { cores: 3, core: "Cortex-A520", max_ghz: 1.8 }
+    memory:
+      types: [{ type: "LPDDR5X", mts: 8400 }, { type: "LPDDR5", mts: 6400 }, { type: "LPDDR4X", mts: 4266 }]
+      notes: "LPDDR5 and LPDDR4X at 2× 16-bit"
+    gpu:
+      name: "Adreno 722"
+      max_mhz: 1150
+    display:
+      outputs: ["2× DSI", "DisplayPort", "HDMI"]
+    wifi: "2x2 Wi-Fi 7, 2x2 Wi-Fi 6E"
+    bluetooth: "5.4 and 6.0"
+    os: ["Android", "Linux"]

@@ -22,36 +22,11 @@ images:
 ## Hardware Specifications
 
 {{% details title="Specs" open=true %}}
+{{< board-specs show="soc" >}}
 
-| **SoC** | **NXP i.MX 8M Plus (Quad-core or Quad Lite variants)**                                                                                            |
-|---------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| **CPU** | 4× ARM Cortex-A53 @ 1.6GHz (industrial) / 1.8GHz (commercial) <br> 1× ARM Cortex-M7 @ 800MHz |
-| **RAM** | 2GB LPDDR4 (4GB/8GB optional) |
-| **NPU** | 2.3 TOPS Neural Processing Unit (Standard version) |
-| **GPU** | Vivante GC7000UL 3D GPU <br> Vivante GC520L 2D GPU |
-| **VPU** | 1080p60 H.265/H.264 encode/decode |
-| **ISP** | Dual camera ISP, 375 MPixels/s |
-
----
 ### Interfaces
 
-| **I/O**      | Description                                                                                                                                                                                                                                                             |
-|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Storage** | MicroSD card slot <br> Optional onboard eMMC: 8GB/16GB/32GB/64GB/128GB/256GB |
-| **Ethernet** | 2× Gigabit Ethernet <br> • 1× with TSN support and optional PoE <br> • 1× via 12-pin header (without transformer) |
-| **Wireless** | WiFi 5 (2.4GHz & 5GHz) <br> Bluetooth 5.0 <br> External SMA antenna connector (IPEX-4) |
-| **USB** | 4× USB 3.0 Host <br> 1× USB 2.0 OTG Type-C |
-| **Video** | 1× HDMI 2.0a output <br> 1× MIPI DSI (4-lane) <br> 1× LVDS (single & dual channel 8-bit) |
-| **Camera** | 1× MIPI CSI (4-lane) |
-| **Audio** | 3.5mm headphone/mic combo port <br> SPDIF digital audio |
-| **Expansion** | 40-pin double-row GPIO header: <br> • 3× UART, 2× I2C, 2× SPI, 2× CAN <br> • 6× GPIO (configurable as I2S, PWM, SPDIF) <br> • 5V power supply, system reset, ON/OFF |
-| **PCIe** | 1× PCIe Gen 3.0 (1-lane) |
-| **Power** | DC 5V/3A via USB Type-C |
-| **Security** | Integrated EdgeLock® Secure Enclave |
-| **Operating Temp** | -20°C to 70°C (Model A) <br> -40°C to 85°C (Model B) |
-| **Dimensions** | 85.0mm × 56.0mm (±0.5mm) |
-| **Weight** | 46g net / 72g gross (±0.5g) |
-
+{{< board-specs show="board" >}}
 {{% /details %}}
 
 {{< list-board-available-os >}}

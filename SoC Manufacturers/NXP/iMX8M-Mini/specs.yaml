@@ -1,0 +1,29 @@
+# NXP/iMX8M-Mini specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "NXP i.MX 8M Mini"
+    process_nm: 14
+    process_note: "LPC FinFET"
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A53", max_ghz: 1.8 }
+    mcu:
+      - { cores: 1, core: "Cortex-M4", max_mhz: 400 }
+    memory:
+      types: ["LPDDR4", "DDR4"]
+    gpu:
+      name: "Vivante GCNanoUltra"
+      vendor_apis: { opengl_es: "2.0", openvg: "1.1" }
+    vpu:
+      decode:
+        - { res: "1080p", fps: 60, codecs: ["H.265", "VP9"] }
+        - { res: "1080p", fps: 60, codecs: ["H.264", "VP8"] }
+      encode:
+        - { res: "1080p", fps: 60, codecs: ["H.264"] }
+    camera: "MIPI-CSI (4-lane)"
+    display:
+      outputs: ["MIPI-DSI (4-lane)"]
+    storage: ["eMMC 5.1", "SD 3.0", "Quad SPI"]
+    ethernet:
+      - { count: 1, gbps: 1 }

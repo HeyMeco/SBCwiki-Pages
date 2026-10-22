@@ -19,20 +19,7 @@ summary: NXP i.MX 94 ARM processor (Preproduction) - Quad Cortex-A55 + dual Cort
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **SoC** | **NXP i.MX 94 (Preproduction)**                                                                                            |
-|---------|----------------------------------------------------------------------------------------------------------------|
-| **CPU** | Hexa-core: <br> 4× ARM Cortex-A55 <br> 2× ARM Cortex-M33 <br> 2× ARM Cortex-M7            |
-| **RAM** | LPDDR4 with inline ECC                                                                                     |
-| **GPU** | 2D GPU, 1 GFLOPS               |
-| **NPU** | Integrated NPU for ML acceleration                                                                           |
-| **Display** | 1080p60 LVDS (4-lane) |
-| **Storage** | 3× SD/SDIO 3.0/eMMC 5.1, 1× Octal SPI |
-| **Ethernet** | 3-port TSN switch (2× 2.5GbE, 1× 1GbE) + 2× 1GbE with TSN |
-| **USB** | 1× USB 2.0, 1× USB 3.0 |
-| **PCIe** | 2× PCIe Gen 3.0 (1-lane) |
-| **CAN** | 5× CAN-FD |
-| **Audio** | 3× I²S, PDM mic |
-| **Security** | EdgeLock secure enclave |
+{{< soc-specs >}}
 
 {{% /details %}}
 

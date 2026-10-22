@@ -20,15 +20,7 @@ Rockchip's next-generation flagship SoC, positioned above the RK3588. RK3688 is 
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **SoC** | **Rockchip RK3688** |
-|---------|---------------------|
-| **Process** | 4–5 nm (300K+ DMIPS) |
-| **CPU** | 12-core: 8× Cortex-A730 + 4× Cortex-A530 |
-| **RAM** | 8-channel LPDDR5 / LPDDR5x / LPDDR6 (up to 200 GB/s) |
-| **GPU** | Arm Mali Magni (2+ TFLOPS) |
-| **NPU** | 32 TOPS (RKNN-P3) |
-| **Storage** | UFS 4.0 |
-| **VPU** | 16K@30fps decoder · 8K@60fps encoder |
+{{< soc-specs >}}
 
 {{% /details %}}
 

@@ -23,14 +23,7 @@ The Qualcomm Snapdragon X Elite and Dragonwing IQ-X are commercial and industria
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **Part** | **CPU** | **GPU** | **NPU** | **Memory** |
-|----------|---------|---------|---------|------------|
-| **X1E-00-1DE** | 12x Oryon<br>3.8 GHz all-core, dual-core boost 4.3 GHz<br>42 MB cache, 4 nm | [Adreno X1-85](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-x-series-pc--compute) @ 1.50 GHz<br>Up to 4.6 TFLOPS | Hexagon<br>45 TOPS | LPDDR5x @ 8448 MT/s<br>8x 16-bit, up to 64 GB<br>135 GB/s |
-| **X1E-84-100** | 12x Oryon<br>3.8 GHz all-core, dual-core boost 4.2 GHz<br>42 MB cache, 4 nm | [Adreno X1-85](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-x-series-pc--compute) @ 1.50 GHz<br>Up to 4.6 TFLOPS | Hexagon<br>45 TOPS | LPDDR5x @ 8448 MT/s<br>8x 16-bit, up to 64 GB<br>135 GB/s |
-| **X1E-80-100** | 12x Oryon<br>3.4 GHz all-core, dual-core boost 4.0 GHz<br>42 MB cache, 4 nm | [Adreno X1-85](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-x-series-pc--compute) @ 1.25 GHz<br>Up to 3.8 TFLOPS | Hexagon<br>45 TOPS | LPDDR5x @ 8448 MT/s<br>8x 16-bit, up to 64 GB<br>135 GB/s |
-| **X1E-78-100** | 12x Oryon @ 3.4 GHz<br>42 MB cache, 4 nm | [Adreno X1-85](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-x-series-pc--compute) @ 1.25 GHz<br>Up to 3.8 TFLOPS | Hexagon<br>45 TOPS | LPDDR5x @ 8448 MT/s<br>8x 16-bit, up to 64 GB<br>135 GB/s |
-| **IQ-X7181** | 12x Oryon @ 3.4 GHz<br>Industrial grade of X1E-78-100 | [Adreno](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-x-series-pc--compute) @ 1.25 GHz | Hexagon<br>45 dense TOPS<br>Hexagon V73M | 8x 16-bit LPDDR5x @ 4200 MHz<br>Up to 64 GB |
-| **IQ-X5121** | 8x Oryon @ 3.4 GHz<br>Industrial grade | [Adreno](/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-x-series-pc--compute) @ 1.1 GHz | Hexagon<br>45 dense TOPS<br>Hexagon V73M | 8x 16-bit LPDDR5x @ 4200 MHz<br>Up to 64 GB |
+{{< soc-specs >}}
 
 {{% /details %}}
 

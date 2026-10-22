@@ -1,0 +1,25 @@
+# Radxa Dragon Q6A board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+soc:
+  name: "Qualcomm QCS6490"
+memory:
+  types: ["LPDDR5"]
+  sizes_gb: [4, 6, 8, 12, 16]
+storage: ["Boot: 32 MB QSPI NOR flash", "microSD / eMMC module / UFS module / M.2 M-Key 2230 NVMe SSD"]
+usb:
+  - { count: 1, version: "3.1", connector: "Type-A", note: "host / OTG" }
+  - { count: 3, version: "2.0", connector: "Type-A", note: "host" }
+ethernet:
+  - { count: 1, gbps: 1, note: "PoE with external PoE HAT" }
+wifi: "Wi-Fi 6 (external antenna required)"
+bluetooth: "5.4"
+display:
+  outputs: ["1× HDMI (4K@60)", "1× 4-lane MIPI DSI"]
+camera: ["1× 4-lane MIPI CSI", "2× 2-lane MIPI CSI"]
+audio: "3.5 mm 4-segment headphone jack with microphone input; stereo output drives 32 Ω headphones"
+gpio: "40-pin header (UART, SPI, I2C, …)"
+power: ["12 V via USB Type-C", "External 12 V pin input", "PoE (with external PoE HAT)"]
+cooling: "1× 2-pin 1.25 mm fan connector"
+other:
+  - { name: "Buttons", value: "Power button, EDL button" }

@@ -21,11 +21,7 @@ These three names share the same CPU layout: two Cortex-A78 cores and six Cortex
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **Part** | **CPU** | **GPU** | **Memory** | **AI** |
-|----------|---------|---------|------------|--------|
-| **Genio 720 / MT8391** | Consumer: 2x A78 @ 2.6 GHz + 6x A55 @ 2.0 GHz<br>Industrial: 2x A78 @ 2.4 GHz + 6x A55 @ 2.0 GHz<br>6 nm | Mali-G57 MC2 @ 1.1 GHz | x32 LPDDR4X-4266 up to 8 GB<br>x32 LPDDR5(X)-6400 up to 16 GB | 8th-gen NPU, 9 TOPS (MDLA5.3)<br>Up to 10 TOPS platform AI |
-| **Genio 520 / MT8371** | Consumer: 2x A78 @ 2.2 GHz + 6x A55 @ 2.0 GHz<br>Industrial: 2x A78 @ 2.0 GHz + 6x A55 @ 1.8 GHz<br>6 nm | Mali-G57 MC2 @ 880 MHz | Same LPDDR4X / LPDDR5(X) options as Genio 720 | Same 8th-gen NPU class as Genio 720 |
-| **Kompanio 540 / MT8189** | 2x A78 @ 2.6 GHz + 6x A55 @ 2.0 GHz<br>6 nm | Mali-G57 MC2 | LPDDR5 up to 6400 Mbps<br>LPDDR4X up to 4266 Mbps | Chromebook SKU; no separate Genio NPU rating published |
+{{< soc-specs >}}
 
 {{% /details %}}
 

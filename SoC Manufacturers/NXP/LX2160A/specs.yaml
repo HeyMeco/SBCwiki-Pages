@@ -1,0 +1,25 @@
+# NXP/LX2160A specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "NXP Layerscape LX2160A"
+    cpu:
+      clusters:
+        - { cores: 16, core: "Cortex-A72", max_ghz: 2.2 }
+      notes: "Also available as 8- or 12-core variants"
+    memory:
+      types: ["DDR4"]
+    storage: ["SD", "SPI", "I²C"]
+    pcie:
+      - { count: 6, gen: 3, note: "24 lanes total" }
+    sata: { count: 4, gen: "3.0" }
+    usb:
+      - { version: "2.0/3.0" }
+    ethernet:
+      - { count: 16, gbps: 100, note: "up to 16 ports at 1, 2.5, 10, 25, 40, 50 or 100 Gbit/s" }
+    security: "SEC security engine, 50 Gbit/s offload capability"
+    other:
+      - { name: "L2 Switch", value: "122 Gbit/s L2 switching capability" }
+      - { name: "SerDes", value: "24× 25 GHz SerDes lanes" }
+      - { name: "Compression", value: "100 Gbit/s compression engine" }
+      - { name: "Acceleration", value: "DPAA2 acceleration engines for crypto, pattern matching, compression" }

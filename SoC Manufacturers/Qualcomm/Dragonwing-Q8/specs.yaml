@@ -1,0 +1,85 @@
+# Qualcomm/Dragonwing-Q8 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+# DRAM speeds are data rates in MT/s. Qualcomm quotes LPDDR clocks in MHz, so their figures are doubled here.
+
+label: "Part"
+parts:
+  - name: "Q-8750"
+    process_nm: 3
+    cpu:
+      clusters:
+        - { cores: 8, core: "Oryon", max_ghz: 4.32 }
+      notes: "Custom Qualcomm cores"
+    memory:
+      types: [{ type: "LPDDR5X", mts: 9600 }]
+      bus_bits: 64
+      max_gb: 24
+    gpu:
+      name: "Adreno 830"
+      max_mhz: 1100
+    npu:
+      name: "Hexagon V79"
+      tops_dense: 77
+  - name: "QCM8550 / QCS8550"
+    process_nm: 4
+    cpu:
+      clusters:
+        - { cores: 1, core: "Cortex-X3", max_ghz: 3.2 }
+        - { cores: 2, core: "Cortex-A715", max_ghz: 2.8 }
+        - { cores: 2, core: "Cortex-A710", max_ghz: 2.8 }
+        - { cores: 3, core: "Cortex-A510", max_ghz: 2.0 }
+    memory:
+      types: [{ type: "LPDDR5X", mts: 8400 }]
+    gpu:
+      name: "Adreno 740"
+      max_mhz: 680
+  - name: "QCS8250"
+    process_nm: 7
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A77", max_ghz: 2.85 }
+        - { cores: 4, core: "Cortex-A55", max_ghz: 1.8 }
+    memory:
+      types: [{ type: "LPDDR5", mts: 5500 }, { type: "LPDDR4X", mts: 4266 }]
+      channels: 4
+      notes: "Quad-channel PoP; LPDDR4X at the JEDEC base data rate"
+    gpu:
+      name: "Adreno 650"
+    npu:
+      name: "Hexagon V66Q @ 1.5 GHz"
+      tops: 15
+  - name: "SDA845"
+    process_nm: 10
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A75", max_ghz: 2.8 }
+        - { cores: 4, core: "Cortex-A55", max_ghz: 1.8 }
+    memory:
+      types: [{ type: "LPDDR4X", mts: 3732 }]
+    gpu:
+      name: "Adreno 630"
+    npu:
+      name: "Hexagon 685"
+  - name: "QCS8275 / QCS8300"
+    codename: "Monaco"
+    cpu:
+      clusters:
+        - { cores: 2, core: "Kryo Gold Prime", max_ghz: 2.35 }
+        - { cores: 2, core: "Kryo Gold", max_ghz: 2.1 }
+        - { cores: 4, core: "Kryo Silver", max_ghz: 1.95 }
+      notes: "Kryo Gen 6"
+    memory:
+      types: [{ type: "LPDDR5", mts: 6400 }, { type: "LPDDR5X", mts: 6400 }]
+      bus_bits: 64
+      max_gb: 32
+      ecc: "inline"
+    gpu:
+      name: "Adreno 623"
+      max_mhz: 877
+    npu:
+      name: "Hexagon"
+      tops_dense: 40
+      tops_precision: "INT8"
+      notes: "Highest of a 20–40 TOPS range; can differ by binning"
+    isp:
+      notes: "Qualcomm Spectra 692"

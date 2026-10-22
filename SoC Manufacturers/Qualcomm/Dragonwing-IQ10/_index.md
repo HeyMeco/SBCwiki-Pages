@@ -17,13 +17,7 @@ The Qualcomm Dragonwing IQ10 series is the top of the industrial IQ family, aime
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **SoC** | **IQ-10800** |
-|---------|----------------|
-| **CPU** | Up to 18x Oryon up to 3.014 GHz<br>Custom Qualcomm cores |
-| **RAM** | 16x 16-bit LPDDR5x, ECC, up to 128 GB<br>IQ-10800MD-AA: 64 GB<br>IQ-10800MD-AD: 32 GB |
-| **GPU** | Primary [Adreno](/docs/soc-manufacturers/qualcomm/adreno-gpu/) up to 1.0 GHz<br>Secondary [Adreno](/docs/soc-manufacturers/qualcomm/adreno-gpu/) up to 1.1 GHz |
-| **NPU** | Hexagon, 700 INT8 sparse TOPS<br>350 dense TOPS |
-| **OS** | Linux and Ubuntu |
+{{< soc-specs >}}
 
 {{% /details %}}
 

@@ -17,17 +17,7 @@ summary: NXP Layerscape LS1043A networking processor - Quad Cortex-A53 cores (up
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **SoC** | **NXP Layerscape LS1043A**                                                                                            |
-|---------|----------------------------------------------------------------------------------------------------------------|
-| **CPU** | Quad-core: <br> 4× ARM Cortex-A53 (up to 1.6GHz)            |
-| **RAM** | DDR3L, DDR4                                                                                     |
-| **Ethernet** | 1× 10 Gigabit Ethernet + up to 5× Gigabit Ethernet |
-| **PCIe** | 3× PCIe Gen 2.0 |
-| **SerDes** | 4-10 GHz SerDes lanes |
-| **Storage** | SD, SPI, I²C |
-| **SATA** | 1× SATA 3.0 |
-| **Security** | SEC security engine, 5 Gbit/s |
-| **USB** | USB 2.0/3.0 |
+{{< soc-specs >}}
 
 {{% /details %}}
 

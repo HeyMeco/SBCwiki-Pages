@@ -1,0 +1,29 @@
+# Cix/CD8180-P1 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "CD8180 / P1"
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A720", max_ghz: 2.8, note: "big" }
+        - { cores: 4, core: "Cortex-A720", max_ghz: 2.4, note: "medium" }
+        - { cores: 4, core: "Cortex-A520", max_ghz: 1.8, note: "LITTLE" }
+    memory:
+      types: [{ type: "LPDDR5", mts: 5500 }]
+      bus_bits: 128
+      max_gb: 64
+      notes: "Configurations: 4 / 8 / 16 / 32 / 64 GB"
+    gpu:
+      name: "Arm Immortalis-G720 MC10"
+      vendor_apis: { opengl_es: "3.2", vulkan: "1.3", opencl: "3.0" }
+      notes: "Hardware ray tracing"
+    npu:
+      name: "Arm-China Zhouyi"
+      tops: 30
+      datatypes: ["INT4", "INT8", "INT16", "FP16", "TF32"]
+    vpu:
+      name: "Arm-China Linlon V8"
+      decode:
+        - { res: "8K", fps: 60, codecs: ["AV1", "H.265", "H.264", "VP9", "VP8", "H.263", "MPEG-4", "MPEG-2"] }
+      encode:
+        - { res: "8K", fps: 30, codecs: ["H.265", "H.264", "VP9", "VP8"] }

@@ -19,12 +19,7 @@ It is aimed at **edge** and **IoT** products that still participate in OpenClaw-
 ## General specifications
 {{% details title="Specs" open=true %}}
 
-| **Product** | **ClawCore-E** |
-|-------------|----------------|
-| **CPU** | Armv9.2 (core count and clocks not detailed in initial press) |
-| **AI** | Integrated NPU (TOPS not specified in summarized coverage) |
-| **Power** | Ultra-low-power positioning; on-demand wake via voice and network |
-| **Target** | Edge / IoT OpenClaw deployments |
+{{< soc-specs >}}
 
 {{% /details %}}
 

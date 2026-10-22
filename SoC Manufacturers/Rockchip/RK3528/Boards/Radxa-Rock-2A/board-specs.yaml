@@ -1,0 +1,18 @@
+# Radxa-Rock-2A board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+soc:
+  notes: "[Rockchip RK3528 datasheet](https://wiki.friendlyelec.com/wiki/images/7/70/Rockchip_RK3528_Datasheet_V1.2-20240410.pdf)"
+storage: ["microSD", "Optional eMMC 5.1"]
+usb:
+  - { version: "3.0" }
+  - { version: "2.0" }
+ethernet:
+  - { gbps: 1 }
+wifi: "Varies by model"
+bluetooth: "Varies by model"
+display:
+  outputs: ["HDMI 2.0 (4K@60)"]
+camera: "MIPI CSI"
+gpio: "GPIO header"
+power: "USB Type-C or DC input"

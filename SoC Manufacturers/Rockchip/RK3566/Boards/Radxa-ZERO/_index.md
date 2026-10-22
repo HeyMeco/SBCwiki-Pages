@@ -22,28 +22,11 @@ images:
 
 ## Hardware
 {{% details title="Specs" open=true %}}
+{{< board-specs show="soc" >}}
 
-| **SoC** | **Rockchip RK3566**                                                                                                                      |
-|---------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| **CPU** | Quad-core ARM Cortex-A55 (up to 1.6GHz)                                                             |
-| **RAM** | LPDDR4<br>- Configurations: 1GB / 2GB / 4GB                                                                                |
-| **GPU** | Mali-G52-2EE<br>- OpenGL ES 1.1/2.0/3.2<br>- Vulkan 1.1<br>- OpenCL 2.0                                                 |
-| **VPU** | 4K@60fps H.264/H.265/VP9 decoder<br>1080p@60fps H.264/H.265 encoder                          |
-
----
 ### Interfaces
 
-| **I/O**      | Description                                                                                                                                                                                                                                                             |
-|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Wireless** | Wi-Fi and Bluetooth (varies by model)                                                                                                                                                                                                                      |
-| **Ethernet** | Gigabit Ethernet via optional HAT                                                                                                                                                                                                        |
-| **USB**      | 1x USB-C OTG port (power & data)<br>USB 2.0 ports                                                                                                                                                                                                                 |
-| **Video**    | Micro HDMI (up to 4K@60Hz)                                                                                                                                                                                                                     |
-| **Camera**   | MIPI CSI interfaces                                                                                                                                                                                                                                |
-| **Storage**  | MicroSD card slot<br>Optional eMMC                                                                                                                                                            |
-| **Power**    | USB Type-C power input (5V/2A)                                                                                                                                                            |
-| **GPIO**     | 40-Pin GPIO Header                                                                                                                                                                                                                              |
-
+{{< board-specs show="board" >}}
 {{% /details %}}
 
 ## Available OS images

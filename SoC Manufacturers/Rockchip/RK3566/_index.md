@@ -15,13 +15,7 @@ summary: Rockchip RK3566 mid-range ARM processor - Quad-core Cortex-A55 up to 1.
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **SoC** | **Rockchip RK3566**                                                                                            |
-|---------|----------------------------------------------------------------------------------------------------------------|
-| **CPU** | Quad-core ARM Cortex-A55 (up to 1.8GHz)            |
-| **RAM** | 32bit LPDDR4/4X                                                                                     |
-| **GPU** | Mali-G52-2EE, compatible with OpenGL® ES 1.1/2.0/3.2, OpenCL™ 2.0 and Vulkan® 1.1               |
-| **VPU** | 4Kp60 H.264/H.265/VP9 decoder <br> 1080p60 H.264/H.265 encoder |
-| **NPU** | n/a                                                                           |
+{{< soc-specs >}}
 
 {{% /details %}}
 

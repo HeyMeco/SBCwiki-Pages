@@ -17,17 +17,7 @@ summary: NXP i.MX 8M ARM processor - Quad-core Cortex-A53 (up to 1.5GHz) + Corte
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **SoC** | **NXP i.MX 8M**                                                                                            |
-|---------|----------------------------------------------------------------------------------------------------------------|
-| **Process** | 14nm LPC FinFET |
-| **CPU** | Quad-core: <br> 4× ARM Cortex-A53 (up to 1.5GHz) <br> 1× ARM Cortex-M4            |
-| **RAM** | LPDDR4, DDR3L                                                                                     |
-| **GPU** | Vivante GC7000Lite, OpenGL ES 3.1, Vulkan               |
-| **VPU** | 4Kp60 H.265/VP9 video decode with HDR <br> 4Kp30 H.264/VP8 decode <br> 1080p30 H.264 encode |
-| **Display** | MIPI-DSI (4-lane), HDMI 2.0a |
-| **Camera** | 2× MIPI-CSI (4-lane each) |
-| **Storage** | eMMC 5.1, SD 3.0, Quad SPI |
-| **Ethernet** | Gigabit Ethernet |
+{{< soc-specs >}}
 
 {{% /details %}}
 

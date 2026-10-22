@@ -1,0 +1,65 @@
+# Qualcomm/Dragonwing-Q4 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+# DRAM speeds are data rates in MT/s. Qualcomm quotes LPDDR clocks in MHz, so their figures are doubled here.
+
+label: "Part"
+parts:
+  - name: "Q-4390"
+    process_nm: 4
+    cpu:
+      clusters:
+        - { cores: 2, core: "Cortex-A78", max_ghz: 2.2 }
+        - { cores: 6, core: "Cortex-A55" }
+    memory:
+      types: [{ type: "LPDDR5", mts: 5500 }, { type: "LPDDR4X", mts: 4200 }]
+      bus_bits: 32
+    gpu:
+      name: "Adreno 613"
+      max_mhz: 738
+  - name: "QCM4490 / QCS4490"
+    process_nm: 4
+    cpu:
+      clusters:
+        - { cores: 2, core: "Cortex-A78", max_ghz: 2.4 }
+        - { cores: 6, core: "Cortex-A55" }
+    memory:
+      types: [{ type: "LPDDR5", mts: 6400 }, { type: "LPDDR4X", mts: 4200 }]
+      bus_bits: 32
+    gpu:
+      name: "Adreno 613"
+      max_mhz: 1010
+  - name: "QCS4290 / QCM4290"
+    process_nm: 11
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A73", max_ghz: 2.0 }
+        - { cores: 4, core: "Cortex-A53" }
+    memory:
+      types: [{ type: "LPDDR4X", mts: 3732 }, { type: "LPDDR3", mts: 1866 }]
+      bus_bits: 32
+      notes: "LPDDR4X 2× 16-bit, LPDDR3 1× 32-bit"
+    gpu:
+      name: "Adreno 610"
+  - name: "QCS410"
+    process_nm: 11
+    cpu:
+      clusters:
+        - { cores: 2, core: "Cortex-A76", max_ghz: 2.2 }
+        - { cores: 6, core: "Cortex-A55" }
+    memory:
+      types: [{ type: "LPDDR4X", mts: 3608 }]
+    gpu:
+      name: "Adreno 612"
+  - name: "QRB4210"
+    process_nm: 11
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A73", max_ghz: 2.0 }
+        - { cores: 4, core: "Cortex-A53", max_ghz: 1.8 }
+    memory:
+      types: [{ type: "LPDDR4X", mts: 3732 }, { type: "LPDDR3", mts: 1866 }]
+      bus_bits: 32
+      notes: "LPDDR4X 2× 16-bit, LPDDR3 1× 32-bit"
+    gpu:
+      name: "Adreno 610"
+      max_mhz: 950

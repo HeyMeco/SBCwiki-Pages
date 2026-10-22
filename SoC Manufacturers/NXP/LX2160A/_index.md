@@ -17,20 +17,7 @@ summary: NXP Layerscape LX2160A flagship networking processor - 16× Cortex-A72 
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **SoC** | **NXP Layerscape LX2160A**                                                                                            |
-|---------|----------------------------------------------------------------------------------------------------------------|
-| **CPU** | 16-core (also available as 8 or 12-core variants): <br> 16× ARM Cortex-A72 (up to 2.2GHz)            |
-| **RAM** | DDR4                                                                                     |
-| **Ethernet** | Up to 16× Ethernet ports with speeds of 1, 2.5, 10, 25, 40, 50, and 100 Gbit/s |
-| **L2 Switch** | 122 Gbit/s L2 switching capability |
-| **PCIe** | 6× PCIe Gen 3.0 (24 lanes total) |
-| **SerDes** | 24× 25 GHz SerDes lanes |
-| **Storage** | SD, SPI, I²C |
-| **SATA** | 4× SATA 3.0 |
-| **Security** | SEC security engine, 50 Gbit/s offload capability |
-| **Compression** | 100 Gbit/s compression engine |
-| **Acceleration** | DPAA2 acceleration engines for crypto, pattern matching, compression |
-| **USB** | USB 2.0/3.0 |
+{{< soc-specs >}}
 
 {{% /details %}}
 

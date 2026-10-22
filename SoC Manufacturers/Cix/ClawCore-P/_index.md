@@ -19,13 +19,7 @@ Specifications are close to the [Cix P1 (CD8180)]({{< relref "/docs/SoC Manufact
 ## General specifications
 {{% details title="Specs" open=true %}}
 
-| **Product** | **ClawCore-P** |
-|-------------|----------------|
-| **CPU** | 12-core Armv9.2 @ up to 3.2 GHz |
-| **RAM** | Up to 64 GB LPDDR5 |
-| **GPU** | Arm Immortalis-G720 |
-| **AI** | ~45 TOPS combined (vendor figure) |
-| **Target** | OpenClaw, high parallelism, large-capacity local inference |
+{{< soc-specs >}}
 
 {{% /details %}}
 

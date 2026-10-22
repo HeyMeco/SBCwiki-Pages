@@ -16,15 +16,7 @@ The MediaTek Filogic 850 is the cost-effective Wi-Fi 7 AP and CPE platform in th
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **SoC** | **Filogic 850** |
-|---------|-----------------|
-| **CPU** | 4× Arm Cortex-A53 @ 2 GHz (about 18.4K DMIPS) |
-| **RAM** | Up to DDR4-3200 |
-| **Wi-Fi** | Dual-band Wi-Fi 7 (a/b/g/n/ac/ax/be)<br>Up to 3.6 Gbps (BE3600)<br>2.4 GHz 2T2R 2SS, 5 GHz 3T3R 2SS / 2T2R+1R 0-DFS<br>4096-QAM, single-MAC MLO, Multi-RU |
-| **Ethernet** | 2× 2.5 GbE via HSGMII, built-in 1 GbE PHY |
-| **NPU** | Up to 7.5 Gbps packet processing<br>800 Kpps Wi-Fi offload<br>HW acceleration for PPPoE, VLAN, MAP-E, DS-Lite |
-| **Security** | Secure Boot, Arm TrustZone, EIP-197 crypto, FIPS 140-3 support |
-| **I/O** | PCIe 3.0 (2x1 or 1x2), USB 3.2 Gen1 (shared with HSGMII), SPI, I2C, UART, GPIO, PCM/I2S |
+{{< soc-specs >}}
 
 {{% /details %}}
 

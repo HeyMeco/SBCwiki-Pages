@@ -1,0 +1,119 @@
+# Qualcomm/Snapdragon-X2-Elite specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+# DRAM speeds are data rates in MT/s. Qualcomm quotes LPDDR clocks in MHz, so their figures are doubled here.
+
+label: "Part"
+parts:
+  - name: "X2E-96-100"
+    process_nm: 3
+    cpu:
+      clusters:
+        - { cores: 12, core: "Oryon", base_ghz: 4.4, max_ghz: 5.0, note: "prime" }
+        - { cores: 6, core: "Oryon", max_ghz: 3.6, note: "performance" }
+      cache: [{ level: "Total", mb: 53 }]
+    memory:
+      types: [{ type: "LPDDR5X", mts: 9523 }]
+      bus_bits: 192
+      bandwidth_gbs: 228
+    gpu:
+      name: "Adreno X2-90"
+      max_mhz: 1850
+    npu:
+      name: "Hexagon"
+      tops: 80
+      tops_precision: "INT8"
+  - name: "X2E-94-100"
+    process_nm: 3
+    cpu:
+      clusters:
+        - { cores: 18, core: "Oryon", max_ghz: 4.7 }
+      cache: [{ level: "Total", mb: 53 }]
+    memory:
+      types: ["LPDDR5X"]
+      bandwidth_gbs: 228
+    gpu:
+      name: "Adreno X2-90"
+      max_mhz: 1850
+    npu:
+      name: "Hexagon"
+      tops: 80
+      tops_precision: "INT8"
+  - name: "X2E-90-100"
+    process_nm: 3
+    cpu:
+      clusters:
+        - { cores: 18, core: "Oryon", max_ghz: 5.0 }
+      cache: [{ level: "Total", mb: 53 }]
+    memory:
+      types: ["LPDDR5X"]
+      bandwidth_gbs: 152
+    gpu:
+      name: "Adreno X2-90"
+      max_mhz: 1700
+    npu:
+      name: "Hexagon"
+      tops: 85
+      tops_precision: "INT8"
+  - name: "X2E-88-100"
+    process_nm: 3
+    cpu:
+      clusters:
+        - { cores: 12, core: "Oryon", base_ghz: 4.0, max_ghz: 4.7, note: "prime" }
+        - { cores: 6, core: "Oryon", max_ghz: 3.4, note: "performance" }
+      cache: [{ level: "Total", mb: 53 }]
+    memory: &x2mem128
+      types: [{ type: "LPDDR5X", mts: 9523 }]
+      bus_bits: 128
+      bandwidth_gbs: 152
+    gpu:
+      name: "Adreno X2-90"
+      max_mhz: 1700
+    npu:
+      name: "Hexagon"
+      tops: 80
+      tops_precision: "INT8"
+  - name: "X2E-84-100"
+    process_nm: 3
+    cpu:
+      clusters:
+        - { cores: 6, core: "Oryon", base_ghz: 4.0, max_ghz: 4.7, note: "prime" }
+        - { cores: 6, core: "Oryon", max_ghz: 3.4, note: "performance" }
+      cache: [{ level: "Total", mb: 34 }]
+    memory: *x2mem128
+    gpu:
+      name: "Adreno X2-85"
+      max_mhz: 1700
+    npu:
+      name: "Hexagon"
+      tops: 85
+      tops_precision: "INT8"
+  - name: "X2E-80-100"
+    process_nm: 3
+    cpu:
+      clusters:
+        - { cores: 6, core: "Oryon", base_ghz: 4.0, max_ghz: 4.7, note: "prime; dual-core boost 4.4 GHz" }
+        - { cores: 6, core: "Oryon", max_ghz: 3.4, note: "performance" }
+      cache: [{ level: "Total", mb: 34 }]
+    memory: *x2mem128
+    gpu:
+      name: "Adreno X2-85"
+      max_mhz: 1700
+    npu:
+      name: "Hexagon"
+      tops: 80
+      tops_precision: "INT8"
+  - name: "X2E-78-100"
+    process_nm: 3
+    cpu:
+      clusters:
+        - { cores: 6, core: "Oryon", max_ghz: 4.0, note: "prime" }
+        - { cores: 6, core: "Oryon", max_ghz: 3.4, note: "performance" }
+      cache: [{ level: "Total", mb: 34 }]
+    memory: *x2mem128
+    gpu:
+      name: "Adreno X2-85"
+      max_mhz: 1350
+    npu:
+      name: "Hexagon"
+      tops: 80
+      tops_precision: "INT8"

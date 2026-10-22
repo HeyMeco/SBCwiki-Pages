@@ -15,12 +15,7 @@ summary: MediaTek Filogic 880 (MT7988) networking ARM processor - Quad-core Cort
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **SoC** | **Filogic 880 / MT7988**                                                                                            |
-|---------|----------------------------------------------------------------------------------------------------------------|
-| **CPU** | Quad-core ARM Cortex-A73 (up to 1.8GHz)                                                         |
-| **RAM** | DDR3/4                                                                                                         |
-| **GPU** | n/a                                                                                                            |
-| **NPU** | HW IPv4 NATP / IPv6 / DS-Lite / 6RD acceleration <br> Hardware QoS acceleration <br> Tunneling Offload Engine for: VLAN / PPTP / L2TP / GRE <br> Ultra-high Speed Networking Crypto Engine for: <br> IPSec,SSL/TLS, DTLS (CAPWAP), SRTP and MACsec                                                                       |
+{{< soc-specs >}}
 
 {{% /details %}}
 <br>

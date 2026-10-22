@@ -1,0 +1,20 @@
+# Cix/ClawCore-P specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+label: "Product"
+parts:
+  - name: "ClawCore-P"
+    cpu:
+      cores: 12
+      max_ghz: 3.2
+      isa: "Armv9.2"
+    memory:
+      types: ["LPDDR5"]
+      max_gb: 64
+    gpu:
+      name: "Arm Immortalis-G720"
+    npu:
+      tops: 45
+      notes: "Combined figure (vendor)"
+    other:
+      - { name: "Target", value: "OpenClaw, high parallelism, large-capacity local inference" }

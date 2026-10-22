@@ -1,0 +1,22 @@
+# Allwinner/A527 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "Allwinner A527 / T527"
+    cpu:
+      clusters:
+        - { cores: 8, core: "Cortex-A55", max_ghz: 2.0 }
+    memory:
+      types: ["LPDDR4", "LPDDR4X"]
+    gpu:
+      name: "Mali-G57"
+      vendor_apis: { opengl_es: "3.2", vulkan: "1.1", opencl: "2.0" }
+    npu:
+      tops: 2
+      datatypes: ["INT8", "INT16", "FP16"]
+      notes: "T527 variant only"
+    vpu:
+      decode:
+        - { res: "4K", fps: 60, codecs: ["H.264", "H.265", "VP9"] }
+      encode:
+        - { res: "1080p", fps: 60, codecs: ["H.264", "H.265"] }

@@ -1,0 +1,26 @@
+# Qualcomm/Dragonwing-IQ10 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+# DRAM speeds are data rates in MT/s. Qualcomm quotes LPDDR clocks in MHz, so their figures are doubled here.
+
+parts:
+  - name: "IQ-10800"
+    cpu:
+      clusters:
+        - { cores: 18, core: "Oryon", max_ghz: 3.014 }
+      notes: "Up to 18 custom Qualcomm cores"
+    memory:
+      types: ["LPDDR5X"]
+      bus_bits: 256
+      max_gb: 128
+      ecc: true
+      notes: ["16× 16-bit", "IQ-10800MD-AA: 64 GB", "IQ-10800MD-AD: 32 GB"]
+    gpu:
+      name: "Adreno"
+      max_mhz: 1000
+      notes: "Secondary [Adreno](/docs/soc-manufacturers/qualcomm/adreno-gpu/) up to 1100 MHz"
+    npu:
+      name: "Hexagon"
+      tops_dense: 350
+      tops_sparse: 700
+      tops_precision: "INT8"
+    os: ["Linux", "Ubuntu"]

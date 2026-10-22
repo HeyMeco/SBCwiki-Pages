@@ -17,19 +17,7 @@ summary: NXP Layerscape LS2088A networking processor - Octa-core Cortex-A72 (up 
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **SoC** | **NXP Layerscape LS2088A**                                                                                            |
-|---------|----------------------------------------------------------------------------------------------------------------|
-| **CPU** | Octa-core: <br> 8× ARM Cortex-A72 (up to 2.1GHz)            |
-| **RAM** | DDR4                                                                                     |
-| **Ethernet** | 8× 10 Gigabit Ethernet (up to 1/2.5/10 Gbit/s) + 8× Gigabit Ethernet (2.5/1 Gbit/s) |
-| **L2 Switch** | 88 Gbit/s L2 switching capability |
-| **PCIe** | 4× PCIe Gen 3.0 |
-| **SerDes** | 16× 10 GHz SerDes lanes |
-| **Storage** | SD, SPI, I²C |
-| **SATA** | 2× SATA 3.0 |
-| **Security** | SEC security engine, 24 Gbit/s |
-| **Acceleration** | DPAA2 engines for crypto, pattern matching, compression |
-| **USB** | USB 2.0/3.0 |
+{{< soc-specs >}}
 
 {{% /details %}}
 

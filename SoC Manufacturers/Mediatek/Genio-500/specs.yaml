@@ -1,0 +1,37 @@
+# Mediatek/Genio-500 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "MediaTek Genio 500 / MT8385"
+    process_nm: 12
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A73", max_ghz: 2.0 }
+        - { cores: 4, core: "Cortex-A53", max_ghz: 2.0 }
+    memory:
+      types: ["LPDDR3", { type: "LPDDR4", mts: 3733 }, { type: "LPDDR4X", mts: 3733 }]
+      max_gb: 8
+    gpu:
+      name: "Mali-G72 MP3"
+      max_mhz: 800
+      vendor_apis: { opengl_es: "3.2", vulkan: "1.0", opencl: "2.x" }
+    npu:
+      tops: 0.75
+      notes: "Dual-core Cadence Tensilica VP6 @ up to 525 MHz"
+    vpu:
+      decode:
+        - { res: "1080p", fps: 30, codecs: ["H.264", "HEVC"] }
+      encode:
+        - { res: "1080p", fps: 30, codecs: ["H.264"] }
+    isp:
+      max_mp: 32
+      notes: "32 MP @ 30 fps"
+    camera: "Multi-camera MIPI CSI-2"
+    display:
+      max: "Concurrent dual display, up to FHD+ (2400×1080)"
+      outputs: ["MIPI-DSI 4-lane", "DPI/DBI"]
+    storage: ["eMMC 5.1", "UFS 2.1 (1-lane)", "SD"]
+    usb:
+      - { version: "3.0", note: "SuperSpeed device, or USB 2.0 OTG" }
+    wifi: "External Wi-Fi / Bluetooth / GNSS / FM via companion chips (e.g. MT7668 / MT6631)"
+    temperature: "Typical modules: about −20°C to 85°C ambient"

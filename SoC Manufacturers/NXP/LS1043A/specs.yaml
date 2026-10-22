@@ -1,0 +1,22 @@
+# NXP/LS1043A specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "NXP Layerscape LS1043A"
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A53", max_ghz: 1.6 }
+    memory:
+      types: ["DDR3L", "DDR4"]
+    storage: ["SD", "SPI", "I²C"]
+    pcie:
+      - { count: 3, gen: 2 }
+    sata: { count: 1, gen: "3.0" }
+    usb:
+      - { version: "2.0/3.0" }
+    ethernet:
+      - { count: 1, gbps: 10 }
+      - { count: 5, gbps: 1, note: "up to 5" }
+    security: "SEC security engine, 5 Gbit/s"
+    other:
+      - { name: "SerDes", value: "4-10 GHz SerDes lanes" }

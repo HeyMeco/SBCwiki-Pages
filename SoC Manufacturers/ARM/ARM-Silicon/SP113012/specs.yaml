@@ -1,0 +1,24 @@
+# ARM/ARM-Silicon/SP113012 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "Arm AGI CPU SP113012"
+    cpu:
+      clusters:
+        - { cores: 136, core: "Neoverse V3", base_ghz: 3.2, max_ghz: 3.5 }
+      isa: "Armv9.2 with bfloat16 and INT8 AI instructions"
+      cache:
+        - { level: "L2", mb: 2, per: "core" }
+        - { level: "SLC", mb: 128 }
+      notes: "2× 128-bit SVE"
+    memory:
+      types: [{ type: "DDR5", mts: 8800 }]
+      channels: 12
+      notes: ["6 GB/s per core", "2 DIMMs per channel"]
+    pcie:
+      - { gen: 6, lanes: 96 }
+      - { count: 6, gen: 4, lanes: 1, note: "control lanes" }
+    io: "CXL 3.0 Type 3"
+    tdp_w: { min: 230, max: 420 }
+    other:
+      - { name: "Multi-Socket", value: "2-socket support" }

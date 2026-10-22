@@ -1,0 +1,32 @@
+{
+  "_about": "Link database for SoC spec tables. CPU cores and Mali/Adreno GPUs are NOT listed here: they are read from the generations files (cpus.yaml / gpus.yaml) of the pages in cpu_sources and gpu_sources, the same files that render those pages' tables. The cpu/gpu/npu sections below only hold extra names those files lack. A spec name matches the longest key or alias it starts with, so \"Mali-G610 MP4\" resolves to \"Mali-G610\". Used by layouts/partials/soc/linkdb.html in the SBCwiki repo.",
+  "cpu_sources": [
+    "/docs/soc-manufacturers/arm/"
+  ],
+  "gpu_sources": [
+    "/docs/soc-manufacturers/arm/mali-gpu/",
+    "/docs/soc-manufacturers/qualcomm/adreno-gpu/"
+  ],
+  "cpu": {},
+  "gpu": {
+    "Adreno": {
+      "url": "/docs/soc-manufacturers/qualcomm/adreno-gpu/"
+    },
+    "Mali Magni": {
+      "url": "/docs/soc-manufacturers/arm/mali-gpu/#2026",
+      "year": 2026,
+      "arch": "6th Gen Magni (v15)"
+    }
+  },
+  "npu": {
+    "Ethos-U55": {
+      "url": "/docs/soc-manufacturers/arm/ethos-npu/#ethos-u55"
+    },
+    "Ethos-U65": {
+      "url": "/docs/soc-manufacturers/arm/ethos-npu/#ethos-u65"
+    },
+    "Ethos-U85": {
+      "url": "/docs/soc-manufacturers/arm/ethos-npu/#ethos-u85"
+    }
+  }
+}

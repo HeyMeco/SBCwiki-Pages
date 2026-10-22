@@ -22,29 +22,11 @@ images:
 
 ## Hardware
 {{% details title="Specs" open=true %}}
+{{< board-specs show="soc" >}}
 
-| **SoC** | **Rockchip RK3528** ([datasheet](https://wiki.friendlyelec.com/wiki/images/7/70/Rockchip_RK3528_Datasheet_V1.2-20240410.pdf))                                                                                                                      |
-|---------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| **CPU** | Quad-core ARM Cortex-A53 with Neon and FPU                                                             |
-| **RAM** | LPDDR4/LPDDR4X                                                                                |
-| **GPU** | ARM Mali-450<br>- OpenGL ES 1.1/2.0, OpenVG 1.1                                                 |
-| **VPU** | 4K@60fps H.264/H.265/AVS2 decoder<br>1080p@60fps H.264/H.265 encoder                          |
-
----
 ### Interfaces
 
-| **I/O**      | Description                                                                                                                                                                                                                                                             |
-|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Wireless** | Wi-Fi 6 & Bluetooth 5.4                                                                                                                                                                                                                      |
-| **Ethernet** | Dual 2.5G Ethernet (via HAT)                                                                                                                                                                                                        |
-| **USB**      | USB ports                                                                                                                                                                                                                 |
-| **Video**    | HDMI 2.0 (up to 4K@60Hz)<br>AV out (up to 720x576@60Hz)                                                                                                                                                                                                                     |
-| **Camera**   | MIPI CSI interfaces                                                                                                                                                                                                                                |
-| **Storage**  | MicroSD card slot<br>Optional onboard eMMC                                                                                                                                                            |
-| **Power**    | Power input                                                                                                                                                            |
-| **GPIO**     | GPIO Header                                                                                                                                                                                                                              |
-| **PCIe**     | FPC connector with PCIe 2.0 x1 for HAT compatibility                                                                                                                                                                                                              |
-
+{{< board-specs show="board" >}}
 {{% /details %}}
 
 ## Available OS images

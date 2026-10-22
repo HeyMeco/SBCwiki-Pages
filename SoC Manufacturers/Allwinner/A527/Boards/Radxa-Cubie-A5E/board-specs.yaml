@@ -1,0 +1,19 @@
+# Radxa-Cubie-A5E board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+memory:
+  types: ["LPDDR4", "LPDDR4X"]
+  sizes_gb: [1, 2, 4]
+storage: ["SPI flash", "Optional eMMC (0–32 GB)", "M.2 M-Key NVMe"]
+usb:
+  - { version: "3.1" }
+  - { version: "2.0" }
+ethernet:
+  - { count: 2, gbps: 1, note: "one PoE capable" }
+wifi: "Wi-Fi 6"
+bluetooth: "5.4"
+display:
+  outputs: ["1× HDMI (4K@60)", "MIPI DSI"]
+camera: "MIPI CSI"
+gpio: "GPIO header"
+power: ["USB Type-C", "PoE (with PoE HAT)"]

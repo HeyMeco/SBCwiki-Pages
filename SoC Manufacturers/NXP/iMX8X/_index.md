@@ -17,18 +17,7 @@ summary: NXP i.MX 8X ARM processor - Quad-core Cortex-A35 + Cortex-M4, 3D graphi
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **SoC** | **NXP i.MX 8X**                                                                                            |
-|---------|----------------------------------------------------------------------------------------------------------------|
-| **CPU** | Quad-core: <br> 4× ARM Cortex-A35 <br> 1× ARM Cortex-M4            |
-| **RAM** | LPDDR4, DDR3L with ECC support                                                                                     |
-| **GPU** | 3D GPU, OpenGL ES 3.1, OpenCL 1.2 EP               |
-| **VPU** | 4K H.265 video decode <br> 1080p60 H.264/VP8 decode <br> 1080p30 H.264 encode |
-| **DSP** | Tensilica HiFi 4 DSP for audio processing                                                                           |
-| **Display** | Parallel display, 2× LVDS/MIPI-DSI combo |
-| **Camera** | MIPI-CSI (4-lane), Parallel camera interface |
-| **Storage** | eMMC 5.1, SD 3.0, Quad SPI |
-| **Ethernet** | 2× Gigabit Ethernet |
-| **PCIe** | PCIe Gen 3.0 |
+{{< soc-specs >}}
 
 {{% /details %}}
 

@@ -1,0 +1,24 @@
+# Rockchip/RK3576 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "Rockchip RK3576"
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A72", max_ghz: 2.2 }
+        - { cores: 4, core: "Cortex-A53", max_ghz: 1.8 }
+    memory:
+      types: ["LPDDR4", "LPDDR4X", "LPDDR5"]
+      bus_bits: 32
+    gpu:
+      name: "Mali-G52 MC3"
+      vendor_apis: { opengl_es: "1.1/2.0/3.2", vulkan: "1.2", opencl: "2.1" }
+    npu:
+      tops: 6
+      datatypes: ["INT4", "INT8", "INT16", "FP16", "BF16", "TF32"]
+    vpu:
+      decode:
+        - { res: "4K", fps: 120, codecs: ["H.265", "VP9", "AV1", "AVS2"] }
+        - { res: "4K", fps: 60, codecs: ["H.264"] }
+      encode:
+        - { res: "4K", fps: 60, codecs: ["H.264", "H.265"] }

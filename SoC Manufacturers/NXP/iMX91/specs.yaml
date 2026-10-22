@@ -1,0 +1,25 @@
+# NXP/iMX91 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "NXP i.MX 91"
+    cpu:
+      clusters:
+        - { cores: 1, core: "Cortex-A55", max_ghz: 1.4 }
+    mcu:
+      - { cores: 1, core: "Cortex-M33", note: "optional" }
+    memory:
+      types: [{ type: "LPDDR4", mts: 2400 }]
+      ecc: "inline"
+    camera: "8-bit parallel RGB/YUV camera interface"
+    display:
+      outputs: ["24-bit parallel RGB/YUV"]
+    storage: ["3× SD/SDIO 3.0/eMMC 5.1", "1× Octal SPI"]
+    pcie:
+      - { gen: 3 }
+    usb:
+      - { count: 2, version: "2.0", note: "dual mode with Type-C support" }
+    ethernet:
+      - { count: 2, gbps: 1, note: "1× with TSN" }
+    audio: ["3× SAI", "4× I²S TDM", "8-channel PDM microphone input", "SPDIF"]
+    security: "EdgeLock secure enclave"

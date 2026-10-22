@@ -1,0 +1,31 @@
+# Arduino Uno Q board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+soc:
+  part: "QRB2210 / QCS2290 / QCM2290"
+  name: "Qualcomm Dragonwing Q2 (QRB2210)"
+memory:
+  types: ["LPDDR4X"]
+  bus_bits: 32
+  sizes_gb: [2, 4]
+  notes: "Single-rank; 2 GB (ABX00162), 4 GB (ABX00173)"
+storage: ["eMMC 16 GB (ABX00162) or 32 GB (ABX00173)"]
+usb:
+  - { count: 1, version: "3.1", connector: "Type-C", note: "role switching; DisplayPort Alt Mode via an ANX7625 MIPI DSI-to-DP bridge" }
+wifi: "Wi-Fi 5 dual-band (802.11a/b/g/n/ac), onboard antenna (WCBN3536A / Qualcomm WCN3980)"
+bluetooth: "5.1"
+display:
+  outputs: ["DisplayPort over USB-C", "4-lane MIPI DSI on the JMEDIA connector"]
+camera: "4-lane MIPI CSI-2 on the JMEDIA connector"
+gpio: ["Arduino UNO headers (JDIGITAL, JANALOG) at 3.3 V", "JSPI header", "Qwiic connector", "JMEDIA 60-pin, 1.8 V (MIPI CSI / DSI)", "JMISC mixed-voltage header (1.8 V MPU, 3.3 V MCU)"]
+power: ["USB-C Power Delivery, 5 V / 3 A only", "7–24 V DC on VIN", "5 V pin on the analog header"]
+form_factor: "Arduino Uno"
+mcu:
+  name: "STM32U585"
+  core: "Cortex-M33"
+  max_mhz: 160
+  flash: "2 MB"
+  ram: "786 KB SRAM"
+  os: "Arduino Core on Zephyr"
+other:
+  - { name: "Indicators", value: "8×13 blue LED matrix driven by the STM32<br>RGB status LEDs" }

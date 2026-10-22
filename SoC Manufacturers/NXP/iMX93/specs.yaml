@@ -1,0 +1,32 @@
+# NXP/iMX93 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "NXP i.MX 93"
+    cpu:
+      clusters:
+        - { cores: 2, core: "Cortex-A55", max_ghz: 1.7 }
+    mcu:
+      - { cores: 1, core: "Cortex-M33", max_mhz: 250 }
+    memory:
+      types: ["LPDDR4"]
+      ecc: "inline"
+    gpu:
+      name: "2D GPU"
+    npu:
+      name: "Arm Ethos-U65 microNPU"
+      tops: 0.5
+      datatypes: ["INT8", "INT16"]
+      notes: "256 MACs @ 1.0 GHz"
+    isp:
+      notes: "1080p60 camera processing"
+    camera: ["1080p60 MIPI-CSI (2-lane)", "8-bit parallel YUV/RGB"]
+    display:
+      outputs: ["1080p60 MIPI-DSI (4-lane)", "720p60 LVDS (4-lane)", "24-bit parallel RGB"]
+    storage: ["3× SD/SDIO 3.0/eMMC 5.1", "1× Octal SPI"]
+    usb:
+      - { count: 2, version: "2.0" }
+    ethernet:
+      - { count: 2, gbps: 1, note: "1× with TSN" }
+    audio: ["7× I²S", "SPDIF", "PDM mic", "MQS output"]
+    security: "EdgeLock secure enclave"

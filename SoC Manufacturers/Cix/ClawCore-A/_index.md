@@ -17,14 +17,7 @@ summary: Cix ClawCore-A (智螯芯) — octa-core Armv9.2 SoC with 80 TOPS AI (e
 ## General specifications
 {{% details title="Specs" open=true %}}
 
-| **Product** | **ClawCore-A** |
-|-------------|----------------|
-| **CPU** | Octa-core Armv9.2 @ up to 3.0 GHz |
-| **RAM** | Up to 64 GB LPDDR5 |
-| **AI** | ~80 TOPS on-chip; up to ~200 TOPS with vendor PCIe AI accelerator card (press figures) |
-| **Reliability** | Full-chain ECC (as advertised) |
-| **Security** | Hardware encryption / key management (as advertised) |
-| **Target** | Always-on agents, local inference to reduce cloud token use |
+{{< soc-specs >}}
 
 {{% /details %}}
 

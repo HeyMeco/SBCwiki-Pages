@@ -19,17 +19,7 @@ The MediaTek Genio 130 family is the MCU tier of Genio. It is not an application
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **SoC** | **MediaTek Genio 130A / MT7933CT** |
-|---------|-------------------------------------|
-| **CPU** | Arm Cortex-M33 with FPU<br>Up to 300 MHz (0.8 V), 200 MHz at 0.7 V |
-| **Memory** | 1 MB SRAM<br>8 MB UHS PSRAM<br>Up to 96 KB TCM/cache<br>External serial flash with XIP and on-the-fly AES |
-| **Audio DSP** | Cadence Tensilica HiFi 4 @ up to 600 MHz (MT7933) |
-| **Wi-Fi** | 802.11a/b/g/n/ac/ax 1T1R dual-band<br>20 MHz, MU-OFDMA, WPA3 |
-| **Bluetooth** | Bluetooth 5.2 |
-| **Security** | AES, DES/3DES, SHA, ECC, TRNG |
-| **I/O** | USB 2.0 OTG (MT7933), SDIO, SPI master/slave, I2C, I2S, UART, AUXADC, PWM<br>Up to about 47 GPIOs |
-| **Package** | 10.6 × 10.6 mm BGA |
-| **Power** | Single 3.3 V input with integrated PMU |
+{{< soc-specs >}}
 
 {{% /details %}}
 

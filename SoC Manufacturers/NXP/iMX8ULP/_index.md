@@ -17,17 +17,7 @@ summary: NXP i.MX 8ULP ARM processor - Ultra-low power dual-core Cortex-A35 + du
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **SoC** | **NXP i.MX 8ULP**                                                                                            |
-|---------|----------------------------------------------------------------------------------------------------------------|
-| **CPU** | Dual-core: <br> 2× ARM Cortex-A35 <br> 2× ARM Cortex-M33            |
-| **RAM** | LPDDR4, LPDDR4X                                                                                     |
-| **GPU** | 2D GPU, OpenVG 1.1               |
-| **Display** | MIPI-DSI (4-lane), 24-bit RGB, EPD (E-Paper Display) |
-| **Camera** | MIPI-CSI (2-lane) |
-| **Storage** | eMMC 5.1, SD 3.0, Quad SPI |
-| **Ethernet** | Gigabit Ethernet |
-| **Power** | Energy Flex architecture for ultra-low power consumption |
-| **Security** | EdgeLock secure enclave |
+{{< soc-specs >}}
 
 {{% /details %}}
 

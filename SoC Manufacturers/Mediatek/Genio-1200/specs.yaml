@@ -1,0 +1,50 @@
+# Mediatek/Genio-1200 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "MediaTek Genio 1200 / MT8395"
+    process_nm: 6
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A78", max_ghz: 2.2 }
+        - { cores: 4, core: "Cortex-A55", max_ghz: 2.0 }
+    memory:
+      types: [{ type: "LPDDR4X", mts: 4266 }]
+      bus_bits: 64
+      max_gb: 16
+    gpu:
+      name: "Mali-G57 MC5"
+      max_mhz: 880
+      vendor_apis: { opengl_es: "3.2", vulkan: "1.1", opencl: "2.0" }
+    npu:
+      name: "MediaTek 3rd Gen NPU"
+      tops: 4.8
+      notes: "2× MDLA2.0 + 2× Tensilica VP6"
+    vpu:
+      decode:
+        - { res: "4K", fps: 90, codecs: ["H.264", "H.265", "AV1", "VP9"] }
+        - { res: "1080p", fps: 60, codecs: ["MPEG4", "VP8"] }
+      encode:
+        - { res: "4K", fps: 60, codecs: ["H.264", "H.265"] }
+    isp:
+      count: 2
+      max_mp: 48
+      notes: "48 MP @ 30 fps or 16 MP + 16 MP @ 30 fps"
+    camera: ["3× MIPI CSI-2 4-lane (virtual: 6× FHD30)", "HDMI-RX"]
+    display:
+      max: ["Triple: 4K60 + 4K30 + 4K30", "Dual: 4K60 + 4K60"]
+      outputs: ["2× MIPI-DSI (4L)", "1× eDP 1.4", "1× DP 1.4", "1× HDMI 2.0"]
+    storage: ["eMMC 5.1", "UFS 2.1", "SD 3.0", "SPI-NOR"]
+    pcie:
+      - { count: 1, gen: 2, lanes: 1, note: "RC" }
+      - { count: 1, gen: 3, lanes: 2, note: "RC/EP" }
+    usb:
+      - { count: 2, version: "2.0", note: "Host/Device" }
+      - { count: 1, version: "3.2 Gen1", note: "Host/Device" }
+      - { count: 1, version: "3.2 Gen1", note: "Host, shared with PCIe 2.0" }
+    ethernet:
+      - { count: 1, gbps: 1, note: "MAC, TSN" }
+    dsp: "Cadence Tensilica HiFi 4 audio DSP"
+    security: ["Arm TrustZone", "Secure Boot (RSA3072)", "Crypto Engine", "RNG"]
+    package: "VFBGA 15×15×0.9 mm, 0.4 mm ball pitch"
+    temperature: ["Consumer: -20°C to 95°C (Tj)", "Industrial: -40°C to 105°C (Tj)"]

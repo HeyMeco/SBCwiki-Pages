@@ -1,0 +1,29 @@
+# Debix-Model-C board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+soc:
+  name: "NXP i.MX 93 (i.MX9352)"
+memory:
+  types: ["LPDDR4X"]
+  sizes_gb: [1, 2]
+storage: ["microSD", "8 MB onboard NOR flash", "Optional onboard eMMC: 8 / 16 / 32 / 64 / 128 / 256 GB"]
+usb:
+  - { count: 2, version: "2.0", note: "host" }
+  - { count: 1, version: "2.0", connector: "Type-C", note: "OTG" }
+ethernet:
+  - { count: 1, gbps: 1, note: "TSN, optional PoE" }
+  - { count: 1, gbps: 1, note: "no PoE" }
+wifi: "Wi-Fi 5 (2.4 GHz & 5 GHz) IEEE 802.11a/b/g/n, external SMA antenna connector (IPEX-1)"
+bluetooth: "5.2"
+display:
+  outputs: ["1× MIPI DSI 1080p60 (4-lane)", "1× LVDS 720p60 (single channel 8-bit)"]
+camera: "1× MIPI CSI 1080p60 (2-lane)"
+audio: "3.5 mm headphone/mic combo"
+gpio: ["40-pin double-row header: 1× I2C, 1× UART (system debug), 2× USB 2.0 host, 4× 12-bit ADC", "6× GPIO (configurable as PWM, UART, SPI, I2C, CAN)", "5 V in/out, 1.8 V / 3.3 V @ 300 mA out, system reset, ON/OFF"]
+security: "EdgeLock Secure Enclave"
+power: ["5 V / 2 A via USB Type-C", "**Maximum 1 W power consumption**"]
+temperature: ["-20°C to 70°C (standard)", "-40°C to 85°C (optional)"]
+dimensions_mm: { w: 85, h: 56 }
+weight_g: 43
+other:
+  - { name: "Switches", value: "1× 3-bit DIP switch" }

@@ -1,0 +1,45 @@
+# Mediatek/Genio-350 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "MediaTek Genio 350 / MT8365"
+    process_nm: 14
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A53", max_ghz: 2.0 }
+    memory:
+      types: [{ type: "LPDDR3", mts: 1600 }, { type: "LPDDR4X", mts: 3200 }]
+      bus_bits: 32
+      max_gb: 4
+    gpu:
+      name: "Mali-G52"
+      max_mhz: 800
+      vendor_apis: { opengl_es: "3.2", vulkan: "1.1", opencl: "2.0" }
+    npu:
+      tops: 0.35
+      notes: "1× Tensilica VP6"
+    vpu:
+      decode:
+        - { res: "1080p", fps: 60, codecs: ["H.264", "H.265", "MPEG4"] }
+      encode:
+        - { res: "1080p", fps: 60, codecs: ["H.264", "H.265"] }
+    isp:
+      count: 1
+      max_mp: 13
+      notes: "13 MP @ 30 fps"
+    camera: "2× MIPI CSI-2 (4L)"
+    display:
+      max: ["Dual: FHD + HD", "Single: FHD"]
+      outputs: ["1× MIPI-DSI (4L)", "1× DPI / LVDS"]
+    storage: ["eMMC 5.1", "SD 3.0", "SPI-NAND"]
+    usb:
+      - { count: 1, version: "2.0", note: "Host" }
+      - { count: 1, version: "2.0", note: "Host/Device" }
+    ethernet:
+      - { count: 1, gbps: 0.1, note: "MAC, RMII" }
+    wifi: ["Integrated Wi-Fi 5 1x1 baseband (MT6631)", "External 2x2 Wi-Fi options"]
+    bluetooth: "Bluetooth 5.0 baseband (MT6631)"
+    dsp: "Tensilica HiFi 4 audio DSP"
+    package: "VFBGA 12.2 × 11.8 × 0.9 mm"
+    temperature: "−20°C to 105°C (Tj)"
+    availability: "Available until 2030"

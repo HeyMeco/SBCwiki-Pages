@@ -1,0 +1,27 @@
+# Radxa Orion O6N board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+memory:
+  types: [{ type: "LPDDR5", mts: 5500 }]
+  bus_bits: 128
+  sizes_gb: [4, 8, 16, 32, 64]
+storage: ["M.2 M-Key 2280 NVMe (PCIe Gen 4 x4)"]
+pcie:
+  - { count: 1, slot: "x16 slot", gen: 4, lanes: 8, note: "graphics cards, AI accelerators and other PCIe devices" }
+  - { count: 1, slot: "M.2 M-Key", gen: 4, lanes: 4, note: "2280 NVMe" }
+  - { count: 1, slot: "M.2 E-Key", gen: 4, lanes: 2, note: "plus USB, for Wi-Fi 7 / BT modules" }
+usb:
+  - { count: 1, version: "3.2 Gen 2", connector: "Type-C", note: "Power Delivery" }
+  - { count: 1, version: "3.2 Gen 2", connector: "Type-C", note: "DP Alt Mode (4K@60), Power Delivery" }
+  - { count: 2, version: "3.2 Gen 2", connector: "Type-A" }
+  - { count: 2, version: "2.0", connector: "Type-A" }
+  - { count: 2, version: "2.0", note: "front panel header" }
+ethernet:
+  - { count: 2, gbps: 5, note: "10/100/1000/2500/5000 Mbit/s" }
+wifi: "Via M.2 E-Key module"
+display:
+  outputs: ["USB-C DisplayPort Alt Mode (4K@60)"]
+camera: "2× MIPI CSI (4-lane or 2-lane each)"
+gpio: "40-pin header"
+power: ["24-pin ATX power connector", "USB Type-C with Power Delivery"]
+rtc: "Powered from CR1220 battery"

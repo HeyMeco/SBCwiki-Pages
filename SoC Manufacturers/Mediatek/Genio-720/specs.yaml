@@ -1,0 +1,54 @@
+# Mediatek/Genio-720 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+label: "Part"
+parts:
+  - name: "Genio 720 / MT8391"
+    process_nm: 6
+    cpu:
+      clusters:
+        - { cores: 2, core: "Cortex-A78", max_ghz: 2.6 }
+        - { cores: 6, core: "Cortex-A55", max_ghz: 2.0 }
+      notes: "Consumer clocks; industrial: A78 @ 2.4 GHz, A55 @ 2.0 GHz"
+    memory:
+      types: [{ type: "LPDDR4X", mts: 4266 }, { type: "LPDDR5", mts: 6400 }, { type: "LPDDR5X", mts: 6400 }]
+      bus_bits: 32
+      max_gb: 16
+      notes: "LPDDR4X up to 8 GB, LPDDR5(X) up to 16 GB"
+    gpu:
+      name: "Mali-G57 MC2"
+      max_mhz: 1100
+    npu:
+      name: "8th-gen NPU (MDLA5.3)"
+      tops: 9
+      notes: "Up to 10 TOPS platform AI"
+  - name: "Genio 520 / MT8371"
+    process_nm: 6
+    cpu:
+      clusters:
+        - { cores: 2, core: "Cortex-A78", max_ghz: 2.2 }
+        - { cores: 6, core: "Cortex-A55", max_ghz: 2.0 }
+      notes: "Consumer clocks; industrial: A78 @ 2.0 GHz, A55 @ 1.8 GHz"
+    memory:
+      types: [{ type: "LPDDR4X", mts: 4266 }, { type: "LPDDR5", mts: 6400 }, { type: "LPDDR5X", mts: 6400 }]
+      bus_bits: 32
+      max_gb: 16
+      notes: "Same options as Genio 720"
+    gpu:
+      name: "Mali-G57 MC2"
+      max_mhz: 880
+    npu:
+      name: "8th-gen NPU"
+      notes: "Same class as Genio 720"
+  - name: "Kompanio 540 / MT8189"
+    process_nm: 6
+    cpu:
+      clusters:
+        - { cores: 2, core: "Cortex-A78", max_ghz: 2.6 }
+        - { cores: 6, core: "Cortex-A55", max_ghz: 2.0 }
+    memory:
+      types: [{ type: "LPDDR4X", mts: 4266 }, { type: "LPDDR5", mts: 6400 }]
+    gpu:
+      name: "Mali-G57 MC2"
+    npu:
+      notes: "Chromebook SKU; no separate Genio NPU rating published"

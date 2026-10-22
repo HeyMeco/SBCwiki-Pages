@@ -1,0 +1,34 @@
+# NXP/iMX94 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "NXP i.MX 94 (Preproduction)"
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A55" }
+    mcu:
+      - { cores: 2, core: "Cortex-M33" }
+      - { cores: 2, core: "Cortex-M7" }
+    memory:
+      types: ["LPDDR4"]
+      ecc: "inline"
+    gpu:
+      name: "2D GPU"
+      gflops: 1
+    npu:
+      notes: "Integrated NPU for ML acceleration"
+    display:
+      outputs: ["1080p60 LVDS (4-lane)"]
+    storage: ["3× SD/SDIO 3.0/eMMC 5.1", "1× Octal SPI"]
+    pcie:
+      - { count: 2, gen: 3, lanes: 1 }
+    usb:
+      - { count: 1, version: "3.0" }
+      - { count: 1, version: "2.0" }
+    ethernet:
+      - { count: 2, gbps: 2.5, note: "3-port TSN switch" }
+      - { count: 1, gbps: 1, note: "3-port TSN switch" }
+      - { count: 2, gbps: 1, note: "TSN" }
+    can: { count: 5, fd: true }
+    audio: ["3× I²S", "PDM mic"]
+    security: "EdgeLock secure enclave"

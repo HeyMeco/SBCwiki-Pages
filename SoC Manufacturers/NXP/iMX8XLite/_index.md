@@ -17,14 +17,7 @@ summary: NXP i.MX 8XLite ARM processor - Dual-core Cortex-A35 + Cortex-M4, secur
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **SoC** | **NXP i.MX 8XLite**                                                                                            |
-|---------|----------------------------------------------------------------------------------------------------------------|
-| **CPU** | Dual-core: <br> 2× ARM Cortex-A35 <br> 1× ARM Cortex-M4            |
-| **RAM** | LPDDR4, DDR3L                                                                                     |
-| **Display** | Parallel display interface |
-| **Storage** | eMMC 5.1, SD 3.0, SPI |
-| **Ethernet** | 2× Gigabit Ethernet with TSN and AVB support |
-| **Security** | EdgeLock secure enclave |
+{{< soc-specs >}}
 
 {{% /details %}}
 

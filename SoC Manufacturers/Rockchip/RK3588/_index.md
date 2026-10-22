@@ -15,13 +15,7 @@ summary: Rockchip RK3588 flagship ARM processor - 8-core CPU (4x Cortex-A76 + 4x
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **SoC** | **Rockchip RK3588**                                                                                            |
-|---------|----------------------------------------------------------------------------------------------------------------|
-| **CPU** | Octa-core: <br> Quad-core ARM Cortex-A76(up to 2.4GHz) <br> Quad-core ARM Cortex-A55 (up to 1.8GHz)            |
-| **RAM** | Dual Channel LPDDR4X/5                                                                                         |
-| **GPU** | Mali-G610 MP4, compatible with OpenGLES 1.1, 2.0, and 3.2, OpenCL up to 2.2 and Vulkan1.2                      |
-| **VPU** | 8K@60fps H.265 and VP9 decoder <br> 8K@30fps H.264 decoder <br> 4K@60fps AV1 decoder <br> 8K@30fps H.264 and H.265 encoder |
-| **NPU** | 6TOPs, supports INT4/INT8/INT16/FP16                                                                           |
+{{< soc-specs >}}
 
 {{% /details %}}
 <br>

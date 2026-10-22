@@ -1,0 +1,22 @@
+# NXP/LS1088A specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "NXP Layerscape LS1088A"
+    cpu:
+      clusters:
+        - { cores: 8, core: "Cortex-A53", max_ghz: 1.6 }
+    memory:
+      types: ["DDR4"]
+    storage: ["SD", "SPI", "I²C"]
+    pcie:
+      - { count: 3, gen: 3 }
+    sata: { count: 1, gen: "3.0" }
+    usb:
+      - { version: "2.0/3.0" }
+    ethernet:
+      - { count: 2, gbps: 10 }
+      - { count: 8, gbps: 1, note: "up to 8" }
+    security: "SEC security engine, 10 Gbit/s"
+    other:
+      - { name: "SerDes", value: "8-10 GHz SerDes lanes" }

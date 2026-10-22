@@ -1,0 +1,22 @@
+# Radxa-Cubie-A7A board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+memory:
+  types: ["LPDDR5"]
+  sizes_gb: [2, 4, 8, 16]
+storage: ["8 MB SPI NOR flash", "microSD", "eMMC/UFS module"]
+pcie:
+  - { slot: "FPC connector", gen: 3 }
+usb:
+  - { count: 1, version: "3.1", connector: "Type-A", note: "host" }
+  - { version: "2.0" }
+  - { version: "OTG", connector: "Type-C" }
+ethernet:
+  - { count: 1, gbps: 1, note: "PoE capable" }
+wifi: "Wi-Fi 6"
+bluetooth: "5.4"
+display:
+  outputs: ["1× HDMI (4K@60)", "1× MIPI DSI"]
+camera: ["1× 4-lane MIPI CSI", "2× 2-lane MIPI CSI"]
+gpio: "40-pin header (UART, SPI, I2C, …)"
+power: ["USB Type-C", "PoE (with PoE HAT)"]

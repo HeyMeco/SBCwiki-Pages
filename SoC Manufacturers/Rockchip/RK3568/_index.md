@@ -15,13 +15,7 @@ summary: Rockchip RK3568 mid-range ARM processor - Quad-core Cortex-A55 up to 2G
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **SoC** | **Rockchip RK3568**                                                                                            |
-|---------|----------------------------------------------------------------------------------------------------------------|
-| **CPU** | Quad-core ARM Cortex-A55 (up to 2GHz)            |
-| **RAM** | 32bit LPDDR4/4X/3 | DDR4/3/3L with ECC support                                                                                     |
-| **GPU** | Mali-G52EE, compatible with OpenGL® ES 1.1/2.0/3.2, OpenCL™ 2.0 and Vulkan® 1.1               |
-| **VPU** | 4Kp60 H.264/H.265/VP9 decoder <br> 1080p60 H.264/H.265 encoder |
-| **NPU** | 1TOPs, supports INT8/INT16/FP16/BFP16                                                                           |
+{{< soc-specs >}}
 
 {{% /details %}}
 <br>

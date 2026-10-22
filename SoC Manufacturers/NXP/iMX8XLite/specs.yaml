@@ -1,0 +1,18 @@
+# NXP/iMX8XLite specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "NXP i.MX 8XLite"
+    cpu:
+      clusters:
+        - { cores: 2, core: "Cortex-A35" }
+    mcu:
+      - { cores: 1, core: "Cortex-M4" }
+    memory:
+      types: ["LPDDR4", "DDR3L"]
+    display:
+      outputs: ["Parallel display interface"]
+    storage: ["eMMC 5.1", "SD 3.0", "SPI"]
+    ethernet:
+      - { count: 2, gbps: 1, note: "TSN and AVB" }
+    security: "EdgeLock secure enclave"

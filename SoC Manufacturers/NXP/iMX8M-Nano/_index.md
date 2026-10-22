@@ -17,16 +17,7 @@ summary: NXP i.MX 8M Nano ARM processor - Quad-core Cortex-A53 (up to 1.5GHz) + 
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **SoC** | **NXP i.MX 8M Nano**                                                                                            |
-|---------|----------------------------------------------------------------------------------------------------------------|
-| **Process** | 14nm LPC FinFET |
-| **CPU** | Quad-core: <br> 4× ARM Cortex-A53 (up to 1.5GHz) <br> 1× ARM Cortex-M7 (up to 750MHz)            |
-| **RAM** | LPDDR4, DDR4, DDR3L                                                                                     |
-| **GPU** | Optional 3D GPU, OpenGL ES 3.1, Vulkan               |
-| **Display** | MIPI-DSI (4-lane) |
-| **Camera** | MIPI-CSI (2-lane) |
-| **Storage** | eMMC 5.1, SD 3.0, Quad SPI |
-| **Ethernet** | Gigabit Ethernet |
+{{< soc-specs >}}
 
 {{% /details %}}
 

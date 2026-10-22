@@ -16,13 +16,7 @@ summary: Allwinner A733 ARM processor - Octa-core hybrid (2x Cortex-A76 + 6x Cor
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **SoC** | **Allwinner A733**                                                                                            |
-|---------|----------------------------------------------------------------------------------------------------------------|
-| **CPU** | Octa-core hybrid: <br> 2× ARM Cortex-A76 (up to 2.0GHz) <br> 6× ARM Cortex-A55 (up to 1.8GHz)            |
-| **RAM** | LPDDR4/4X/5                                                                                     |
-| **GPU** | Imagination BXM-4-64 MC1, compatible with OpenGL® ES 3.2, Vulkan® 1.3, OpenCL™ 3.0               |
-| **VPU** | 4Kp60 H.264/H.265/VP9 decoder <br> 4Kp30 H.264/H.265 encoder |
-| **NPU** | 3 TOPS AI acceleration engine, supports INT8/INT16/FP16                                                                           |
+{{< soc-specs >}}
 
 {{% /details %}}
 

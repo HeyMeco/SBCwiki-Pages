@@ -1,0 +1,25 @@
+# Radxa-NIO-12L board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+soc:
+  notes: "[MediaTek Genio 1200 product page](https://www.mediatek.com/products/iot/genio-iot/genio-1200)"
+memory:
+  types: [{ type: "LPDDR4X", mts: 4266 }]
+  bus_bits: 64
+  sizes_gb: [4, 8, 16]
+storage: ["microSD", "eMMC/UFS module", "M.2 NVMe"]
+pcie:
+  - { slot: "PCIe connectors" }
+usb:
+  - { version: "3.1" }
+  - { version: "2.0" }
+  - { version: "Type-C ports" }
+ethernet:
+  - { count: 1, gbps: 1, note: "PoE capable" }
+wifi: "Wi-Fi 6"
+bluetooth: "5.4"
+display:
+  outputs: ["HDMI (4K@60)", "MIPI DSI"]
+camera: "MIPI CSI"
+gpio: "GPIO header"
+power: ["USB Type-C", "PoE (with PoE HAT)"]

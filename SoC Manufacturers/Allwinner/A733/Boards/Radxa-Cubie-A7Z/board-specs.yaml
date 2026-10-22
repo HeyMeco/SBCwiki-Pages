@@ -1,0 +1,20 @@
+# Radxa-Cubie-A7Z board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+memory:
+  types: ["LPDDR4", "LPDDR4X"]
+  sizes_gb: [1, 2, 4, 8, 16]
+storage: ["Optional onboard UFS (up to 1 TB)", "microSD"]
+usb:
+  - { count: 1, version: "3.0", connector: "Type-C", note: "DisplayPort Alt Mode" }
+  - { version: "2.0" }
+ethernet:
+  - { gbps: 1, note: "via optional HAT" }
+wifi: "Wi-Fi 6 (onboard)"
+bluetooth: "5.4"
+display:
+  outputs: ["Micro HDMI (4K@60)", "USB-C DisplayPort Alt Mode"]
+camera: "MIPI CSI"
+gpio: "GPIO header"
+power: "USB Type-C"
+dimensions_mm: { w: 65, h: 30 }

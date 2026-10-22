@@ -1,0 +1,23 @@
+# NXP/iMX8M-Nano specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "NXP i.MX 8M Nano"
+    process_nm: 14
+    process_note: "LPC FinFET"
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A53", max_ghz: 1.5 }
+    mcu:
+      - { cores: 1, core: "Cortex-M7", max_mhz: 750 }
+    memory:
+      types: ["LPDDR4", "DDR4", "DDR3L"]
+    gpu:
+      name: "3D GPU (optional)"
+      vendor_apis: { opengl_es: "3.1", vulkan: true }
+    camera: "MIPI-CSI (2-lane)"
+    display:
+      outputs: ["MIPI-DSI (4-lane)"]
+    storage: ["eMMC 5.1", "SD 3.0", "Quad SPI"]
+    ethernet:
+      - { count: 1, gbps: 1 }

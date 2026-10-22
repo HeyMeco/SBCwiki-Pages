@@ -22,29 +22,11 @@ images:
 
 ## Hardware
 {{% details title="Specs" open=true %}}
+{{< board-specs show="soc" >}}
 
-| **SoC** | **Allwinner A733**                                                                                                                      |
-|---------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| **CPU** | Octa-core hybrid: <br> 2× ARM Cortex-A76 (up to 2.0GHz) <br> 6× ARM Cortex-A55 (up to 1.8GHz)                                                             |
-| **RAM** | LPDDR4/4X<br>- Configurations: 1GB / 2GB / 4GB / 8GB / 16GB                                                                                |
-| **GPU** | Imagination BXM-4-64 MC1<br>- OpenGL ES 3.2<br>- Vulkan 1.3<br>- OpenCL 3.0                                                 |
-| **NPU** | 3 TOPS AI acceleration engine<br>- Supports INT8/INT16/FP16                          |
-
----
 ### Interfaces
 
-| **I/O**      | Description                                                                                                                                                                                                                                                             |
-|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Wireless** | Onboard Wi-Fi 6, Bluetooth 5.4                                                                                                                                                                                                                      |
-| **Ethernet** | Gigabit Ethernet via optional HAT                                                                                                                                                                                                        |
-| **USB**      | 1x USB-C 3.0 with DisplayPort Alt Mode<br>USB 2.0 ports                                                                                                                                                                                                                 |
-| **Video**    | Micro HDMI (up to 4K@60Hz)<br>USB-C DisplayPort Alt Mode                                                                                                                                                                                                                     |
-| **Camera**   | MIPI CSI interfaces                                                                                                                                                                                                                                |
-| **Storage**  | Optional onboard UFS (up to 1TB)<br>MicroSD card slot                                                                                                                                                            |
-| **Power**    | USB Type-C power input                                                                                                                                                            |
-| **GPIO**     | GPIO Header                                                                                                                                                                                                                              |
-| **Other**    | Ultra-compact 65×30mm form factor                                                                                                                                                                                                              |
-
+{{< board-specs show="board" >}}
 {{% /details %}}
 
 ## Available OS images

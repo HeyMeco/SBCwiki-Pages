@@ -1,0 +1,16 @@
+# Mediatek/Filogic-820 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "Filogic 820 / MT7981"
+    cpu:
+      clusters:
+        - { cores: 2, core: "Cortex-A53", max_ghz: 1.3 }
+    memory:
+      types: ["DDR3", "DDR4"]
+    storage: ["SPI-NAND", "SPI-NOR", "eMMC", "SD"]
+    ethernet:
+      - { count: 1, gbps: 2.5 }
+      - { count: 1, gbps: 1 }
+    wifi: ["Companion MT7976-class Wi-Fi 6", "Typical AX3000: 2×2 2.4 GHz + 3×3 5 GHz"]
+    io: ["PCIe (NVMe on OpenWrt One)", "USB", "UART", "GPIO"]

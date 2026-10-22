@@ -22,28 +22,11 @@ images:
 
 ## Hardware
 {{% details title="Specs" open=true %}}
+{{< board-specs show="soc" >}}
 
-| **SoC** | **Rockchip RK3528** ([datasheet](https://wiki.friendlyelec.com/wiki/images/7/70/Rockchip_RK3528_Datasheet_V1.2-20240410.pdf))                                                                                                                      |
-|---------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| **CPU** | Quad-core ARM Cortex-A53 with Neon and FPU                                                             |
-| **RAM** | DDR3(L)/LPDDR3/DDR4/LPDDR4/LPDDR4X, 32-bit, 4GB addressing                                                                                |
-| **GPU** | ARM Mali-450<br>- OpenGL ES 1.1/2.0, OpenVG 1.1                                                 |
-| **VPU** | 4K@60fps H.264/H.265/AVS2 decoder<br>1080p@60fps H.264/H.265 encoder                          |
-
----
 ### Interfaces
 
-| **I/O**      | Description                                                                                                                                                                                                                                                             |
-|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Wireless** | Wi-Fi and Bluetooth (varies by model)                                                                                                                                                                                                                      |
-| **Ethernet** | Gigabit Ethernet                                                                                                                                                                                                        |
-| **USB**      | USB 3.0 and USB 2.0 ports                                                                                                                                                                                                                 |
-| **Video**    | HDMI 2.0 (up to 4K@60Hz)                                                                                                                                                                                                                     |
-| **Camera**   | MIPI CSI interfaces                                                                                                                                                                                                                                |
-| **Storage**  | MicroSD card slot<br>Optional eMMC (eMMC 5.1)                                                                                                                                                            |
-| **Power**    | USB Type-C or DC power input                                                                                                                                                            |
-| **GPIO**     | GPIO Header                                                                                                                                                                                                                              |
-
+{{< board-specs show="board" >}}
 {{% /details %}}
 
 ## Available OS images

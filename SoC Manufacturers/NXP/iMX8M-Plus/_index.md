@@ -17,20 +17,7 @@ summary: NXP i.MX 8M Plus ARM processor - Quad-core Cortex-A53 (up to 1.8GHz) + 
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **SoC** | **NXP i.MX 8M Plus**                                                                                            |
-|---------|----------------------------------------------------------------------------------------------------------------|
-| **Process** | 14nm LPC FinFET |
-| **CPU** | Quad-core: <br> 4× ARM Cortex-A53 (up to 1.8GHz commercial, 1.6GHz industrial) <br> 1× ARM Cortex-M7 (800MHz)            |
-| **RAM** | LPDDR4                                                                                     |
-| **GPU** | Vivante GC7000UL, 1 GPixel/s, OpenGL ES 3.1, Vulkan, OpenCL 1.2 FP               |
-| **NPU** | 2.3 TOPS Neural Processing Unit for ML acceleration                                                                           |
-| **VPU** | 1080p60 H.265/H.264/VP9/VP8 decode <br> 1080p60 H.265/H.264 encode |
-| **ISP** | Dual Camera ISP, 375 MPixels/s |
-| **Display** | MIPI-DSI (4-lane), HDMI 2.0, LVDS |
-| **Camera** | 2× MIPI-CSI (4-lane each) |
-| **Storage** | eMMC 5.1, SD 3.0, Quad SPI |
-| **Ethernet** | 2× Gigabit Ethernet (1× with TSN) |
-| **PCIe** | PCIe Gen 3.0 |
+{{< soc-specs >}}
 
 {{% /details %}}
 

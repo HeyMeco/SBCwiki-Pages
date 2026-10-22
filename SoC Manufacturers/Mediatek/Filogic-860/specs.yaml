@@ -1,0 +1,27 @@
+# Mediatek/Filogic-860 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "Filogic 860 / MT7987"
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A53", max_ghz: 2.0, note: "OpenWrt MT7987A" }
+      notes: "MediaTek Filogic 860 marketing also describes a triple-core Cortex-A73 platform SKU under the same brand"
+    memory:
+      types: ["DDR3", "DDR4"]
+    storage: ["SPI-NOR", "SPI-NAND", "eMMC"]
+    pcie:
+      - { gen: 3 }
+    usb:
+      - { version: "3.2 Gen1" }
+    ethernet:
+      - { gbps: 10, note: "USXGMII class" }
+      - { gbps: 2.5, note: "PHY" }
+      - { gbps: 1, note: "multiple ports on the platform" }
+    wifi:
+      - "Dual-band concurrent Wi-Fi 7 (a/b/g/n/ac/ax/be)"
+      - "Platform class BE7200 (7.2 Gbps PHY)"
+      - "4x4 2.4 GHz + 5x5 5/6 GHz antenna design on the Filogic 860 RF platform"
+    io: ["UART", "SD", "SPI", "PWM", "GPIO"]
+    other:
+      - { name: "Network offload", value: "Hardware QoS and tunneling offload (VLAN / PPTP / L2TP / GRE)<br>Networking crypto engine (EIP-197) for IPv4 NATP / IPv6 / DS-Lite / 6RD" }

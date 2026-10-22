@@ -21,31 +21,11 @@ images:
 
 ## Hardware
 {{% details title="Specs" open=true %}}
-Current Board Revision: 1.1
+{{< board-specs show="soc" >}}
 
-| **SoC** | **Filogic 880 / MT7988**                                                                                            |
-|---------|----------------------------------------------------------------------------------------------------------------|
-| **CPU** | Quad-core ARM Cortex-A73 (up to 1.8GHz)                                                         |
-| **RAM** | 4GB DDR4                                                                                                         |
-| **GPU** | n/a                                                                                                            |
-| **NPU** | HW IPv4 NATP / IPv6 / DS-Lite / 6RD acceleration <br> Hardware QoS acceleration <br> Tunneling Offload Engine for: <br> VLAN / PPTP / L2TP / GRE <br> Ultra-high Speed Networking Crypto Engine for: <br> IPSec,SSL/TLS, DTLS (CAPWAP), SRTP and MACsec                                                                       |
----
 ### Interfaces
 
-| **I/O**      	| Description                                                                                                                                                          	|
-|--------------	|----------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-| **Wireless** 	| 2x miniPCIe slots with PCIe3.0 2-lane interface for Wi-Fi 7 NIC                                                                                                        |
-| **Ethernet** 	| 2x 10Gbe SFP slot <br> 4x GbE network port                                                                                                                         	|
-| **USB**      	| 1x USB3.2 slot                                                                                            	|
-| **Video**    	| n/a 	|
-| **MicroSD**  	| yes                                                                                                                                            	|
-| **Storage**   | 8GB EMMC <br> 128MB SPI NAND Flash                                                                                                            |
-| **Power**    	| USB Type‑C™ PD Version 2.0 with up to PD 20V <br> 12V/5.2A DC input (5521)                                                                                             	|
-| **GPIO**     	| 26-pin header                                                                                                                                  	|
-| **PCIe**     	| 1x M.2 KEY-M slot with PCIe3.0 1lane interface for NVME SSD <br> 1x M.2 KEY-B slot with USB3.2/PCIe3.0 interface for 5G                                                                                 	|
-| **MIPI**     	| n/a                                                                                                                  	|
-| **RTC**      	| powered from external battery                                                                                                                                        	|
-
+{{< board-specs show="board" >}}
 {{% /details %}}
 
 ## Available OS images

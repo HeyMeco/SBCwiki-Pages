@@ -1,0 +1,29 @@
+# NXP/iMX8M specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "NXP i.MX 8M"
+    process_nm: 14
+    process_note: "LPC FinFET"
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A53", max_ghz: 1.5 }
+    mcu:
+      - { cores: 1, core: "Cortex-M4" }
+    memory:
+      types: ["LPDDR4", "DDR3L"]
+    gpu:
+      name: "Vivante GC7000Lite"
+      vendor_apis: { opengl_es: "3.1", vulkan: true }
+    vpu:
+      decode:
+        - { res: "4K", fps: 60, codecs: ["H.265", "VP9"], note: "HDR" }
+        - { res: "4K", fps: 30, codecs: ["H.264", "VP8"] }
+      encode:
+        - { res: "1080p", fps: 30, codecs: ["H.264"] }
+    camera: "2× MIPI-CSI (4-lane each)"
+    display:
+      outputs: ["MIPI-DSI (4-lane)", "HDMI 2.0a"]
+    storage: ["eMMC 5.1", "SD 3.0", "Quad SPI"]
+    ethernet:
+      - { count: 1, gbps: 1 }

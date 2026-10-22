@@ -1,0 +1,229 @@
+# Arm CPU core generations: the single source for the tables on the ARM page (rendered by
+# {{< generation-table "<anchor>" >}} under each year heading) and for CPU core links and
+# tooltips in every SoC spec table (layouts/partials/soc/linkdb.html in the SBCwiki repo).
+#
+# `anchor` must equal the id of the heading the table sits under (the build warns if not).
+# `name` is what SoC specs match against (longest prefix wins); `aliases` match the same
+# entry; `display` overrides the table text; `based_on` names the Cortex core a Neoverse
+# core derives from.
+
+columns:
+  - { key: isa, label: "ISA" }
+  - { key: name, label: "Name" }
+  - { key: class, label: "Class" }
+
+groups:
+  - anchor: "2025"
+    year: 2025
+    entries:
+      - name: "C1-Ultra"
+        aliases: ["Cortex-X930"]
+        display: "C1-Ultra (Cortex-X930)"
+        isa: "ARMv9.3-A"
+        class: "Flagship"
+      - name: "C1-Premium"
+        aliases: ["Cortex-A730"]
+        display: "C1-Premium (Cortex-A730)"
+        isa: "ARMv9.3-A"
+        class: "High-End"
+      - name: "C1-Pro"
+        aliases: ["Cortex-A530"]
+        display: "C1-Pro (Cortex-A530)"
+        isa: "ARMv9.3-A"
+        class: "Performance"
+      - name: "C1-Nano"
+        aliases: ["Cortex-A320"]
+        display: "C1-Nano (Cortex-A320)"
+        isa: "ARMv9.3-A"
+        class: "Ultra Efficiency"
+  - anchor: "2024"
+    year: 2024
+    entries:
+      - name: "Cortex-X925"
+        isa: "ARMv9.2-A"
+        class: "Flagship"
+      - name: "Cortex-A725"
+        isa: "ARMv9.2-A"
+        class: "High-End"
+      - name: "Cortex-A720AE"
+        isa: "ARMv9.2-A"
+        class: "Performance"
+      - name: "Cortex-A520AE"
+        isa: "ARMv9.2-A"
+        class: "Efficiency"
+      - name: "Cortex-R82AE"
+        isa: "ARMv8-R"
+        class: "Real-Time"
+  - anchor: "2023"
+    year: 2023
+    entries:
+      - name: "Cortex-X4"
+        isa: "ARMv9.2-A"
+        class: "Flagship"
+      - name: "Cortex-A720"
+        isa: "ARMv9.2-A"
+        class: "Performance"
+      - name: "Cortex-A520"
+        isa: "ARMv9.2-A"
+        class: "Efficiency"
+      - name: "Neoverse N3"
+        based_on: "Cortex-X3"
+        display: "Neoverse N3 (Cortex-X3)"
+        isa: "ARMv9.2-A"
+        class: "Infrastructure"
+      - name: "Neoverse V3"
+        based_on: "Cortex-X4"
+        display: "Neoverse V3 (Cortex-X4)"
+        isa: "ARMv9.2-A"
+        class: "Infrastructure"
+  - anchor: "2022"
+    year: 2022
+    entries:
+      - name: "Cortex-X3"
+        isa: "ARMv9.0-A"
+        class: "Flagship"
+      - name: "Cortex-A715"
+        isa: "ARMv9.0-A"
+        class: "Performance"
+      - name: "Neoverse V2"
+        based_on: "Cortex-X2"
+        display: "Neoverse V2 (Cortex-X2)"
+        isa: "ARMv9.0-A"
+        class: "Infrastructure"
+      - name: "Cortex-R52+"
+        isa: "ARMv8-R"
+        class: "Real-Time"
+      - name: "Cortex-M85"
+        isa: "ARMv8.1-M"
+        class: "Microcontroller"
+  - anchor: "2021"
+    year: 2021
+    entries:
+      - name: "Cortex-X2"
+        isa: "ARMv9.0-A"
+        class: "Flagship"
+      - name: "Cortex-A710"
+        isa: "ARMv9.0-A"
+        class: "Performance"
+      - name: "Cortex-A510"
+        isa: "ARMv9.0-A"
+        class: "Efficiency"
+      - name: "Neoverse N2"
+        based_on: "Cortex-A710"
+        display: "Neoverse N2 (Cortex-A710)"
+        isa: "ARMv9.0-A"
+        class: "Infrastructure"
+      - name: "Neoverse E2"
+        based_on: "Cortex-A510"
+        display: "Neoverse E2 (Cortex-A510)"
+        isa: "ARMv9.0-A"
+        class: "Infrastructure"
+  - anchor: "2020"
+    year: 2020
+    entries:
+      - name: "Cortex-X1"
+        isa: "ARMv8.2-A"
+        class: "Flagship"
+      - name: "Cortex-A78"
+        isa: "ARMv8.2-A"
+        class: "Performance"
+      - name: "Cortex-A78AE"
+        isa: "ARMv8.2-A"
+        class: "Performance (Safety)"
+      - name: "Cortex-A78C"
+        isa: "ARMv8.2-A"
+        class: "Performance"
+      - name: "Neoverse V1"
+        based_on: "Cortex-X1"
+        display: "Neoverse V1 (Cortex-X1)"
+        isa: "ARMv8.4-A"
+        class: "Infrastructure"
+      - name: "Cortex-R82"
+        isa: "ARMv8-R"
+        class: "Real-Time"
+  - anchor: "2019"
+    year: 2019
+    entries:
+      - name: "Cortex-A77"
+        isa: "ARMv8.2-A"
+        class: "Performance"
+      - name: "Cortex-A34"
+        isa: "ARMv8-A"
+        class: "Ultra Efficiency"
+      - name: "Neoverse N1"
+        based_on: "Cortex-A76"
+        display: "Neoverse N1 (Cortex-A76)"
+        isa: "ARMv8.2-A"
+        class: "Infrastructure"
+      - name: "Neoverse E1"
+        based_on: "Cortex-A75"
+        display: "Neoverse E1 (Cortex-A75)"
+        isa: "ARMv8.2-A"
+        class: "Infrastructure"
+  - anchor: "2018"
+    year: 2018
+    entries:
+      - name: "Cortex-A76"
+        isa: "ARMv8.2-A"
+        class: "Performance"
+      - name: "Cortex-A76AE"
+        isa: "ARMv8.2-A"
+        class: "Performance (Safety)"
+      - name: "Cortex-A65"
+        isa: "ARMv8.2-A"
+        class: "Performance"
+      - name: "Cortex-A65AE"
+        isa: "ARMv8.2-A"
+        class: "Performance (Safety)"
+  - anchor: "2017"
+    year: 2017
+    entries:
+      - name: "Cortex-A75"
+        isa: "ARMv8.2-A"
+        class: "Performance"
+      - name: "Cortex-A55"
+        isa: "ARMv8.2-A"
+        class: "Efficiency"
+  - anchor: "2016"
+    year: 2016
+    entries:
+      - name: "Cortex-A73"
+        isa: "ARMv8-A"
+        class: "Performance"
+      - name: "Cortex-A32"
+        isa: "ARMv8-A"
+        class: "Ultra Efficiency (32-bit)"
+      - name: "Cortex-M33"
+        isa: "ARMv8-M"
+        class: "Microcontroller"
+  - anchor: "2015"
+    year: 2015
+    entries:
+      - name: "Cortex-A72"
+        isa: "ARMv8-A"
+        class: "Performance"
+      - name: "Cortex-A35"
+        isa: "ARMv8-A"
+        class: "Ultra Efficiency"
+  - anchor: "2014"
+    year: 2014
+    entries:
+      - name: "Cortex-M7"
+        isa: "ARMv7E-M"
+        class: "Microcontroller"
+  - anchor: "2012"
+    year: 2012
+    entries:
+      - name: "Cortex-A57"
+        isa: "ARMv8-A"
+        class: "Performance"
+      - name: "Cortex-A53"
+        isa: "ARMv8-A"
+        class: "Efficiency"
+  - anchor: "2010"
+    year: 2010
+    entries:
+      - name: "Cortex-M4"
+        aliases: ["Cortex-M4F"]
+        isa: "ARMv7E-M"
+        class: "Microcontroller"

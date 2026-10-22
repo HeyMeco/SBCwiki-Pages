@@ -1,0 +1,21 @@
+# Radxa-ZERO board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+soc:
+  notes: "CPU clocked at up to 1.6 GHz on this board"
+memory:
+  types: ["LPDDR4"]
+  sizes_gb: [1, 2, 4]
+storage: ["microSD", "Optional eMMC"]
+usb:
+  - { count: 1, version: "OTG", connector: "Type-C", note: "power & data" }
+  - { version: "2.0" }
+ethernet:
+  - { gbps: 1, note: "via optional HAT" }
+wifi: "Varies by model"
+bluetooth: "Varies by model"
+display:
+  outputs: ["Micro HDMI (4K@60)"]
+camera: "MIPI CSI"
+gpio: "40-pin header"
+power: "USB Type-C (5 V / 2 A)"

@@ -22,37 +22,15 @@ images:
 
 ## Hardware
 {{% details title="Specs" open=true %}}
+{{< board-specs show="soc" >}}
 
-| **SoC** | **Qualcomm Dragonwing Q2 (QRB2210)** |
-|:--- |:--- |
-| **CPU** | 4x Arm Cortex-A53 @ 2.0 GHz |
-| **GPU** | Qualcomm Adreno 702 @ 845 MHz |
-| **ISP** | Dual ISP: 13 MP + 13 MP, or 25 MP @ 30 fps |
-| **RAM** | LPDDR4X, 32-bit single-rank<br>- 2GB (ABX00162)<br>- 4GB (ABX00173) |
-| **Storage** | eMMC 16GB (ABX00162) or 32GB (ABX00173) |
+### Microcontroller
 
-<br>
+{{< board-specs show="mcu" >}}
 
-| **Microcontroller (MCU)** | **STM32U585** |
-|:--- |:--- |
-| **CPU** | Arm Cortex-M33 up to 160 MHz |
-| **Flash** | 2MB |
-| **RAM** | 786kB SRAM |
-| **OS** | Arduino Core on Zephyr |
-
----
 ### Interfaces
 
-| **I/O**      | Description                                                                                                                                                                                                                                                             |
-|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Wireless** | Wi-Fi 5 dual-band (802.11a/b/g/n/ac) and Bluetooth 5.1<br>Onboard antenna (WCBN3536A / Qualcomm WCN3980)                                                                                                                                                                                                                      |
-| **USB**      | 1x USB-C 3.1 with role switching<br>DisplayPort Alt Mode through an ANX7625 MIPI DSI-to-DisplayPort bridge                                                                                                                                                                                                                 |
-| **Video**    | DisplayPort over USB-C<br>4-lane MIPI DSI on the JMEDIA connector                                                                                                                                                                                                                     |
-| **Camera**   | 4-lane MIPI CSI-2 on the JMEDIA connector                                                                                                                                                                                                                                |
-| **Power**    | USB-C Power Delivery, 5V / 3A only<br>7–24V DC on VIN<br>5V pin on the analog header                                                                                                                                                            |
-| **GPIO**     | Arduino UNO headers (JDIGITAL, JANALOG) at 3.3V<br>JSPI header<br>Qwiic connector<br>JMEDIA 60-pin, 1.8V (MIPI CSI / DSI)<br>JMISC mixed-voltage header (1.8V MPU, 3.3V MCU)                                                                                                                                                                                                                              |
-| **Other**    | 8×13 blue LED matrix driven by the STM32<br>RGB status LEDs<br>Uno form factor                                                                                                                                                                                                              |
-
+{{< board-specs show="board" >}}
 {{% /details %}}
 
 ## Available OS images

@@ -1,0 +1,14 @@
+# Cix/ClawCore-E specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+label: "Product"
+parts:
+  - name: "ClawCore-E"
+    cpu:
+      isa: "Armv9.2"
+      notes: "Core count and clocks not detailed in initial press"
+    npu:
+      notes: "Integrated NPU (TOPS not specified in summarized coverage)"
+    other:
+      - { name: "Power", value: "Ultra-low-power positioning; on-demand wake via voice and network" }
+      - { name: "Target", value: "Edge / IoT OpenClaw deployments" }

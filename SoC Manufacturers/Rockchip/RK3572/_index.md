@@ -19,19 +19,7 @@ Rockchip positions it as doubling performance and cutting typical-scene power by
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **SoC** | **Rockchip RK3572** |
-|---------|---------------------|
-| **Process** | 8nm |
-| **CPU** | Octa-core hybrid: <br> 2× ARM Cortex-A73 <br> 6× ARM Cortex-A53 <br> Up to 2.2 GHz (module spec; datasheet clocks TBD) |
-| **RAM** | 32-bit LPDDR4/LPDDR4X-4266 · LPDDR5/LPDDR5X-5500 <br> Up to 4 ranks, 16 GB addressing |
-| **Storage** | UFS 2.0 (2-lane, HS-G3) · eMMC 5.1 (HS400) · SD 3.0 / MMC 4.51 · FSPI |
-| **GPU** | Mali-G310 v2 MC1 <br> OpenGL® ES 1.1/2.0/3.2, OpenCL™ 3.0, Vulkan® 1.4 |
-| **NPU** | 4 TOPS sparse INT8 <br> INT4/INT8/INT16/FP4/FP8/FP16/BF16, W4A16 asymmetric MAC |
-| **VPU** | H.265/VP9/AV1/AVS2 decode up to 8K@30fps or 4K@120fps <br> H.264 decode up to 4K@60fps <br> H.264/H.265 encode up to 4K@40fps |
-| **Display** | Dual independent display: 4K@60fps + 2K@60fps <br> HDMI 2.1, eDP 1.3, MIPI DSI 1.2, parallel RGB/BT.656/BT.1120, E-ink |
-| **ISP** | 12 MP ISP · up to 5 camera inputs <br> 2× MIPI CSI-2 D-PHY (each 4-lane or 2×2-lane) + DVP |
-| **Connectivity** | PCIe 2.1 · SATA 3.1 · USB DRD 3.0/2.0 · dual Gigabit Ethernet <br> SDIO 3.0 · DSMC · CAN, I2C, I3C, SPI, UART |
-| **Package** | FCCSP550L (14.3 × 15.5 mm) |
+{{< soc-specs >}}
 
 {{% /details %}}
 <br>

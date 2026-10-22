@@ -1,0 +1,12 @@
+# Mediatek/Filogic-880 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "Filogic 880 / MT7988"
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A73", max_ghz: 1.8 }
+    memory:
+      types: ["DDR3", "DDR4"]
+    other:
+      - { name: "Network offload", value: "HW IPv4 NATP / IPv6 / DS-Lite / 6RD acceleration<br>Hardware QoS acceleration<br>Tunneling Offload Engine for: VLAN / PPTP / L2TP / GRE<br>Ultra-high Speed Networking Crypto Engine for: IPSec, SSL/TLS, DTLS (CAPWAP), SRTP and MACsec" }

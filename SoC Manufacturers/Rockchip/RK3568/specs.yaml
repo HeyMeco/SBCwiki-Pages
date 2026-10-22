@@ -1,0 +1,23 @@
+# Rockchip/RK3568 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "Rockchip RK3568"
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A55", max_ghz: 2.0 }
+    memory:
+      types: ["LPDDR4", "LPDDR4X", "LPDDR3", "DDR4", "DDR3", "DDR3L"]
+      bus_bits: 32
+      ecc: true
+    gpu:
+      name: "Mali-G52 2EE"
+      vendor_apis: { opengl_es: "1.1/2.0/3.2", vulkan: "1.1", opencl: "2.0" }
+    npu:
+      tops: 1
+      datatypes: ["INT8", "INT16", "FP16", "BFP16"]
+    vpu:
+      decode:
+        - { res: "4K", fps: 60, codecs: ["H.264", "H.265", "VP9"] }
+      encode:
+        - { res: "1080p", fps: 60, codecs: ["H.264", "H.265"] }

@@ -1,0 +1,26 @@
+# Mediatek/Filogic-850 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "Filogic 850"
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A53", max_ghz: 2.0 }
+      notes: "About 18.4K DMIPS"
+    memory:
+      types: [{ type: "DDR4", mts: 3200 }]
+    pcie:
+      - { gen: 3, note: "2× x1 or 1× x2" }
+    usb:
+      - { version: "3.2 Gen1", note: "shared with HSGMII" }
+    ethernet:
+      - { count: 2, gbps: 2.5, note: "HSGMII" }
+      - { count: 1, gbps: 1, note: "built-in PHY" }
+    wifi:
+      - "Dual-band Wi-Fi 7 (a/b/g/n/ac/ax/be), up to 3.6 Gbps (BE3600)"
+      - "2.4 GHz 2T2R 2SS, 5 GHz 3T3R 2SS / 2T2R+1R 0-DFS"
+      - "4096-QAM, single-MAC MLO, Multi-RU"
+    io: ["SPI", "I2C", "UART", "GPIO", "PCM/I2S"]
+    security: ["Secure Boot", "Arm TrustZone", "EIP-197 crypto", "FIPS 140-3 support"]
+    other:
+      - { name: "Network offload", value: "Up to 7.5 Gbps packet processing<br>800 Kpps Wi-Fi offload<br>HW acceleration for PPPoE, VLAN, MAP-E, DS-Lite" }

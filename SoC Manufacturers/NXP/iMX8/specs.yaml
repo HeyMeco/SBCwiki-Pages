@@ -1,0 +1,28 @@
+# NXP/iMX8 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "NXP i.MX 8 (i.MX 8QuadMax / 8QuadPlus)"
+    cpu:
+      clusters:
+        - { cores: 2, core: "Cortex-A72", max_ghz: 1.3 }
+        - { cores: 4, core: "Cortex-A53" }
+    mcu:
+      - { cores: 2, core: "Cortex-M4F" }
+    memory:
+      types: ["LPDDR4"]
+    gpu:
+      name: "Dual 32-bit GPU subsystems"
+      notes: "3D graphics acceleration"
+    vpu:
+      decode:
+        - { res: "4K", codecs: ["H.265"] }
+        - { codecs: ["H.264"] }
+      notes: "Dual failover-ready display controllers"
+    display:
+      max: "4K"
+      outputs: ["MIPI-DSI", "HDMI", "eDP/DP", "LVDS"]
+    storage: ["Quad/Octal SPI", "eMMC 5.1", "SD 3.0"]
+    ethernet:
+      - { count: 2, gbps: 1, note: "AVB" }
+    dsp: "Tensilica HiFi 4 DSP for audio processing"

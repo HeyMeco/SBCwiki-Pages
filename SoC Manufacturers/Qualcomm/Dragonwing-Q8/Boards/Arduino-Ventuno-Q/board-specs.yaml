@@ -1,0 +1,34 @@
+# Arduino-Ventuno-Q board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+soc:
+  part: "QCS8275 / QCS8300"
+  name: "Qualcomm Dragonwing IQ8 (IQ-8275)"
+memory:
+  types: ["LPDDR5"]
+  sizes_gb: [16]
+storage: ["64 GB eMMC", "M.2 connector for NVMe Gen 4 storage"]
+usb:
+  - { count: 1, version: "Type-C", note: "host/device and power role switching, video output (DP Alt Mode)" }
+  - { count: 2, version: "3.0", connector: "Type-A" }
+  - { count: 2, version: "3.0", note: "on JOMEGA header" }
+ethernet:
+  - { count: 1, gbps: 2.5, note: "RJ45" }
+wifi: "Wi-Fi 6, 2.4/5/6 GHz, onboard antenna"
+bluetooth: "5.3, onboard antenna"
+display:
+  outputs: ["1× HDMI (muxed with MIPI DSI on JMEDIA)", "USB-C DP Alt Mode", "MIPI DSI pins on JMEDIA header"]
+camera: ["USB camera support", "3× MIPI CSI connectors (muxed with 2× MIPI CSI on JMEDIA)"]
+audio: "2× microphone in / headphone out / ear out / line out on JMISC header"
+can: { count: 5, fd: true }
+power: ["USB-C (5 V max @ 3 A)", "5.5×2.1 mm power jack (12–24 V DC)", "Screw terminal (7–24 V DC)", "7–24 V on JOMEGA"]
+dimensions_mm: { w: 160, h: 100, d: 25.8 }
+mcu:
+  name: "STM32H5F5"
+  core: "Cortex-M33"
+  max_mhz: 250
+  flash: "4 MB"
+  ram: "1.5 MB"
+  os: "Arduino core on Zephyr"
+other:
+  - { name: "CAN detail", value: "1× CAN-FD PHY on screw terminal<br>3× CAN-FD (no PHY) on JOMEGA header<br>1× CAN-FD (no PHY) on UNO shield headers" }

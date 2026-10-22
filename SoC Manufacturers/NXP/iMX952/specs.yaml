@@ -1,0 +1,40 @@
+# NXP/iMX952 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "NXP i.MX 952 (Preproduction)"
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A55" }
+    mcu:
+      - { cores: 1, core: "Cortex-M7" }
+      - { cores: 1, core: "Cortex-M33" }
+    memory:
+      types: ["LPDDR5", "LPDDR4X"]
+      ecc: "inline"
+      notes: "IPED support on Octal SPI"
+    gpu:
+      name: "Arm Mali 3D GPU"
+      gflops: 64
+      vendor_apis: { opengl_es: "3.2", vulkan: "1.2", opencl: "3.0" }
+      notes: "Plus a 2D GPU"
+    npu:
+      name: "NXP eIQ Neutron NPU"
+    isp:
+      mpixel_s: 500
+      notes: "4Kp60, 2× 4Kp30 or 4× 1080p60"
+    camera: "1× MIPI-CSI (4-lane or 2× 2-lane), up to 8 cameras with MIPI virtual channels"
+    display:
+      outputs: ["MIPI-DSI 4-lane (4Kp30 or 3840×1440p60)", "LVDS up to 1080p60 (2× 4-lane or 1× 8-lane)"]
+      notes: "Local dimming support (512 zones)"
+    storage: ["3× SD 3.0/SDIO 3.0/eMMC 5.1", "1× Octal SPI with IPED"]
+    pcie:
+      - { count: 1, gen: 3, lanes: 1 }
+    usb:
+      - { count: 2, version: "2.0" }
+    ethernet:
+      - { count: 1, gbps: 2.5, note: "TSN" }
+      - { count: 2, gbps: 1, note: "TSN" }
+    can: { count: 3, fd: true }
+    audio: ["17-lane I²S TDM", "8× PDM mic", "2× MQS output", "5× SAI"]
+    security: "EdgeLock secure enclave"

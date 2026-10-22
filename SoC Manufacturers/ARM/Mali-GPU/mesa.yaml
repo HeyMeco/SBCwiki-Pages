@@ -1,0 +1,55 @@
+# Mesa (open-source driver) API support for Arm Mali GPUs: the single source for the
+# "Mesa" line in every SoC spec table. Edit here, not in the SoC specs.yaml files.
+#
+# A GPU is matched by its architecture version, taken from the `arch` field of its
+# links.json entry (e.g. "Valhall (v10)" → v10), so Immortalis parts and Mali parts that
+# Mesa does not list individually inherit the support of their architecture.
+# Read by layouts/partials/soc/mesa.html in the SBCwiki repo.
+
+source: "https://docs.mesa3d.org/drivers/panfrost.html"
+checked: "2026-10-22"
+key_from: { field: "arch", pattern: "v[0-9]+|Utgard" }
+
+# Defaults for every architecture below; an architecture can override them.
+drivers: { opengl: "Panfrost", vulkan: "PanVK", opencl: "Rusticl" }
+
+arch:
+  utgard:
+    drivers: { opengl: "Lima" }
+    kernel: "Lima"
+    apis: { opengl_es: "2.0", opengl: "2.1" }
+    note: "Lima: no OpenGL ES 3.x, OpenCL or Vulkan planned; Mali-470 unsupported"
+    source: "https://docs.mesa3d.org/drivers/lima.html"
+  v4:
+    kernel: "Panfrost"
+    apis: { opengl_es: "2.0", opengl: "2.1", opencl: "3.0" }
+  v5:
+    kernel: "Panfrost"
+    apis: { opengl_es: "3.1", opengl: "3.1", opencl: "3.0" }
+  v6:
+    kernel: "Panfrost"
+    apis: { opengl_es: "3.1", opengl: "3.1", vulkan: "1.3", opencl: "3.0" }
+  v7:
+    kernel: "Panfrost"
+    apis: { opengl_es: "3.1", opengl: "3.1", vulkan: "1.3", opencl: "3.0" }
+    conformance: ["OpenGL ES 3.1 (Mali-G52)"]
+  v9:
+    kernel: "Panfrost"
+    apis: { opengl_es: "3.1", opengl: "3.1", opencl: "3.0" }
+    conformance: ["OpenGL ES 3.1 (Mali-G57)"]
+  v10:
+    kernel: "Panthor"
+    apis: { opengl_es: "3.1", opengl: "3.1", vulkan: "1.4", opencl: "3.0" }
+    conformance: ["OpenGL ES 3.1 (Mali-G610)", "Vulkan 1.4 (Mali-G610)", "OpenCL 3.0 (Mali-G310, Mali-G610)"]
+  v11:
+    kernel: "Panthor"
+    apis: { opengl_es: "3.1", opengl: "3.1", vulkan: "1.4", opencl: "3.0" }
+  v12:
+    kernel: "Panthor"
+    apis: { opengl_es: "3.1", opengl: "3.1", vulkan: "1.4", opencl: "3.0" }
+  v13:
+    kernel: "Panthor"
+    apis: { opengl_es: "3.1", opengl: "3.1", vulkan: "1.4", opencl: "3.0" }
+  v14:
+    kernel: "Panthor"
+    apis: { opengl_es: "3.1", opengl: "3.1", vulkan: "1.4", opencl: "3.0" }

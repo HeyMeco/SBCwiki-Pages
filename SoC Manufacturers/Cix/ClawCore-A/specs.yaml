@@ -1,0 +1,20 @@
+# Cix/ClawCore-A specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "ClawCore-A"
+    cpu:
+      cores: 8
+      max_ghz: 3.0
+      isa: "Armv9.2"
+    memory:
+      types: ["LPDDR5"]
+      max_gb: 64
+    npu:
+      tops: 80
+      notes: "~80 TOPS on-chip; up to ~200 TOPS with vendor PCIe AI accelerator card (press figures)"
+    security: "Hardware encryption / key management (as advertised)"
+    other:
+      - { name: "Reliability", value: "Full-chain ECC (as advertised)" }
+      - { name: "Target", value: "Always-on agents, local inference to reduce cloud token use" }
+label: "Product"

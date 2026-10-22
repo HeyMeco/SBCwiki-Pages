@@ -1,0 +1,18 @@
+# Mediatek/Genio-130 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "MediaTek Genio 130A / MT7933CT"
+    cpu:
+      clusters:
+        - { cores: 1, core: "Cortex-M33", max_mhz: 300, note: "with FPU; 300 MHz at 0.8 V, 200 MHz at 0.7 V" }
+    memory:
+      notes: ["1 MB SRAM", "8 MB UHS PSRAM", "Up to 96 KB TCM/cache", "External serial flash with XIP and on-the-fly AES"]
+    wifi: ["802.11a/b/g/n/ac/ax 1T1R dual-band", "20 MHz, MU-OFDMA, WPA3"]
+    bluetooth: "Bluetooth 5.2"
+    io: ["USB 2.0 OTG (MT7933)", "SDIO", "SPI master/slave", "I2C", "I2S", "UART", "AUXADC", "PWM", "Up to about 47 GPIOs"]
+    dsp: "Cadence Tensilica HiFi 4 audio DSP @ up to 600 MHz (MT7933)"
+    security: ["AES", "DES/3DES", "SHA", "ECC", "TRNG"]
+    package: "10.6 × 10.6 mm BGA"
+    other:
+      - { name: "Power", value: "Single 3.3 V input with integrated PMU" }

@@ -93,12 +93,7 @@ Mali is ARM's family of graphics processing units (GPUs) designed for mobile and
 
 ### 2026
 
-| Micro Architecture | Name | Class |
-|-------------------|------|-------|
-| "6th Gen" Magni (v15) | Mali G2-Ultra-NX | Flagship |
-| "6th Gen" Magni (v15) | Mali G2-Premium-NX | Mid-Range |
-| "6th Gen" Magni (v15) | Mali G2-Pro-NX | Entry |
-| "6th Gen" Magni (v15) | Mali TMEX (Immortalis) | Entry? |
+{{< generation-table "2026" >}}
 
  
 > The Mali G2 Ultra NX (will exist as a 12 and 16 core variant) according to Genshin Impact's Vulkan whitelist
@@ -109,138 +104,75 @@ Mali is ARM's family of graphics processing units (GPUs) designed for mobile and
 
 ### 2025
 
-| Micro Architecture | Name | Class |
-|-------------------|------|-------|
-| "5th Gen" (v14) | Mali G1-Ultra | Flagship |
-| "5th Gen" (v14) | Mali G1-Premium | Mid-Range |
-| "5th Gen" (v14) | Mali G1-Pro | Entry |
+{{< generation-table "2025" >}}
 
 ### 2024
 
-| Micro Architecture | Name | Class |
-|-------------------|------|-------|
-| 5th Gen (v13) | Immortalis-G925 | Flagship |
-| 5th Gen (v13) | Mali-G725 | Mid-Range |
-| 5th Gen (v13) | Mali-G625 | Entry |
+{{< generation-table "2024" >}}
 
 ### 2023
 
-| Micro Architecture | Name | Class |
-|-------------------|------|-------|
-| 5th Gen / Avalon (v12) | Immortalis-G720 | Flagship |
-| 5th Gen / Avalon (v12) | Mali-G720 | Sub-Premium |
-| 5th Gen / Avalon (v12) | Mali-G620 | Mid-Range |
+{{< generation-table "2023" >}}
 
 ### 2022
 
-| Micro Architecture | Name | Class |
-|-------------------|------|-------|
-| Valhall (v11) | Immortalis-G715 | Flagship |
-| Valhall (v11) | Mali-G715 | Sub-Premium |
-| Valhall (v11) | Mali-G615 | Mid-Range |
+{{< generation-table "2022" >}}
 
 > **Note:** Immortalis (G715, G720, G925) share the same architecture version as their Mali siblings (v11, v12, v13); the Linux kernel distinguishes them by **10+ shader cores** and **hardware ray intersection** support, not by a different arch version. Utgard-based GPUs are supported by the Lima driver; Midgard and newer are supported by Panfrost/Panthor.
 > <br>**Source**: [Linux Kernel - Panthor_hw.c](https://github.com/torvalds/linux/blob/master/drivers/gpu/drm/panthor/panthor_hw.c)
 
 ### 2021
 
-| Micro Architecture | Name | Class |
-|-------------------|------|-------|
-| Valhall (v10) | Mali-G710 | High-End |
-| Valhall (v10) | Mali-G610 | Sub-Premium |
-| Valhall (v10) | Mali-G510 | Mid-Range |
-| Valhall (v10) | Mali-G310 | Entry |
+{{< generation-table "2021" >}}
 
 ### 2020
 
-| Micro Architecture | Name | Class |
-|-------------------|------|-------|
-| Valhall (v9) | Mali-G78 | High-End |
-| Valhall (v9) | Mali-G68 | Mid-Range |
-| Valhall (v9) | Mali-G78AE | Automotive |
+{{< generation-table "2020" >}}
 
 ### 2019
 
-| Micro Architecture | Name | Class |
-|-------------------|------|-------|
-| Valhall (v9) | Mali-G77 | High-End |
-| Valhall (v9) | Mali-G57 | Mid-Range |
+{{< generation-table "2019" >}}
 
 ### 2018
 
-| Micro Architecture | Name | Class |
-|-------------------|------|-------|
-| Bifrost (v7) | Mali-G76 | High-End |
-| Bifrost (v7) | Mali-G52 | Mid-Range |
-| Bifrost (v7) | Mali-G31 | Entry |
+{{< generation-table "2018" >}}
 
 ### 2017
 
-| Micro Architecture | Name | Class |
-|-------------------|------|-------|
-| Bifrost (v6) | Mali-G72 | High-End |
+{{< generation-table "2017" >}}
 
 ### 2016
 
-| Micro Architecture | Name | Class |
-|-------------------|------|-------|
-| Bifrost (v6) | Mali-G71 | High-End |
-| Midgard (v5) | Mali-T880 | High-End |
-| Bifrost (v6) | Mali-G51 | Mid-Range |
+{{< generation-table "2016" >}}
 
 ### 2015
 
-| Micro Architecture | Name | Class |
-|-------------------|------|-------|
-| Midgard (v5) | Mali-T860 | High-End |
-| Midgard (v5) | Mali-T830 | Mid-Range |
-| Utgard | Mali-470 | Mid-Range |
-| Midgard (v5) | Mali-T820 | Entry |
+{{< generation-table "2015" >}}
 
 ### 2013
 
-| Micro Architecture | Name | Class |
-|-------------------|------|-------|
-| Midgard (v5) | Mali-T760 | High-End |
-| Midgard (v4) | Mali-T720 | Mid-Range |
-| Midgard (v4) | Mali-T622 | Entry |
+{{< generation-table "2013" >}}
 
 ### 2012
 
-| Micro Architecture | Name | Class |
-|-------------------|------|-------|
-| Midgard (v4) | Mali-T678 | High-End |
-| Midgard (v4) | Mali-T628 | High-End |
-| Midgard (v4) | Mali-T624 | Mid-Range |
-| Utgard | Mali-450 | Mid-Range |
+{{< generation-table "2012" >}}
 
 ### 2011
 
-| Micro Architecture | Name | Class |
-|-------------------|------|-------|
-| Midgard (v4) | Mali-T658 | High-End |
+{{< generation-table "2011" >}}
 
 ### 2010
 
-| Micro Architecture | Name | Class |
-|-------------------|------|-------|
-| Midgard (v4) | Mali-T604 | High-End |
-| Utgard | Mali-300 | Entry |
+{{< generation-table "2010" >}}
 
 ### 2008
 
-| Micro Architecture | Name | Class |
-|-------------------|------|-------|
-| Utgard | Mali-400 | Entry |
+{{< generation-table "2008" >}}
 
 ### 2007
 
-| Micro Architecture | Name | Class |
-|-------------------|------|-------|
-| Utgard | Mali-200 | Entry |
+{{< generation-table "2007" >}}
 
 ### 2005
 
-| Micro Architecture | Name | Class |
-|-------------------|------|-------|
-| Utgard | Mali-55 / Mali-110 | Entry |
+{{< generation-table "2005" >}}

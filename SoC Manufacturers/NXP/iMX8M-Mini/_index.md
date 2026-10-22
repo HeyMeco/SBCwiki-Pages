@@ -17,17 +17,7 @@ summary: NXP i.MX 8M Mini ARM processor - Quad-core Cortex-A53 (up to 1.8GHz) + 
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **SoC** | **NXP i.MX 8M Mini**                                                                                            |
-|---------|----------------------------------------------------------------------------------------------------------------|
-| **Process** | 14nm LPC FinFET |
-| **CPU** | Quad-core: <br> 4× ARM Cortex-A53 (up to 1.8GHz) <br> 1× ARM Cortex-M4 (400MHz)            |
-| **RAM** | LPDDR4, DDR4                                                                                     |
-| **GPU** | Vivante GCNanoUltra, OpenGL ES 2.0, OpenVG 1.1               |
-| **VPU** | 1080p60 H.265/VP9 video decode <br> 1080p60 H.264/VP8 decode <br> 1080p60 H.264 encode |
-| **Display** | MIPI-DSI (4-lane) |
-| **Camera** | MIPI-CSI (4-lane) |
-| **Storage** | eMMC 5.1, SD 3.0, Quad SPI |
-| **Ethernet** | Gigabit Ethernet |
+{{< soc-specs >}}
 
 {{% /details %}}
 

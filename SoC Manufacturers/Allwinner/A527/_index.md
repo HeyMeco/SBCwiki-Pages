@@ -17,13 +17,7 @@ summary: Allwinner A527/T527 ARM processor - Octa-core Cortex-A55 up to 2.0GHz, 
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **SoC** | **Allwinner A527 / T527**                                                                                            |
-|---------|----------------------------------------------------------------------------------------------------------------|
-| **CPU** | Octa-core ARM Cortex-A55 (up to 2.0GHz)            |
-| **RAM** | LPDDR4/4X                                                                                     |
-| **GPU** | Mali-G57, compatible with OpenGL® ES 3.2, Vulkan® 1.1, OpenCL™ 2.0               |
-| **VPU** | 4Kp60 H.264/H.265/VP9 decoder <br> 1080p60 H.264/H.265 encoder |
-| **NPU** | 2 TOPS AI acceleration engine (T527 variant only), supports INT8/INT16/FP16                                                                           |
+{{< soc-specs >}}
 
 {{% /details %}}
 

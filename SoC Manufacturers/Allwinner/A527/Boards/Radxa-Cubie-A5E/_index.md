@@ -22,28 +22,11 @@ images:
 
 ## Hardware
 {{% details title="Specs" open=true %}}
+{{< board-specs show="soc" >}}
 
-| **SoC** | **Allwinner A527 / T527**                                                                                                                      |
-|---------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| **CPU** | Octa-core ARM Cortex-A55 (up to 2.0GHz)                                                             |
-| **RAM** | LPDDR4/4X<br>- Configurations: 1GB / 2GB / 4GB                                                                                |
-| **GPU** | Mali-G57<br>- OpenGL ES 3.2<br>- Vulkan 1.1<br>- OpenCL 2.0                                                 |
-| **NPU** | 2 TOPS AI acceleration engine (T527 variant only)<br>- Supports INT8/INT16/FP16                          |
-
----
 ### Interfaces
 
-| **I/O**      | Description                                                                                                                                                                                                                                                             |
-|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Wireless** | Wi-Fi 6, Bluetooth 5.4                                                                                                                                                                                                                      |
-| **Ethernet** | Dual Gigabit Ethernet (one PoE capable)                                                                                                                                                                                                        |
-| **USB**      | USB 3.1 and USB 2.0 ports                                                                                                                                                                                                                 |
-| **Video**    | 1x HDMI port (up to 4K@60Hz)<br>MIPI DSI support                                                                                                                                                                                                                     |
-| **Camera**   | MIPI CSI interfaces                                                                                                                                                                                                                                |
-| **Storage**  | SPI Flash<br>Optional eMMC (0–32GB)<br>M.2 M-Key NVMe support                                                                                                                                                            |
-| **Power**    | USB Type-C power input<br>PoE power supply (with PoE HAT)                                                                                                                                                            |
-| **GPIO**     | GPIO Header                                                                                                                                                                                                                              |
-
+{{< board-specs show="board" >}}
 {{% /details %}}
 
 ## Available OS images

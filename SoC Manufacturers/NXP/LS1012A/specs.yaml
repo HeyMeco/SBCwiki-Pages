@@ -1,0 +1,21 @@
+# NXP/LS1012A specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "NXP Layerscape LS1012A"
+    cpu:
+      clusters:
+        - { cores: 1, core: "Cortex-A53", max_ghz: 1.0 }
+    memory:
+      types: ["DDR3L", "DDR4"]
+    storage: ["SD", "SPI", "I²C"]
+    pcie:
+      - { count: 1, gen: 2 }
+    sata: { count: 1, gen: "3.0" }
+    usb:
+      - { version: "2.0/3.0" }
+    ethernet:
+      - { count: 2, gbps: 1, note: "up to 2, 2.5G support" }
+    security: "SEC security engine, 1 Gbit/s"
+    other:
+      - { name: "SerDes", value: "3-6 GHz SerDes lanes" }

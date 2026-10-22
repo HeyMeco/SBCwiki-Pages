@@ -1,0 +1,24 @@
+# Mesa (open-source driver) API support for Qualcomm Adreno GPUs: the single source for
+# the "Mesa" line in every SoC spec table. Edit here, not in the SoC specs.yaml files.
+#
+# A GPU is matched by its Mesa generation, taken from the `mesa` field of its links.json
+# entry (e.g. "a6xx_gen4" → a6xx; Adreno 702 is "a6xx_gen1_low" → a6xx, as in Mesa).
+# Read by layouts/partials/soc/mesa.html in the SBCwiki repo.
+
+source: "https://mesamatrix.net/"
+checked: "2026-10-22"
+key_from: { field: "mesa", pattern: "^a[0-9]xx" }
+
+drivers: { opengl: "Freedreno", vulkan: "Turnip" }
+kernel: "drm/msm"   # Freedreno/Turnip also run on vendor kernels via the kgsl backend
+
+arch:
+  a6xx:
+    apis: { opengl: "4.6", opengl_es: "3.2", vulkan: "1.3" }
+    conformance: ["Vulkan 1.3 (a6xx_gen1 to a6xx_gen4)"]
+  a7xx:
+    apis: { opengl: "4.6", opengl_es: "3.2", vulkan: "1.4" }
+    conformance: ["Vulkan 1.4"]   # Adreno X1-85 / X1-45 supported from Mesa 24.2
+  a8xx:
+    apis: { vulkan: "1.4" }
+    note: "Initial bring-up in upstream Mesa"

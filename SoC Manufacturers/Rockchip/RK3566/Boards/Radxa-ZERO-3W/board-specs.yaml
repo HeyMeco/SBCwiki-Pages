@@ -1,0 +1,22 @@
+# Radxa-ZERO-3W board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+soc:
+  notes: "CPU clocked at up to 1.6 GHz on this board"
+memory:
+  types: ["LPDDR4"]
+  sizes_gb: [1, 2, 4, 8]
+storage: ["microSD", "Optional onboard eMMC (0 / 8 / 16 / 32 / 64 GB)"]
+usb:
+  - { count: 1, version: "3.0", connector: "Type-C", note: "host" }
+  - { count: 1, version: "2.0", connector: "Type-C", note: "OTG, power & data" }
+ethernet:
+  - { gbps: 1, note: "via optional HAT" }
+wifi: "Onboard Wi-Fi 6 (802.11 b/g/n)"
+bluetooth: "5.0"
+display:
+  outputs: ["Micro HDMI (1080p@60)"]
+camera: "1× 4-lane MIPI CSI"
+gpio: "40-pin header"
+power: "USB Type-C (5 V / 2 A)"
+dimensions_mm: { w: 65, h: 30 }

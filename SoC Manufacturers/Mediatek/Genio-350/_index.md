@@ -17,24 +17,7 @@ The MediaTek Genio 350 is the entry multimedia IoT platform in the Genio line. I
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **SoC** | **MediaTek Genio 350 / MT8365** |
-|---------|---------------------------------|
-| **Process** | 14 nm |
-| **CPU** | 4× Arm Cortex-A53 @ 2.0 GHz |
-| **RAM** | x32 LPDDR3-1600 up to 4 GB<br>x32 LPDDR4X-3200 up to 4 GB |
-| **GPU** | Arm Mali-G52 @ 800 MHz<br>OpenGL ES 3.2, Vulkan 1.1, OpenCL 2.0 |
-| **NPU** | 0.35 TOPS (1× Tensilica VP6) |
-| **Audio DSP** | Tensilica HiFi 4 |
-| **VPU** | **Decode:** H.264/H.265/MPEG4 FHD60<br>**Encode:** H.264/H.265 FHD60 |
-| **Display** | Dual: max FHD+HD<br>Single: max FHD<br>1× MIPI-DSI (4L), 1× DPI / LVDS |
-| **ISP** | 1× ISP, 13 MP @ 30 fps<br>2× MIPI CSI-2 (4L) |
-| **Storage** | eMMC 5.1, SD 3.0, SPI-NAND |
-| **USB** | 1× USB 2.0 Host, 1× USB 2.0 Host/Device |
-| **Ethernet** | 10/100 MAC (RMII) |
-| **Connectivity** | Integrated Wi-Fi 5 1x1 / Bluetooth 5.0 baseband (MT6631)<br>External 2x2 Wi-Fi options |
-| **Package** | VFBGA 12.2 × 11.8 × 0.9 mm |
-| **Temperature** | −20°C to 105°C (Tj) |
-| **Longevity** | Available until 2030 |
+{{< soc-specs >}}
 
 {{% /details %}}
 

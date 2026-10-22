@@ -1,0 +1,21 @@
+# BananaPi-R4 board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+revision: "1.1"
+memory:
+  types: ["DDR4"]
+  sizes_gb: [4]
+storage: ["8 GB eMMC", "128 MB SPI NAND flash", "microSD"]
+pcie:
+  - { count: 2, slot: "miniPCIe", gen: 3, lanes: 2, note: "for Wi-Fi 7 NICs" }
+  - { count: 1, slot: "M.2 M-Key", gen: 3, lanes: 1, note: "NVMe SSD" }
+  - { count: 1, slot: "M.2 B-Key", gen: 3, note: "USB 3.2 / PCIe, for 5G modems" }
+usb:
+  - { count: 1, version: "3.2" }
+ethernet:
+  - { count: 2, gbps: 10, note: "SFP" }
+  - { count: 4, gbps: 1 }
+wifi: "Via miniPCIe Wi-Fi 7 NICs"
+gpio: "26-pin header"
+power: ["USB Type-C PD 2.0, up to 20 V", "12 V / 5.2 A DC input (5521)"]
+rtc: "Powered from external battery"

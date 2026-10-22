@@ -1,0 +1,50 @@
+# Qualcomm/Dragonwing-Q5 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+# DRAM speeds are data rates in MT/s. Qualcomm quotes LPDDR clocks in MHz, so their figures are doubled here.
+
+label: "Part"
+parts:
+  - name: "QCS5430"
+    process_nm: 6
+    cpu:
+      cores: 6
+      core: "Cortex-A78 and Cortex-A55"
+      max_ghz: 2.1
+    memory:
+      types: [{ type: "LPDDR5", mts: 6400 }, { type: "LPDDR4X", mts: 4266 }]
+    gpu:
+      name: "Adreno 643L"
+      max_mhz: 812
+    npu:
+      name: "Hexagon 770"
+      tops: 9
+      tops_precision: "INT8"
+      notes: "Highest of a range: 3.5 TOPS with feature pack 1, up to 9 TOPS with software SKUs"
+  - name: "QCM5430"
+    process_nm: 6
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A78" }
+        - { cores: 4, core: "Cortex-A55" }
+      max_ghz: 2.7
+    memory:
+      types: [{ type: "LPDDR5", mts: 6400 }, { type: "LPDDR4X", mts: 4266 }]
+      notes: "JEDEC base data rates; Qualcomm lists up to 8400 MT/s"
+    gpu:
+      name: "Adreno 642L / Adreno 643"
+      max_mhz: 812
+    npu:
+      notes: "Same Kodiak platform as QCS5430"
+  - name: "QRB5165"
+    process_nm: 7
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A77", max_ghz: 2.84 }
+        - { cores: 4, core: "Cortex-A55" }
+    memory:
+      types: [{ type: "LPDDR5", mts: 5500 }, { type: "LPDDR4X", mts: 4266 }]
+    gpu:
+      name: "Adreno 650"
+    npu:
+      name: "5th gen AI Engine, Hexagon 698"
+      tops: 15

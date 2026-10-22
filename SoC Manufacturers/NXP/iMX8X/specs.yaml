@@ -1,0 +1,31 @@
+# NXP/iMX8X specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "NXP i.MX 8X"
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A35" }
+    mcu:
+      - { cores: 1, core: "Cortex-M4" }
+    memory:
+      types: ["LPDDR4", "DDR3L"]
+      ecc: true
+    gpu:
+      name: "3D GPU"
+      vendor_apis: { opengl_es: "3.1", opencl: "1.2 EP" }
+    vpu:
+      decode:
+        - { res: "4K", codecs: ["H.265"] }
+        - { res: "1080p", fps: 60, codecs: ["H.264", "VP8"] }
+      encode:
+        - { res: "1080p", fps: 30, codecs: ["H.264"] }
+    camera: ["MIPI-CSI (4-lane)", "Parallel camera interface"]
+    display:
+      outputs: ["Parallel display", "2× LVDS/MIPI-DSI combo"]
+    storage: ["eMMC 5.1", "SD 3.0", "Quad SPI"]
+    pcie:
+      - { gen: 3 }
+    ethernet:
+      - { count: 2, gbps: 1 }
+    dsp: "Tensilica HiFi 4 DSP for audio processing"

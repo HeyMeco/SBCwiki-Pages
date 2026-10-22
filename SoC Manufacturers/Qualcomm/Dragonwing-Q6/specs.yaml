@@ -1,0 +1,89 @@
+# Qualcomm/Dragonwing-Q6 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+# DRAM speeds are data rates in MT/s. Qualcomm quotes LPDDR clocks in MHz, so their figures are doubled here.
+
+label: "Part"
+parts:
+  - name: "Q-6690"
+    process_nm: 4
+    cpu:
+      clusters:
+        - { cores: 1, core: "Cortex-A715", max_ghz: 2.9 }
+        - { cores: 3, core: "Cortex-A715", max_ghz: 2.7 }
+        - { cores: 4, core: "Cortex-A510", max_ghz: 2.0 }
+    memory:
+      types: [{ type: "LPDDR5", mts: 6400 }]
+      bus_bits: 32
+    gpu:
+      name: "Adreno"
+      max_mhz: 1150
+    npu:
+      name: "Hexagon"
+      tops: 6
+    wifi: "Wi-Fi 7 and Wi-Fi 6E, 2x2"
+    bluetooth: "5.4 and 6.0"
+    os: "Android"
+  - name: "QCS6490 / QCM6490"
+    link: "/docs/soc-manufacturers/qualcomm/dragonwing-6490/"
+    process_nm: 6
+    cpu:
+      core: "Cortex-A78 and Cortex-A55"
+    memory:
+      types: ["LPDDR5", "LPDDR4X"]
+    gpu:
+      name: "Adreno 643"
+    other:
+      - { name: "Notes", value: "Full specifications are on the [chip page](/docs/soc-manufacturers/qualcomm/dragonwing-6490/)" }
+  - name: "QCS610"
+    process_nm: 11
+    cpu:
+      clusters:
+        - { cores: 2, core: "Cortex-A76", max_ghz: 2.2 }
+        - { cores: 6, core: "Cortex-A55" }
+    memory:
+      types: [{ type: "LPDDR4X", mts: 3608 }]
+    gpu:
+      name: "Adreno 612"
+    npu:
+      name: "Hexagon 685"
+    wifi: "Wi-Fi 5 and Wi-Fi 4, 1x1"
+    bluetooth: "5.0"
+    os: ["Android", "Linux"]
+    availability: "10-year longevity"
+  - name: "QCS6125"
+    process_nm: 11
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A73", max_ghz: 2.0 }
+        - { cores: 4, core: "Cortex-A53", max_ghz: 1.8 }
+    memory:
+      types: [{ type: "LPDDR4X", mts: 3608 }, { type: "LPDDR3", mts: 1866 }]
+      bus_bits: 32
+      notes: "LPDDR4X 2× 16-bit, LPDDR3 1× 32-bit"
+    gpu:
+      name: "Adreno 610"
+    npu:
+      name: "Hexagon 686"
+    wifi: "Wi-Fi 5, 1x1"
+    bluetooth: "5.0"
+    os: ["Android", "Linux"]
+    other:
+      - { name: "Modem", value: "Snapdragon X12 LTE" }
+  - name: "IQ-615"
+    cpu:
+      clusters:
+        - { cores: 2, core: "Cortex-A76" }
+        - { cores: 6, core: "Cortex-A55" }
+      max_ghz: 1.9
+    memory:
+      types: [{ type: "LPDDR4X", mts: 3110 }]
+      bus_bits: 32
+      max_gb: 8
+    gpu:
+      name: "Adreno 612"
+      max_mhz: 845
+    npu:
+      name: "Hexagon V66 @ 1.0 GHz"
+    os: ["Yocto Linux", "Ubuntu"]
+    other:
+      - { name: "Grade", value: "Industrial" }

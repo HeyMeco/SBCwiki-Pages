@@ -17,15 +17,7 @@ The MediaTek Filogic 860 is the mainstream Wi-Fi 7 router and gateway platform b
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **SoC** | **Filogic 860 / MT7987** |
-|---------|--------------------------|
-| **CPU** | OpenWrt MT7987A: 4× Arm Cortex-A53 up to 2.0 GHz<br>MediaTek Filogic 860 marketing also describes a triple-core Cortex-A73 platform SKU under the same brand |
-| **RAM** | DDR3 / DDR4 |
-| **Storage** | SPI-NOR, SPI-NAND, eMMC |
-| **Wi-Fi** | Dual-band concurrent Wi-Fi 7 (a/b/g/n/ac/ax/be)<br>Platform class BE7200 (7.2 Gbps PHY)<br>4x4 2.4 GHz + 5x5 5/6 GHz antenna design on the Filogic 860 RF platform |
-| **Ethernet** | USXGMII 10 GbE class, 2.5 GbE PHY, and multiple 1 GbE ports on the platform |
-| **NPU** | Hardware QoS and tunneling offload (VLAN / PPTP / L2TP / GRE)<br>Networking crypto engine (EIP-197) for IPv4 NATP / IPv6 / DS-Lite / 6RD |
-| **I/O** | PCIe 3.0, USB 3.2 Gen1, UART, SD, SPI, PWM, GPIO |
+{{< soc-specs >}}
 
 {{% /details %}}
 

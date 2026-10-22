@@ -1,0 +1,52 @@
+# Rockchip/RK3572 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "Rockchip RK3572"
+    process_nm: 8
+    cpu:
+      clusters:
+        - { cores: 2, core: "Cortex-A73" }
+        - { cores: 6, core: "Cortex-A53" }
+      max_ghz: 2.2
+      notes: "Clock per module spec; datasheet clocks TBD"
+    memory:
+      types:
+        - { type: "LPDDR4", mts: 4266 }
+        - { type: "LPDDR4X", mts: 4266 }
+        - { type: "LPDDR5", mts: 5500 }
+        - { type: "LPDDR5X", mts: 5500 }
+      bus_bits: 32
+      max_gb: 16
+      notes: "Up to 4 ranks"
+    gpu:
+      name: "Mali-G310 v2 MC1"
+      vendor_apis: { opengl_es: "1.1/2.0/3.2", vulkan: "1.4", opencl: "3.0" }
+    npu:
+      tops_sparse: 4
+      tops_precision: "INT8"
+      datatypes: ["INT4", "INT8", "INT16", "FP4", "FP8", "FP16", "BF16"]
+      notes: "W4A16 asymmetric MAC"
+    vpu:
+      decode:
+        - { res: "8K", fps: 30, codecs: ["H.265", "VP9", "AV1", "AVS2"], note: "or 4K@120fps" }
+        - { res: "4K", fps: 60, codecs: ["H.264"] }
+      encode:
+        - { res: "4K", fps: 40, codecs: ["H.264", "H.265"] }
+    isp:
+      max_mp: 12
+      notes: "Up to 5 camera inputs"
+    camera: ["2× MIPI CSI-2 D-PHY (each 4-lane or 2×2-lane)", "DVP"]
+    display:
+      max: "Dual independent: 4K@60 + 2K@60"
+      outputs: ["HDMI 2.1", "eDP 1.3", "MIPI DSI 1.2", "Parallel RGB/BT.656/BT.1120", "E-ink"]
+    storage: ["UFS 2.0 (2-lane, HS-G3)", "eMMC 5.1 (HS400)", "SD 3.0 / MMC 4.51", "FSPI"]
+    pcie:
+      - { gen: "2.1" }
+    sata: { gen: "3.1" }
+    usb:
+      - { version: "3.0/2.0", note: "DRD" }
+    ethernet:
+      - { count: 2, gbps: 1 }
+    io: ["SDIO 3.0", "DSMC", "CAN", "I2C", "I3C", "SPI", "UART"]
+    package: "FCCSP550L (14.3 × 15.5 mm)"

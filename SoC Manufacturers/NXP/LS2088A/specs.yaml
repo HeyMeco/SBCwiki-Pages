@@ -1,0 +1,24 @@
+# NXP/LS2088A specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "NXP Layerscape LS2088A"
+    cpu:
+      clusters:
+        - { cores: 8, core: "Cortex-A72", max_ghz: 2.1 }
+    memory:
+      types: ["DDR4"]
+    storage: ["SD", "SPI", "I²C"]
+    pcie:
+      - { count: 4, gen: 3 }
+    sata: { count: 2, gen: "3.0" }
+    usb:
+      - { version: "2.0/3.0" }
+    ethernet:
+      - { count: 8, gbps: 10, note: "1/2.5/10 Gbit/s" }
+      - { count: 8, gbps: 1, note: "1/2.5 Gbit/s" }
+    security: "SEC security engine, 24 Gbit/s"
+    other:
+      - { name: "L2 Switch", value: "88 Gbit/s L2 switching capability" }
+      - { name: "SerDes", value: "16× 10 GHz SerDes lanes" }
+      - { name: "Acceleration", value: "DPAA2 engines for crypto, pattern matching, compression" }

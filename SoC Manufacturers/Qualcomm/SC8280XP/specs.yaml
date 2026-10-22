@@ -1,0 +1,31 @@
+# Qualcomm/SC8280XP specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+# DRAM speeds are data rates in MT/s. Qualcomm quotes LPDDR clocks in MHz, so their figures are doubled here.
+
+parts:
+  - name: "Snapdragon 8cx Gen 3"
+    process_nm: 5
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-X1", max_ghz: 3.0 }
+        - { cores: 4, core: "Cortex-A78", max_ghz: 2.4 }
+      isa: "64-bit"
+    memory:
+      types: [{ type: "LPDDR4X", mts: 4266 }]
+      bus_bits: 128
+      channels: 8
+      max_gb: 32
+    gpu:
+      name: "Adreno 690"
+      vendor_apis: { opengl_es: "3.2", vulkan: "1.3", opencl: "2.0", directx: true }
+      notes: "DirectML"
+    npu:
+      name: "Hexagon processor and Sensing Hub"
+      tops: 29
+      notes: "Qualcomm AI Engine up to 29+ TOPS"
+    vpu:
+      name: "Adreno VPU (5th generation)"
+      decode:
+        - { res: "4K", fps: 120, codecs: ["H.265 Main 10", "H.265 Main", "H.264 High", "VP9 Profile 2"] }
+      encode:
+        - { res: "4K", fps: 60, codecs: ["H.265 Main 10", "H.265 Main", "H.264 High"] }

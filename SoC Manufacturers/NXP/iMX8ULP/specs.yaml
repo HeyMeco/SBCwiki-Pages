@@ -1,0 +1,24 @@
+# NXP/iMX8ULP specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "NXP i.MX 8ULP"
+    cpu:
+      clusters:
+        - { cores: 2, core: "Cortex-A35" }
+    mcu:
+      - { cores: 2, core: "Cortex-M33" }
+    memory:
+      types: ["LPDDR4", "LPDDR4X"]
+    gpu:
+      name: "2D GPU"
+      vendor_apis: { openvg: "1.1" }
+    camera: "MIPI-CSI (2-lane)"
+    display:
+      outputs: ["MIPI-DSI (4-lane)", "24-bit RGB", "EPD (E-Paper Display)"]
+    storage: ["eMMC 5.1", "SD 3.0", "Quad SPI"]
+    ethernet:
+      - { count: 1, gbps: 1 }
+    security: "EdgeLock secure enclave"
+    other:
+      - { name: "Power", value: "Energy Flex architecture for ultra-low power consumption" }

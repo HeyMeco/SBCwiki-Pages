@@ -1,0 +1,29 @@
+# Rockchip/RK3688 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "Rockchip RK3688"
+    process_nm: 4
+    process_note: "4–5 nm, not final"
+    cpu:
+      clusters:
+        - { cores: 8, core: "Cortex-A730" }
+        - { cores: 4, core: "Cortex-A530" }
+      notes: "300K+ DMIPS"
+    memory:
+      types: ["LPDDR5", "LPDDR5X", "LPDDR6"]
+      channels: 8
+      bandwidth_gbs: 200
+    gpu:
+      name: "Mali Magni"
+      tflops: 2
+      notes: "At least 2 TFLOPS"
+    npu:
+      name: "RKNN-P3"
+      tops: 32
+    vpu:
+      decode:
+        - { res: "16K", fps: 30 }
+      encode:
+        - { res: "8K", fps: 60 }
+    storage: ["UFS 4.0"]

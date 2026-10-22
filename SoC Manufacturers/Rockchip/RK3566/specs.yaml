@@ -1,0 +1,19 @@
+# Rockchip/RK3566 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "Rockchip RK3566"
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A55", max_ghz: 1.8 }
+    memory:
+      types: ["LPDDR4", "LPDDR4X"]
+      bus_bits: 32
+    gpu:
+      name: "Mali-G52 2EE"
+      vendor_apis: { opengl_es: "1.1/2.0/3.2", vulkan: "1.1", opencl: "2.0" }
+    vpu:
+      decode:
+        - { res: "4K", fps: 60, codecs: ["H.264", "H.265", "VP9"] }
+      encode:
+        - { res: "1080p", fps: 60, codecs: ["H.264", "H.265"] }

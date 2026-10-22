@@ -1,0 +1,43 @@
+# NXP/iMX95 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "NXP i.MX 95 (Preproduction)"
+    cpu:
+      clusters:
+        - { cores: 6, core: "Cortex-A55" }
+      cache:
+        - { level: "L3", mb: 0.5 }
+      notes: "32 KB I-cache, 32 KB D-cache, 64 KB L2 per core; L3 with ECC"
+    mcu:
+      - { cores: 1, core: "Cortex-M7", note: "32 KB I/D-cache, 512 KB TCM with ECC" }
+      - { cores: 1, core: "Cortex-M33", note: "16 KB I/D-cache, 256 KB OCRAM with ECC" }
+    memory:
+      types: [{ type: "LPDDR5", mts: 6400 }, "LPDDR4X"]
+      bus_bits: 32
+      ecc: "inline"
+    gpu:
+      name: "Arm Mali 3D GPU"
+      gflops: 64
+      vendor_apis: { opengl_es: "3.2", vulkan: "1.2", opencl: "3.0" }
+      notes: "Plus a 2D GPU"
+    npu:
+      name: "NXP eIQ Neutron NPU"
+    isp:
+      mpixel_s: 500
+      notes: "4Kp60, 2× 4Kp30, 4× 1080p60 or 8× 1080p30"
+    camera: "2× MIPI-CSI (4-lane), up to 8 cameras with MIPI virtual channels"
+    display:
+      outputs: ["MIPI-DSI 4-lane (4Kp30 or 3840×1440p60)", "LVDS up to 1080p60 (2× 4-lane or 1× 8-lane)"]
+    storage: ["3× SD 3.0/SDIO 3.0/eMMC 5.1", "1× Octal SPI"]
+    pcie:
+      - { count: 2, gen: 3, lanes: 1 }
+    usb:
+      - { count: 1, version: "3.0" }
+      - { count: 2, version: "2.0" }
+    ethernet:
+      - { count: 1, gbps: 10, note: "TSN" }
+      - { count: 2, gbps: 1, note: "TSN" }
+    can: { count: 5, fd: true }
+    audio: ["17-lane I²S TDM", "SPDIF", "8× PDM mic", "2× MQS output", "5× SAI"]
+    security: "EdgeLock secure enclave"

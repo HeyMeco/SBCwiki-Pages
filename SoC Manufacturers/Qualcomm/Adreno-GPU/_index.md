@@ -129,12 +129,7 @@ Adreno GPUs support OpenGL ES, OpenCL, Vulkan, and DirectX 11/12 on the propriet
 
 Designed for Qualcomm's Oryon-based Snapdragon X PC and industrial compute platforms, featuring wide 128-bit to 192-bit LPDDR5X memory interfaces and full DirectX 12.1 / Vulkan 1.3+ support.
 
-| Name | FP32 ALUs | Notable SoCs & Class |
-|------|-----------|----------------------|
-| Adreno X2-90 `a8xx` | — | [Snapdragon X2 Elite](/docs/soc-manufacturers/qualcomm/snapdragon-x2-elite/) (X2E-96-100, X2E-94-100, X2E-90-100, X2E-88-100) — Flagship PC |
-| Adreno X2-85 `a8xx` | — | [Snapdragon X2 Elite](/docs/soc-manufacturers/qualcomm/snapdragon-x2-elite/) (X2E-84-100, X2E-80-100, X2E-78-100) — High-End PC |
-| Adreno X1-85 `a7xx_gen2` | 1536 | [Snapdragon X Elite](/docs/soc-manufacturers/qualcomm/snapdragon-x-elite/) (X1E-00-1DE, X1E-84-100, X1E-80-100, X1E-78-100), Snapdragon X Plus (X1P-64-100) — Flagship PC |
-| Adreno X1-45 `a7xx_gen2` | 768 | Snapdragon X Plus (X1P-46-100, X1P-42-100), Snapdragon X (X1-26-100) — Mainstream PC |
+{{< generation-table "adreno-x-series-pc--compute" >}}
 
 > **Note:** In [`freedreno_devices.py`](https://gitlab.freedesktop.org/mesa/mesa/-/blob/main/src/freedreno/common/freedreno_devices.py), **Adreno X1-85** is defined under `CHIP.A7XX` / `a7xx_gen2` (internally `Adreno 741`) and **Adreno X1-45** is defined under `CHIP.A7XX` / `a7xx_gen2` (internally `Adreno 726`, derived from Adreno 725). Both are supported by Mesa Freedreno/Turnip starting from Mesa 24.2.
 
@@ -142,31 +137,13 @@ Designed for Qualcomm's Oryon-based Snapdragon X PC and industrial compute platf
 
 Introduced in late 2024, the Adreno 800 (`a8xx`) generation transitions to a **sliced architecture** where shaders and dedicated L2/GMEM cache blocks are partitioned into independent slices, alongside **UBWC v6** and Vulkan 1.3/1.4 support.
 
-| Name | FP32 ALUs | Notable SoCs & Class |
-|------|-----------|----------------------|
-| Adreno 850 `a8xx` | — | Snapdragon 8 Elite Gen 2 / Extreme — Next-Gen Flagship |
-| Adreno 840 `a8xx` | — | Flagship / Compute Tier |
-| Adreno 830 `a8xx` | 1536 (3 slices) | Snapdragon 8 Elite, [Dragonwing Q-8750](/docs/soc-manufacturers/qualcomm/dragonwing-q8/) — Flagship |
-| Adreno 825 `a8xx` | 1024 (2 slices) | Snapdragon 8s Gen 4 — Sub-Flagship |
-| Adreno 810 `a8xx` | 256 (2 slices) | Snapdragon 7s Gen 3 — Mid-Range |
+{{< generation-table "adreno-800-series-20242026" >}}
 
 ### Adreno 700 Series (2021–2024)
 
 Introduced with the Snapdragon 8 Gen 1, the Adreno 700 (`a7xx`) family doubled FP32 ALU density per shader block and introduced hardware-accelerated **Ray Tracing** starting with the Adreno 740.
 
-| Name | FP32 ALUs | Notable SoCs & Class |
-|------|-----------|----------------------|
-| Adreno 750 `a7xx_gen3` | 1536 | Snapdragon 8 Gen 3 — Flagship (Ray Tracing) |
-| Adreno 740 `a7xx_gen2` | 1536 | Snapdragon 8 Gen 2, Snapdragon XR2 Gen 2, [QCS8550 / QCM8550](/docs/soc-manufacturers/qualcomm/dragonwing-q8/) — Flagship (First Hardware Ray Tracing) |
-| Adreno 735 `a7xx_gen3` | 768 | Snapdragon 8s Gen 3 — Sub-Flagship (Ray Tracing) |
-| Adreno 732 `a7xx_gen2` | 768 | Snapdragon 7+ Gen 3 — High-End Mid-Range |
-| Adreno 730 `a7xx_gen1` | 768 | Snapdragon 8 Gen 1, Snapdragon 8+ Gen 1 — Flagship |
-| Adreno 725 `a7xx_gen2` | 768 | Snapdragon 7+ Gen 2 — Sub-Flagship |
-| Adreno 722 `a7xx` | — | [Dragonwing Q-7790](/docs/soc-manufacturers/qualcomm/dragonwing-q7/) — Commercial IoT / Mid-Range |
-| Adreno 720 `a7xx_gen1` | 512 | Snapdragon 7 Gen 3 — Mid-Range |
-| Adreno 710 `a7xx_gen1` | 512 | Snapdragon 6 Gen 1, Snapdragon 7s Gen 2 — Mid-Range |
-| Adreno 704 `a7xx` | — | [Dragonwing Q-2390 / IQ-2390](/docs/soc-manufacturers/qualcomm/dragonwing-q2/) — Entry IoT |
-| Adreno 702 `a6xx_gen1_low` | 128 | [QRB2210 / QCS2290 / QCM2290](/docs/soc-manufacturers/qualcomm/dragonwing-q2/), Snapdragon Wear W5/W5+ Gen 1 — Entry / Wearable |
+{{< generation-table "adreno-700-series-20212024" >}}
 
 > **Note:** Based on Mesa's [`freedreno_devices.py`](https://gitlab.freedesktop.org/mesa/mesa/-/blob/main/src/freedreno/common/freedreno_devices.py):
 > - **Adreno 702** is marketed in the 700 series, but in `freedreno_devices.py` it is defined under `CHIP.A6XX` with `[a6xx_base, a6xx_gen1_low]` (alongside Adreno 610/612) rather than `CHIP.A7XX`, with a halved register file (`reg_size_vec4 = 48`) and stripped-down hardware blocks (`# A702 cuts A LOT of things..`).
@@ -176,32 +153,7 @@ Introduced with the Snapdragon 8 Gen 1, the Adreno 700 (`a7xx`) family doubled F
 
 Introduced in 2018 with the Snapdragon 845, the Adreno 600 (`a6xx`) architecture unified shader and compute pipelines with Direct3D 12_1, OpenGL ES 3.2, OpenCL 2.0/3.0, and Vulkan 1.1–1.3 support. It enjoys the most mature open-source support in Mesa's Freedreno and Turnip drivers.
 
-| Name | FP32 ALUs | Notable SoCs & Class |
-|------|-----------|----------------------|
-| Adreno 695 `a6xx_gen4` | — | Snapdragon G3x Gen 1 — Gaming Handheld |
-| Adreno 690 `a6xx_gen4` | 1536 | [Snapdragon 8cx Gen 3 (SC8280XP)](/docs/soc-manufacturers/qualcomm/sc8280xp/), Snapdragon 8cx Gen 2, Microsoft SQ2, SA8295P — Flagship PC / Automotive |
-| Adreno 685 `a6xx_gen2` | 1536 | Microsoft SQ1 — PC Compute |
-| Adreno 680 `a6xx_gen2` | 1536 | Snapdragon 8cx, SA8195P — PC Compute / Automotive |
-| Adreno 675 `a6xx_gen2` | 1344 | Snapdragon 8c — Mainstream PC |
-| Adreno 663 `a6xx_gen4` | — | [Dragonwing IQ9 (QCS9100 / QCS9075)](/docs/soc-manufacturers/qualcomm/dragonwing-iq9/) — Industrial Edge AI / Automotive |
-| Adreno 660 `a6xx_gen4` | 1024 | Snapdragon 888, Snapdragon 888+ — Flagship (Introduced VRS) |
-| Adreno 650 `a6xx_gen3` | 1024 | Snapdragon 865, 865+, 870, [QRB5165](/docs/soc-manufacturers/qualcomm/dragonwing-q5/), [QCS8250](/docs/soc-manufacturers/qualcomm/dragonwing-q8/), XR2 Gen 1 — Flagship |
-| Adreno 644 `a6xx_gen4` | 512 | Snapdragon 7 Gen 1 — Upper Mid-Range |
-| Adreno 643 / 643L `a6xx_gen4` | 512 | [QCS6490 / QCM6490](/docs/soc-manufacturers/qualcomm/dragonwing-6490/), [QCS5430 / QCM5430](/docs/soc-manufacturers/qualcomm/dragonwing-q5/), SA8155P — Commercial IoT / Mid-Range |
-| Adreno 642 / 642L `a6xx_gen4` | 512 / 768 | Snapdragon 780G (768 ALUs), 778G, 778G+, 782G, 7c+ Gen 3 — Upper Mid-Range |
-| Adreno 640 `a6xx_gen2` | 768 | Snapdragon 855, 855+, 860, SA8155P — Flagship |
-| Adreno 630 `a6xx_gen1` | 512 | Snapdragon 845, 850, [SDA845](/docs/soc-manufacturers/qualcomm/dragonwing-q8/) — Flagship |
-| Adreno 623 `a6xx_gen4` | — | [QCS8275 / QCS8300](/docs/soc-manufacturers/qualcomm/dragonwing-q8/) — Industrial IoT / Automotive |
-| Adreno 620 `a6xx_gen1` | 384 | Snapdragon 765, 765G, 768G — Mid-Range |
-| Adreno 619 / 619L `a6xx_gen1` | 256 | Snapdragon 750G, 695, 690, 480, 480+, 4 Gen 1 — Mid-Range / Entry |
-| Adreno 618 `a6xx_gen1` | 256 | Snapdragon 730, 730G, 732G, 720G, 7c, 7c Gen 2 — Mid-Range |
-| Adreno 616 `a6xx_gen1` | 256 | Snapdragon 710, 712 — Mid-Range |
-| Adreno 615 `a6xx_gen1` | 256 | Snapdragon 670, QCS603, QCS605 — Mid-Range / IoT |
-| Adreno 613 `a6xx_gen3` | 128 | Snapdragon 4 Gen 2, [Q-4390, QCM4490 / QCS4490](/docs/soc-manufacturers/qualcomm/dragonwing-q4/) — Entry / Commercial IoT |
-| Adreno 612 `a6xx_gen1_low` | 128 | Snapdragon 675, 678, [QCS610, IQ-615](/docs/soc-manufacturers/qualcomm/dragonwing-q6/), [QCS410](/docs/soc-manufacturers/qualcomm/dragonwing-q4/) — Entry / Industrial IoT |
-| Adreno 610 `a6xx_gen1_low` | 128 | Snapdragon 680, 685, 665, 662, 460, [QCS6125](/docs/soc-manufacturers/qualcomm/dragonwing-q6/), [QCS4290 / QCM4290, QRB4210](/docs/soc-manufacturers/qualcomm/dragonwing-q4/) — Entry |
-| Adreno 608 `a6xx_gen1_low` | 128 | Snapdragon SA6155P — Automotive |
-| Adreno 605 `a6xx_gen1_low` | — | Entry IoT |
+{{< generation-table "adreno-600-series-20182023" >}}
 
 > **Note:** Model numbers in the Adreno 600 series do not strictly reflect sub-architecture generation. In Mesa's [`freedreno_devices.py`](https://gitlab.freedesktop.org/mesa/mesa/-/blob/main/src/freedreno/common/freedreno_devices.py), `CHIP.A6XX` is divided into five sub-generations:
 > - `a6xx_gen1_low` (`reg_size_vec4 = 48`): Adreno 610, 612, and 702

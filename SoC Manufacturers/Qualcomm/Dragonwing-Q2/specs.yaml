@@ -1,0 +1,38 @@
+# Qualcomm/Dragonwing-Q2 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+# DRAM speeds are data rates in MT/s. Qualcomm quotes LPDDR clocks in MHz, so their figures are doubled here.
+
+label: "Part"
+parts:
+  - name: "QRB2210 / QCS2290 / QCM2290"
+    codename: "Agatti"
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A53", max_ghz: 2.0 }
+    memory:
+      types: [{ type: "LPDDR4X", mts: 3608 }, { type: "LPDDR3", mts: 1866 }]
+      bus_bits: 32
+      notes: "LPDDR4X 2× 16-bit, LPDDR3 1× 32-bit"
+    gpu:
+      name: "Adreno 702"
+      max_mhz: 845
+    isp:
+      count: 2
+      max_mp: 25
+      notes: "13 MP + 13 MP, or 25 MP @ 30 fps"
+  - name: "Q-2390 / IQ-2390"
+    cpu:
+      clusters:
+        - { cores: 1, core: "Cortex-A78", max_ghz: 1.9 }
+        - { cores: 3, core: "Cortex-A55", max_ghz: 1.8 }
+    memory:
+      types: [{ type: "LPDDR4X", mts: 3600 }]
+      bus_bits: 32
+      max_gb: 8
+    gpu:
+      name: "Adreno 704"
+      max_mhz: 1100
+    npu:
+      name: "Hexagon V66"
+      tops: 1.1
+      tops_precision: "INT8"

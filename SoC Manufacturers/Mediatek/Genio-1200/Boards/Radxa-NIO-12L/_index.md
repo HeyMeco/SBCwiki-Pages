@@ -22,30 +22,11 @@ images:
 
 ## Hardware
 {{% details title="Specs" open=true %}}
+{{< board-specs show="soc" >}}
 
-| **SoC** | **MediaTek Genio-1200 / MT8395** ([full spec](https://www.mediatek.com/products/iot/genio-iot/genio-1200))                                                                                                                      |
-|---------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| **CPU** | Octa-core: 4× Cortex-A78 @ 2.2 GHz, 4× Cortex-A55 @ 2.0 GHz                                                             |
-| **RAM** | x64 LPDDR4X-4266<br>- Configurations: 4GB / 8GB / 16GB                                                                                |
-| **GPU** | Mali-G57 MC5 @ 880 MHz<br>- OpenGL ES 3.2, Vulkan 1.1, OpenCL 2.0                                                 |
-| **VPU** | Decode: H.264/H.265/AV1/VP9 (4K@90fps), MPEG4/VP8 (FHD@60fps)<br>Encode: H.264/H.265 (4K@60fps)                          |
-| **NPU** | MediaTek 3rd Gen NPU: **4.8 TOPS** (2× MDLA2.0 + 2× Tensilica VP6)                          |
-
----
 ### Interfaces
 
-| **I/O**      | Description                                                                                                                                                                                                                                                             |
-|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Wireless** | Wi-Fi 6, Bluetooth 5.4                                                                                                                                                                                                                      |
-| **Ethernet** | Gigabit Ethernet (PoE capable)                                                                                                                                                                                                        |
-| **USB**      | USB 3.1 and USB 2.0 ports<br>USB Type-C ports                                                                                                                                                                                                                 |
-| **Video**    | HDMI (up to 4K@60Hz)<br>MIPI DSI support                                                                                                                                                                                                                     |
-| **Camera**   | MIPI CSI interfaces                                                                                                                                                                                                                                |
-| **Storage**  | MicroSD card slot<br>eMMC/UFS module support<br>M.2 NVMe support                                                                                                                                                            |
-| **Power**    | USB Type-C power input<br>PoE power supply (with PoE HAT)                                                                                                                                                            |
-| **GPIO**     | GPIO Header                                                                                                                                                                                                                              |
-| **PCIe**     | PCIe connectors                                                                                                                                                                                                              |
-
+{{< board-specs show="board" >}}
 {{% /details %}}
 
 ## Available OS images

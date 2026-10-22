@@ -20,16 +20,7 @@ The **Arm AGI CPU SP113012S** is the TCO (Total Cost of Ownership) optimized 128
 ## SP113012S Specifications & Features
 {{% details title="Specs" open=true %}}
 
-| **SoC** | **Arm AGI CPU SP113012S** |
-|---------|---------------------------|
-| **CPU** | 128x Arm [Neoverse V3](/docs/soc-manufacturers/arm/#2023) cores <br> 2x 128 SVE <br> 2MB/core L2 cache |
-| **Architecture** | Armv9.2 with bfloat16 and INT8 AI instructions |
-| **Frequency** | 3.2 GHz Nominal / 3.5 GHz Boost |
-| **System Cache** | 128 MB System-Level Cache |
-| **RAM** | 12x DDR5 up to 8800 MT/s <br> 6.3 GBps/core throughput <br> 2 DIMMs per channel |
-| **PCIe/IO** | 96x lanes PCIe Gen6 <br> CXL 3.0 Type 3 <br> 6x 1 Gen4 PCIe control lanes |
-| **TDP** | 230W - 410W Configurable TDP |
-| **Multi-Socket** | 2-Socket Support (Yes) |
+{{< soc-specs >}}
 
 {{% /details %}}
 <br>

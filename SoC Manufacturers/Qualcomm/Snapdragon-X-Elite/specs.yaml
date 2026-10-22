@@ -1,0 +1,87 @@
+# Qualcomm/Snapdragon-X-Elite specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+# DRAM speeds are data rates in MT/s. Qualcomm quotes LPDDR clocks in MHz, so their figures are doubled here.
+
+label: "Part"
+parts:
+  - name: "X1E-00-1DE"
+    process_nm: 4
+    cpu:
+      clusters:
+        - { cores: 12, core: "Oryon", base_ghz: 3.8, max_ghz: 4.3, note: "boost on 2 cores" }
+      cache: [{ level: "Total", mb: 42 }]
+    memory: &x1mem
+      types: [{ type: "LPDDR5X", mts: 8448 }]
+      bus_bits: 128
+      max_gb: 64
+      bandwidth_gbs: 135
+    gpu:
+      name: "Adreno X1-85"
+      max_mhz: 1500
+      tflops: 4.6
+    npu: &x1npu
+      name: "Hexagon"
+      tops: 45
+  - name: "X1E-84-100"
+    process_nm: 4
+    cpu:
+      clusters:
+        - { cores: 12, core: "Oryon", base_ghz: 3.8, max_ghz: 4.2, note: "boost on 2 cores" }
+      cache: [{ level: "Total", mb: 42 }]
+    memory: *x1mem
+    gpu:
+      name: "Adreno X1-85"
+      max_mhz: 1500
+      tflops: 4.6
+    npu: *x1npu
+  - name: "X1E-80-100"
+    process_nm: 4
+    cpu:
+      clusters:
+        - { cores: 12, core: "Oryon", base_ghz: 3.4, max_ghz: 4.0, note: "boost on 2 cores" }
+      cache: [{ level: "Total", mb: 42 }]
+    memory: *x1mem
+    gpu:
+      name: "Adreno X1-85"
+      max_mhz: 1250
+      tflops: 3.8
+    npu: *x1npu
+  - name: "X1E-78-100"
+    process_nm: 4
+    cpu:
+      clusters:
+        - { cores: 12, core: "Oryon", max_ghz: 3.4 }
+      cache: [{ level: "Total", mb: 42 }]
+    memory: *x1mem
+    gpu:
+      name: "Adreno X1-85"
+      max_mhz: 1250
+      tflops: 3.8
+    npu: *x1npu
+  - name: "IQ-X7181"
+    cpu:
+      clusters:
+        - { cores: 12, core: "Oryon", max_ghz: 3.4 }
+      notes: "Industrial grade of X1E-78-100"
+    memory: &iqxmem
+      types: [{ type: "LPDDR5X", mts: 8400 }]
+      bus_bits: 128
+      max_gb: 64
+    gpu:
+      name: "Adreno"
+      link: "/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-x-series-pc--compute"
+      max_mhz: 1250
+    npu: &iqxnpu
+      name: "Hexagon V73M"
+      tops_dense: 45
+  - name: "IQ-X5121"
+    cpu:
+      clusters:
+        - { cores: 8, core: "Oryon", max_ghz: 3.4 }
+      notes: "Industrial grade"
+    memory: *iqxmem
+    gpu:
+      name: "Adreno"
+      link: "/docs/soc-manufacturers/qualcomm/adreno-gpu/#adreno-x-series-pc--compute"
+      max_mhz: 1100
+    npu: *iqxnpu

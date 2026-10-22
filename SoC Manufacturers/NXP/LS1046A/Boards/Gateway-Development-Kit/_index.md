@@ -21,28 +21,11 @@ images:
 ## Hardware Specifications
 
 {{% details title="Specs" open=true %}}
+{{< board-specs show="soc" >}}
 
-| **SoC** | **NXP Layerscape LS1046A**                                                                                            |
-|---------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| **CPU** | 4× ARM Cortex-A72 @ 1.6GHz |
-| **RAM** | 8GB DDR4 @ 2100 MT/s with ECC support |
-
----
 ### Interfaces
 
-| **I/O**      | Description                                                                                                                                                                                                                                                             |
-|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Storage** | 32GB eMMC (Operating System) <br> 64MB NOR Flash (Bootloader) |
-| **Ethernet** | 2× 10 Gigabit SFP+ ports <br> 3× Gigabit Ethernet RJ-45 ports |
-| **Wireless** | 2× M.2 Key-E slots: <br> • 1× for WiFi 6 2x2 MU-MIMO <br> • 1× for tri-radio card (WiFi 5 + Bluetooth + Thread) |
-| **USB** | 1× USB-C 3.0 port <br> 1× USB-C console/UART port (debugging) |
-| **Debugging** | JTAG connector <br> 100+ test points throughout the PCB <br> UART USB-C port <br> Status RGB LED |
-| **Cooling** | Active cooling with 2× 4-pin PWM 5V fan headers <br> Heatsink included |
-| **Sensors** | 8× power sensors for real-time monitoring <br> 2× temperature sensors |
-| **Power** | USB-C PD 3.0 (65W charger included) |
-| **Enclosure** | Polycarbonate enclosure with easy access for development |
-| **Throughput** | Up to 26 Gbps line-rate for VLANs, PPPoE, and NAT |
-
+{{< board-specs show="board" >}}
 {{% /details %}}
 
 {{< list-board-available-os >}}

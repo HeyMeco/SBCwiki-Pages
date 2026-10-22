@@ -1,0 +1,21 @@
+# Broadcom/BCM2712 specifications, rendered by {{< soc-specs >}} (and by board pages via {{< board-specs >}}).
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+# Moved here from the Raspberry Pi 5 page.
+
+parts:
+  - name: "Broadcom BCM2712"
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A76", max_ghz: 2.4 }
+      cache:
+        - { level: "L2", mb: 0.5, per: "core" }
+        - { level: "L3", mb: 2 }
+      notes: "Cryptography extensions"
+    memory:
+      types: ["LPDDR4X"]
+    gpu:
+      name: "VideoCore VII"
+      vendor_apis: { opengl_es: "3.1", vulkan: "1.2" }
+    vpu:
+      decode:
+        - { res: "4K", fps: 60, codecs: ["HEVC"] }

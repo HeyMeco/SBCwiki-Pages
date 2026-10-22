@@ -1,0 +1,43 @@
+# Rockchip/RK3528 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "Rockchip RK3528"
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A53" }
+      notes: "Neon and FPU, shared L2 cache"
+    memory:
+      types:
+        - { type: "DDR3", mts: 2133 }
+        - { type: "DDR3L", mts: 2133 }
+        - { type: "LPDDR3", mts: 2133 }
+        - { type: "DDR4", mts: 2400 }
+        - { type: "LPDDR4", mts: 2400 }
+        - { type: "LPDDR4X", mts: 2400 }
+      bus_bits: 32
+      max_gb: 4
+    gpu:
+      name: "Mali-450"
+      vendor_apis: { opengl_es: "1.1/2.0", openvg: "1.1" }
+    vpu:
+      decode:
+        - { res: "4K", fps: 60, codecs: ["H.264", "H.265", "AVS2"] }
+        - { codecs: ["MPEG-1/2/4", "VC-1", "AVS/AVS+", "H.263"] }
+      encode:
+        - { res: "1080p", fps: 60, codecs: ["H.264", "H.265"] }
+      notes: "JPEG encoder"
+    display:
+      outputs: ["HDMI 2.0b (4K@60, HDR, CEC, HDCP 2.2)", "CVBS (720×576@60)"]
+    storage: ["eMMC 5.1 (HS400, CMD Queue)", "SD/MMC 4.51", "FSPI"]
+    pcie:
+      - { count: 1, gen: "2.1", lanes: 1, note: "RC, shared with USB 3.0" }
+    usb:
+      - { count: 1, version: "3.0", note: "DRD, shared with PCIe" }
+      - { count: 1, version: "2.0", note: "Host" }
+      - { count: 1, version: "2.0", note: "OTG" }
+    ethernet:
+      - { count: 1, gbps: 1, note: "MAC, RGMII/RMII" }
+    io: ["SDIO 3.0", "8× UART", "8× I2C", "2× SPI"]
+    security: ["Arm TrustZone", "Crypto", "RNG", "Firewall"]
+    package: "WBBGA401L (13.3×13.5 mm, 0.65/0.6 mm ball pitch)"

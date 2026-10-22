@@ -43,119 +43,69 @@ While Arm primarily licenses CPU and GPU designs to other manufacturers, they st
 
 ## ARM CPU Cores
 
-All ARMv8-A and newer cores
+All ARMv8-A and newer cores, plus the Cortex-M microcontroller cores used in SoCs on this wiki
 
 ### 2025
 
-| ISA | Name | Class |
-|-----|------|-------|
-| ARMv9.3-A | C1-Ultra (Cortex-X930) | Flagship |
-| ARMv9.3-A | C1-Premium (Cortex-A730) | High-End |
-| ARMv9.3-A | C1-Pro (Cortex-A530) | Performance |
-| ARMv9.3-A | C1-Nano (Cortex-A320) | Ultra Efficiency |
+{{< generation-table "2025" >}}
 
 > **Note:** From 2025, ARM uses the **C1** branding (C1-Ultra, C1-Premium, C1-Pro, C1-Nano) instead of "Cortex" for the new CPU line.
 
 ### 2024
 
-| ISA | Name | Class |
-|-----|------|-------|
-| ARMv9.2-A | Cortex-X925 | Flagship |
-| ARMv9.2-A | Cortex-A725 | High-End |
-| ARMv9.2-A | Cortex-A720AE | Performance |
-| ARMv9.2-A | Cortex-A520AE | Efficiency |
-| ARMv8-R | Cortex-R82AE | Real-Time |
+{{< generation-table "2024" >}}
 
 ### 2023
 
-| ISA | Name | Class |
-|-----|------|-------|
-| ARMv9.2-A | Cortex-X4 | Flagship |
-| ARMv9.2-A | Cortex-A720 | Performance |
-| ARMv9.2-A | Cortex-A520 | Efficiency |
-| ARMv9.2-A | Neoverse N3 (Cortex-X3) | Infrastructure |
-| ARMv9.2-A | Neoverse V3 (Cortex-X4) | Infrastructure |
+{{< generation-table "2023" >}}
 
 ### 2022
 
-| ISA | Name | Class |
-|-----|------|-------|
-| ARMv9.0-A | Cortex-X3 | Flagship |
-| ARMv9.0-A | Cortex-A715 | Performance |
-| ARMv9.0-A | Neoverse V2 (Cortex-X2) | Infrastructure |
-| ARMv8-R | Cortex-R52+ | Real-Time |
-| ARMv8.2-A | Cortex-M85 | Microcontroller |
+{{< generation-table "2022" >}}
 
 ### 2021
 
-| ISA | Name | Class |
-|-----|------|-------|
-| ARMv9.0-A | Cortex-X2 | Flagship |
-| ARMv9.0-A | Cortex-A710 | Performance |
-| ARMv9.0-A | Cortex-A510 | Efficiency |
-| ARMv9.0-A | Neoverse N2 (Cortex-A710) | Infrastructure |
-| ARMv9.0-A | Neoverse E2 (Cortex-A510) | Infrastructure |
+{{< generation-table "2021" >}}
 
 ### 2020
 
-| ISA | Name | Class |
-|-----|------|-------|
-| ARMv8.2-A | Cortex-X1 | Flagship |
-| ARMv8.2-A | Cortex-A78 | Performance |
-| ARMv8.2-A | Cortex-A78AE | Performance (Safety) |
-| ARMv8.2-A | Cortex-A78C | Performance |
-| ARMv8.4-A | Neoverse V1 (Cortex-X1) | Infrastructure |
-| ARMv8-R | Cortex-R82 | Real-Time |
+{{< generation-table "2020" >}}
 
 ### 2019
 
-| ISA | Name | Class |
-|-----|------|-------|
-| ARMv8.2-A | Cortex-A77 | Performance |
-| ARMv8-A | Cortex-A34 | Ultra Efficiency |
-| ARMv8.2-A | Neoverse N1 (Cortex-A76) | Infrastructure |
-| ARMv8.2-A | Neoverse E1 (Cortex-A75) | Infrastructure |
+{{< generation-table "2019" >}}
 
 > Neoverse targets datacenter and infrastructure; Cortex-A/X target mobile and client.
 
 ### 2018
 
-| ISA | Name | Class |
-|-----|------|-------|
-| ARMv8.2-A | Cortex-A76 | Performance |
-| ARMv8.2-A | Cortex-A76AE | Performance (Safety) |
-| ARMv8.2-A | Cortex-A65 | Performance |
-| ARMv8.2-A | Cortex-A65AE | Performance (Safety) |
+{{< generation-table "2018" >}}
 
  > AE variants add safety features (e.g. lockstep) commonly used in Automotive.
 
 ### 2017
 
-| ISA | Name | Class |
-|-----|------|-------|
-| ARMv8.2-A | Cortex-A75 | Performance |
-| ARMv8.2-A | Cortex-A55 | Efficiency |
+{{< generation-table "2017" >}}
 
 ### 2016
 
-| ISA | Name | Class |
-|-----|------|-------|
-| ARMv8-A | Cortex-A73 | Performance |
-| ARMv8-A | Cortex-A32 | Ultra Efficiency (32-bit) |
+{{< generation-table "2016" >}}
 
 ### 2015
 
-| ISA | Name | Class |
-|-----|------|-------|
-| ARMv8-A | Cortex-A72 | Performance |
-| ARMv8-A | Cortex-A35 | Ultra Efficiency |
+{{< generation-table "2015" >}}
+
+### 2014
+
+{{< generation-table "2014" >}}
 
 ### 2012
 
-| ISA | Name | Class |
-|-----|------|-------|
-| ARMv8-A | Cortex-A57 | Performance |
-| ARMv8-A | Cortex-A53 | Efficiency |
+{{< generation-table "2012" >}}
+
+### 2010
+
+{{< generation-table "2010" >}}
 
 ## ARM Mali GPUs
 

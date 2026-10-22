@@ -17,17 +17,7 @@ summary: NXP Layerscape LS1088A networking processor - Octa-core Cortex-A53 (up 
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **SoC** | **NXP Layerscape LS1088A**                                                                                            |
-|---------|----------------------------------------------------------------------------------------------------------------|
-| **CPU** | Octa-core: <br> 8× ARM Cortex-A53 (up to 1.6GHz)            |
-| **RAM** | DDR4                                                                                     |
-| **Ethernet** | 2× 10 Gigabit Ethernet + up to 8× Gigabit Ethernet |
-| **PCIe** | 3× PCIe Gen 3.0 |
-| **SerDes** | 8-10 GHz SerDes lanes |
-| **Storage** | SD, SPI, I²C |
-| **SATA** | 1× SATA 3.0 |
-| **Security** | SEC security engine, 10 Gbit/s |
-| **USB** | USB 2.0/3.0 |
+{{< soc-specs >}}
 
 {{% /details %}}
 

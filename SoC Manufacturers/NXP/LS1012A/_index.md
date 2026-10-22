@@ -17,17 +17,7 @@ summary: NXP Layerscape LS1012A networking processor - Single Cortex-A53 core (u
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **SoC** | **NXP Layerscape LS1012A**                                                                                            |
-|---------|----------------------------------------------------------------------------------------------------------------|
-| **CPU** | Single-core: <br> 1× ARM Cortex-A53 (up to 1GHz)            |
-| **RAM** | DDR3L, DDR4                                                                                     |
-| **Ethernet** | Up to 2× Gigabit Ethernet, 2.5G support |
-| **PCIe** | 1× PCIe Gen 2.0 |
-| **SerDes** | 3-6 GHz SerDes lanes |
-| **Storage** | SD, SPI, I²C |
-| **SATA** | 1× SATA 3.0 |
-| **Security** | SEC security engine, 1 Gbit/s |
-| **USB** | USB 2.0/3.0 |
+{{< soc-specs >}}
 
 {{% /details %}}
 

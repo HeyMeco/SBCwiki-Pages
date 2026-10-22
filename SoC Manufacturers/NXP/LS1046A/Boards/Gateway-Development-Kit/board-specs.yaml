@@ -1,0 +1,26 @@
+# Gateway-Development-Kit board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+soc:
+  notes: "CPU clocked at 1.6 GHz on this board"
+memory:
+  types: [{ type: "DDR4", mts: 2100 }]
+  sizes_gb: [8]
+  ecc: true
+storage: ["32 GB eMMC (operating system)", "64 MB NOR flash (bootloader)"]
+pcie:
+  - { count: 2, slot: "M.2 E-Key", note: "1× Wi-Fi 6 2x2 MU-MIMO, 1× tri-radio (Wi-Fi 5 + Bluetooth + Thread)" }
+usb:
+  - { count: 1, version: "3.0", connector: "Type-C" }
+  - { count: 1, version: "console/UART", connector: "Type-C", note: "debugging" }
+ethernet:
+  - { count: 2, gbps: 10, note: "SFP+" }
+  - { count: 3, gbps: 1, note: "RJ-45" }
+wifi: "Via M.2 E-Key modules"
+power: "USB-C PD 3.0 (65 W charger included)"
+cooling: ["Active cooling with 2× 4-pin PWM 5 V fan headers", "Heatsink included"]
+sensors: ["8× power sensors for real-time monitoring", "2× temperature sensors"]
+debugging: ["JTAG connector", "100+ test points throughout the PCB", "UART USB-C port", "Status RGB LED"]
+enclosure: "Polycarbonate enclosure with easy access for development"
+other:
+  - { name: "Throughput", value: "Up to 26 Gbps line-rate for VLANs, PPPoE and NAT" }

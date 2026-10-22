@@ -17,18 +17,7 @@ summary: NXP Layerscape LS1028A networking processor - Dual Cortex-A72 cores (up
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **SoC** | **NXP Layerscape LS1028A**                                                                                            |
-|---------|----------------------------------------------------------------------------------------------------------------|
-| **CPU** | Dual-core: <br> 2× ARM Cortex-A72 (up to 1.3GHz)            |
-| **RAM** | DDR3L, DDR4                                                                                     |
-| **Ethernet** | 5× 2.5 Gigabit Ethernet + 1× Gigabit Ethernet with TSN support |
-| **Display** | LCD controller with eDP/DP output |
-| **PCIe** | 2× PCIe Gen 3.0 |
-| **SerDes** | 4-10 GHz SerDes lanes |
-| **Storage** | SD, SPI, I²C |
-| **SATA** | 1× SATA 3.0 |
-| **Security** | SEC security engine, 5 Gbit/s |
-| **USB** | USB 2.0/3.0 |
+{{< soc-specs >}}
 
 {{% /details %}}
 

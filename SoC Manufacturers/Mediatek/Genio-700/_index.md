@@ -19,10 +19,7 @@ The MediaTek Genio 700 and Genio 510 are a pin-compatible IoT pair on 6 nm. Geni
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **Part** | **CPU** | **GPU** | **Memory** | **AI** |
-|----------|---------|---------|------------|--------|
-| **Genio 700 / MT8390** | 2x Cortex-A78 @ 2.2 GHz<br>6x Cortex-A55 @ 2.0 GHz<br>6 nm | Mali-G57 MC3 @ 950 MHz | x32 or x64 LPDDR4X-3733<br>Up to 8 GB | 5th-gen NPU, 4.0 TOPS<br>(1x MDLA3.0 + 1x Tensilica VP6) |
-| **Genio 510 / MT8370** | 2x Cortex-A78 @ 2.0 GHz<br>4x Cortex-A55 @ 2.0 GHz<br>6 nm | Mali-G57 MC2 @ 950 MHz | Same LPDDR4X options as Genio 700 | 5th-gen NPU, 3.2 TOPS<br>(1x MDLA3.0 + 1x Tensilica VP6) |
+{{< soc-specs >}}
 
 {{% /details %}}
 

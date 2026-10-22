@@ -17,15 +17,7 @@ The MediaTek Filogic 820 is the entry Wi-Fi 6 SoC in the Filogic line. The silic
 ## General Specifications
 {{% details title="Specs" open=true %}}
 
-| **SoC** | **Filogic 820 / MT7981** |
-|---------|--------------------------|
-| **CPU** | 2× Arm Cortex-A53 @ 1.3 GHz |
-| **RAM** | DDR3 / DDR4 |
-| **Storage** | SPI-NAND, SPI-NOR, eMMC, SD |
-| **Wi-Fi** | Companion MT7976-class Wi-Fi 6<br>Typical AX3000: 2×2 2.4 GHz + 3×3 5 GHz |
-| **Ethernet** | 2.5 GbE + 1 GbE |
-| **I/O** | PCIe (NVMe on OpenWrt One), USB, UART, GPIO |
-| **GPU** | n/a |
+{{< soc-specs >}}
 
 {{% /details %}}
 
