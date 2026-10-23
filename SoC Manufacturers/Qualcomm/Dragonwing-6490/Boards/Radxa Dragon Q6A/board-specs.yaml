@@ -13,13 +13,14 @@ usb:
 ethernet:
   - { count: 1, gbps: 1, note: "PoE with external PoE HAT" }
 wifi: "Wi-Fi 6 (external antenna required)"
-bluetooth: "5.4"
+bluetooth: "5.4 (external antenna required)"
 display:
-  outputs: ["1× HDMI (4K@60)", "1× 4-lane MIPI DSI"]
+  outputs: ["1× HDMI (4K@30)", "1× 4-lane MIPI DSI"]
 camera: ["1× 4-lane MIPI CSI", "2× 2-lane MIPI CSI"]
 audio: "3.5 mm 4-segment headphone jack with microphone input; stereo output drives 32 Ω headphones"
 gpio: "40-pin header (UART, SPI, I2C, …)"
 power: ["12 V via USB Type-C", "External 12 V pin input", "PoE (with external PoE HAT)"]
-cooling: "1× 2-pin 1.25 mm fan connector"
+rtc: "1× 2-pin 1.25 mm RTC battery connector"
+dimensions_mm: { w: 85, h: 56 }
 other:
   - { name: "Buttons", value: "Power button, EDL button" }

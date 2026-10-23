@@ -2,26 +2,32 @@
 # Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
 
 memory:
-  types: [{ type: "LPDDR5", mts: 5500 }]
+  types: [{ type: "LPDDR5", mts: 5000 }, { type: "LPDDR5", mts: 6000 }]
   bus_bits: 128
-  sizes_gb: [4, 8, 16, 32, 64]
-storage: ["M.2 M-Key 2280 NVMe (PCIe Gen 4 x4)"]
+  sizes_gb: [8, 16, 24, 32, 48, 64]
+storage: ["UFS module interface (Radxa UFS module)", "2× M.2 M-Key 2280 NVMe (PCIe Gen 4 x4)"]
 pcie:
-  - { count: 1, slot: "x16 slot", gen: 4, lanes: 8, note: "graphics cards, AI accelerators and other PCIe devices" }
-  - { count: 1, slot: "M.2 M-Key", gen: 4, lanes: 4, note: "2280 NVMe" }
-  - { count: 1, slot: "M.2 E-Key", gen: 4, lanes: 2, note: "plus USB, for Wi-Fi 7 / BT modules" }
+  - { count: 2, slot: "M.2 M-Key 2280", gen: 4, lanes: 4, note: "NVMe SSD" }
+  - { count: 1, slot: "M.2 E-Key 2230", note: "Wi-Fi and Bluetooth module" }
+  - { count: 1, slot: "M.2 B-Key 3042", note: "4G mobile network module" }
 usb:
-  - { count: 1, version: "3.2 Gen 2", connector: "Type-C", note: "Power Delivery" }
-  - { count: 1, version: "3.2 Gen 2", connector: "Type-C", note: "DP Alt Mode (4K@60), Power Delivery" }
+  - { count: 1, version: "3.2 Gen 2", connector: "Type-C", note: "host" }
   - { count: 2, version: "3.2 Gen 2", connector: "Type-A" }
-  - { count: 2, version: "2.0", connector: "Type-A" }
-  - { count: 2, version: "2.0", note: "front panel header" }
+  - { count: 3, version: "2.0", connector: "Type-A" }
 ethernet:
-  - { count: 2, gbps: 5, note: "10/100/1000/2500/5000 Mbit/s" }
-wifi: "Via M.2 E-Key module"
+  - { count: 2, gbps: 2.5 }
+wifi: "Via M.2 E-Key 2230 module"
+bluetooth: "Via M.2 E-Key 2230 module"
 display:
-  outputs: ["USB-C DisplayPort Alt Mode (4K@60)"]
-camera: "2× MIPI CSI (4-lane or 2-lane each)"
+  outputs: ["1× HDMI (4K@60)", "1× DisplayPort with MST (4K@120)", "1× USB-C DisplayPort Alt Mode (4K@60)"]
+camera: "2× 4-lane MIPI CSI"
 gpio: "40-pin header"
-power: ["24-pin ATX power connector", "USB Type-C with Power Delivery"]
-rtc: "Powered from CR1220 battery"
+power: ["12 V DC input (5.5×2.1 mm barrel jack)", "12 V pin power input", "4-pin power interface (12 V in/out, 5 V out only)"]
+rtc: "RTC battery holder, CR1220 compatible"
+cooling: ["4-pin fan header (PWM, tachometer)", "4× heatsink mounting points, M3.5, 75×75 mm"]
+form_factor: "Nano-ITX"
+dimensions_mm: { w: 120, h: 120 }
+other:
+  - { name: "Mobile network", value: "1× M.2 B-Key 3042 slot + 1× Nano SIM slot, for 4G modules" }
+  - { name: "Buttons", value: "Power button" }
+  - { name: "Recommended PSU", value: "≥ 65 W" }

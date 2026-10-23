@@ -1,16 +1,22 @@
 # Radxa-Rock-3A board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
 # Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
 
-storage: ["microSD", "Optional eMMC"]
+storage: ["microSD card slot", "Onboard eMMC module (0 / 8 / 16 / 32 / 64 GB)"]
+pcie:
+  - { count: 1, slot: "M.2 M-Key", gen: 3, lanes: 2, note: "NVMe SSD" }
+  - { count: 1, slot: "M.2 E-Key", gen: 2, lanes: 1, note: "SDIO/UART; Wi-Fi 6 module slot (e.g. Radxa Wireless Module A8)" }
 usb:
-  - { version: "3.0" }
-  - { version: "2.0" }
+  - { count: 2, version: "2.0", connector: "Type-A", note: "host" }
+  - { count: 1, version: "3.0", connector: "Type-A", note: "host" }
+  - { count: 1, version: "3.0", connector: "Type-A", note: "OTG/host" }
 ethernet:
-  - { gbps: 1 }
-wifi: "Varies by model"
-bluetooth: "Varies by model"
+  - { count: 1, gbps: 1, note: "PoE via optional HAT" }
+wifi: "None onboard; Wi-Fi 6 via optional Radxa Wireless Module A8 (M.2 E-Key)"
+bluetooth: "None onboard; BT 5.2 via optional Radxa Wireless Module A8 (M.2 E-Key)"
 display:
-  outputs: ["HDMI (4K@60)"]
-camera: "MIPI CSI"
+  outputs: ["1× Micro HDMI (4K@60)", "1x2-lane MIPI DSI"]
+camera: "1× 2-lane MIPI CSI"
+audio: "3.5 mm headphone jack (with microphone)"
 gpio: "40-pin header"
-power: "USB Type-C"
+power: "USB Type-C (5 V/2 A; also supports QC 3.0/2.0 at 9 V/2 A or 12 V/1.5 A)"
+dimensions_mm: { w: 85, h: 56 }

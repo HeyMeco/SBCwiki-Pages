@@ -1,5 +1,5 @@
 ---
-weight: 10
+weight: 7
 title: NXP
 icon: /assets/nxp/NXP_Logo.png
 categories:

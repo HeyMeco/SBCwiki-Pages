@@ -1,17 +1,28 @@
 # Radxa-Rock-3B board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
 # Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
 
-storage: ["microSD", "Optional eMMC"]
+storage: ["eMMC module connector", "microSD card slot"]
+pcie:
+  - { count: 1, slot: "M.2 M-Key (2280)", gen: 3, lanes: 2, note: "NVMe SSD" }
+  - { count: 1, slot: "M.2 E-Key", gen: 2, lanes: 1, note: "SDIO/UART/SATA/USB; Wi-Fi 6 module support" }
+  - { count: 1, slot: "M.2 B-Key (3042)", note: "USB; 4G modem with SIM slot" }
 usb:
-  - { version: "3.0" }
-  - { version: "2.0" }
+  - { count: 2, version: "2.0", connector: "Type-A", note: "host" }
+  - { count: 1, version: "3.0", connector: "Type-A", note: "host" }
+  - { count: 1, version: "3.0", connector: "Type-A", note: "OTG" }
 ethernet:
-  - { gbps: 1 }
-wifi: "Varies by model"
-bluetooth: "Varies by model"
+  - { count: 2, gbps: 1, note: "one port supports PoE via optional Radxa 25W PoE HAT" }
+wifi: "None onboard; optional via M.2 E-Key SDIO module (e.g. Wi-Fi 6)"
+bluetooth: "None onboard; optional via M.2 E-Key SDIO module"
 display:
-  outputs: ["HDMI (4K@60)"]
-camera: "MIPI CSI"
-gpio: "40-pin header"
-power: "USB Type-C"
+  outputs: ["HDMI 2.0 (4K@60)", "2× MIPI DSI", "eDP"]
+camera: "2× MIPI CSI"
+audio: "4-ring 3.5 mm headphone jack (analog, drives 32 Ω headphones directly)"
+cooling: "2-pin 1.25mm fan header (5 V, PWM control, no speed feedback)"
+gpio: "40-pin header (27× GPIO, 7× PWM, 3× I2C, 6× UART, 2× CAN, 1× SPI, 1× ADC)"
+power:
+  - "USB Type-C (PD 2.0: 9/12/15/20 V @ 2 A; QC 3.0/2.0: 9 V/2 A or 12 V/1.5 A; fixed 5.3–12 V)"
+  - "5 V via GPIO pins 2 & 4"
+  - "PoE via optional Radxa 25W PoE HAT"
+dimensions_mm: { w: 100, h: 75 }
 form_factor: "Pico-ITX"

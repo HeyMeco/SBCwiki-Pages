@@ -1,5 +1,5 @@
 ---
-weight: 10
+weight: 9
 title: Rockchip
 icon: /assets/rockchip/Rockchip-Logo.png
 categories:

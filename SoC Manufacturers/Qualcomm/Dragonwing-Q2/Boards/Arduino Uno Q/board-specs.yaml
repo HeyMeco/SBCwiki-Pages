@@ -17,9 +17,13 @@ bluetooth: "5.1"
 display:
   outputs: ["DisplayPort over USB-C", "4-lane MIPI DSI on the JMEDIA connector"]
 camera: "4-lane MIPI CSI-2 on the JMEDIA connector"
-gpio: ["Arduino UNO headers (JDIGITAL, JANALOG) at 3.3 V", "JSPI header", "Qwiic connector", "JMEDIA 60-pin, 1.8 V (MIPI CSI / DSI)", "JMISC mixed-voltage header (1.8 V MPU, 3.3 V MCU)"]
+audio: "Microphone in, headphone out, line out on JMISC header"
+gpio: ["Arduino UNO headers (JDIGITAL, JANALOG) at 3.3 V", "JSPI header", "Qwiic connector (3.3 V, I2C)", "JMEDIA 60-pin, 1.8 V (MIPI CSI / DSI)", "JMISC mixed-voltage header (1.8 V MPU, 3.3 V MCU)"]
 power: ["USB-C Power Delivery, 5 V / 3 A only", "7–24 V DC on VIN", "5 V pin on the analog header"]
+debugging: "JCTL MPU remote debug connector"
 form_factor: "Arduino Uno"
+dimensions_mm: { w: 68.85, h: 53.34 }
+weight_g: 48
 mcu:
   name: "STM32U585"
   core: "Cortex-M33"
@@ -28,4 +32,5 @@ mcu:
   ram: "786 KB SRAM"
   os: "Arduino Core on Zephyr"
 other:
-  - { name: "Indicators", value: "8×13 blue LED matrix driven by the STM32<br>RGB status LEDs" }
+  - { name: "Indicators", value: "8×13 blue LED matrix driven by the STM32<br>4× RGB user LEDs" }
+  - { name: "Buttons", value: "User button" }

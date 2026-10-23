@@ -1,5 +1,5 @@
 ---
-weight: 10
+weight: 5
 title: Cix
 icon: /assets/cix/Cix-Logo-Blue.webp
 categories:

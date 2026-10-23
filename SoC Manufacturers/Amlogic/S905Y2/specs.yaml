@@ -1,0 +1,19 @@
+# Amlogic/S905Y2 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "Amlogic S905Y2"
+    process_nm: 12
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A53", max_ghz: 1.8 }
+    memory:
+      types: [{ type: "LPDDR4", mts: 3200 }]
+      bus_bits: 32
+      max_gb: 4
+    gpu:
+      name: "Mali-G31 MP2"
+      vendor_apis: { opengl_es: "3.2", vulkan: "1.0", opencl: "2.0" }
+    vpu:
+      decode:
+        - { res: "4K", fps: 60, codecs: ["H.265", "VP9", "AVS2"] }

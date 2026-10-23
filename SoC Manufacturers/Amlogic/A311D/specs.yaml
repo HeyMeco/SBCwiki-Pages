@@ -1,0 +1,26 @@
+# Amlogic/A311D specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "Amlogic A311D"
+    process_nm: 12
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A73", max_ghz: 2.2, note: "big" }
+        - { cores: 2, core: "Cortex-A53", max_ghz: 1.8, note: "LITTLE" }
+    memory:
+      types: ["LPDDR4", "LPDDR4X"]
+    gpu:
+      name: "Mali-G52 MP4"
+      max_mhz: 800
+      vendor_apis: { opengl_es: "1.1/2.0/3.2", vulkan: "1.1", opencl: "2.0" }
+    npu:
+      name: "Amlogic NPU"
+      tops: 5
+      tops_precision: "INT8"
+    vpu:
+      decode:
+        - { res: "4K", fps: 60, codecs: ["H.265", "VP9", "AVS2"] }
+      encode:
+        - { res: "1080p", fps: 60, codecs: ["H.264", "H.265"] }
+    isp: { max_mp: 8 }

@@ -18,9 +18,10 @@ ethernet:
   - { count: 1, gbps: 2.5, note: "PCIe RTL8125; PoE with add-on PoE HAT" }
 wifi: "Via standard M.2 E-Key Wi-Fi / BT modules"
 display:
-  outputs: ["1× HDMI 2.1 (8K@60)", "1× \"HDMI 2.1\" (4K@60)", "1× DP via USB Type-C", "1× MIPI DSI (up to 1080p60)"]
-  inputs: ["4K@60 \"HDMI 2.1\""]
-camera: "2× 2-lane MIPI CSI (cameras up to 48 MP)"
+  outputs: ["1× HDMI 2.1 (8K@60)", "1× HDMI 2.1 (4K@60)", "1× DP via USB Type-C (4K@60)", "1× 4-lane MIPI DSI"]
+  inputs: ["1× Micro HDMI 2.1 input (4K@60)"]
+camera: "1× 4-lane MIPI CSI camera port (splittable into 2× 2-lane)"
+audio: "4-ring 3.5 mm headphone jack (drives 32 Ω headphones) with microphone input"
 gpio: "Raspberry Pi 40-pin header"
-power: "USB Type-C PD 2.0 (9 V/2 A, 12 V/2 A, 15 V/2 A, 20 V/2 A)"
+power: "USB Type-C PD 2.0 (9 V/2 A, 12 V/2 A, 15 V/2 A, 20 V/2 A); 5V on GPIO pins 2 & 4"
 rtc: "Powered from external battery"

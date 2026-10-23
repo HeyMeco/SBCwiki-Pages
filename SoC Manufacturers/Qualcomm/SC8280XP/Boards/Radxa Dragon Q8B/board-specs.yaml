@@ -13,7 +13,6 @@ usb:
   - { count: 2, version: "3.2 Gen 2", connector: "Type-C", note: "DisplayPort 1.4 Alt Mode" }
   - { count: 2, version: "3.2 Gen 2", connector: "Type-A" }
   - { count: 2, version: "2.0", connector: "Type-A" }
-  - { count: 1, version: "Type-C", note: "power input" }
 ethernet:
   - { count: 2, gbps: 2.5, note: "RJ45, QPS615 PCIe bridge, AVB/TSN" }
 wifi: "Via M.2 E-Key module"
@@ -23,8 +22,8 @@ camera: "1× 50-pin board-to-board connector (PCIe / MIPI CSI / I2C)"
 audio: ["3.5 mm headphone jack", "Microphone connector"]
 gpio: "40-pin header (UART, I2C, SPI, GPIO)"
 power: ["USB Type-C, 20 V", "12–20 V power header with external power-button pin"]
-rtc: "RTC battery connector"
-cooling: "Fan connector"
+rtc: "1× RTC battery connector (2-pin, 1.25 mm pitch)"
+cooling: "1× fan connector (3-pin, 1.0 mm pitch)"
 dimensions_mm: { w: 100, h: 75 }
 other:
   - { name: "Buttons", value: "Power button, EDL button" }

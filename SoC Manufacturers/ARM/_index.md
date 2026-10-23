@@ -1,5 +1,5 @@
 ---
-weight: 1
+weight: 3
 title: ARM
 icon: /assets/arm/Arm_Logo.png
 iconBg: "#098DAD"

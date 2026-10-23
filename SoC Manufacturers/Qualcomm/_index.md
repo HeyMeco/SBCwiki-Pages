@@ -1,5 +1,5 @@
 ---
-weight: 10
+weight: 8
 title: Qualcomm
 icon: /assets/qualcomm/Qualcomm-Logo.png
 categories:

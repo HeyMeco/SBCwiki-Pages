@@ -4,24 +4,32 @@
 memory:
   types: [{ type: "LPDDR5", mts: 5500 }]
   bus_bits: 128
-  sizes_gb: [4, 8, 16, 32, 64]
+  sizes_gb: [8, 12, 16, 24, 32, 64]
 storage: ["M.2 M-Key 2280 NVMe (PCIe Gen 4 x4)"]
 pcie:
   - { count: 1, slot: "x16 slot", gen: 4, lanes: 8, note: "graphics cards, AI accelerators and other PCIe devices" }
   - { count: 1, slot: "M.2 M-Key", gen: 4, lanes: 4, note: "2280 NVMe" }
-  - { count: 1, slot: "M.2 E-Key", gen: 4, lanes: 2, note: "plus USB, for Wi-Fi 7 / BT modules" }
+  - { count: 1, slot: "M.2 E-Key 2230", gen: 4, lanes: 2, note: "plus USB, for Wi-Fi 6E / BT modules" }
 usb:
-  - { count: 1, version: "3.2 Gen 2", connector: "Type-C", note: "Power Delivery" }
+  - { count: 1, version: "3.2 Gen 2", connector: "Type-C", note: "20 V Power Delivery input" }
   - { count: 1, version: "3.2 Gen 2", connector: "Type-C", note: "DP Alt Mode (4K@60), Power Delivery" }
   - { count: 2, version: "3.2 Gen 2", connector: "Type-A" }
   - { count: 2, version: "2.0", connector: "Type-A" }
   - { count: 2, version: "2.0", note: "front panel header" }
 ethernet:
   - { count: 2, gbps: 5, note: "10/100/1000/2500/5000 Mbit/s" }
-wifi: "Via M.2 E-Key module"
+wifi: "Via M.2 E-Key 2230 module"
+bluetooth: "Via M.2 E-Key 2230 module"
 display:
-  outputs: ["USB-C DisplayPort Alt Mode (4K@60)"]
-camera: "2× MIPI CSI (4-lane or 2-lane each)"
+  outputs: ["1× HDMI (4K@60)", "1× DisplayPort with 2-way MST (4K@120)", "1× eDP (4K@60)", "1× USB-C DisplayPort Alt Mode (4K@60)"]
+camera: "2× 4-lane MIPI CSI"
+audio: ["3.5 mm headphone jack with microphone support", "Front panel audio header", "2× speaker connectors"]
 gpio: "40-pin header"
-power: ["24-pin ATX power connector", "USB Type-C with Power Delivery"]
-rtc: "Powered from CR1220 battery"
+power: ["24-pin ATX power connector", "20 V via USB Type-C (Power Delivery)"]
+rtc: "2-pin 1.25 mm RTC battery connector"
+cooling: ["4-pin fan header (PWM)", "4× heatsink mounting points, M3.5, 75×75 mm"]
+form_factor: "Mini-ITX"
+dimensions_mm: { w: 170, h: 170 }
+other:
+  - { name: "Buttons", value: "Power button, reset button" }
+  - { name: "Recommended PSU", value: "≥ 65 W" }

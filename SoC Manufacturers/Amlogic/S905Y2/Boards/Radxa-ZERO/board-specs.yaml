@@ -1,0 +1,17 @@
+# Radxa-ZERO board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+memory:
+  types: ["LPDDR4"]
+  sizes_gb: [1, 2, 4]
+storage: ["microSD card slot", "Onboard eMMC module (0 / 8 / 16 / 32 / 64 / 128 GB)"]
+usb:
+  - { count: 1, version: "2.0", connector: "Type-C", note: "OTG, power & data" }
+  - { count: 1, version: "3.0", connector: "Type-C", note: "host" }
+wifi: "Onboard module varies by unit: ap6212 (Wi-Fi 4, 2.4 GHz only) / ap6256 (Wi-Fi 5, 2.4+5 GHz) / aw-cm256sm (Wi-Fi 5, 2.4+5 GHz)"
+bluetooth: "Onboard module varies by unit: ap6212 (BT 4.1) / ap6256 (BT 5.2) / aw-cm256sm (BT 4.2)"
+display:
+  outputs: ["Micro HDMI (4K@60)"]
+gpio: "40-pin header"
+power: "USB Type-C (5 V / 2 A)"
+dimensions_mm: { w: 65, h: 30 }

@@ -7,19 +7,19 @@ memory:
   types: [{ type: "LPDDR4X", mts: 4266 }]
   bus_bits: 64
   sizes_gb: [4, 8, 16]
-storage: ["microSD", "eMMC/UFS module", "M.2 NVMe"]
-pcie:
-  - { slot: "PCIe connectors" }
+storage: ["microSD", "UFS 2.1 onboard: 64 / 128 / 256 / 512 GB", "eMMC footprint reserved, not populated by default"]
 usb:
-  - { version: "3.1" }
-  - { version: "2.0" }
-  - { version: "Type-C ports" }
+  - { count: 4, version: "3.0", connector: "Type-A", note: "host" }
+  - { count: 1, version: "3.0", connector: "Type-C", note: "OTG, also carries DisplayPort" }
 ethernet:
-  - { count: 1, gbps: 1, note: "PoE capable" }
-wifi: "Wi-Fi 6"
-bluetooth: "5.4"
+  - { count: 1, gbps: 1, note: "10/100/1000 Mbps, adaptive" }
+wifi: "Wi-Fi 6 (802.11ax), 3× external antennas"
+bluetooth: "5.2"
 display:
-  outputs: ["HDMI (4K@60)", "MIPI DSI"]
-camera: "MIPI CSI"
-gpio: "GPIO header"
-power: ["USB Type-C", "PoE (with PoE HAT)"]
+  outputs: ["1× HDMI 2.0b (up to 4K@60)", "1× USB Type-C DP 1.4 (up to 4K@60)", "1× 4-lane MIPI DSI (up to 2K@60)"]
+  inputs: ["1× HDMI 2.0b (up to 4K@60)"]
+camera: "2× 4-lane MIPI CSI (1× 48MP or 2× 16MP camera)"
+audio: "3.5 mm headphone jack with mic input (headphone recording supported)"
+gpio: "40-pin 2.54 mm header: 2× UART, 2× SPI, 2× I2C, 1× PCM/I2S, 1× S/PDIF, 1× PWM, 1× ADC, 6× GPIO, plus 5V/3.3V/GND"
+power: ["5 V via USB Type-C (min. 10 W, 20 W recommended with USB 3.0 peripherals)", "5 V / GND via GPIO pins 2 & 4"]
+dimensions_mm: { w: 140, h: 75 }

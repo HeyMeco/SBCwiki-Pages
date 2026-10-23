@@ -4,18 +4,20 @@
 revision: "1.1"
 memory:
   types: ["DDR4"]
-  sizes_gb: [4]
+  sizes_gb: [4, 8]
 storage: ["8 GB eMMC", "128 MB SPI NAND flash", "microSD"]
 pcie:
   - { count: 2, slot: "miniPCIe", gen: 3, lanes: 2, note: "for Wi-Fi 7 NICs" }
   - { count: 1, slot: "M.2 M-Key", gen: 3, lanes: 1, note: "NVMe SSD" }
   - { count: 1, slot: "M.2 B-Key", gen: 3, note: "USB 3.2 / PCIe, for 5G modems" }
 usb:
-  - { count: 1, version: "3.2" }
+  - { count: 1, version: "3.2 Gen1", connector: "Type-A" }
 ethernet:
   - { count: 2, gbps: 10, note: "SFP" }
   - { count: 4, gbps: 1 }
-wifi: "Via miniPCIe Wi-Fi 7 NICs"
+wifi: "Wi-Fi 6/7 via 2× miniPCIe NIC cards (not included)"
 gpio: "26-pin header"
 power: ["USB Type-C PD 2.0, up to 20 V", "12 V / 5.2 A DC input (5521)"]
-rtc: "Powered from external battery"
+rtc: "1.25 mm RTC battery connector (3.3 V)"
+dimensions_mm: { w: 148, h: 100.5 }
+weight_g: 250

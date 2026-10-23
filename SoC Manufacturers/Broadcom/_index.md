@@ -1,5 +1,5 @@
 ---
-weight: 1
+weight: 4
 title: Broadcom / RaspberryPi
 icon: /assets/broadcom-rpi/Raspberry_Pi_Logo.png
 categories:

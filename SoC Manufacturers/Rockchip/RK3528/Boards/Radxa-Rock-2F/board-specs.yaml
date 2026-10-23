@@ -4,18 +4,19 @@
 soc:
   notes: "[Rockchip RK3528 datasheet](https://wiki.friendlyelec.com/wiki/images/7/70/Rockchip_RK3528_Datasheet_V1.2-20240410.pdf)"
 memory:
-  types: ["LPDDR4", "LPDDR4X"]
-storage: ["microSD", "Optional onboard eMMC"]
+  types: ["LPDDR4"]
+  sizes_gb: [1, 2, 4]
+storage: ["microSD", "Optional onboard eMMC (0, 8, 16, 32, or 64 GB)"]
 pcie:
-  - { slot: "FPC connector", gen: 2, lanes: 1, note: "for HAT compatibility" }
+  - { count: 1, slot: "FPC connector", gen: 2, lanes: 1, note: "SSD/SATA/2.5GbE expansion via HAT" }
 usb:
-  - { version: "USB ports" }
-ethernet:
-  - { count: 2, gbps: 2.5, note: "via HAT" }
+  - { count: 2, version: "2.0", connector: "Type-A", note: "host" }
+  - { count: 1, version: "2.0", connector: "Type-C", note: "OTG/host, data and power" }
 wifi: "Wi-Fi 6"
 bluetooth: "5.4"
 display:
-  outputs: ["HDMI 2.0 (4K@60)", "AV out (720×576@60)"]
-camera: "MIPI CSI"
-gpio: "GPIO header"
-power: "Power input"
+  outputs: ["1× HDMI 2.0 (4K@60, CEC)", "1× AV out (720×576@60)"]
+audio: "4-ring 3.5mm headphone jack (drives 32Ω headphones); AV-out audio"
+gpio: "40-pin header (ADC, I2C, SPI, UART, PWM, …)"
+power: ["USB Type-C (5 V)", "5V via GPIO pins 2 and 4"]
+dimensions_mm: { w: 56, h: 65 }

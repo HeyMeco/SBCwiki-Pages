@@ -10,13 +10,12 @@ storage: ["microSD", "Optional onboard eMMC (0 / 8 / 16 / 32 / 64 GB)"]
 usb:
   - { count: 1, version: "3.0", connector: "Type-C", note: "host" }
   - { count: 1, version: "2.0", connector: "Type-C", note: "OTG, power & data" }
-ethernet:
-  - { gbps: 1, note: "via optional HAT" }
-wifi: "Onboard Wi-Fi 6 (802.11 b/g/n)"
-bluetooth: "5.0"
+wifi: "Onboard Wi-Fi 6 (802.11 a/b/g/n/ac/ax)"
+bluetooth: "5.4 with BLE"
 display:
   outputs: ["Micro HDMI (1080p@60)"]
-camera: "1× 4-lane MIPI CSI"
+camera: "1× 4-lane MIPI CSI (22-pin, 0.5mm pitch FPC)"
 gpio: "40-pin header"
 power: "USB Type-C (5 V / 2 A)"
+debugging: "UART2_M0 debug console on 40-pin header (pin 8 TX, pin 10 RX), default baud 1500000n8"
 dimensions_mm: { w: 65, h: 30 }

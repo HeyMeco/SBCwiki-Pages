@@ -1,0 +1,19 @@
+# Radxa-ZERO-2-Pro board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+memory:
+  types: ["LPDDR4"]
+  sizes_gb: [4]
+storage: ["microSD card slot", "Optional onboard eMMC module (16 / 32 / 64 GB)"]
+usb:
+  - { count: 1, version: "2.0", connector: "Type-C", note: "OTG, power & data" }
+  - { count: 1, version: "3.0", connector: "Type-C", note: "host" }
+wifi: "Wi-Fi 5 (802.11 b/g/n/ac), external antenna"
+bluetooth: "5.0 with BLE"
+display:
+  outputs: ["Micro HDMI (4K@60)", "4-channel MIPI DSI"]
+camera: "1× MIPI CSI"
+cooling: "3-pin fan header (5 V)"
+gpio: "40-pin header"
+power: "USB Type-C (5 V / 2 A)"
+dimensions_mm: { w: 65, h: 37 }

@@ -7,9 +7,9 @@ soc:
     - "Radxa lists NPU support for INT4/INT8/INT16/FP16/BF16"
 memory:
   types: ["LPDDR5"]
-storage: ["microSD"]
+storage: ["microSD", "Optional onboard eMMC (up to 256 GB)"]
 pcie:
-  - { count: 1, slot: "FPC connector", gen: 3, lanes: 1 }
+  - { count: 1, slot: "FPC connector", gen: 3, lanes: 1, note: "NVMe SSD expansion" }
 usb:
   - { count: 1, version: "3.2", connector: "Type-C", note: "DisplayPort Alt Mode, OTG" }
   - { count: 1, version: "2.0", connector: "Type-C", note: "power input, OTG" }
@@ -19,11 +19,12 @@ ethernet:
 wifi: "Wi-Fi 6"
 bluetooth: "5.4"
 display:
-  outputs: ["USB-C DisplayPort Alt Mode (4K@60)"]
+  outputs: ["1× USB-C DisplayPort Alt Mode (4K@60)"]
 camera: "1× 4-lane MIPI CSI"
 gpio: ["30-pin header", "15-pin header"]
 power: "USB Type-C 2.0 (5 V)"
-cooling: "Fan connector"
+cooling: "1× fan header"
+dimensions_mm: { w: 51, h: 51 }
 other:
   - { name: "Co-processor", value: "RISC-V XuanTie E902 (200 MHz)" }
   - { name: "Buttons", value: "USB BOOT button" }

@@ -18,9 +18,11 @@ ethernet:
   - { count: 3, gbps: 1, note: "RJ-45" }
 wifi: "Via M.2 E-Key modules"
 power: "USB-C PD 3.0 (65 W charger included)"
-cooling: ["Active cooling with 2× 4-pin PWM 5 V fan headers", "Heatsink included"]
+cooling: ["Active cooling with 2× 2-pin PWM 5 V fan headers", "Heatsink included"]
 sensors: ["8× power sensors for real-time monitoring", "2× temperature sensors"]
 debugging: ["JTAG connector", "100+ test points throughout the PCB", "UART USB-C port", "Status RGB LED"]
-enclosure: "Polycarbonate enclosure with easy access for development"
+enclosure: "Polycarbonate enclosure (design TBD)"
+form_factor: "Nano-ITX"
+dimensions_mm: { w: 120, h: 120 }
 other:
   - { name: "Throughput", value: "Up to 26 Gbps line-rate for VLANs, PPPoE and NAT" }

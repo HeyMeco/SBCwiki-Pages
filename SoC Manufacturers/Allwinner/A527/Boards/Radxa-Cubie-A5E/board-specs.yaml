@@ -4,16 +4,16 @@
 memory:
   types: ["LPDDR4", "LPDDR4X"]
   sizes_gb: [1, 2, 4]
-storage: ["SPI flash", "Optional eMMC (0–32 GB)", "M.2 M-Key NVMe"]
+storage: ["SPI flash", "microSD", "Optional eMMC (0, 8, 16, or 32 GB)", "M.2 M-Key (2230) NVMe SSD"]
 usb:
-  - { version: "3.1" }
-  - { version: "2.0" }
+  - { count: 1, version: "3.0", connector: "Type-A", note: "host" }
+  - { count: 1, version: "2.0", connector: "Type-C", note: "OTG, 5V power input" }
 ethernet:
-  - { count: 2, gbps: 1, note: "one PoE capable" }
+  - { count: 2, gbps: 1, note: "one PoE capable (requires external PoE HAT), other non-PoE" }
 wifi: "Wi-Fi 6"
 bluetooth: "5.4"
 display:
-  outputs: ["1× HDMI (4K@60)", "MIPI DSI"]
-camera: "MIPI CSI"
-gpio: "GPIO header"
-power: ["USB Type-C", "PoE (with PoE HAT)"]
+  outputs: ["1× HDMI (4K@60)", "1× 4-lane MIPI DSI"]
+camera: ["1× 4-lane MIPI CSI", "2× 2-lane MIPI CSI"]
+gpio: "40-pin header (UART, SPI, I2C, …)"
+power: ["USB Type-C (5 V)", "PoE (with PoE HAT)", "5V via GPIO pins 2 and 4"]

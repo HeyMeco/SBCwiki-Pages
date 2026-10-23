@@ -1,5 +1,5 @@
 ---
-weight: 10
+weight: 6
 title: Mediatek
 icon: /assets/mediatek/MediaTek-Logo.png
 categories:
