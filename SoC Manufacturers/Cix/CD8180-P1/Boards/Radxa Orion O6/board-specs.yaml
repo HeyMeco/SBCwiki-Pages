@@ -2,7 +2,7 @@
 # Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
 
 memory:
-  types: [{ type: "LPDDR5", mts: 5500 }]
+  types: [{ type: "LPDDR5", mts: 6400 }]
   bus_bits: 128
   sizes_gb: [8, 12, 16, 24, 32, 64]
 storage: ["M.2 M-Key 2280 NVMe (PCIe Gen 4 x4)"]

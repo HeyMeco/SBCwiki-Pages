@@ -9,7 +9,7 @@ parts:
         - { cores: 4, core: "Cortex-A720", max_ghz: 2.4, note: "medium" }
         - { cores: 4, core: "Cortex-A520", max_ghz: 1.8, note: "LITTLE" }
     memory:
-      types: [{ type: "LPDDR5", mts: 5500 }]
+      types: [{ type: "LPDDR5", mts: 6400 }]
       bus_bits: 128
       max_gb: 64
       notes: "Configurations: 4 / 8 / 16 / 32 / 64 GB"
