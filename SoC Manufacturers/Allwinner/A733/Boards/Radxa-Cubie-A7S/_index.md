@@ -9,6 +9,7 @@ boards:
 - Radxa-Cubie-A7S
 board-vendor:
 - Radxa
+release: "2026-02"
 summary: "Radxa Cubie A7S single-board computer - Allwinner A733 8-core ARM processor, Pocket-sized Power for AI"
 images:
 - images/spec_radxa_cubie_a7s_01.webp

@@ -9,6 +9,7 @@ boards:
 - Radxa-Cubie-A5E
 board-vendor:
 - Radxa
+release: "2025-02"
 summary: "Radxa Cubie A5E single-board computer - Allwinner A527/T527 8-core ARM processor, 8 Core Tiny AIoT SBC"
 images:
 - images/radxa-cubie-a5e-01.webp

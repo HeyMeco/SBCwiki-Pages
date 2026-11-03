@@ -9,6 +9,7 @@ boards:
 - Radxa-Rock-5C
 board-vendor:
 - Radxa
+release: "2024-02"
 summary: "Radxa Rock 5C single-board computer - RK3588S2/RK3582 8-core ARM processor, Your 8K Computer for Everything"
 images:
 - images/radxa-rock-5c-01.webp

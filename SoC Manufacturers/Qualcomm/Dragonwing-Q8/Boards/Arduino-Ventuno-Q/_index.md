@@ -9,6 +9,7 @@ boards:
 - Arduino-Ventuno-Q
 board-vendor:
 - Arduino
+release: "2026-08"
 summary: "Arduino Ventuno Q high-performance industrial SBC - Qualcomm Dragonwing IQ8 (QCS8275), STM32H5 MCU, 16GB LPDDR5, 64GB eMMC, M.2 NVMe, WiFi 6, 2.5GbE, and CAN-FD."
 images:
 - images/1-Arduino_VENTUNO_Q_Front_Render.webp

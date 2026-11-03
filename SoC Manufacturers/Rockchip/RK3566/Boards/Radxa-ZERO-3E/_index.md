@@ -9,6 +9,7 @@ boards:
 - Radxa-ZERO-3E
 board-vendor:
 - Radxa
+release: "2024-04"
 summary: "Radxa ZERO 3E single-board computer - RK3566 4-core ARM processor, A Light, Compact and Tiny SBC"
 images:
 - images/radxa-zero-3e-01.webp

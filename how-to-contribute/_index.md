@@ -60,6 +60,7 @@ Pages find each other through front matter values, not hand-written lists. Keep 
 |-------|---------|---------|
 | `tags: [SOC-RK]` | SoC page | Lists the SoC on its vendor page (`{{</* taglist SOC-RK */>}}`). Use `SOC-RK-Upcoming` style tags for unreleased chips. |
 | `tags: [RK3576]` | Board page | Lists the board as a card on its SoC page (`{{</* taglist tag="RK3576" style="cards" */>}}`). |
+| `board-vendor: [Radxa]`, `release: "2025-04"` | Board page | Lists the board on its SBC vendor page (`{{</* vendor-boards */>}}`), newest release first. A new vendor needs a page under `SBC Vendors/` with `vendor: <ID>` in its front matter. |
 | `boards: [Radxa-Rock-4D]` | Board and OS pages | Connects boards and operating systems. The value must match exactly on both pages. |
 | `categories: [os]` | OS page | Marks the page as an operating system. |
 | `summary` | All pages | Shown in cards, search results and link previews. Keep it to one sentence. |

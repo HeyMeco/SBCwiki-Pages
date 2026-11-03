@@ -9,6 +9,7 @@ boards:
 - Radxa-Rock-5A
 board-vendor:
 - Radxa
+release: "2023-01"
 summary: "Radxa Rock 5A single-board computer - RK3588S 8-core ARM processor, 8K Quality in the Palm of Your Hand!"
 images:
 - images/radxa-rock-5a-01.webp

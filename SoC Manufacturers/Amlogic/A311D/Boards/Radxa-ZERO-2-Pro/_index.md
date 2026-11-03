@@ -9,6 +9,7 @@ boards:
 - Radxa-ZERO-2-Pro
 board-vendor:
 - Radxa
+release: "2024-03"
 summary: "Radxa ZERO 2 Pro single-board computer - Amlogic A311D 6-core ARM processor, A Ultra Tiny High Performance SBC"
 images:
 - images/radxa-zero-2-pro-01.webp

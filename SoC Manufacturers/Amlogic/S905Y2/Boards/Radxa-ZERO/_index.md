@@ -9,6 +9,7 @@ boards:
 - Radxa-ZERO
 board-vendor:
 - Radxa
+release: "2021-06"
 summary: "Radxa ZERO single-board computer - Amlogic S905Y2 4-core ARM processor, An Ultra Tiny SBC Supports 4K Display"
 images:
 - images/radxa-zero-01.webp

@@ -9,6 +9,7 @@ boards:
 - Radxa-Rock-4D
 board-vendor:
 - Radxa
+release: "2025-04"
 summary: "Radxa Rock 4D single-board computer - RK3576 8-core ARM processor, High-Performance SBC for Edge AI and 4K Multimedia"
 images:
 - images/radxa-rock-4d-01.webp

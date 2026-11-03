@@ -9,6 +9,7 @@ boards:
 - Radxa-ZERO-3W
 board-vendor:
 - Radxa
+release: "2023-12"
 summary: "Radxa ZERO 3W single-board computer - RK3566 4-core ARM processor, A Light, Compact and Tiny SBC"
 images:
 - images/radxa-zero-3w-01.webp

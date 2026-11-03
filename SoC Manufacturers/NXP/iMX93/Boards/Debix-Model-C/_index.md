@@ -9,6 +9,7 @@ boards:
 - Debix-Model-C
 board-vendor:
 - Polyhex
+release: "2023-09"
 summary: Low-power industrial SBC powered by NXP i.MX 93 with dual-core Cortex-A55 (1.7GHz), 0.5 TOPS NPU, maximum 1W power consumption, dual Gigabit Ethernet with TSN, -20°C to 70°C operating temperature, and 10-15 year long-term availability.
 images:
 - /images/debix-model-c-01.png

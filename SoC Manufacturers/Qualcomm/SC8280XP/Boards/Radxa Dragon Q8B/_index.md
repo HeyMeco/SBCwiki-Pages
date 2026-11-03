@@ -9,6 +9,7 @@ boards:
 - Dragon-Q8B
 board-vendor:
 - Radxa
+release: "2026-05"
 summary: "Radxa Dragon Q8B single-board computer - Snapdragon 8cx Gen 3, up to 32GB LPDDR4X, Adreno 690 GPU, dual 2.5GbE, triple 4K120 display output."
 images:
 - images/1-q8b_top.webp

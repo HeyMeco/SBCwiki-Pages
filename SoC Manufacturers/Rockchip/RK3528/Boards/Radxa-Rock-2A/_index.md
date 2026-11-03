@@ -9,6 +9,7 @@ boards:
 - Radxa-Rock-2A
 board-vendor:
 - Radxa
+release: "2024-07"
 summary: "Radxa Rock 2A single-board computer - RK3528 4-core ARM processor, Your 4K Single Board Computer"
 images:
 - images/radxa-rock-2a-01.webp

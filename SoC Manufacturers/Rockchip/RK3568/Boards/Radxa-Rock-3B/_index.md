@@ -10,6 +10,7 @@ boards:
 - Radxa-Rock-3B
 board-vendor:
 - Radxa
+release: "2023-11"
 summary: "Radxa Rock 3B single-board computer - RK3568 4-core ARM processor, An Pico-ITX form factor SBC with Multifunctional Interface"
 images:
 - images/radxa-rock-3b-01.webp

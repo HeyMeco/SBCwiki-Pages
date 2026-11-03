@@ -9,6 +9,7 @@ boards:
 - Debix-Model-A
 board-vendor:
 - Polyhex
+release: "2022-07"
 summary: Industrial SBC powered by NXP i.MX 8M Plus with quad-core Cortex-A53 (up to 1.8GHz), 2.3 TOPS NPU, dual Gigabit Ethernet with TSN, 4x USB 3.0, -20°C to 70°C operating temperature, and 10-15 year long-term availability.
 images:
 - /images/debix-model-a-01.png

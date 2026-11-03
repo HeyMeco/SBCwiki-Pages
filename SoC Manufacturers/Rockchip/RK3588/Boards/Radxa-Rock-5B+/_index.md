@@ -9,6 +9,7 @@ boards:
 - Radxa-Rock-5B+
 board-vendor:
 - Radxa
+release: "2024-11"
 summary: "Radxa Rock 5B+ single-board computer - RK3588 8-core ARM processor, New Upgrade Version of ROCK 5B"
 images:
 - images/radxa-rock-5bp-01.webp

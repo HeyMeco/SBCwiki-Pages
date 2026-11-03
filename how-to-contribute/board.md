@@ -15,6 +15,8 @@ Create `SoC Manufacturers/<Vendor>/<SoC>/Boards/<Board-Name>/` with:
 In the front matter:
 
 - `tags` holds the SoC part number, which lists the board on the SoC page.
+- `board-vendor` holds the vendor ID, which lists the board on its page under **SBC Vendors**. Use the same spelling as the other boards from that vendor (e.g. `Radxa`, `RaspberryPi`).
+- `release` is the month the board launched (first orders or pre-orders), as `"YYYY-MM"`. Vendor pages sort boards by it.
 - `boards` holds the board ID. Operating system pages list the same ID to show up under **Available OS images**.
 
 ## `_index.md`
@@ -31,6 +33,7 @@ boards:
 - Vendor-Board-Name
 board-vendor:
 - Vendor
+release: "2025-01"
 summary: "Vendor Board Name single-board computer - SOC123 processor, key features in one sentence"
 images:
 - images/vendor-board-name-01.webp

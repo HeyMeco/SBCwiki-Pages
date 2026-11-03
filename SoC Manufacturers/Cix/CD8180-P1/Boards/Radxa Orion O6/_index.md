@@ -9,6 +9,7 @@ boards:
 - Orion-O6
 board-vendor:
 - Radxa
+release: "2024-12"
 summary: "Radxa Orion O6 on SBCwiki.com"
 images:
 - images/spec_orion_o6_01.webp

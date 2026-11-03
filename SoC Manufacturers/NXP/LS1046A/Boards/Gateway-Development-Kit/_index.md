@@ -9,6 +9,7 @@ boards:
 - Gateway-Development-Kit
 board-vendor:
 - Mono
+release: "2025-04"
 summary: High-performance open-source router development kit powered by NXP Layerscape LS1046A quad-core Cortex-A72 (1.6GHz), 8GB ECC RAM, 2× 10 Gigabit SFP+ ports, 3× Gigabit Ethernet, dual M.2 WiFi slots, 32GB eMMC, OpenWRT pre-installed.
 images:
 - /images/gateway-mono-01.png

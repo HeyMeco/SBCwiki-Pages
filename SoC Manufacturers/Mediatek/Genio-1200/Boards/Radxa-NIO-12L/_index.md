@@ -9,6 +9,7 @@ boards:
 - Radxa-NIO-12L
 board-vendor:
 - Radxa
+release: "2024-04"
 summary: "Radxa NIO 12L single-board computer - MediaTek Genio-1200 8-core ARM processor, Where High-Performance Meets AI Efficiency"
 images:
 - images/radxa-nio-12l-01.webp

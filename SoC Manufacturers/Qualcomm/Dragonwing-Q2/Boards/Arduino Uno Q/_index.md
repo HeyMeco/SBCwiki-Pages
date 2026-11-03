@@ -9,6 +9,7 @@ boards:
 - Arduino-Uno-Q
 board-vendor:
 - Arduino
+release: "2025-10"
 summary: "Arduino Uno Q single-board computer - Qualcomm Dragonwing Q2 (QRB2210) quad Cortex-A53 running Debian, plus an STM32U585 Cortex-M33 for Arduino sketches, in the Uno form factor."
 images:
 - images/1-uno-q_top.webp
