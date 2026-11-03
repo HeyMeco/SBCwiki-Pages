@@ -2,7 +2,6 @@
 weight: 3
 title: ARM
 icon: /assets/arm/Arm_Logo.png
-iconBg: "#098DAD"
 categories:
 - soc-vendors
 soc-vendors:
@@ -30,7 +29,7 @@ bookToc: true
 }
 </style>
 
-![ARM Logo](assets/arm/Arm_Logo.png?h=100&bc=098DAD)
+![ARM Logo](assets/arm/Arm_Logo.png?h=100)
 
 ## Summary
 
