@@ -1,5 +1,6 @@
 ---
-weight: 7
+menuStripPrefix: "NXP "
+weight: 8
 title: NXP
 icon: /assets/nxp/NXP_Logo.png
 categories:

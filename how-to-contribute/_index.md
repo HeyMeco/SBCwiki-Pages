@@ -1,5 +1,5 @@
 ---
-weight: 3
+weight: 9
 bookFlatSection: true
 bookCollapseSection: true
 title: "How to Contribute"

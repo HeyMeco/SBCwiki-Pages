@@ -1,6 +1,7 @@
 ---
-weight: 1
+weight: 2
 bookFlatSection: true
+bookCollapseSection: true
 title: "SBC Vendors"
 summary: Single-board computer makers on SBCwiki.com, each with their boards listed by release date.
 noindex: true

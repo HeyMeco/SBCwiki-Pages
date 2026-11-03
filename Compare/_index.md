@@ -1,8 +1,8 @@
 ---
 menu:
-  after:
+  before:
     name: Compare Hardware
-    weight: 6
+    weight: 30
     params:
       class: menu-top-level
 bookHidden: true

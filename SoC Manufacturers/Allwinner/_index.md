@@ -1,4 +1,5 @@
 ---
+menuStripPrefix: "Allwinner "
 weight: 1
 title: Allwinner
 icon: /assets/allwinner/Allwinner_Logo.png

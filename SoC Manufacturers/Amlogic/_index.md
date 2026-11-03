@@ -1,4 +1,5 @@
 ---
+menuStripPrefix: "Amlogic "
 weight: 2
 title: Amlogic
 categories:

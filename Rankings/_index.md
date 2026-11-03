@@ -1,10 +1,10 @@
 ---
 menu:
-  after:
+  before:
     name: Rankings
-    weight: 5
+    weight: 20
     params:
-      class: menu-divider-above menu-top-level
+      class: menu-top-level
 bookHidden: true
 weight: 0
 bookFlatSection: true

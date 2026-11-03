@@ -1,5 +1,5 @@
 ---
-weight: 2
+weight: 3
 bookFlatSection: true
 title: "Operating Systems"
 description: Find compatible operating systems for your Single Board Computer including Armbian, Ubuntu, and OpenMediaVault.

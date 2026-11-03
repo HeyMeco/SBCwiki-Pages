@@ -11,7 +11,7 @@ Welcome to the SBCwiki documentation hub. Explore detailed specifications, block
 
 ## Browse by Category
 
-### ARM SoC Manufacturers
+### ARM SoC Vendors
 
 Find documentation organized by chip manufacturer including detailed SoC specifications, block diagrams, and compatible boards:
 
