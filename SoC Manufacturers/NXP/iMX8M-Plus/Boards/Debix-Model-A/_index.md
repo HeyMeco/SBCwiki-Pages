@@ -51,6 +51,10 @@ images:
 | ISP | ✓ | ✗ |
 | HiFi 4 DSP | ✓ | ✗ |
 
+## Benchmarks
+
+- [Geekbench 6.7.1 Preview](https://browser.geekbench.com/v6/cpu/19426361), Armbian 26.11 (kernel 7.3.1-edge-imx8m):<br> Single Core **171**, Multi Core **515**
+
 ## Documentation
 
 - [Debix Model A Product Page](https://debix.io/product/debix-model-a/)
