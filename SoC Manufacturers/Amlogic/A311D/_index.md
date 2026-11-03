@@ -1,5 +1,5 @@
 ---
-weight: 2
+weight: 1
 title: Amlogic A311D
 soc:
 - A311D

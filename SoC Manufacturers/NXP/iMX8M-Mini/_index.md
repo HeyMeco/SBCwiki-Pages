@@ -1,5 +1,5 @@
 ---
-weight: 3
+weight: 9
 title: NXP i.MX 8M Mini
 #bookCollapseSection: true
 soc-series:

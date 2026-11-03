@@ -1,5 +1,5 @@
 ---
-weight: 20
+weight: 14
 title: NXP Layerscape LX2160A
 #bookCollapseSection: true
 soc-series:

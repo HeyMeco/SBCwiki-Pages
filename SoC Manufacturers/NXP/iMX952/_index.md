@@ -1,5 +1,5 @@
 ---
-weight: 13
+weight: 1
 title: NXP i.MX 952
 #bookCollapseSection: true
 soc-series:

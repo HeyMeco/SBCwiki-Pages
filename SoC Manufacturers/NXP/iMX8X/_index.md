@@ -1,5 +1,5 @@
 ---
-weight: 6
+weight: 11
 title: NXP i.MX 8X
 #bookCollapseSection: true
 soc-series:

@@ -34,22 +34,6 @@ parts:
       name: "Adreno 643"
     other:
       - { name: "Notes", value: "Full specifications are on the [chip page](/docs/soc-manufacturers/qualcomm/dragonwing-6490/)" }
-  - name: "QCS610"
-    process_nm: 11
-    cpu:
-      clusters:
-        - { cores: 2, core: "Cortex-A76", max_ghz: 2.2 }
-        - { cores: 6, core: "Cortex-A55" }
-    memory:
-      types: [{ type: "LPDDR4X", mts: 3608 }]
-    gpu:
-      name: "Adreno 612"
-    npu:
-      name: "Hexagon 685"
-    wifi: "Wi-Fi 5 and Wi-Fi 4, 1x1"
-    bluetooth: "5.0"
-    os: ["Android", "Linux"]
-    availability: "10-year longevity"
   - name: "QCS6125"
     process_nm: 11
     cpu:
@@ -87,3 +71,19 @@ parts:
     os: ["Yocto Linux", "Ubuntu"]
     other:
       - { name: "Grade", value: "Industrial" }
+  - name: "QCS610"
+    process_nm: 11
+    cpu:
+      clusters:
+        - { cores: 2, core: "Cortex-A76", max_ghz: 2.2 }
+        - { cores: 6, core: "Cortex-A55" }
+    memory:
+      types: [{ type: "LPDDR4X", mts: 3608 }]
+    gpu:
+      name: "Adreno 612"
+    npu:
+      name: "Hexagon 685"
+    wifi: "Wi-Fi 5 and Wi-Fi 4, 1x1"
+    bluetooth: "5.0"
+    os: ["Android", "Linux"]
+    availability: "10-year longevity"

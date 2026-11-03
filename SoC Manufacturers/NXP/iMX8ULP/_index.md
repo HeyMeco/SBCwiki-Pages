@@ -1,5 +1,5 @@
 ---
-weight: 8
+weight: 13
 title: NXP i.MX 8ULP
 #bookCollapseSection: true
 soc-series:

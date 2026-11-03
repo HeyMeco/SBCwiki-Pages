@@ -1,5 +1,5 @@
 ---
-weight: 1
+weight: 3
 title: Amlogic S905Y2
 soc:
 - S905Y2

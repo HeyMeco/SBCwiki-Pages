@@ -1,5 +1,5 @@
 ---
-weight: 11
+weight: 3
 title: NXP i.MX 94
 #bookCollapseSection: true
 soc-series:

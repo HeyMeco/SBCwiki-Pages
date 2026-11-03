@@ -1,5 +1,5 @@
 ---
-weight: 14
+weight: 20
 title: NXP Layerscape LS1012A
 #bookCollapseSection: true
 soc-series:

@@ -40,16 +40,6 @@ parts:
       notes: "LPDDR4X 2× 16-bit, LPDDR3 1× 32-bit"
     gpu:
       name: "Adreno 610"
-  - name: "QCS410"
-    process_nm: 11
-    cpu:
-      clusters:
-        - { cores: 2, core: "Cortex-A76", max_ghz: 2.2 }
-        - { cores: 6, core: "Cortex-A55" }
-    memory:
-      types: [{ type: "LPDDR4X", mts: 3608 }]
-    gpu:
-      name: "Adreno 612"
   - name: "QRB4210"
     process_nm: 11
     cpu:
@@ -63,3 +53,13 @@ parts:
     gpu:
       name: "Adreno 610"
       max_mhz: 950
+  - name: "QCS410"
+    process_nm: 11
+    cpu:
+      clusters:
+        - { cores: 2, core: "Cortex-A76", max_ghz: 2.2 }
+        - { cores: 6, core: "Cortex-A55" }
+    memory:
+      types: [{ type: "LPDDR4X", mts: 3608 }]
+    gpu:
+      name: "Adreno 612"

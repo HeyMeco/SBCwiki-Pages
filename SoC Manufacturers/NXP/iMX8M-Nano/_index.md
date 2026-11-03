@@ -1,5 +1,5 @@
 ---
-weight: 4
+weight: 10
 title: NXP i.MX 8M Nano
 #bookCollapseSection: true
 soc-series:

@@ -1,5 +1,5 @@
 ---
-weight: 7
+weight: 12
 title: NXP i.MX 8XLite
 #bookCollapseSection: true
 soc-series:

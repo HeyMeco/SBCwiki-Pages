@@ -1,5 +1,5 @@
 ---
-weight: 16
+weight: 18
 title: NXP Layerscape LS1043A
 #bookCollapseSection: true
 soc-series:

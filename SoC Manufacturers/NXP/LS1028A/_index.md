@@ -1,5 +1,5 @@
 ---
-weight: 15
+weight: 19
 title: NXP Layerscape LS1028A
 #bookCollapseSection: true
 soc-series:
