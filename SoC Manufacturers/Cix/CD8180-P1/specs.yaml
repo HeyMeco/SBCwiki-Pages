@@ -5,7 +5,7 @@ parts:
   - name: "CD8180 / P1"
     cpu:
       clusters:
-        - { cores: 4, core: "Cortex-A720", max_ghz: 2.8, note: "big" }
+        - { cores: 4, core: "Cortex-A720", max_ghz: 2.6, note: "big" }
         - { cores: 4, core: "Cortex-A720", max_ghz: 2.4, note: "medium" }
         - { cores: 4, core: "Cortex-A520", max_ghz: 1.8, note: "LITTLE" }
     memory:
