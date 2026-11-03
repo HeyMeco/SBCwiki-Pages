@@ -1,0 +1,29 @@
+# NVIDIA Jetson AGX Orin Developer Kit board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+soc: { part: "Jetson AGX Orin 64GB" }
+memory:
+  types: ["LPDDR5"]
+  bus_bits: 256
+  sizes_gb: [32, 64]
+storage: ["64 GB eMMC 5.1 (on module)", "microSD (UHS-I, SDR104)", "M.2 M-Key NVMe"]
+pcie:
+  - { count: 1, slot: "PCIe x16 (x8 electrical)", gen: 4, lanes: 8 }
+  - { count: 1, slot: "M.2 M-Key", gen: 4, lanes: 4, note: "NVMe SSD" }
+  - { count: 1, slot: "M.2 E-Key", gen: 4, lanes: 1, note: "plus USB 2.0, UART, I2S" }
+usb:
+  - { count: 2, version: "3.2 Gen 2", connector: "Type-C", note: "USB PD, one DFP-only" }
+  - { count: 2, version: "3.2 Gen 2", connector: "Type-A" }
+  - { count: 2, version: "3.2 Gen 1", connector: "Type-A" }
+  - { count: 1, version: "2.0", connector: "micro-B", note: "debug UART" }
+ethernet:
+  - { count: 1, gbps: 10, note: "RJ45, 10GBASE-T" }
+display:
+  outputs: ["1× DisplayPort 1.4a (MST)"]
+camera: "16-lane MIPI CSI-2 connector"
+gpio: ["40-pin header (I2C, GPIO, SPI, CAN, I2S, UART, DMIC)", "12-pin automation header", "10-pin JTAG header"]
+audio: "10-pin audio panel header"
+power: ["19 V via either USB-C port", "7–20 V DC jack (5.5/2.5 mm)"]
+rtc: "2-pin RTC battery connector"
+cooling: "4-pin fan header, fan and heatsink fitted"
+dimensions_mm: { w: 110, h: 110, d: 71.65 }

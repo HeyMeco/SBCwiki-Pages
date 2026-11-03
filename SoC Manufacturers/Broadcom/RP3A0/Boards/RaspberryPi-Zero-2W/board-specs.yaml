@@ -1,0 +1,17 @@
+# Raspberry Pi Zero 2 W board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+memory:
+  types: ["LPDDR2"]
+  sizes_gb: [0.5]
+storage: ["microSD"]
+usb:
+  - { count: 1, version: "2.0", connector: "micro USB", note: "OTG" }
+wifi: "2.4 GHz 802.11 b/g/n"
+bluetooth: "4.2 / BLE"
+display:
+  outputs: ["1× mini HDMI"]
+camera: "CSI-2 camera connector"
+gpio: "Raspberry Pi 40-pin header footprint (unpopulated)"
+power: "5 V / 2.5 A via micro USB"
+dimensions_mm: { w: 65, h: 30 }

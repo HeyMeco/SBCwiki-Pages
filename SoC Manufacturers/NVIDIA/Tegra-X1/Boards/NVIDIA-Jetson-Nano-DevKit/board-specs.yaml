@@ -1,0 +1,22 @@
+# NVIDIA Jetson Nano Developer Kit board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+soc: { part: "Jetson Nano (Tegra X1)" }
+memory:
+  types: ["LPDDR4"]
+  bus_bits: 64
+  sizes_gb: [4]
+storage: ["microSD"]
+pcie:
+  - { count: 1, slot: "M.2 E-Key", note: "Wi-Fi card" }
+usb:
+  - { count: 4, version: "3.0", connector: "Type-A" }
+  - { count: 1, version: "2.0", connector: "micro-B" }
+ethernet:
+  - { count: 1, gbps: 1 }
+display:
+  outputs: ["1× HDMI", "1× DisplayPort"]
+camera: "2× MIPI CSI-2 (B01 revision; 1× on A02)"
+gpio: "40-pin header"
+power: ["5 V / 4 A DC barrel jack", "5 V / 2 A micro USB"]
+dimensions_mm: { w: 100, h: 80, d: 29 }

@@ -1,0 +1,24 @@
+# Rockchip/RK3399 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "Rockchip RK3399"
+    process_nm: 28
+    cpu:
+      clusters:
+        - { cores: 2, core: "Cortex-A72", max_ghz: 2.0 }
+        - { cores: 4, core: "Cortex-A53", max_ghz: 1.8 }
+      notes: "Clocks as run on the Renegade Elite; Rockchip's standard rating is 1.8 GHz (A72) and 1.4 GHz (A53)"
+    memory: { types: ["DDR3", "LPDDR3", "LPDDR4"], bus_bits: 64, max_gb: 4 }
+    gpu: { name: "Mali-T860 MP4", vendor_apis: { opengl_es: "3.2", opencl: "1.2" } }
+    vpu:
+      decode:
+        - { res: "4K", fps: 60, codecs: ["H.265", "VP9"] }
+        - { res: "4K", fps: 30, codecs: ["H.264"] }
+      encode:
+        - { res: "1080p", fps: 30, codecs: ["H.264"] }
+    display: { max: "4K@60", outputs: ["HDMI 2.0", "DisplayPort 1.2", "eDP 1.3", "2× MIPI DSI"] }
+    camera: ["2× MIPI CSI-2"]
+    pcie: [{ count: 1, gen: "2.1", lanes: 4 }]
+    usb: [{ count: 2, version: "3.0", note: "Type-C with DisplayPort" }, { count: 2, version: "2.0" }]
+    ethernet: [{ count: 1, gbps: 1 }]

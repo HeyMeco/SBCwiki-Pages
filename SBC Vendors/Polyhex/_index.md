@@ -1,5 +1,5 @@
 ---
-weight: 4
+weight: 14
 title: Polyhex (DEBIX)
 vendor: Polyhex
 icon: /assets/polyhex/DEBIX-Logo.png

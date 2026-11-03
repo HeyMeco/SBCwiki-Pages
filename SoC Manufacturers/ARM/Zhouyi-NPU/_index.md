@@ -36,7 +36,7 @@ Zhouyi is Arm-China's family of neural processing units, also called AIPUs, lice
 | SoC | NPU Performance |
 | :--- | :--- |
 | [Cix CD8180 / P1](/docs/soc-manufacturers/cix/cd8180-p1/) | 30 TOPS |
-| SiEngine SE1000 | 3.34 TOPS + 3.5 TOPS (two NPU cores, Zhouyi Z2) |
+| [SiEngine SE1000](/docs/soc-manufacturers/siengine/se1000/) | 3.34 TOPS + 3.5 TOPS (two NPU cores, Zhouyi Z2) |
 | Allwinner R329 | |
 
 ## Software

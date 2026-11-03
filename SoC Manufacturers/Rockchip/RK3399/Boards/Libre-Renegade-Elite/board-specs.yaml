@@ -1,0 +1,28 @@
+# Libre Computer Renegade Elite (ROC-RK3399-PC) board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+memory:
+  types: ["LPDDR4"]
+  bus_bits: 64
+  sizes_gb: [4]
+storage: ["microSD", "eMMC 5.x module connector", "16 MB SPI NOR flash (UEFI boot firmware)"]
+pcie:
+  - { count: 1, slot: "30-pin PCIe expansion header" }
+usb:
+  - { count: 1, version: "3.0", connector: "Type-C", note: "DisplayPort and Power Delivery input" }
+  - { count: 1, version: "3.0", connector: "Type-C", note: "DisplayPort (one DP active at a time)" }
+  - { count: 3, version: "2.0", connector: "Type-A" }
+ethernet:
+  - { count: 1, gbps: 1, note: "PoE via 6-pin header" }
+display:
+  outputs: ["1× HDMI 2.0", "DisplayPort via USB-C", "eDP", "MIPI DSI", "MIPI DSI/CSI (shared)"]
+camera: "MIPI CSI, MIPI DSI/CSI (shared)"
+gpio: ["30-pin RF expansion header", "30-pin audio expansion header", "30-pin USB header"]
+power: ["USB-C Power Delivery", "6-pin DC power header", "PoE header"]
+rtc: "RTC with battery backup"
+debugging: "3-pin UART header"
+form_factor: "Libre Computer PC form factor, low profile"
+dimensions_mm: { w: 120, h: 72, d: 12 }
+other:
+  - { name: "Firmware", value: "UEFI" }
+  - { name: "Software support", value: "Until 2048" }

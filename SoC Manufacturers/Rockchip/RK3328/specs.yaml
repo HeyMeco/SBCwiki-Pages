@@ -1,0 +1,20 @@
+# Rockchip/RK3328 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "Rockchip RK3328"
+    process_nm: 28
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A53", max_ghz: 1.4 }
+      notes: "Cryptography extensions"
+    memory: { types: ["DDR3", "DDR4", "LPDDR3"], bus_bits: 32, max_gb: 4 }
+    gpu: { name: "Mali-450 MP2", max_mhz: 500, vendor_apis: { opengl_es: "2.0", openvg: "1.1" } }
+    vpu:
+      decode:
+        - { res: "4K", fps: 60, codecs: ["H.265", "H.264", "VP9"] }
+      encode:
+        - { res: "1080p", fps: 30, codecs: ["H.265", "H.264"] }
+    display: { max: "4K HDR", outputs: ["HDMI 2.0", "CVBS"] }
+    usb: [{ count: 1, version: "3.0" }, { count: 3, version: "2.0" }]
+    ethernet: [{ count: 1, gbps: 1 }, { count: 1, gbps: 0.1, note: "integrated PHY" }]

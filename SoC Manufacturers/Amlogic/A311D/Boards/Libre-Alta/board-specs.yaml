@@ -1,0 +1,25 @@
+# Libre Computer Alta (AML-A311D-CC) board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+memory:
+  types: ["LPDDR4"]
+  bus_bits: 32
+  sizes_gb: [2, 4]
+storage: ["microSD (UHS SDR104)", "eMMC 5.x module connector (screw mount)", "16 MB SPI NOR flash (UEFI boot firmware)"]
+usb:
+  - { count: 4, version: "3.0", connector: "Type-A", note: "via hub" }
+  - { count: 1, version: "2.0", connector: "Type-C", note: "dual-role, 5 V / 3 A power input" }
+ethernet:
+  - { count: 1, gbps: 1, note: "PoE via header and add-on" }
+display:
+  outputs: ["1× HDMI 2.0 (4K HDR)", "4-lane MIPI DSI (22-pin)", "3.5 mm TRRS CVBS/AV jack"]
+camera: "4-lane MIPI CSI (22-pin), dual-camera ISP"
+gpio: "40-pin Raspberry Pi-compatible header"
+power: "5 V / 3 A via USB Type-C; 7.5 W typical, 10 W full load"
+debugging: "3-pin UART header"
+form_factor: "Libre Computer CC form factor (Raspberry Pi 3 Model B+ footprint and mounting holes)"
+dimensions_mm: { w: 85, h: 56, d: 20 }
+other:
+  - { name: "Firmware", value: "UEFI" }
+  - { name: "Other", value: "IR receiver with wake support, USB ROM boot button, boot select switch" }
+  - { name: "Software support", value: "Until 2053" }

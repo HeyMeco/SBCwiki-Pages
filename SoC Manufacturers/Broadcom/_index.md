@@ -1,4 +1,5 @@
 ---
+menuStripPrefix: "Broadcom "
 weight: 4
 title: Broadcom / RaspberryPi
 icon: /assets/broadcom-rpi/Raspberry_Pi_Logo.png
@@ -17,17 +18,9 @@ summary: All Broadcom SoC's, boards, and development resources on sbcwiki.com
 
 {{< taglist tag="RPI" style="cards">}}
 
----
-
-- Raspberry Pi 500
-- Raspberry Pi 500+
-- Raspberry Pi Compute Module 5 (CM5)
-- Raspberry Pi Zero 2W
-
 ## Current Broadcom SoC's
 
 {{< taglist SOC-Broadcom >}}
-- Broadcom RP3A0
 
 ## Older Broadcom SoC'S
 

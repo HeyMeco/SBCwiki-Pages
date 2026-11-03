@@ -1,5 +1,5 @@
 ---
-weight: 3
+weight: 10
 title: Mono
 vendor: Mono
 icon: /assets/mono/Mono-Logo.png

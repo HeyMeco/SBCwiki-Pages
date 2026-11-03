@@ -1,0 +1,22 @@
+# Libre Computer Das Frite (AML-S805X-AC-V2) board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+memory:
+  types: ["DDR4"]
+  bus_bits: 16
+  sizes_gb: [0.5, 1]
+storage: ["eMMC 5.x module connector (screw mount)", "SPI NOR flash (UEFI boot firmware)"]
+usb:
+  - { count: 1, version: "2.0", connector: "Type-A" }
+  - { count: 1, version: "2.0", connector: "Type-C", note: "power input and USB device port" }
+ethernet:
+  - { count: 1, gbps: 0.1 }
+display:
+  outputs: ["1× HDMI 2.0 (1080p HDR)", "3.5 mm AV jack (stereo line out and CVBS)"]
+gpio: ["40-pin Raspberry Pi-compatible header", "4-pin ADC header"]
+power: "5 V via USB-C; 2.5 W typical, 4 W full load"
+form_factor: "Libre Computer AC form factor (Raspberry Pi 3 Model A+ footprint), low profile"
+dimensions_mm: { w: 65, h: 56, d: 14 }
+other:
+  - { name: "Firmware", value: "UEFI" }
+  - { name: "Software support", value: "Until 2056" }

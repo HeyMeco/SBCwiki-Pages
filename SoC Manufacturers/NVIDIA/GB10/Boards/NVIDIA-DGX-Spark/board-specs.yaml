@@ -1,0 +1,21 @@
+# NVIDIA DGX Spark board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+memory:
+  types: [{ type: "LPDDR5X", mts: 8533 }]
+  bus_bits: 256
+  sizes_gb: [128]
+storage: ["1 or 4 TB M.2 2242 NVMe (PCIe Gen 5, self-encrypting)"]
+usb:
+  - { count: 4, connector: "Type-C" }
+ethernet:
+  - { count: 1, gbps: 10, note: "RJ45" }
+  - { count: 2, gbps: 200, note: "ConnectX-7 QSFP, 200 Gbit/s total" }
+wifi: "Wi-Fi 7"
+bluetooth: "5.3"
+display:
+  outputs: ["1× HDMI 2.1a"]
+power: "240 W external power supply"
+form_factor: "Desktop mini PC"
+dimensions_mm: { w: 150, h: 150, d: 50.5 }
+weight_g: 1200

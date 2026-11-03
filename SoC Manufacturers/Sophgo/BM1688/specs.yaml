@@ -1,0 +1,29 @@
+# Sophgo/BM1688 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "Sophgo BM1688"
+    cpu:
+      clusters:
+        - { cores: 8, core: "Cortex-A53", max_ghz: 1.65 }
+    mcu: [{ cores: 1, core: "XuanTie C906 (RISC-V)", max_mhz: 1200 }]
+    memory:
+      types: ["LPDDR4", "LPDDR4X"]
+      max_gb: 16
+    npu:
+      name: "Sophgo TPU"
+      tops: 16
+      tops_precision: "INT8"
+      datatypes: ["INT4", "INT8", "FP16", "BF16", "FP32"]
+      notes: "32 TOPS INT4, 4.0 TFLOPS FP16/BF16, 0.5 TFLOPS FP32"
+    vpu:
+      decode:
+        - { res: "1080p", fps: 30, codecs: ["H.265", "H.264"] }
+      encode:
+        - { res: "1080p", fps: 30, codecs: ["H.265", "H.264"] }
+      notes: "Up to 16 decode and 10 encode streams at 1080p30; JPEG up to 480 fps at 1080p"
+    isp:
+      notes: "2-frame HDR, 3DNR, lens distortion correction, fisheye dewarp, 360° stitching"
+    camera: ["Up to 6 sensor inputs: 2× 8 MP@30 HDR or 1× 8K@15 SDR"]
+    other:
+      - { name: "AI frameworks", value: "Caffe, PyTorch, TensorFlow, ONNX, MXNet" }

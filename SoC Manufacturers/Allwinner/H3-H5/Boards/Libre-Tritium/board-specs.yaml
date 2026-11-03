@@ -1,0 +1,25 @@
+# Libre Computer Tritium (ALL-H3-CC) board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+soc:
+  part: "Allwinner H5"
+  notes: ["Sold as H2+ (512 MB), H3 (1 GB) or H5 (2 GB); the table shows the H5"]
+memory:
+  types: [{ type: "DDR3", mts: 1333 }]
+  sizes_gb: [0.5, 1, 2]
+storage: ["microSD", "eMMC 4.x module connector"]
+usb:
+  - { count: 4, version: "2.0", connector: "Type-A", note: "discrete SoC channels, no hub" }
+ethernet:
+  - { count: 1, gbps: 0.1 }
+display:
+  outputs: ["1× HDMI 1.4 with HDCP 1.2 (4K@30, 1080p on H2+)", "3.5 mm CVBS/AV jack"]
+camera: "DVP parallel camera connector"
+gpio: "40-pin header (PWM, I2C, SPI, GPIO)"
+power: "5 V via micro USB"
+debugging: "3-pin UART header"
+form_factor: "Libre Computer CC form factor (Raspberry Pi 3 Model B+ footprint and mounting holes)"
+dimensions_mm: { w: 85, h: 56, d: 20 }
+other:
+  - { name: "Other", value: "IR receiver, U-Boot button" }
+  - { name: "Software support", value: "Until 2047" }

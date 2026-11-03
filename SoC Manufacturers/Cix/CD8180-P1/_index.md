@@ -50,12 +50,7 @@ summary: Cix CD8180/P1 - High-performance 12-core SoC with Immortalis G720 GPU a
 
 List of boards:
 
-{{< taglist tag="CD8180" style="cards" >}} 
-
-- Minisforum MS-R1
-- Radxa Orion O6N
-- OrangePi 6 Plus
-- MetaComputing ARM AI PC
+{{< taglist tag="CD8180" style="cards" >}}
 
 ---
 

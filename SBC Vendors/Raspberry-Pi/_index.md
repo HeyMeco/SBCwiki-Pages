@@ -1,5 +1,5 @@
 ---
-weight: 6
+weight: 17
 title: Raspberry Pi
 vendor: RaspberryPi
 icon: /assets/broadcom-rpi/Raspberry_Pi_Logo.png

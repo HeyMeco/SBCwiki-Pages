@@ -1,0 +1,31 @@
+# Forlinx OK3572-C board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+memory:
+  types: ["LPDDR5"]
+  sizes_gb: [2, 4, 8]
+storage: ["eMMC up to 64 GB (on SoM)", "microSD", "M.2 M-Key NVMe"]
+pcie:
+  - { count: 1, slot: "M.2 M-Key", gen: "2.1", lanes: 1, note: "NVMe SSD" }
+  - { count: 1, slot: "PCIe x1", gen: "2.1", lanes: 1 }
+  - { count: 1, slot: "M.2 B-Key", note: "4G/5G module with nano SIM slot" }
+usb:
+  - { count: 3, version: "3.0", connector: "Type-A" }
+  - { count: 1, version: "2.0", connector: "Type-C", note: "OTG, flashing" }
+ethernet:
+  - { count: 2, gbps: 1 }
+wifi: "Dual-band Wi-Fi 4 (AzureWave AW-CM358SM)"
+bluetooth: "5.0"
+display:
+  outputs: ["1× HDMI 2.1 (4096×2160@60)", "1× MIPI DSI (2560×1600@60)"]
+camera: "4× MIPI CSI (2× 4-lane or 4× 2-lane)"
+can: { count: 2, fd: true }
+audio: ["Onboard codec", "3.5 mm headphone/mic jack", "Speaker connector"]
+gpio: ["20-pin GPIO header", "6-pin analog header (3× ADC)"]
+rtc: "Coin cell battery"
+power: "12 V DC jack"
+form_factor: "FET3572-C SoM (68 × 50 mm) on carrier board"
+temperature: "SoM: 0 °C to 80 °C (FET3572-C), -40 °C to 85 °C (FET3572J-C)"
+dimensions_mm: { w: 190, h: 130 }
+other:
+  - { name: "Serial", value: "2× RS-485 on terminal block" }

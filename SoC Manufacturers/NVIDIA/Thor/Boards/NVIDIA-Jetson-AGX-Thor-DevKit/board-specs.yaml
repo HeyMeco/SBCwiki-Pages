@@ -1,0 +1,25 @@
+# NVIDIA Jetson AGX Thor Developer Kit board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+soc: { part: "Jetson T5000" }
+memory:
+  types: ["LPDDR5X"]
+  bus_bits: 256
+  sizes_gb: [128]
+storage: ["1 TB NVMe SSD (M.2 M-Key)"]
+pcie:
+  - { count: 1, slot: "M.2 M-Key", note: "1 TB NVMe SSD fitted" }
+  - { count: 1, slot: "M.2 E-Key", note: "Wi-Fi 6E module fitted" }
+usb:
+  - { count: 2, version: "3.2 Gen 2", connector: "Type-A" }
+  - { count: 2, version: "3.1", connector: "Type-C" }
+ethernet:
+  - { count: 1, gbps: 5, note: "RJ45" }
+  - { count: 4, gbps: 25, note: "1× QSFP28" }
+wifi: "Wi-Fi 6E (M.2 module)"
+display:
+  outputs: ["1× HDMI 2.0b", "1× DisplayPort 1.4a"]
+camera: "Holoscan Sensor Bridge via QSFP, USB cameras"
+gpio: "GPIO, UART, I2C, JTAG, CAN headers"
+power: "140 W power supply included"
+dimensions_mm: { w: 243.19, h: 112.4, d: 56.88 }

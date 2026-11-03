@@ -1,0 +1,30 @@
+# Orange Pi 6 Plus board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+soc:
+  name: "Cix CD8160 / P1"
+memory:
+  types: [{ type: "LPDDR5", mts: 5500 }]
+  bus_bits: 128
+  sizes_gb: [16, 32, 64]
+storage: ["2× M.2 M-Key 2280 NVMe (PCIe 4.0 x4)", "64 Mbit SPI flash", "microSD"]
+pcie:
+  - { count: 2, slot: "M.2 M-Key 2280", gen: 4, lanes: 4, note: "NVMe SSD" }
+  - { count: 1, slot: "M.2 E-Key", note: "Wi-Fi and Bluetooth module" }
+usb:
+  - { count: 2, version: "3.0", connector: "Type-C", note: "full-function: DisplayPort Alt Mode, up to 100 W PD input" }
+  - { count: 2, version: "3.0", connector: "Type-A" }
+  - { count: 2, version: "2.0", connector: "Type-A" }
+ethernet:
+  - { count: 2, gbps: 5 }
+wifi: "Via M.2 E-Key module"
+bluetooth: "Via M.2 E-Key module"
+display:
+  outputs: ["1× HDMI", "1× DisplayPort 1.4", "1× eDP", "2× DisplayPort via USB-C"]
+camera: "2× 4-lane MIPI CSI"
+gpio: "40-pin header (GPIO, UART, I2C, SPI, PWM)"
+audio: ["3.5 mm audio jack", "2× speaker connectors", "Microphone header"]
+power: "USB Type-C PD, up to 100 W"
+cooling: "Fan connector, active cooler included in kits"
+dimensions_mm: { w: 115, h: 100 }
+weight_g: 132

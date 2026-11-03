@@ -1,0 +1,18 @@
+# GL.iNet Brume 3 (GL-MT5000) board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+soc:
+  name: "MediaTek MT7987A"
+memory:
+  types: ["DDR4"]
+  sizes_gb: [1]
+storage: ["8 GB eMMC"]
+usb:
+  - { count: 1, version: "3.0", connector: "Type-A" }
+ethernet:
+  - { count: 1, gbps: 2.5, note: "WAN, SoC internal PHY" }
+  - { count: 2, gbps: 2.5, note: "LAN via Realtek RTL8366UB switch" }
+power: "5 V / 3 A via USB Type-C"
+debugging: "UART header (115200 8n1)"
+dimensions_mm: { w: 92, h: 75, d: 25 }
+weight_g: 148

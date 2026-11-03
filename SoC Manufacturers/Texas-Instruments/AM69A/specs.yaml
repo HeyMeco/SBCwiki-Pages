@@ -1,0 +1,26 @@
+# Texas-Instruments/AM69A specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "TI AM69A"
+    cpu:
+      clusters:
+        - { cores: 8, core: "Cortex-A72", max_ghz: 2.0 }
+      cache: [{ level: "L2", mb: 2 }]
+    mcu: [{ cores: 4, core: "Cortex-R5F", max_mhz: 1000 }]
+    memory:
+      types: [{ type: "LPDDR4", mts: 4266 }]
+      ecc: "inline"
+    gpu:
+      name: "BXS-4-64"
+      max_mhz: 800
+    npu:
+      name: "4× C7x DSP + MMAv2"
+      tops: 32
+      notes: "8 TOPS per core, deep-learning only on AM69A"
+    vpu:
+      notes: "H.264 / H.265 encode and decode"
+    isp: { mpixel_s: 1440 }
+    ethernet:
+      - { count: 2, gbps: 10, note: "USXGMII / XFI" }
+      - { count: 6, gbps: 2.5, note: "SGMII, integrated switch with up to 8 ports total" }

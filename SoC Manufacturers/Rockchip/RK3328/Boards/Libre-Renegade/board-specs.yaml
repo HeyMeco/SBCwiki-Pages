@@ -1,0 +1,23 @@
+# Libre Computer Renegade (ROC-RK3328-CC) board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+memory:
+  types: ["DDR4"]
+  bus_bits: 32
+  sizes_gb: [1, 2, 4]
+storage: ["microSD (UHS SDR104)", "eMMC 5.x module connector"]
+usb:
+  - { count: 1, version: "3.0", connector: "Type-A" }
+  - { count: 1, version: "2.0", connector: "Type-A" }
+  - { count: 1, version: "2.0", connector: "Type-A", note: "dual-role" }
+ethernet:
+  - { count: 1, gbps: 1 }
+display:
+  outputs: ["1× HDMI 2.0 (4K HDR)", "3.5 mm TRRS CVBS/AV jack"]
+gpio: ["40-pin header (I2S, PWM, I2C, 2× UART, SPI, SPDIF)", "3-pin ADC header", "3-pin PMIC power control header"]
+power: "5 V via micro USB; 4 W typical, 5 W full load"
+form_factor: "Libre Computer CC form factor (Raspberry Pi 3 Model B+ footprint and mounting holes)"
+dimensions_mm: { w: 85, h: 56, d: 20 }
+other:
+  - { name: "Other", value: "IR receiver with wake support, USB ROM boot button" }
+  - { name: "Software support", value: "Until 2047" }

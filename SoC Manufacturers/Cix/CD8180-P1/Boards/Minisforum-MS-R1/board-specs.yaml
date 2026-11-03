@@ -1,0 +1,31 @@
+# Minisforum MS-R1 board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+soc:
+  name: "Cix CP8180 / P1"
+memory:
+  types: [{ type: "LPDDR5", mts: 5500 }]
+  bus_bits: 128
+  sizes_gb: [32, 64]
+  ecc: true
+storage: ["M.2 2280/22110 NVMe (PCIe 4.0 x4)", "Second M.2 2280 NVMe via M.2 E-Key adapter card"]
+pcie:
+  - { count: 1, slot: "PCIe x16 (x8 electrical)", note: "fits single-slot low-profile cards" }
+  - { count: 1, slot: "M.2 M-Key 2280/22110", gen: 4, lanes: 4, note: "NVMe SSD" }
+  - { count: 1, slot: "M.2 E-Key 2230", note: "Wi-Fi 6E / Bluetooth 5.3 module" }
+usb:
+  - { count: 2, version: "3.2 Gen 2", connector: "Type-C", note: "DisplayPort 1.4 Alt Mode" }
+  - { count: 2, version: "3.2 Gen 2", connector: "Type-A", note: "rear" }
+  - { count: 1, version: "3.2 Gen 1", connector: "Type-A", note: "front" }
+  - { count: 4, version: "2.0", connector: "Type-A", note: "2 rear, 2 front" }
+ethernet:
+  - { count: 2, gbps: 10, note: "Realtek RTL8127" }
+wifi: "Wi-Fi 6E (M.2 module)"
+bluetooth: "5.3"
+display:
+  outputs: ["1× HDMI 2.0", "2× DisplayPort 1.4 via USB-C (up to 4K@120)"]
+audio: "3.5 mm combo jack"
+form_factor: "Mini PC"
+other:
+  - { name: "Firmware", value: "UEFI, Arm SystemReady and PC-BSA v1.0 compliant" }
+  - { name: "ECC", value: "Supported, reduces usable memory by one eighth when enabled" }

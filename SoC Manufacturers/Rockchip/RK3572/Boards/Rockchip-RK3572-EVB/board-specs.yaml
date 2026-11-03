@@ -1,0 +1,6 @@
+# Rockchip RK3572 EVB board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+other:
+  - { name: "Status", value: "Pre-release evaluation board, not sold" }
+  - { name: "Shown at", value: "Embedded World 2026, Nuremberg" }

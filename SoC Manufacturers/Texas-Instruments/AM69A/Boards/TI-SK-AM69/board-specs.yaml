@@ -1,0 +1,22 @@
+# TI SK-AM69 board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+soc:
+  name: "TI AM69 / AM69A"
+memory:
+  types: [{ type: "LPDDR4", mts: 4266 }]
+  sizes_gb: [32]
+  ecc: "inline"
+pcie:
+  - { count: 1, slot: "M.2 M-Key" }
+  - { count: 1, slot: "M.2 E-Key" }
+usb:
+  - { count: 3, version: "3.0", connector: "Type-A" }
+  - { count: 1, version: "3.0", connector: "Type-C" }
+ethernet:
+  - { count: 1, gbps: 1 }
+display:
+  outputs: ["1× DisplayPort (4K, MST)", "1× HDMI (1080p)"]
+camera: "Raspberry Pi-compatible CSI-2 connectors and a 40-pin Samtec camera connector (up to 12 cameras via hub)"
+can: { count: 4, fd: true }
+debugging: "4 UART terminals over one USB bridge"

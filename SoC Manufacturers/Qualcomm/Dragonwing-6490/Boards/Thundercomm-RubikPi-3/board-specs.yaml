@@ -1,0 +1,28 @@
+# Thundercomm RUBIK Pi 3 board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+soc:
+  name: "Qualcomm QCS6490"
+memory:
+  types: ["LPDDR4X"]
+  sizes_gb: [8]
+storage: ["128 GB UFS 2.2"]
+pcie:
+  - { count: 1, slot: "M.2 M-Key 2280", gen: 3, lanes: 2, note: "NVMe SSD" }
+usb:
+  - { count: 1, version: "3.1 Gen 1", connector: "Type-C", note: "DisplayPort Alt Mode (4K@60)" }
+  - { count: 2, version: "3.0", connector: "Type-A" }
+  - { count: 1, version: "2.0", connector: "Type-A" }
+  - { count: 1, version: "2.0", connector: "micro USB" }
+ethernet:
+  - { count: 1, gbps: 1 }
+wifi: "Wi-Fi 5"
+bluetooth: "5.2"
+display:
+  outputs: ["1× HDMI (4K@30)", "1× DisplayPort via USB-C (4K@60)"]
+camera: "2× 4-lane MIPI CSI D-PHY"
+gpio: "40-pin header (Raspberry Pi HAT compatible)"
+audio: "3.5 mm headphone jack"
+power: "12 V / 3 A via USB Type-C PD"
+rtc: "Yes"
+dimensions_mm: { w: 100, h: 75 }

@@ -1,0 +1,30 @@
+# Orange Pi O1 board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+memory:
+  types: ["LPDDR4", "LPDDR4X"]
+  sizes_gb: [8, 16]
+storage: ["Optional eMMC module 16–128 GB, or SPI flash 128/256 Mbit (mutually exclusive)", "microSD (up to 128 GB)", "M.2 M-Key NVMe (PCIe 3.0)", "SATA 3.0"]
+pcie:
+  - { count: 1, slot: "M.2 M-Key", gen: 3, note: "NVMe SSD" }
+  - { count: 1, slot: "M.2 B-Key", note: "4G/5G module with SIM slot" }
+sata: { count: 1, gen: "3.0" }
+usb:
+  - { count: 2, version: "3.0" }
+  - { count: 2, version: "2.0" }
+ethernet:
+  - { count: 2, gbps: 1, note: "Motorcomm YT8531C" }
+wifi: "Wi-Fi 6E"
+bluetooth: "5.3 / BLE"
+display:
+  outputs: ["1× HDMI 2.0 (4K@60)", "1× 4-lane MIPI DSI"]
+camera: "2× 4-lane MIPI CSI"
+can: { count: 2 }
+gpio: "26-pin header (GPIO, UART, I2C, SPI, PWM)"
+power: "USB Type-C, 20 V / 3.25 A (65 W)"
+rtc: "Backup battery connector"
+cooling: "4-pin 12 V fan header"
+dimensions_mm: { w: 90, h: 70 }
+weight_g: 76
+other:
+  - { name: "Serial", value: "1× RS-485, TTL debug UART" }

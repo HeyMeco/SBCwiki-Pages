@@ -1,0 +1,26 @@
+# NVIDIA Jetson TX2 Developer Kit board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+memory:
+  types: ["LPDDR4"]
+  bus_bits: 128
+  sizes_gb: [8]
+storage: ["32 GB eMMC 5.1 (on module)", "Full-size SD", "SATA (data and power)"]
+pcie:
+  - { count: 1, slot: "PCIe x4", gen: 2, lanes: 4 }
+  - { count: 1, slot: "M.2 E-Key" }
+sata: { count: 1, gen: "3.0" }
+usb:
+  - { count: 1, version: "3.0", connector: "Type-A" }
+  - { count: 1, version: "2.0", connector: "micro-AB", note: "recovery and host mode" }
+ethernet:
+  - { count: 1, gbps: 1 }
+wifi: "802.11ac (on module)"
+bluetooth: "Yes (on module)"
+display:
+  outputs: ["1× HDMI", "Display expansion header"]
+camera: "120-pin camera expansion header, 5 MP camera module included"
+gpio: "40-pin header (GPIO, I2C, I2S, SPI, CAN)"
+debugging: "TTL UART with flow control"
+form_factor: "Mini-ITX carrier"
+dimensions_mm: { w: 170, h: 170 }

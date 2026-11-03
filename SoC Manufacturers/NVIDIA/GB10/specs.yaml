@@ -1,0 +1,21 @@
+# NVIDIA/GB10 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "NVIDIA GB10"
+    cpu:
+      clusters:
+        - { cores: 10, core: "Cortex-X925" }
+        - { cores: 10, core: "Cortex-A725" }
+    memory:
+      types: [{ type: "LPDDR5X", mts: 8533 }]
+      bus_bits: 256
+      max_gb: 128
+      bandwidth_gbs: 273
+      notes: "Coherent unified memory shared by CPU and GPU"
+    gpu:
+      name: "NVIDIA Blackwell (6,144 CUDA cores)"
+      notes: "5th-gen Tensor Cores, up to 1 PFLOP FP4 with sparsity"
+    vpu:
+      notes: "1× NVENC, 1× NVDEC"
+    tdp_w: 140

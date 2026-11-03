@@ -1,0 +1,25 @@
+# Radxa SiRider S1 board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+soc:
+  name: "SiEngine SE1000-I"
+memory:
+  types: ["LPDDR5"]
+  sizes_gb: [8, 16]
+storage: ["UFS 3.0 (up to 128 GB tested)", "microSD", "M.2 M-Key 2280 NVMe (PCIe 3.0 x2)"]
+pcie:
+  - { count: 1, slot: "M.2 M-Key 2280", gen: 3, lanes: 2, note: "NVMe SSD" }
+  - { count: 1, slot: "M.2 E-Key", note: "Wi-Fi / Bluetooth" }
+  - { count: 1, slot: "M.2 B-Key", note: "4G/5G with SIM slot" }
+usb:
+  - { count: 4, version: "3.0", connector: "Type-A" }
+  - { count: 4, version: "2.0", connector: "Type-A" }
+ethernet:
+  - { count: 2, gbps: 1 }
+display:
+  outputs: ["HDMI (Radxa docs list 1×, the product brief 2×)", "1× 4-lane MIPI DSI"]
+camera: "2× 2-lane MIPI CSI"
+can: { count: 1 }
+audio: "3.5 mm 4-ring audio jack, I2S"
+gpio: "40-pin header"
+cooling: "2-pin 5 V fan header, heatsink holes 60 mm apart"

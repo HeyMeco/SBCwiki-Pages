@@ -1,0 +1,32 @@
+# Qualcomm Dragonwing IQ-8275 EVK board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+soc:
+  part: "QCS8275 / QCS8300"
+  name: "Qualcomm Dragonwing IQ8 (IQ-8275)"
+memory:
+  types: ["LPDDR5"]
+  sizes_gb: [12]
+  ecc: "inline"
+storage: ["128 GB UFS 3.1"]
+pcie:
+  - { count: 1, slot: "PCIe x4", lanes: 4, note: "PCIe to M.2 NVMe adapter included" }
+  - { count: 1, slot: "M.2 E-Key", note: "Wi-Fi 6E / Bluetooth 5.3 module" }
+usb:
+  - { count: 1, connector: "Type-C", note: "host" }
+  - { count: 1, connector: "Type-C", note: "EDL / fastboot only" }
+ethernet:
+  - { count: 1, gbps: 2.5 }
+wifi: "Wi-Fi 6E (Qualcomm M.2 module)"
+bluetooth: "5.3"
+display:
+  outputs: ["2× mini DisplayPort", "MIPI DSI (flex)"]
+camera: "3× MIPI CSI (C/D-PHY) flex connectors"
+can: { fd: true }
+sensors: ["ICM-42688 IMU", "TMP411 temperature sensor"]
+debugging: "FTDI debug chip"
+power: "12–36 V DC (2.1 mm barrel jack)"
+cooling: "Heatsink and fan"
+dimensions_mm: { w: 106, h: 106, d: 46 }
+other:
+  - { name: "Security", value: "ST33 TPM" }

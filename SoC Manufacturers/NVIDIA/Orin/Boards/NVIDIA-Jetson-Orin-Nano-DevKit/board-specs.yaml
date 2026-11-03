@@ -1,0 +1,26 @@
+# NVIDIA Jetson Orin Nano Super Developer Kit board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+soc: { part: "Jetson Orin Nano 8GB" }
+memory:
+  types: ["LPDDR5"]
+  bus_bits: 128
+  sizes_gb: [8]
+storage: ["microSD (on module)", "2× M.2 M-Key NVMe"]
+pcie:
+  - { count: 1, slot: "M.2 M-Key", gen: 3, lanes: 4, note: "NVMe SSD" }
+  - { count: 1, slot: "M.2 M-Key", gen: 3, lanes: 2, note: "NVMe SSD" }
+  - { count: 1, slot: "M.2 E-Key", lanes: 1, note: "802.11ac Wi-Fi card fitted" }
+usb:
+  - { count: 4, version: "3.2 Gen 2", connector: "Type-A" }
+  - { count: 1, connector: "Type-C", note: "device mode only, no power or video" }
+ethernet:
+  - { count: 1, gbps: 1 }
+wifi: "802.11ac (M.2 card)"
+display:
+  outputs: ["1× DisplayPort 1.2 (MST)"]
+camera: "2× MIPI CSI-2 22-pin connectors (2- or 4-lane)"
+gpio: ["40-pin header (UART, SPI, I2S, I2C, GPIO)", "12-pin button header"]
+power: "9–19 V DC jack, 19 V / 45 W adapter included; module modes 7 W / 15 W / 25 W / MAXN Super"
+cooling: "4-pin fan header, fan and heatsink fitted"
+dimensions_mm: { w: 103, h: 90.5, d: 34.77 }

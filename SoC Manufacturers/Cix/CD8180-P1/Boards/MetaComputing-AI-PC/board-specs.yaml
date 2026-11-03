@@ -1,0 +1,17 @@
+# MetaComputing ARM AI PC board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+soc:
+  name: "Cix CP8180 / P1"
+memory:
+  types: ["LPDDR5"]
+  bus_bits: 128
+  sizes_gb: [16, 32]
+storage: ["M.2 NVMe SSD (1 TB in standard configurations)"]
+pcie:
+  - { count: 1, slot: "M.2 M-Key", note: "NVMe SSD" }
+  - { count: 1, slot: "M.2 E-Key 2230", note: "Wi-Fi module" }
+form_factor: "Framework Laptop 13 mainboard"
+other:
+  - { name: "Ports", value: "Framework Laptop 13 expansion card slots" }
+  - { name: "Firmware", value: "TianoCore EDK II (UEFI)" }

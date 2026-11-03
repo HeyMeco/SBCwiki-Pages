@@ -1,0 +1,17 @@
+# NVIDIA/Parker-TX2 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "NVIDIA Jetson TX2 (T186)"
+    process_nm: 16
+    cpu:
+      clusters:
+        - { cores: 2, core: "NVIDIA Denver 2", max_ghz: 2.0 }
+        - { cores: 4, core: "Cortex-A57", max_ghz: 2.0 }
+    memory: { types: ["LPDDR4"], bus_bits: 128, max_gb: 8, bandwidth_gbs: 59.7 }
+    gpu: { name: "Pascal, 256 CUDA cores", vendor_apis: { vulkan: "1.1", opengl_es: "3.2" } }
+    isp: { mpixel_s: 1400 }
+    camera: ["12 MIPI CSI-2 lanes (up to 3× 4-lane or 6× 2-lane)"]
+    pcie: [{ gen: 2, lanes: 4, note: "1×4 + 1×1 or 2×1 + 1×2" }]
+    storage: ["32 GB eMMC 5.1 (on module)"]
+    tdp_w: { min: 7.5, max: 15 }

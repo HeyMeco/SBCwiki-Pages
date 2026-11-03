@@ -1,0 +1,25 @@
+# Firefly ICORE-3572Q38 board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+memory:
+  types: ["LPDDR4", "LPDDR4X"]
+  sizes_gb: [2, 4, 8, 16]
+storage: ["eMMC: 16, 32, 64 or 128 GB"]
+pcie:
+  - { count: 1, slot: "BTB", gen: "2.1", lanes: 1, note: "PCIe / SATA 3.1 / USB 3.0 combo" }
+  - { count: 1, slot: "BTB", gen: "2.1", lanes: 1, note: "PCIe / SATA 3.1 combo" }
+usb:
+  - { count: 2, version: "3.0 DRD / 2.0", connector: "board-to-board" }
+ethernet:
+  - { count: 2, gbps: 1, note: "GMAC (RGMII/RMII), PHY on carrier" }
+display:
+  outputs: ["MIPI DSI (D-PHY 1.2)", "Dual display up to 4K@60 + 2K@60"]
+camera: "2× MIPI CSI D-PHY (1× 4-lane or 2× 2-lane), 1× DVP"
+can: { count: 4, fd: true }
+power: "5 V (±5%), about 1 W typical, 3.5 W maximum"
+form_factor: "System-on-module, 2× 100-pin board-to-board sockets"
+temperature: "-20 °C to 60 °C"
+dimensions_mm: { w: 38, h: 38, d: 5.5 }
+weight_g: 9
+other:
+  - { name: "Other I/O", value: "2× SDIO 3.0, 5× SPI, 10× I2C, 1× I3C, 12× UART (RS-485 capable), 16× PWM" }

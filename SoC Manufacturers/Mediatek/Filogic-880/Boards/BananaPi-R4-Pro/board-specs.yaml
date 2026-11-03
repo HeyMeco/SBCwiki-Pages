@@ -1,0 +1,18 @@
+# BananaPi R4 Pro board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+name: "BananaPi R4 Pro (8X)"
+memory:
+  types: ["DDR4"]
+  sizes_gb: [8]
+storage: ["8 GB eMMC", "256 MB SPI NAND flash"]
+pcie:
+  - { count: 2, slot: "miniPCIe", gen: 3, lanes: 2, note: "for Wi-Fi 7 NICs" }
+  - { count: 1, slot: "M.2 B-Key", note: "4G/5G modems" }
+ethernet:
+  - { count: 2, gbps: 10, note: "SFP+ (WAN + LAN), each shared with a 10G RJ45 port (Aeonsemi AS21010P)" }
+  - { count: 4, gbps: 2.5, note: "MaxLinear MxL86252C switch" }
+  - { count: 2, gbps: 1, note: "one on an FPC connector" }
+wifi: "Wi-Fi 7 via 2× miniPCIe NIC cards"
+power: ["12 V or 24 V DC (5.5×2.1 mm)", "20 V via USB Type-C or header", "Optional PoE module (RT5400)"]
+dimensions_mm: { w: 194, h: 134 }

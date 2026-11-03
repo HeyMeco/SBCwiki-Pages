@@ -1,0 +1,20 @@
+# NVIDIA/Xavier specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+label: "Module"
+parts:
+  - name: "Jetson AGX Xavier"
+    process_nm: 12
+    cpu: { clusters: [{ cores: 8, core: "NVIDIA Carmel", max_ghz: 2.26 }], isa: "Armv8.2" }
+    memory: { types: ["LPDDR4X"], bus_bits: 256, max_gb: 64, bandwidth_gbs: 136.5 }
+    gpu: { name: "Volta, 512 CUDA cores, 64 Tensor Cores", vendor_apis: { vulkan: "1.2", opengl_es: "3.2" } }
+    npu: { name: "2× NVDLA", tops: 32, tops_precision: "INT8", notes: "Total of GPU and DLA" }
+    storage: ["32 GB eMMC 5.1"]
+    tdp_w: { min: 10, max: 30 }
+  - name: "Jetson Xavier NX"
+    process_nm: 12
+    cpu: { clusters: [{ cores: 6, core: "NVIDIA Carmel", max_ghz: 1.9 }], isa: "Armv8.2" }
+    memory: { types: ["LPDDR4X"], bus_bits: 128, max_gb: 16, bandwidth_gbs: 59.7 }
+    gpu: { name: "Volta, 384 CUDA cores, 48 Tensor Cores", vendor_apis: { vulkan: "1.2", opengl_es: "3.2" } }
+    npu: { name: "2× NVDLA", tops: 21, tops_precision: "INT8" }
+    tdp_w: { min: 10, max: 20 }

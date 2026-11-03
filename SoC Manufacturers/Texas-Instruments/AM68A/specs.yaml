@@ -1,0 +1,28 @@
+# Texas-Instruments/AM68A specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "TI AM68A"
+    cpu:
+      clusters:
+        - { cores: 2, core: "Cortex-A72", max_ghz: 2.0 }
+      cache: [{ level: "L2", mb: 1 }]
+    mcu: [{ cores: 4, core: "Cortex-R5F", max_mhz: 1000 }]
+    memory:
+      types: [{ type: "LPDDR4", mts: 4266 }]
+      ecc: "inline"
+    gpu:
+      name: "BXS-4-64"
+      max_mhz: 800
+    npu:
+      name: "C7x DSP + MMA"
+      tops: 8
+      notes: "Deep-learning only on AM68A"
+    vpu:
+      notes: "H.264 / H.265 encode and decode"
+    isp: { mpixel_s: 480 }
+    display: { outputs: ["eDP", "2× MIPI DSI", "MIPI DPI"] }
+    pcie: [{ count: 1, gen: 3 }]
+    usb: [{ count: 1, version: "3.0", note: "dual-role, Type-C switching" }]
+    can: { count: 20, fd: true }
+    temperature: "-40 °C to 105 °C"

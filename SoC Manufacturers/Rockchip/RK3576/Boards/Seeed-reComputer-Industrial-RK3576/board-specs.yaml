@@ -1,0 +1,29 @@
+# Seeed Studio reComputer Industrial RK3576 board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+memory:
+  types: ["LPDDR5"]
+  sizes_gb: [8]
+storage: ["64 GB eMMC", "M.2 M-Key 2280 NVMe (no SSD included)"]
+pcie:
+  - { count: 1, slot: "M.2 M-Key 2280", gen: "2.1", lanes: 1, note: "NVMe SSD or AI accelerator" }
+  - { count: 1, slot: "mini PCIe", note: "optional 4G, LoRa or Wi-Fi HaLow module, nano SIM slot" }
+usb:
+  - { count: 2, version: "3.0", connector: "Type-A" }
+  - { count: 1, connector: "Type-C", note: "OTG and DisplayPort 1.4" }
+ethernet:
+  - { count: 2, gbps: 1, note: "one with PoE PD" }
+wifi: "Wi-Fi 6 (external antenna)"
+bluetooth: "5.4"
+display:
+  outputs: ["DisplayPort 1.4 via USB-C"]
+can: { count: 1, fd: true }
+power: ["9–36 V DC (2-pin terminal block)", "12 V / 3 A adapter included", "PoE PD"]
+cooling: "Fanless aluminium enclosure"
+enclosure: "DIN-rail or wall mount"
+temperature: "0 °C to 60 °C (with 0.7 m/s airflow), 10–95 % RH"
+dimensions_mm: { w: 131, h: 94.5, d: 56 }
+weight_g: 745.7
+other:
+  - { name: "Industrial I/O", value: "2× isolated RS-485, 1× isolated digital input, 1× isolated digital output" }
+  - { name: "Software", value: "Armbian preinstalled" }

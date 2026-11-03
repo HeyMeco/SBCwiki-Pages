@@ -1,0 +1,21 @@
+# Broadcom/RP3A0 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "Broadcom RP3A0"
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A53", max_ghz: 1.0 }
+    memory:
+      types: ["LPDDR2"]
+      max_gb: 0.5
+      notes: "512 MB stacked in the package"
+    gpu:
+      name: "VideoCore IV"
+      vendor_apis: { opengl_es: "2.0" }
+    vpu:
+      decode:
+        - { res: "1080p", fps: 30, codecs: ["H.264", "MPEG-4"] }
+      encode:
+        - { res: "1080p", fps: 30, codecs: ["H.264"] }
+    package: "System-in-package: BCM2710A1 die + 512 MB LPDDR2"

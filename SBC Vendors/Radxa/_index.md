@@ -1,5 +1,5 @@
 ---
-weight: 5
+weight: 16
 title: Radxa
 vendor: Radxa
 icon: /assets/radxa/Radxa-Logo.png

@@ -30,6 +30,9 @@ images:
 {{% /details %}}
 
 ## Available OS images
+
+{{< list-board-available-os >}}
+
 - Radxa Debian image (BSP Kernel, supports Device Tree & ACPI)
 - Radxa Android 14 image
 - All UEFI based ARM images (with Mainline Kernel 6.6 and above)

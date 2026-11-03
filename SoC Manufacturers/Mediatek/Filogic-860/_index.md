@@ -23,7 +23,7 @@ The MediaTek Filogic 860 is the mainstream Wi-Fi 7 router and gateway platform b
 
 ### Variant Differences:
 
-- **MT7987A**: Quad Cortex-A53 @ 2.0 GHz. Used on boards such as the Banana Pi R4 Lite and GL.iNet MT5000. OpenWrt support landed in late 2025; WED/WO wireless offload still needs more work.
+- **MT7987A**: Quad Cortex-A53 @ 2.0 GHz. Used on boards such as the [Banana Pi R4 Lite](boards/bananapi-r4-lite/) and [GL.iNet Brume 3 (MT5000)](boards/glinet-mt5000/). OpenWrt support landed in late 2025; WED/WO wireless offload still needs more work.
 - **Filogic 860 platform**: MediaTek's product page emphasizes single-MAC MLO, BE7200 PHY, and multi-gig wired options for AP, router, repeater, and gateway designs.
 
 ---

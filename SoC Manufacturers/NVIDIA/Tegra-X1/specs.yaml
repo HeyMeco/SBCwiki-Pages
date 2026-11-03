@@ -1,0 +1,19 @@
+# NVIDIA/Tegra-X1 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "Jetson TX1 (Tegra X1)"
+    process_nm: 20
+    cpu: { clusters: [{ cores: 4, core: "Cortex-A57", max_ghz: 1.73 }] }
+    memory: { types: ["LPDDR4"], bus_bits: 64, max_gb: 4, bandwidth_gbs: 25.6 }
+    gpu: { name: "Maxwell, 256 CUDA cores", vendor_apis: { vulkan: "1.1", opengl_es: "3.2" } }
+    storage: ["16 GB eMMC (on module)"]
+  - name: "Jetson Nano (Tegra X1)"
+    process_nm: 20
+    cpu: { clusters: [{ cores: 4, core: "Cortex-A57", max_ghz: 1.43 }] }
+    memory: { types: ["LPDDR4"], bus_bits: 64, max_gb: 4, bandwidth_gbs: 25.6 }
+    gpu: { name: "Maxwell, 128 CUDA cores", vendor_apis: { vulkan: "1.1", opengl_es: "3.2" }, notes: "472 GFLOPS FP16" }
+    vpu:
+      decode: [{ res: "4K", fps: 60, codecs: ["H.265", "H.264"] }]
+      encode: [{ res: "4K", fps: 30, codecs: ["H.265", "H.264"] }]
+    tdp_w: { min: 5, max: 10 }

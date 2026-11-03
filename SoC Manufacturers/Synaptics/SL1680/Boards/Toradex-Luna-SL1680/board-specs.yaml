@@ -1,0 +1,22 @@
+# Toradex Luna SL1680 board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+memory:
+  types: ["LPDDR4"]
+  bus_bits: 32
+  sizes_gb: [4]
+storage: ["eMMC"]
+pcie:
+  - { count: 1, slot: "M.2 E-Key", note: "PCIe, wireless modules" }
+usb:
+  - { count: 4, version: "3.x", connector: "Type-A" }
+ethernet:
+  - { count: 1, gbps: 1 }
+wifi: "Onboard Wi-Fi (Wi-Fi / Bluetooth SKU)"
+bluetooth: "Onboard (Wi-Fi / Bluetooth SKU)"
+display:
+  outputs: ["1× HDMI", "MIPI DSI"]
+  inputs: ["1× HDMI"]
+camera: "2× MIPI CSI"
+power: "5 V / 5 A via USB Type-C"
+form_factor: "Raspberry Pi form factor"

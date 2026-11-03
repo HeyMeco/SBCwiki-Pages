@@ -1,0 +1,23 @@
+# Libre Computer Alta Compute Module (AML-A311D-CM) board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+memory:
+  types: ["LPDDR4"]
+  bus_bits: 32
+  sizes_gb: [2, 4]
+storage: ["eMMC and SD simultaneously, with card detect", "SPI NOR/NAND interface"]
+pcie:
+  - { count: 1, slot: "board-to-board connector", note: "muxed with USB 3" }
+usb:
+  - { count: 1, version: "3.0", connector: "board-to-board connector", note: "muxed with PCIe" }
+ethernet:
+  - { count: 1, gbps: 1 }
+display:
+  outputs: ["HDMI 2.0 (4K HDR) with ARC", "MIPI DSI"]
+camera: "4-lane MIPI CSI"
+audio: ["ARC", "Line-out stereo", "PCM out/sync/clock"]
+wifi: "None, SDIO for external modules"
+form_factor: "Raspberry Pi CM4 form factor, 2× 100-pin high-density connectors"
+other:
+  - { name: "Power", value: "Low-power states, PCIe power and wake control" }
+  - { name: "Software support", value: "Until 2055" }

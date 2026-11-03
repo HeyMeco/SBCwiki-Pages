@@ -1,0 +1,51 @@
+# NVIDIA/Orin specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+label: "Module"
+parts:
+  - name: "Jetson AGX Orin 64GB"
+    process_nm: 8
+    cpu: { clusters: [{ cores: 12, core: "Cortex-A78AE", max_ghz: 2.2 }] }
+    memory: { types: ["LPDDR5"], bus_bits: 256, max_gb: 64, bandwidth_gbs: 204.8 }
+    gpu: { name: "Ampere, 2,048 CUDA cores, 64 Tensor Cores", max_mhz: 1300, vendor_apis: { vulkan: "1.3", opengl_es: "3.2" } }
+    npu: { name: "2× NVDLA v2", tops: 275, tops_precision: "INT8", notes: "Total of GPU and DLA, sparse" }
+    storage: ["64 GB eMMC 5.1"]
+    tdp_w: { min: 15, max: 60 }
+  - name: "Jetson AGX Orin 32GB"
+    process_nm: 8
+    cpu: { clusters: [{ cores: 8, core: "Cortex-A78AE", max_ghz: 2.2 }] }
+    memory: { types: ["LPDDR5"], bus_bits: 256, max_gb: 32, bandwidth_gbs: 204.8 }
+    gpu: { name: "Ampere, 1,792 CUDA cores, 56 Tensor Cores", max_mhz: 930, vendor_apis: { vulkan: "1.3", opengl_es: "3.2" } }
+    npu: { name: "2× NVDLA v2", tops: 200, tops_precision: "INT8", notes: "Total of GPU and DLA, sparse" }
+    storage: ["64 GB eMMC 5.1"]
+    tdp_w: { min: 15, max: 40 }
+  - name: "Jetson Orin NX 16GB"
+    process_nm: 8
+    cpu: { clusters: [{ cores: 8, core: "Cortex-A78AE", max_ghz: 2.0 }] }
+    memory: { types: ["LPDDR5"], bus_bits: 128, max_gb: 16, bandwidth_gbs: 102.4 }
+    gpu: { name: "Ampere, 1,024 CUDA cores, 32 Tensor Cores", max_mhz: 918, vendor_apis: { vulkan: "1.3", opengl_es: "3.2" } }
+    npu: { name: "2× NVDLA v2", tops: 100, tops_precision: "INT8", notes: "157 TOPS in Super mode" }
+    tdp_w: { min: 10, max: 25 }
+  - name: "Jetson Orin NX 8GB"
+    process_nm: 8
+    cpu: { clusters: [{ cores: 6, core: "Cortex-A78AE", max_ghz: 2.0 }] }
+    memory: { types: ["LPDDR5"], bus_bits: 128, max_gb: 8, bandwidth_gbs: 102.4 }
+    gpu: { name: "Ampere, 1,024 CUDA cores, 32 Tensor Cores", max_mhz: 765, vendor_apis: { vulkan: "1.3", opengl_es: "3.2" } }
+    npu: { name: "1× NVDLA v2", tops: 70, tops_precision: "INT8", notes: "117 TOPS in Super mode" }
+    tdp_w: { min: 10, max: 20 }
+  - name: "Jetson Orin Nano 8GB"
+    process_nm: 8
+    cpu: { clusters: [{ cores: 6, core: "Cortex-A78AE", max_ghz: 1.7 }], notes: "1.5 GHz before Super mode" }
+    memory: { types: ["LPDDR5"], bus_bits: 128, max_gb: 8, bandwidth_gbs: 102, notes: "68 GB/s before Super mode" }
+    gpu: { name: "Ampere, 1,024 CUDA cores, 32 Tensor Cores", max_mhz: 1020, vendor_apis: { vulkan: "1.3", opengl_es: "3.2" }, notes: "625 MHz before Super mode" }
+    npu: { tops: 67, tops_precision: "INT8", notes: "GPU only, no DLA; 40 TOPS before Super mode" }
+    vpu: { notes: "Hardware decode only, encoding runs on the CPU" }
+    tdp_w: { min: 7, max: 25 }
+  - name: "Jetson Orin Nano 4GB"
+    process_nm: 8
+    cpu: { clusters: [{ cores: 6, core: "Cortex-A78AE", max_ghz: 1.7 }], notes: "1.5 GHz before Super mode" }
+    memory: { types: ["LPDDR5"], bus_bits: 64, max_gb: 4, bandwidth_gbs: 51, notes: "34 GB/s before Super mode" }
+    gpu: { name: "Ampere, 512 CUDA cores, 16 Tensor Cores", vendor_apis: { vulkan: "1.3", opengl_es: "3.2" } }
+    npu: { tops: 34, tops_precision: "INT8", notes: "GPU only, no DLA; 20 TOPS before Super mode" }
+    vpu: { notes: "Hardware decode only, encoding runs on the CPU" }
+    tdp_w: { min: 7, max: 25 }

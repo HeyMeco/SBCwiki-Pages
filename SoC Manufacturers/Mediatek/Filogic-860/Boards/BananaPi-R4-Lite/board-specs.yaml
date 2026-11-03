@@ -1,0 +1,25 @@
+# BananaPi R4 Lite board specifications, rendered with its SoC table by {{< board-specs >}} in _index.md.
+# Schema: layouts/shortcodes/board-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+soc:
+  name: "MediaTek MT7987A"
+memory:
+  types: ["DDR4"]
+  sizes_gb: [2]
+storage: ["8 GB eMMC", "256 MB SPI NAND flash", "32 MB SPI NOR flash", "microSD"]
+pcie:
+  - { count: 1, slot: "miniPCIe", gen: 3, lanes: 2, note: "Wi-Fi 7 NIC such as BPI-R4-NIC-BE14" }
+  - { count: 1, slot: "miniPCIe", note: "USB 2.0" }
+  - { count: 1, slot: "M.2 B-Key", note: "USB 3.0, 4G/5G modems" }
+usb:
+  - { count: 1, version: "3.0", connector: "Type-A", note: "shares the SoC lane with one HSGMII/SGMII interface" }
+  - { count: 1, version: "2.0", connector: "Type-C", note: "debug console" }
+ethernet:
+  - { count: 1, gbps: 2.5, note: "SFP" }
+  - { count: 1, gbps: 2.5, note: "RJ45 WAN, optional PoE" }
+  - { count: 4, gbps: 1, note: "LAN via MT7531AE switch" }
+wifi: "Wi-Fi 7 via miniPCIe NIC card (not included)"
+gpio: "2× 8-pin mikroBUS headers"
+dimensions_mm: { w: 148, h: 100.5 }
+other:
+  - { name: "SIM", value: "3× nano SIM slots" }

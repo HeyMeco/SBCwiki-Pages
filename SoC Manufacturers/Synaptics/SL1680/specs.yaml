@@ -1,0 +1,32 @@
+# Synaptics/SL1680 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "Synaptics Astra SL1680"
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A73", max_ghz: 2.1 }
+      cache: [{ level: "L2", mb: 1 }]
+    memory:
+      types: [{ type: "LPDDR4", mts: 3733 }, { type: "LPDDR4X", mts: 3733 }]
+      bus_bits: 64
+      max_gb: 4
+      notes: "Optional 32-bit configuration"
+    gpu:
+      name: "PowerVR Series9XE GE9920"
+      vendor_apis: { opengl_es: "3.2", vulkan: "1.1", opencl: "1.2" }
+    npu:
+      tops: 7.9
+    vpu:
+      decode:
+        - { res: "4K", fps: 60, codecs: ["AV1", "H.265", "H.264", "VP9", "VP8", "MPEG-2"] }
+      encode:
+        - { res: "1080p", fps: 60, codecs: ["H.264", "VP8"] }
+    camera: ["Dual-sensor MIPI CSI-2 with integrated ISP"]
+    display: { outputs: ["HDMI 2.1 Tx", "MIPI DSI"] }
+    storage: ["eMMC 5.1"]
+    pcie: [{ count: 1, gen: 2, lanes: 2 }]
+    usb: [{ count: 1, version: "3.0" }, { count: 1, version: "2.0", note: "OTG" }]
+    ethernet: [{ count: 1, gbps: 1 }]
+    other:
+      - { name: "Video input", value: "HDMI 2.1 Rx" }

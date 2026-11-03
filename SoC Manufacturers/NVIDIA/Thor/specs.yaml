@@ -1,0 +1,33 @@
+# NVIDIA/Thor specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+label: "Module"
+parts:
+  - name: "Jetson T5000"
+    cpu:
+      clusters:
+        - { cores: 14, core: "Neoverse-V3AE", max_ghz: 2.6 }
+    memory: { types: ["LPDDR5X"], bus_bits: 256, max_gb: 128, bandwidth_gbs: 273 }
+    gpu: { name: "Blackwell, 2,560 CUDA cores, 96 Tensor Cores", max_mhz: 1575, notes: "Multi-Instance GPU (MIG)" }
+    ethernet: [{ count: 4, gbps: 25 }]
+    tdp_w: { min: 40, max: 130 }
+    other:
+      - { name: "AI performance", value: "2070 FP4 TFLOPS (sparse)" }
+  - name: "Jetson T4000"
+    cpu:
+      clusters:
+        - { cores: 12, core: "Neoverse-V3AE", max_ghz: 2.6 }
+    memory: { types: ["LPDDR5X"], bus_bits: 256, max_gb: 64, bandwidth_gbs: 273 }
+    gpu: { name: "Blackwell, 1,536 CUDA cores, 64 Tensor Cores", max_mhz: 1530, notes: "Multi-Instance GPU (MIG)" }
+    ethernet: [{ count: 3, gbps: 25 }]
+    tdp_w: { min: 40, max: 70 }
+    other:
+      - { name: "AI performance", value: "1200 FP4 TFLOPS (sparse)" }
+  - name: "Jetson T3000"
+    cpu:
+      clusters:
+        - { cores: 8, core: "Neoverse-V3AE" }
+    memory: { types: ["LPDDR5X"], max_gb: 32 }
+    availability: "Announced July 2026, expected Q1 2027"
+    other:
+      - { name: "AI performance", value: "865 FP4 TFLOPS" }

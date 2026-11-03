@@ -35,7 +35,7 @@ Rockchip’s published power figures (tablet, 8 GB LPDDR5 + 128 GB UFS, display/
 
 ## Linux Support
 
-Forlinx provides a customer-delivered Linux 6.12 BSP for the OK3572-C (Forlinx Desktop 24.04, Debian 13, and Android 16). The [June 2026 announcement](https://www.cnx-software.com/2026/06/04/forlinx-launches-rockchip-rk3572-system-on-module-som-and-development-board-with-linux-6-12-bsp/) marked those images as R&D. [Firefly’s ICORE-3572Q38](https://www.t-firefly.com/products/icore-3572q38) lists Debian and Ubuntu. No mainline support is documented yet. The Mali-G310 v2 is a CSF GPU, so Panthor/Tyr support from RK3588 should apply as boards reach upstream. The [EW26 EVB](/news/articles/exclusive-rk3572-benchmarked-at-ew26/) ran pre-release software.
+Forlinx provides a customer-delivered Linux 6.12 BSP for the OK3572-C (Forlinx Desktop 24.04, Debian 13, and Android 16). The [June 2026 announcement](https://www.cnx-software.com/2026/06/04/forlinx-launches-rockchip-rk3572-system-on-module-som-and-development-board-with-linux-6-12-bsp/) marked those images as R&D. [Firefly’s ICORE-3572Q38](https://www.t-firefly.com/products/icore-3572q38) lists Debian and Ubuntu. No mainline support is documented yet. The Mali-G310 v2 is a CSF GPU, so Panthor/Tyr support from RK3588 should apply as boards reach upstream. The [EW26 EVB](boards/rockchip-rk3572-evb/) ran pre-release software.
 
 ---
 
@@ -68,8 +68,5 @@ Thermals on the show floor were notably mild — the package stayed warm rather 
 ---
 
 ## Boards with RK3572
-
-- [Firefly ICORE-3572Q38](https://www.t-firefly.com/products/icore-3572q38) — 38 × 38 mm SoM
-- [Forlinx FET3572-C SoM and OK3572-C development board](https://www.forlinx.net/industrial-news/forlinx-fet3572-c-som-rockchip-rk3572-828.html) — Linux 6.12 BSP
 
 {{< taglist tag="RK3572" style="cards" >}}
