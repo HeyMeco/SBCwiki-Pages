@@ -1,0 +1,23 @@
+# Renesas/RZ-T2N specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+
+parts:
+  - name: "Renesas RZ/T2N"
+    cpu:
+      clusters:
+        - { cores: 2, core: "Cortex-A55", max_ghz: 1.2 }
+    mcu: [{ cores: 2, core: "Cortex-R52", max_mhz: 800, note: "576 KB TCM with ECC per core" }]
+    memory:
+      types: [{ type: "LPDDR4", mts: 1600 }]
+      bus_bits: 16
+      ecc: true
+      notes: "On-the-fly DDR encryption/decryption; 2 MB on-chip SRAM with ECC"
+    pcie: [{ count: 1, gen: 2, lanes: 1 }]
+    usb: [{ count: 1, version: "2.0", note: "High-Speed host/device" }]
+    ethernet:
+      - { count: 3, gbps: 1, note: "3-port switch, EtherCAT ESC, TSN, HSR/PRP/FRER" }
+    io: ["Motor control for up to 4 axes, 2 encoder channels per axis", "3× 12-bit ADC"]
+    security: ["Arm TrustZone", "Secure boot", "Secure firmware update", "Crypto library"]
+    package: ["537-pin LFBGA (21 × 21 mm, 0.8 mm pitch)", "489-pin LFBGA (16 × 16 mm, 0.65 mm pitch)"]
+    temperature: "Tj -40 °C to 125 °C"
+    other: [{ name: "Industrial Ethernet", value: "EtherCAT, PROFINET RT/IRT, EtherNet/IP" }]

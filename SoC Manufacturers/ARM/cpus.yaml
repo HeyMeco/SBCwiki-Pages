@@ -54,6 +54,12 @@ groups:
       - name: "Cortex-R82AE"
         isa: "ARMv8-R"
         class: "Real-Time"
+      - name: "Neoverse V3AE"
+        aliases: ["Neoverse-V3AE"]
+        based_on: "Cortex-X4"
+        display: "Neoverse V3AE (Cortex-X4)"
+        isa: "ARMv9.2-A"
+        class: "Automotive"
   - anchor: "2023"
     year: 2023
     entries:
@@ -196,6 +202,9 @@ groups:
       - name: "Cortex-M33"
         isa: "ARMv8-M"
         class: "Microcontroller"
+      - name: "Cortex-R52"
+        isa: "ARMv8-R"
+        class: "Real-Time"
   - anchor: "2015"
     year: 2015
     entries:
@@ -220,6 +229,16 @@ groups:
       - name: "Cortex-A53"
         isa: "ARMv8-A"
         class: "Efficiency"
+  - anchor: "2011"
+    year: 2011
+    entries:
+      - name: "Cortex-A7"
+        isa: "ARMv7-A"
+        class: "Efficiency (32-bit)"
+      - name: "Cortex-R5"
+        aliases: ["Cortex-R5F"]
+        isa: "ARMv7-R"
+        class: "Real-Time"
   - anchor: "2010"
     year: 2010
     entries:

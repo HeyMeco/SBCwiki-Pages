@@ -1,6 +1,6 @@
 ---
 menuStripPrefix: "Synaptics "
-weight: 13
+weight: 14
 title: Synaptics
 icon: /assets/synaptics/Synaptics-Logo.png
 categories:
