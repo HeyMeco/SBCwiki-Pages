@@ -40,6 +40,8 @@ images:
 
 ## Benchmarks
 
+{{< all-benchmarks >}}
+
 ## Guides
 
 - [Getting Started with Cubie A5E](https://docs.radxa.com/en/cubie/a5e/getting-started)

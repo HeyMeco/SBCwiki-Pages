@@ -52,6 +52,10 @@ The Debix Model C is optimized for:
 - Smart building applications
 - Battery-powered industrial devices
 
+## Benchmarks
+
+{{< all-benchmarks >}}
+
 ## Documentation
 
 - [Debix Model C Product Page](https://debix.io/product/debix-model-c/)

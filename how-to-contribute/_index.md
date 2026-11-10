@@ -29,6 +29,8 @@ SoC Manufacturers/
 │   └── Mali-GPU/
 │       ├── gpus.yaml            ← Mali GPU generations
 │       └── mesa.yaml            ← Mesa driver support per GPU architecture
+├── NVIDIA/, Qualcomm/
+│   └── cpus.yaml                ← the vendor's own (custom) Arm CPU cores
 ├── Rockchip/                    ← SoC vendor page
 │   ├── _index.md
 │   └── RK3588/                  ← SoC page
@@ -73,7 +75,7 @@ Spec tables are not written in Markdown. They are generated from YAML files next
 |------|-------------|----------|
 | `specs.yaml` | `{{</* soc-specs */>}}` on the SoC page | The SoC: CPU clusters, memory, GPU, NPU, VPU, I/O. See the [SoC template]({{< relref "soc" >}}). |
 | `board-specs.yaml` | `{{</* board-specs */>}}` on the board page | Only what the board adds: RAM sizes, connectors, ports, power. The SoC table is pulled in automatically. See the [board template]({{< relref "board" >}}). |
-| `ARM/cpus.yaml`, `ARM/Mali-GPU/gpus.yaml`, `Qualcomm/Adreno-GPU/gpus.yaml` | `{{</* generation-table */>}}` on those pages | CPU core and GPU generations. SoC tables link core and GPU names here automatically. |
+| `ARM/cpus.yaml`, `NVIDIA/cpus.yaml`, `Qualcomm/cpus.yaml`, `ARM/Mali-GPU/gpus.yaml`, `Qualcomm/Adreno-GPU/gpus.yaml` | `{{</* generation-table */>}}` on those pages | CPU core and GPU generations. SoC tables link core and GPU names here automatically and show each CPU core's Arm version (`isa`, written the way Arm does: `Armv8.2-A`, `Armv9.2-A`, `Armv8-M`). |
 | `ARM/Mali-GPU/mesa.yaml`, `Qualcomm/Adreno-GPU/mesa.yaml` | SoC spec tables | Open-source (Mesa) driver support. Edit it here, never in a `specs.yaml`. |
 | `SoC Manufacturers/links.json` | SoC spec tables | Link targets for NPUs and names the generation files lack. |
 

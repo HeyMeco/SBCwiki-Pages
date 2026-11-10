@@ -48,6 +48,12 @@ Snapdragon is Qualcomm's mobile phone SoC, and the brand on its PC processors, i
 | [Q4](/docs/soc-manufacturers/qualcomm/dragonwing-q4/) | Commercial |
 | [Q2 / IQ2](/docs/soc-manufacturers/qualcomm/dragonwing-q2/) | Commercial and industrial. Q-2390 and IQ-2390 are one SoC. QRB2210, QCS2290, and QCM2290 are a Cortex-A53 SoC |
 
+## CPU Cores
+
+Qualcomm's own Arm CPU cores, from the Nuvia team it acquired in 2021. Cortex cores sold as Kryo are listed on the [ARM](/docs/soc-manufacturers/arm/) page under their Arm names.
+
+{{< generation-table "cpu-cores" >}}
+
 ## Qualcomm Adreno GPUs
 
 {{< category-list path="soc-manufacturers/qualcomm/adreno-gpu" >}}

@@ -11,10 +11,16 @@ board-vendor:
 - TexasInstruments
 release: "2023-03"
 summary: "TI SK-AM69 starter kit - AM69/AM69A 8× Cortex-A72 with 32 TOPS AI, 32 GB LPDDR4 with inline ECC, DisplayPort and HDMI, M.2 M and E, 4× CAN FD, up to 12 cameras."
+images:
+- images/ti-sk-am69-01.png
+- images/ti-sk-am69-02.png
 ---
 # TI SK-AM69
 
 The SK-AM69 is TI's starter kit for the AM69 and AM69A. It has 32 GB of LPDDR4 and takes up to twelve cameras through a multi-camera hub. CNX Software reported a price of $299 at launch.
+
+## Board Pictures
+{{< gallery match="images/*" sortOrder="asc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true >}}
 
 ## Hardware
 {{% details title="Specs" open=true %}}
@@ -35,6 +41,8 @@ The SK-AM69 is TI's starter kit for the AM69 and AM69A. It has 32 GB of LPDDR4 a
 - [Armbian for SK-AM69](https://www.armbian.com/texas-instruments-sk-am69/)
 
 ## Benchmarks
+
+{{< all-benchmarks >}}
 
 ## Guides
 

@@ -8,7 +8,7 @@ parts:
       clusters:
         - { cores: 6, core: "Cortex-A725", max_ghz: 2.5, note: "expected" }
         - { cores: 2, core: "Cortex-A520", max_ghz: 2.2, note: "expected; Rockchip rates A520 in the same class as Cortex-A73" }
-      isa: "Armv9.2, 64-bit only"
+      isa: "AArch64 only"
       cache:
         - { level: "L3", mb: 4 }
         - { level: "SLC", mb: 4 }

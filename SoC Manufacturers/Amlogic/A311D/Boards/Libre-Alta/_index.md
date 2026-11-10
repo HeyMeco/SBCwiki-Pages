@@ -11,10 +11,16 @@ board-vendor:
 - LibreComputer
 release: "2023-11"
 summary: "Libre Computer Alta AML-A311D-CC - Amlogic A311D (4× Cortex-A73 + 2× Cortex-A53), 5 TOPS NPU, 2 or 4 GB LPDDR4, 4× USB 3.0, Gigabit Ethernet, 4-lane MIPI CSI/DSI."
+images:
+- images/libre-alta-01.jpg
+- images/libre-alta-02.jpg
 ---
 # Libre Computer Alta (AML-A311D-CC)
 
 Alta is Libre Computer's A311D board for edge AI and vision. Pre-orders opened in November 2023, and boards shipped from late November. Its NPU runs under mainline Mesa through the Teflon TensorFlow Lite delegate. Mainline Linux has supported it since 6.7, and support runs until 2053.
+
+## Board Pictures
+{{< gallery match="images/*" sortOrder="asc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true >}}
 
 ## Hardware
 {{% details title="Specs" open=true %}}
@@ -39,6 +45,8 @@ Alta is Libre Computer's A311D board for edge AI and vision. Pre-orders opened i
 - [CNX Software: Libre Computer Alta](https://www.cnx-software.com/2023/11/09/libre-computer-aml-a311d-cc-alta-sbc-features-amlogic-a311d-ai-processor/)
 
 ## Benchmarks
+
+{{< all-benchmarks >}}
 
 ## Guides
 

@@ -46,7 +46,8 @@ images:
 
 ## Benchmarks
 
-- Geekbench 6.7.1 Preview, Armbian 26.08 (kernel 7.0.11-midstream-sc8280xp):<br> Single Core **1663**, Multi Core **6852**
+{{< all-benchmarks >}}
+
 
 ## Guides
 

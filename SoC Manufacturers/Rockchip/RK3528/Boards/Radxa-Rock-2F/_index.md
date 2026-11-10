@@ -40,6 +40,8 @@ images:
 
 ## Benchmarks
 
+{{< all-benchmarks >}}
+
 ## Guides
 
 - [Getting Started with Rock 2F](https://docs.radxa.com/en/rock2/rock2f/getting-started)

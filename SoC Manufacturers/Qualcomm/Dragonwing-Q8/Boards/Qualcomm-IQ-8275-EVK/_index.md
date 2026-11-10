@@ -10,10 +10,15 @@ boards:
 board-vendor:
 - Qualcomm
 summary: "Qualcomm Dragonwing IQ-8275 Evaluation Kit (Monaco) - IQ-8275 with up to 40 TOPS, 12 GB LPDDR5 with inline ECC, 128 GB UFS 3.1, 2.5 GbE, Wi-Fi 6E, PCIe x4."
+images:
+- images/qualcomm-iq-8275-evk-01.jpg
 ---
 # Qualcomm Dragonwing IQ-8275 EVK
 
 Qualcomm's own evaluation kit for the IQ-8275 (QCS8275, codename **Monaco**) is sold as EVK-IQ8275-STARTER-1.0. Our [Arduino Ventuno Q first look](/news/articles/arduino-ventuno-q-first-look-ew26/) calls it the RB4 Monaco evaluation board and cites its public Geekbench 6 result. The Arduino VENTUNO Q is built on the same SoC.
+
+## Board Pictures
+{{< gallery match="images/*" sortOrder="asc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true >}}
 
 ## Hardware
 {{% details title="Specs" open=true %}}
@@ -36,7 +41,9 @@ Qualcomm's own evaluation kit for the IQ-8275 (QCS8275, codename **Monaco**) is 
 
 ## Benchmarks
 
-- [Public Geekbench 6 CPU result](https://browser.geekbench.com/v6/cpu/15614288) (multi-core 3418)
+{{< all-benchmarks >}}
+
+- [Public Geekbench 6 CPU result](https://browser.geekbench.com/v6/cpu/15614288)
 
 ## Guides
 

@@ -8,7 +8,7 @@ parts:
     process_nm: 4
     cpu:
       clusters:
-        - { cores: 12, core: "Oryon", base_ghz: 3.8, max_ghz: 4.3, note: "boost on 2 cores" }
+        - { cores: 12, core: "Oryon Gen 1", base_ghz: 3.8, max_ghz: 4.3, note: "boost on 2 cores" }
       cache: [{ level: "Total", mb: 42 }]
     memory: &x1mem
       types: [{ type: "LPDDR5X", mts: 8448 }]
@@ -26,7 +26,7 @@ parts:
     process_nm: 4
     cpu:
       clusters:
-        - { cores: 12, core: "Oryon", base_ghz: 3.8, max_ghz: 4.2, note: "boost on 2 cores" }
+        - { cores: 12, core: "Oryon Gen 1", base_ghz: 3.8, max_ghz: 4.2, note: "boost on 2 cores" }
       cache: [{ level: "Total", mb: 42 }]
     memory: *x1mem
     gpu:
@@ -38,7 +38,7 @@ parts:
     process_nm: 4
     cpu:
       clusters:
-        - { cores: 12, core: "Oryon", base_ghz: 3.4, max_ghz: 4.0, note: "boost on 2 cores" }
+        - { cores: 12, core: "Oryon Gen 1", base_ghz: 3.4, max_ghz: 4.0, note: "boost on 2 cores" }
       cache: [{ level: "Total", mb: 42 }]
     memory: *x1mem
     gpu:
@@ -50,7 +50,7 @@ parts:
     process_nm: 4
     cpu:
       clusters:
-        - { cores: 12, core: "Oryon", max_ghz: 3.4 }
+        - { cores: 12, core: "Oryon Gen 1", max_ghz: 3.4 }
       cache: [{ level: "Total", mb: 42 }]
     memory: *x1mem
     gpu:
@@ -61,7 +61,7 @@ parts:
   - name: "IQ-X7181"
     cpu:
       clusters:
-        - { cores: 12, core: "Oryon", max_ghz: 3.4 }
+        - { cores: 12, core: "Oryon Gen 1", max_ghz: 3.4 }
       notes: "Industrial grade of X1E-78-100"
     memory: &iqxmem
       types: [{ type: "LPDDR5X", mts: 8400 }]
@@ -77,7 +77,7 @@ parts:
   - name: "IQ-X5121"
     cpu:
       clusters:
-        - { cores: 8, core: "Oryon", max_ghz: 3.4 }
+        - { cores: 8, core: "Oryon Gen 1", max_ghz: 3.4 }
       notes: "Industrial grade"
     memory: *iqxmem
     gpu:

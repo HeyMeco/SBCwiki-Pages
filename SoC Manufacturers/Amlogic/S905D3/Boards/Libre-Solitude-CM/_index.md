@@ -38,6 +38,8 @@ The Solitude Compute Module puts the S905D3 into the Raspberry Pi CM4 form facto
 
 ## Benchmarks
 
+{{< all-benchmarks >}}
+
 ## Guides
 
 ## Articles

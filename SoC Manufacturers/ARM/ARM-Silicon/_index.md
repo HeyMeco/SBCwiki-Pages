@@ -23,7 +23,7 @@ Announced at the Arm Everywhere Keynote on March 24, 2026, the ARM AGI CPU is Ar
 ### Specifications
 
 - **Cores:** Up to 136 [Neoverse V3](/docs/soc-manufacturers/arm/#2023) cores (2x 128 SVE, 2MB/core L2)
-- **Architecture:** Armv9.2 with bfloat16 and INT8 AI instructions
+- **Architecture:** Armv9.2-A with bfloat16 and INT8 AI instructions
 - **Clock Speed:** Up to 3.7GHz boost
 - **PCIe:** 96 Lanes of PCIe Gen6, CXL 3.0 Type 3
 - **Process:** 3nm lithography process

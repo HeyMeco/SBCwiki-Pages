@@ -1,0 +1,36 @@
+# Qualcomm custom Arm CPU cores: the single source for the CPU core table on the Qualcomm
+# page (rendered by {{< generation-table "cpu-cores" >}}) and for CPU core links and
+# tooltips in every SoC spec table (layouts/partials/soc/linkdb.html in the SBCwiki repo,
+# listed in `cpu_sources` of links.json). Cortex cores sold as Kryo stay under their Arm
+# names in ARM/cpus.yaml.
+#
+# `name` is what SoC specs match against (longest prefix wins), so a spec writes
+# `core: "Oryon Gen 3"`. A bare "Oryon" (generation not published) matches the fallback
+# entry in links.json and shows no ISA. `isa` uses Arm's spelling: "Armv8.7-A".
+
+columns:
+  - { key: isa, label: "ISA" }
+  - { key: name, label: "Name" }
+  - { key: year, label: "Year" }
+  - { key: socs, label: "Used in" }
+
+groups:
+  - anchor: "cpu-cores"
+    entries:
+      - name: "Oryon Gen 3"
+        display: "Oryon (3rd Gen)"
+        year: 2025
+        # SVE2 and SME are confirmed (Chips and Cheese), so at least Armv9.2-A. Qualcomm
+        # publishes no version; Wikipedia's uncited "Armv9.3-A" is not used until confirmed.
+        isa: "Armv9.2-A"
+        socs: "[Snapdragon X2 Elite](/docs/soc-manufacturers/qualcomm/snapdragon-x2-elite/), Snapdragon 8 Elite Gen 5"
+      - name: "Oryon Gen 2"
+        display: "Oryon (2nd Gen)"
+        year: 2024
+        isa: "Armv8.7-A"
+        socs: "Snapdragon 8 Elite, [Dragonwing Q-8750](/docs/soc-manufacturers/qualcomm/dragonwing-q8/)"
+      - name: "Oryon Gen 1"
+        display: "Oryon (1st Gen)"
+        year: 2023
+        isa: "Armv8.7-A"
+        socs: "[Snapdragon X Elite / X Plus / IQ-X](/docs/soc-manufacturers/qualcomm/snapdragon-x-elite/)"

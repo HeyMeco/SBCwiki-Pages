@@ -14,7 +14,7 @@ summary: MediaTek Genio Pro 5100 (MT8894) and Kompanio Ultra 910 (MT8196). Same 
 ---
 # Genio Pro 5100 / Kompanio Ultra 910
 
-The MediaTek Genio Pro 5100 and Kompanio Ultra 910 are the IoT and Chromebook grades of the same Dimensity 9400-class SoC on TSMC 3 nm. Genio Pro 5100 is the embedded part (MT8894). Kompanio Ultra 910 is the Chromebook part (MT8196). Both use an all-big-core Arm v9.2 cluster, an Immortalis-G925 MC11 GPU, and MediaTek's 8th-generation NPU.
+The MediaTek Genio Pro 5100 and Kompanio Ultra 910 are the IoT and Chromebook grades of the same Dimensity 9400-class SoC on TSMC 3 nm. Genio Pro 5100 is the embedded part (MT8894). Kompanio Ultra 910 is the Chromebook part (MT8196). Both use an all-big-core Armv9.2-A cluster, an Immortalis-G925 MC11 GPU, and MediaTek's 8th-generation NPU.
 
 ## General Specifications
 {{% details title="Specs" open=true %}}

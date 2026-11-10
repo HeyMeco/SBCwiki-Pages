@@ -29,6 +29,12 @@ Jetson is NVIDIA's embedded line of modules and developer kits for robotics and 
 
 {{< taglist SOC-NVIDIA-Jetson >}}
 
+## CPU Cores
+
+NVIDIA's own Arm CPU cores. Its other SoCs use Arm-designed cores (Cortex-A57, Cortex-A78AE, Neoverse V3AE, Cortex-X925/A725 in GB10), listed on the [ARM](/docs/soc-manufacturers/arm/) page.
+
+{{< generation-table "cpu-cores" >}}
+
 ## Resources
 
 - [NVIDIA Jetson](https://developer.nvidia.com/embedded-computing)

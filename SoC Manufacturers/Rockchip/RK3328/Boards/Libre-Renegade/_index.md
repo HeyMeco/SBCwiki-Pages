@@ -10,10 +10,16 @@ boards:
 board-vendor:
 - LibreComputer
 summary: "Libre Computer Renegade ROC-RK3328-CC - Rockchip RK3328 quad Cortex-A53, 1 to 4 GB DDR4, USB 3.0, Gigabit Ethernet, HDMI 2.0 4K HDR, Raspberry Pi 3 B+ form factor."
+images:
+- images/libre-renegade-01.jpg
+- images/libre-renegade-02.jpg
 ---
 # Libre Computer Renegade (ROC-RK3328-CC)
 
 Renegade is Libre Computer's RK3328 board, crowdfunded on Indiegogo. In the Raspberry Pi 3 B+ footprint it adds USB 3.0, Gigabit Ethernet and up to 4 GB of DDR4, but drops one USB Type-A port. Mainline Linux and U-Boot support it until 2047.
+
+## Board Pictures
+{{< gallery match="images/*" sortOrder="asc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true >}}
 
 ## Hardware
 {{% details title="Specs" open=true %}}
@@ -37,6 +43,8 @@ Renegade is Libre Computer's RK3328 board, crowdfunded on Indiegogo. In the Rasp
 - [Libre Computer Hub](https://hub.libre.computer/)
 
 ## Benchmarks
+
+{{< all-benchmarks >}}
 
 ## Guides
 

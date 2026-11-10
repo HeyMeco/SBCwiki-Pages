@@ -40,6 +40,8 @@ images:
 
 ## Benchmarks
 
+{{< all-benchmarks >}}
+
 ## Guides
 
 - [Getting Started with Cubie A7A](https://docs.radxa.com/en/cubie/a7a/getting-started)

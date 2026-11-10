@@ -40,6 +40,8 @@ images:
 
 ## Benchmarks
 
+{{< all-benchmarks >}}
+
 ## Guides
 
 - [Getting Started with Orion O6N](https://docs.radxa.com/en/orion/o6n/getting-started)

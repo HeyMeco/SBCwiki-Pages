@@ -40,6 +40,8 @@ images:
 
 ## Benchmarks
 
+{{< all-benchmarks >}}
+
 ## Guides
 
 - [Getting Started with Rock 5B+](https://docs.radxa.com/en/rock5/rock5b/getting-started)

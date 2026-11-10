@@ -1,0 +1,42 @@
+# NVIDIA custom Arm CPU cores: the single source for the CPU core table on the NVIDIA
+# page (rendered by {{< generation-table "cpu-cores" >}}) and for CPU core links and
+# tooltips in every SoC spec table (layouts/partials/soc/linkdb.html in the SBCwiki repo,
+# listed in `cpu_sources` of links.json). Arm-designed cores NVIDIA licenses (Cortex-A57,
+# Cortex-A78AE, Neoverse V3AE, …) stay in ARM/cpus.yaml.
+#
+# `name` is what SoC specs match against (longest prefix wins, so "NVIDIA Denver 2" finds
+# its own entry before "NVIDIA Denver"). `isa` uses Arm's spelling: "Armv8.2-A".
+
+columns:
+  - { key: isa, label: "ISA" }
+  - { key: name, label: "Name" }
+  - { key: year, label: "Year" }
+  - { key: socs, label: "Used in" }
+
+groups:
+  - anchor: "cpu-cores"
+    entries:
+      - name: "NVIDIA Olympus"
+        aliases: ["Olympus"]
+        display: "Olympus"
+        year: 2025
+        isa: "Armv9.2-A"
+        socs: "Vera CPU"
+      - name: "NVIDIA Carmel"
+        aliases: ["Carmel"]
+        display: "Carmel"
+        year: 2018
+        isa: "Armv8.2-A"
+        socs: "[Jetson Xavier (T194)](/docs/soc-manufacturers/nvidia/xavier/)"
+      - name: "NVIDIA Denver 2"
+        aliases: ["Denver 2"]
+        display: "Denver 2"
+        year: 2016
+        isa: "Armv8-A"
+        socs: "[Jetson TX2 (Parker, T186)](/docs/soc-manufacturers/nvidia/parker-tx2/)"
+      - name: "NVIDIA Denver"
+        aliases: ["Denver"]
+        display: "Denver"
+        year: 2014
+        isa: "Armv8-A"
+        socs: "Tegra K1 (64-bit)"

@@ -96,7 +96,8 @@ parts:
 
 More fields (ISP, cache, SATA, CAN, TDP, …) are listed in the [field reference](#field-reference) below. Look at an existing SoC such as RK3576 for a complete example.
 
-- **CPU, GPU and NPU names** link to their generation automatically. Write the name as the vendor does (`Cortex-A76`, `Mali-G610 MP4`, `Adreno 643`). If it is not found, add it to `ARM/cpus.yaml` or the GPU family's `gpus.yaml` rather than setting `link`.
+- **CPU, GPU and NPU names** link to their generation automatically. Write the name as the vendor does (`Cortex-A76`, `Mali-G610 MP4`, `Adreno 643`). If it is not found, add it to `ARM/cpus.yaml` or the GPU family's `gpus.yaml` rather than setting `link`. A vendor's own Arm cores (NVIDIA Carmel, Qualcomm Oryon, …) go in a `cpus.yaml` on that vendor's page, added to `cpu_sources` in `links.json`. Name the generation when it is known (`Oryon Gen 3`), since the generations differ in Arm version.
+- **Arm version:** each CPU cluster shows its core's `isa` from the `cpus.yaml` entry, e.g. "4× Cortex-A76 (Armv8.2-A) @ 2.4 GHz". Do not repeat it in `cpu.isa`, which is for chips without a cluster split or for extra ISA notes. Spell versions as Arm does: `Armv8-A`, `Armv8.2-A`, `Armv9.2-A`.
 - **Mesa support** is looked up from the GPU family's `mesa.yaml`. `vendor_apis` holds only what the vendor's own driver supports.
 - **Several parts in one file:** when one page covers several chips (e.g. a lineup page), list each as its own entry under `parts`. The page then shows a comparison table, and boards pick theirs with `soc.part` in `board-specs.yaml`.
 
@@ -117,11 +118,12 @@ parts:
         - { cores: 4, core: "Cortex-A76", max_ghz: 2.4 }
         - { cores: 4, core: "Cortex-A55", max_ghz: 1.8, note: "LITTLE" }
         # also: base_ghz (all-core clock; max_ghz is then the boost clock),
-        #       max_mhz (instead of max_ghz for slow cores), link (overrides the automatic link)
+        #       max_mhz (instead of max_ghz for slow cores), link (overrides the automatic link),
+        #       isa (overrides the core's Arm version from cpus.yaml)
       cores: 6                    # only when the split into clusters is not known
       core: "Cortex-A78 and Cortex-A55"   # likewise
       max_ghz: 2.1                # chip-wide peak when clusters carry no clocks
-      isa: "Armv9.2"
+      isa: "Armv9.2-A"              # only without clusters, or for extra notes
       cache: [{ level: "L3", mb: 4 }, { level: "L2", mb: 2, per: "core" }]
       notes: "free text"
     mcu: [{ cores: 1, core: "Cortex-M7", max_mhz: 800 }]   # not counted as CPU cores

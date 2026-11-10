@@ -8,7 +8,7 @@ parts:
     process_nm: 3
     cpu:
       clusters:
-        - { cores: 8, core: "Oryon", max_ghz: 4.32 }
+        - { cores: 8, core: "Oryon Gen 2", max_ghz: 4.32 }
       notes: "Custom Qualcomm cores"
     memory:
       types: [{ type: "LPDDR5X", mts: 9600 }]

@@ -11,10 +11,16 @@ board-vendor:
 - Forlinx
 release: "2026-06"
 summary: "Forlinx OK3572-C development board - FET3572-C RK3572 SoM with up to 8 GB LPDDR5, HDMI 2.1, 2× GbE, M.2 NVMe and 4G/5G, 2× CAN FD, Linux 6.12 BSP."
+images:
+- images/forlinx-ok3572-c-01.webp
+- images/forlinx-ok3572-c-02.webp
 ---
 # Forlinx OK3572-C
 
 The OK3572-C is Forlinx's development board for its FET3572-C system-on-module, a 68 × 50 mm module with four 100-pin board-to-board connectors. The industrial FET3572J-C module uses the RK3572J and runs from -40 °C to 85 °C. Forlinx gives customers a Linux 6.12 BSP with Forlinx Desktop 24.04, Debian 13 and Android 16. At launch these images were marked R&D.
+
+## Board Pictures
+{{< gallery match="images/*" sortOrder="asc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true >}}
 
 ## Hardware
 {{% details title="Specs" open=true %}}
@@ -35,6 +41,8 @@ The OK3572-C is Forlinx's development board for its FET3572-C system-on-module, 
 - [CNX Software: Forlinx RK3572 SoM and development board](https://www.cnx-software.com/2026/06/04/forlinx-launches-rockchip-rk3572-system-on-module-som-and-development-board-with-linux-6-12-bsp/)
 
 ## Benchmarks
+
+{{< all-benchmarks >}}
 
 ## Guides
 

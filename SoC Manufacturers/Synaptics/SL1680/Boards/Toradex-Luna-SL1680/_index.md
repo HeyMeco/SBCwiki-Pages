@@ -10,10 +10,16 @@ boards:
 board-vendor:
 - Toradex
 summary: "Toradex Luna SL1680 single-board computer - Synaptics Astra SL1680 quad Cortex-A73, 8 TOPS NPU, 4 GB LPDDR4, eMMC, HDMI in and out, Raspberry Pi form factor."
+images:
+- images/toradex-luna-sl1680-01.png
+- images/toradex-luna-sl1680-02.png
 ---
 # Toradex Luna SL1680
 
 The Luna SL1680 is Toradex's single-board computer for the Synaptics Astra SL1680. It uses the Raspberry Pi form factor but is designed for mass production in commercial and light industrial products. It runs Toradex's Torizon Linux with quarterly releases. LinuxGizmos reported a starting price of $105.
+
+## Board Pictures
+{{< gallery match="images/*" sortOrder="asc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true >}}
 
 ## Hardware
 {{% details title="Specs" open=true %}}
@@ -35,6 +41,8 @@ The Luna SL1680 is Toradex's single-board computer for the Synaptics Astra SL168
 - [LinuxGizmos: Toradex Luna SL1680](https://linuxgizmos.com/toradex-luna-sl1680-sbc-features-synaptics-sl1680-soc-with-8-tops-npu-starts-at-105/)
 
 ## Benchmarks
+
+{{< all-benchmarks >}}
 
 ## Guides
 

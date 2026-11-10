@@ -46,7 +46,8 @@ images:
 
 ## Benchmarks
 
-- Geekbench 6, from sbc.compare:<br> Single Core **190**, Multi Core **527**
+{{< all-benchmarks >}}
+
 
 ## Guides
 

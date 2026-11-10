@@ -11,10 +11,16 @@ board-vendor:
 - BananaPi
 release: "2025-10"
 summary: "BananaPi R4 Pro router board - MediaTek Filogic 880 (MT7988A), 8 GB DDR4, 2× 10G SFP+/RJ45 combo, 4× 2.5 GbE, Wi-Fi 7 via miniPCIe, 4G/5G support."
+images:
+- images/bananapi-r4-pro-01.jpg
+- images/bananapi-r4-pro-02.jpg
 ---
 # BananaPi R4 Pro
 
 The BPI-R4 Pro is the larger version of the [BananaPi R4](../bananapi-r4/). It doubles the RAM to 8 GB and adds 10G RJ45 ports, which share the two 10G SFP+ cages, plus four 2.5 GbE ports. There are two models. The **8X** has the port set below. The **4E** has a 2.5G RJ45 + 10G SFP+ WAN combo, one 10G SFP+ LAN, four 2.5G and two 1G LAN ports.
+
+## Board Pictures
+{{< gallery match="images/*" sortOrder="asc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true >}}
 
 ## Hardware
 {{% details title="Specs" open=true %}}
@@ -35,6 +41,8 @@ The BPI-R4 Pro is the larger version of the [BananaPi R4](../bananapi-r4/). It d
 - [CNX Software: Banana Pi BPI-R4 Pro](https://www.cnx-software.com/2025/10/20/banana-pi-bpi-r4-pro-board-offers-2x-10gbe-sfp-cages-6x-10gbe-2-5gbe-gbe-ports-wifi-7-support/)
 
 ## Benchmarks
+
+{{< all-benchmarks >}}
 
 ## Guides
 

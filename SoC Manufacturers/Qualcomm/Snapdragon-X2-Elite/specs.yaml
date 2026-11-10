@@ -8,8 +8,8 @@ parts:
     process_nm: 3
     cpu:
       clusters:
-        - { cores: 12, core: "Oryon", base_ghz: 4.4, max_ghz: 5.0, note: "prime" }
-        - { cores: 6, core: "Oryon", max_ghz: 3.6, note: "performance" }
+        - { cores: 12, core: "Oryon Gen 3", base_ghz: 4.4, max_ghz: 5.0, note: "prime" }
+        - { cores: 6, core: "Oryon Gen 3", max_ghz: 3.6, note: "performance" }
       cache: [{ level: "Total", mb: 53 }]
     memory:
       types: [{ type: "LPDDR5X", mts: 9523 }]
@@ -26,7 +26,7 @@ parts:
     process_nm: 3
     cpu:
       clusters:
-        - { cores: 18, core: "Oryon", max_ghz: 4.7 }
+        - { cores: 18, core: "Oryon Gen 3", max_ghz: 4.7 }
       cache: [{ level: "Total", mb: 53 }]
     memory:
       types: [{ type: "LPDDR5X", mts: 9523 }]
@@ -42,7 +42,7 @@ parts:
     process_nm: 3
     cpu:
       clusters:
-        - { cores: 18, core: "Oryon", max_ghz: 5.0 }
+        - { cores: 18, core: "Oryon Gen 3", max_ghz: 5.0 }
       cache: [{ level: "Total", mb: 53 }]
     memory:
       types: [{ type: "LPDDR5X", mts: 9523 }]
@@ -58,8 +58,8 @@ parts:
     process_nm: 3
     cpu:
       clusters:
-        - { cores: 12, core: "Oryon", base_ghz: 4.0, max_ghz: 4.7, note: "prime" }
-        - { cores: 6, core: "Oryon", max_ghz: 3.4, note: "performance" }
+        - { cores: 12, core: "Oryon Gen 3", base_ghz: 4.0, max_ghz: 4.7, note: "prime" }
+        - { cores: 6, core: "Oryon Gen 3", max_ghz: 3.4, note: "performance" }
       cache: [{ level: "Total", mb: 53 }]
     memory: &x2mem128
       types: [{ type: "LPDDR5X", mts: 9523 }]
@@ -76,8 +76,8 @@ parts:
     process_nm: 3
     cpu:
       clusters:
-        - { cores: 6, core: "Oryon", base_ghz: 4.0, max_ghz: 4.7, note: "prime" }
-        - { cores: 6, core: "Oryon", max_ghz: 3.4, note: "performance" }
+        - { cores: 6, core: "Oryon Gen 3", base_ghz: 4.0, max_ghz: 4.7, note: "prime" }
+        - { cores: 6, core: "Oryon Gen 3", max_ghz: 3.4, note: "performance" }
       cache: [{ level: "Total", mb: 34 }]
     memory: *x2mem128
     gpu:
@@ -91,8 +91,8 @@ parts:
     process_nm: 3
     cpu:
       clusters:
-        - { cores: 6, core: "Oryon", base_ghz: 4.0, max_ghz: 4.7, note: "prime; dual-core boost 4.4 GHz" }
-        - { cores: 6, core: "Oryon", max_ghz: 3.4, note: "performance" }
+        - { cores: 6, core: "Oryon Gen 3", base_ghz: 4.0, max_ghz: 4.7, note: "prime; dual-core boost 4.4 GHz" }
+        - { cores: 6, core: "Oryon Gen 3", max_ghz: 3.4, note: "performance" }
       cache: [{ level: "Total", mb: 34 }]
     memory: *x2mem128
     gpu:
@@ -106,8 +106,8 @@ parts:
     process_nm: 3
     cpu:
       clusters:
-        - { cores: 6, core: "Oryon", max_ghz: 4.0, note: "prime" }
-        - { cores: 6, core: "Oryon", max_ghz: 3.4, note: "performance" }
+        - { cores: 6, core: "Oryon Gen 3", max_ghz: 4.0, note: "prime" }
+        - { cores: 6, core: "Oryon Gen 3", max_ghz: 3.4, note: "performance" }
       cache: [{ level: "Total", mb: 34 }]
     memory: *x2mem128
     gpu:

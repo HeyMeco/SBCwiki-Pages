@@ -46,7 +46,7 @@ While Arm primarily licenses CPU and GPU designs to other manufacturers, they st
 
 ## ARM CPU Cores
 
-All ARMv8-A and newer cores, plus the Cortex-M microcontroller cores used in SoCs on this wiki
+All Armv8-A and newer cores, plus the Cortex-M microcontroller cores used in SoCs on this wiki
 
 ### 2025
 

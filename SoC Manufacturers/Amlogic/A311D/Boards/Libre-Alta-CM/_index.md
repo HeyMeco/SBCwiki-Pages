@@ -38,6 +38,8 @@ The Alta Compute Module puts the A311D into the Raspberry Pi CM4 form factor and
 
 ## Benchmarks
 
+{{< all-benchmarks >}}
+
 ## Guides
 
 ## Articles

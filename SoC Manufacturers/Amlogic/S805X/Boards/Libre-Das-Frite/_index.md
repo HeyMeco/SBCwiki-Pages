@@ -39,6 +39,8 @@ Das Frite is the second-generation [La Frite](../libre-la-frite/). It moves powe
 
 ## Benchmarks
 
+{{< all-benchmarks >}}
+
 ## Guides
 
 ## Articles

@@ -11,10 +11,16 @@ board-vendor:
 - Thundercomm
 release: "2025-01"
 summary: "Thundercomm RUBIK Pi 3 - Qualcomm QCS6490 with 12 TOPS AI, 8 GB LPDDR4X, 128 GB UFS 2.2, M.2 NVMe, USB-C DisplayPort, Raspberry Pi HAT compatible."
+images:
+- images/thundercomm-rubikpi-3-01.jpg
+- images/thundercomm-rubikpi-3-02.jpg
 ---
 # Thundercomm RUBIK Pi 3
 
 The RUBIK Pi 3 is Thundercomm's QCS6490 board, launched at CES 2025. Thundercomm is a joint venture of ThunderSoft and Qualcomm. It has the same SoC as the [Radxa Dragon Q6A](../radxa-dragon-q6a/) and takes Raspberry Pi HATs. Canonical maintains an optimized Ubuntu image for it.
+
+## Board Pictures
+{{< gallery match="images/*" sortOrder="asc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true >}}
 
 ## Hardware
 {{% details title="Specs" open=true %}}
@@ -35,6 +41,8 @@ The RUBIK Pi 3 is Thundercomm's QCS6490 board, launched at CES 2025. Thundercomm
 - [RUBIK Pi 3 documentation](https://www.thundercomm.com/rubik-pi-3/en/docs/about-rubikpi/)
 
 ## Benchmarks
+
+{{< all-benchmarks >}}
 
 ## Guides
 

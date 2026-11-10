@@ -59,6 +59,8 @@ images:
 
 ## Benchmarks
 
+{{</* all-benchmarks */>}}
+
 ## Guides
 
 ## Articles

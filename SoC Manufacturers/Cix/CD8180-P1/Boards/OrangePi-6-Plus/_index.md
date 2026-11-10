@@ -12,10 +12,16 @@ board-vendor:
 - OrangePi
 release: "2025-10"
 summary: "Orange Pi 6 Plus single-board computer - Cix P1 (CD8160) 12-core SoC, up to 64 GB LPDDR5, dual 5 GbE, two PCIe 4.0 x4 M.2 slots, 45 TOPS combined AI."
+images:
+- images/orangepi-6-plus-01.webp
+- images/orangepi-6-plus-02.webp
 ---
 # Orange Pi 6 Plus
 
 The Orange Pi 6 Plus is Shenzhen Xunlong's Cix P1 board. It ships with the CD8160 silkscreen of the P1, which is the same silicon as the CD8180 (see the [Cix P1 page](/docs/soc-manufacturers/cix/cd8180-p1/#what-variant-is-cd8160)). Like the Radxa Orion O6N it is a compact Nano-ITX-class board, with two 5 GbE ports and two PCIe 4.0 x4 M.2 slots.
+
+## Board Pictures
+{{< gallery match="images/*" sortOrder="asc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true >}}
 
 ## Hardware
 {{% details title="Specs" open=true %}}
@@ -35,6 +41,8 @@ The Orange Pi 6 Plus is Shenzhen Xunlong's Cix P1 board. It ships with the CD816
 - [Orange Pi 6 Plus product page](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-6-Plus.html)
 
 ## Benchmarks
+
+{{< all-benchmarks >}}
 
 ## Guides
 

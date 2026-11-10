@@ -60,6 +60,10 @@ All development kit buyers will have the option to purchase a CNC-milled aluminu
 - **Tested**: Various Linux distributions, VyOS, VPP + DPDK
 - **Compatible**: Any ARM64 software that compiles for the architecture
 
+## Benchmarks
+
+{{< all-benchmarks >}}
+
 ## Documentation
 
 - [Gateway Product Page](https://mono.si/)

@@ -7,11 +7,11 @@ soc:
 - Xavier-NX
 tags:
 - SOC-NVIDIA-Jetson
-summary: "NVIDIA Jetson Xavier (T194) - up to 8 NVIDIA Carmel Armv8.2 cores, Volta GPU with up to 512 CUDA cores, up to 32 TOPS. AGX Xavier and Xavier NX modules."
+summary: "NVIDIA Jetson Xavier (T194) - up to 8 NVIDIA Carmel Armv8.2-A cores, Volta GPU with up to 512 CUDA cores, up to 32 TOPS. AGX Xavier and Xavier NX modules."
 ---
 # NVIDIA Jetson Xavier (T194)
 
-Xavier (T194) was NVIDIA's first Jetson SoC with Tensor Cores and DLA accelerators. Its CPU cores are NVIDIA's own Carmel cores (Armv8.2). It was sold as the **AGX Xavier** module (699-pin, 2018) and the SO-DIMM **Xavier NX** module (2020), and has been replaced by Orin.
+Xavier (T194) was NVIDIA's first Jetson SoC with Tensor Cores and DLA accelerators. Its CPU cores are NVIDIA's own Carmel cores (Armv8.2-A). It was sold as the **AGX Xavier** module (699-pin, 2018) and the SO-DIMM **Xavier NX** module (2020), and has been replaced by Orin.
 
 ## General Specifications
 {{% details title="Specs" open=true %}}

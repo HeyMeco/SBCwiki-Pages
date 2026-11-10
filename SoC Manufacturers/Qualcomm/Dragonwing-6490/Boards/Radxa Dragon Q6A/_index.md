@@ -42,7 +42,9 @@ images:
 
 ## Benchmarks
 
-- [GeekBench](https://browser.geekbench.com/v6/cpu/13394263) 6.4.0 Preview for Linux AArch64:<br> Single Core **1194**, Multi Core **3334**
+{{< all-benchmarks >}}
+
+- [Geekbench 6 CPU result](https://browser.geekbench.com/v6/cpu/13394263)
 - [Tkaiser's SBC-Bench](https://github.com/ThomasKaiser/sbc-bench/blob/master/results/reviews/Radxa-Dragon-Q6A.md)
 - [sbc.compare results](https://sbc.compare/47-radxa-dragon-q6a-6gb)
 

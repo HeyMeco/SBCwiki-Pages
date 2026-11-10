@@ -34,6 +34,8 @@ Rockchip's RK3572 evaluation board was shown in public for the first time at Emb
 
 ## Benchmarks
 
+{{< all-benchmarks >}}
+
 - Geekbench 6 CPU and Vulkan results: [Exclusive: RK3572 First look & Geekbench results](/news/articles/exclusive-rk3572-benchmarked-at-ew26/)
 
 ## Guides

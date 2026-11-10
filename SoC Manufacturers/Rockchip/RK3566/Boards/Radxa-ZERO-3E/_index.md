@@ -40,6 +40,8 @@ images:
 
 ## Benchmarks
 
+{{< all-benchmarks >}}
+
 ## Guides
 
 - [Getting Started with ZERO 3E](https://docs.radxa.com/en/zero/zero3/getting-started)

@@ -8,11 +8,11 @@ soc:
 - ClawCore-A
 tags:
 - SOC-Cix
-summary: Cix ClawCore-A (智螯芯) — octa-core Armv9.2 SoC with 80 TOPS AI (expandable via PCIe), ECC, and security features for 24/7 OpenClaw-style deployments.
+summary: Cix ClawCore-A (智螯芯) — octa-core Armv9.2-A SoC with 80 TOPS AI (expandable via PCIe), ECC, and security features for 24/7 OpenClaw-style deployments.
 ---
 # Cix ClawCore-A
 
-**ClawCore-A** (智螯芯, “AI / Smart Claw”) is the mid-tier SKU in Cix’s **ClawCore** Armv9.2 family, focused on **24/7** operation, **full-chain ECC**, and **hardware security** (encryption and key management) for local and hybrid AI inference.
+**ClawCore-A** (智螯芯, “AI / Smart Claw”) is the mid-tier SKU in Cix’s **ClawCore** Armv9.2-A family, focused on **24/7** operation, **full-chain ECC**, and **hardware security** (encryption and key management) for local and hybrid AI inference.
 
 ## General specifications
 {{% details title="Specs" open=true %}}
@@ -43,7 +43,7 @@ No public board pages on SBCwiki yet.
 
 {{% columns %}}
 - {{< card title="What is the Cix ClawCore-A?" >}}
-  The Cix ClawCore-A is a mid-tier Armv9.2 SoC designed for 24/7 operation, featuring full-chain ECC and hardware security for local and hybrid AI inference.
+  The Cix ClawCore-A is a mid-tier Armv9.2-A SoC designed for 24/7 operation, featuring full-chain ECC and hardware security for local and hybrid AI inference.
   {{< /card >}}
 
 - {{< card title="How much AI performance does the ClawCore-A offer?" >}}

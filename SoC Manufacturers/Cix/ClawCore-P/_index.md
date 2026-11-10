@@ -8,13 +8,13 @@ soc:
 - ClawCore-P
 tags:
 - SOC-Cix
-summary: Cix ClawCore-P (勁螯芯) — 12-core Armv9.2 SoC with Immortalis-G720 GPU, 45 TOPS AI, up to 64GB LPDDR5, optimized for OpenClaw deployments.
+summary: Cix ClawCore-P (勁螯芯) — 12-core Armv9.2-A SoC with Immortalis-G720 GPU, 45 TOPS AI, up to 64GB LPDDR5, optimized for OpenClaw deployments.
 ---
 # Cix ClawCore-P
 
-**ClawCore-P** (勁螯芯, “Powerful Claw”) is the high-performance SKU in Cix’s **ClawCore** Armv9.2 CPU family, marketed for [OpenClaw](https://www.openclaw.ai/) agent workloads and high-parallelism, large-memory scenarios.
+**ClawCore-P** (勁螯芯, “Powerful Claw”) is the high-performance SKU in Cix’s **ClawCore** Armv9.2-A CPU family, marketed for [OpenClaw](https://www.openclaw.ai/) agent workloads and high-parallelism, large-memory scenarios.
 
-Specifications are close to the [Cix P1 (CD8180)]({{< relref "/docs/SoC Manufacturers/Cix/CD8180-P1" >}}) (12 Armv9.2-class cores, Immortalis-G720, large LPDDR5 capacity), with a higher advertised CPU clock (up to 3.2 GHz). Combined AI compute is quoted at **45 TOPS**. Mini PCs and workstations based on ClawCore-P were expected to ship from **March 2026**.
+Specifications are close to the [Cix P1 (CD8180)]({{< relref "/docs/SoC Manufacturers/Cix/CD8180-P1" >}}) (12 Armv9.2-A cores, Immortalis-G720, large LPDDR5 capacity), with a higher advertised CPU clock (up to 3.2 GHz). Combined AI compute is quoted at **45 TOPS**. Mini PCs and workstations based on ClawCore-P were expected to ship from **March 2026**.
 
 ## General specifications
 {{% details title="Specs" open=true %}}
@@ -41,7 +41,7 @@ Systems from partners such as Orange Pi (Xunlong), Radxa, and others are expecte
 
 {{% columns %}}
 - {{< card title="What is the Cix ClawCore-P?" >}}
-  The Cix ClawCore-P is a high-performance 12-core Armv9.2 SoC featuring an Immortalis-G720 GPU and up to 64GB of LPDDR5 RAM, optimized for OpenClaw agent workloads.
+  The Cix ClawCore-P is a high-performance 12-core Armv9.2-A SoC featuring an Immortalis-G720 GPU and up to 64GB of LPDDR5 RAM, optimized for OpenClaw agent workloads.
   {{< /card >}}
 
 - {{< card title="How much AI compute does the ClawCore-P have?" >}}

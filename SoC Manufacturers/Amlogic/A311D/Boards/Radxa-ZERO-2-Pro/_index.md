@@ -40,6 +40,8 @@ images:
 
 ## Benchmarks
 
+{{< all-benchmarks >}}
+
 ## Guides
 
 - [Getting Started with ZERO 2 Pro](https://docs.radxa.com/en/zero/zero2pro/getting-started)

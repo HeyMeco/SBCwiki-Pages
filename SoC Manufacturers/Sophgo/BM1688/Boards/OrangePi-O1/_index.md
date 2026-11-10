@@ -10,10 +10,16 @@ boards:
 board-vendor:
 - OrangePi
 summary: "Orange Pi O1 single-board computer - Sophgo BM1688 octa-core with 16 TOPS TPU, 8 or 16 GB LPDDR4/4X, M.2 NVMe, SATA, dual GbE, Wi-Fi 6E, 4G/5G."
+images:
+- images/orangepi-o1-01.webp
+- images/orangepi-o1-02.webp
 ---
 # Orange Pi O1
 
 The Orange Pi O1 is Orange Pi's Sophgo BM1688 edge-AI board, 90 × 70 mm in size. It is Orange Pi's first board with a SIM card slot, which feeds an M.2 B-Key 4G/5G module. It also has SATA 3.0 next to an M.2 NVMe slot.
+
+## Board Pictures
+{{< gallery match="images/*" sortOrder="asc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true >}}
 
 ## Hardware
 {{% details title="Specs" open=true %}}
@@ -34,6 +40,8 @@ The Orange Pi O1 is Orange Pi's Sophgo BM1688 edge-AI board, 90 × 70 mm in size
 - [Electronics-Lab: OrangePi O1](https://www.electronics-lab.com/news/orangepi-o1-sbc-features-sophgo-bm1688-with-16-tops-tpu/)
 
 ## Benchmarks
+
+{{< all-benchmarks >}}
 
 ## Guides
 

@@ -40,6 +40,8 @@ images:
 
 ## Benchmarks
 
+{{< all-benchmarks >}}
+
 ## Guides
 
 - [Getting Started with NIO 12L](https://docs.radxa.com/en/nio/12l/getting-started)

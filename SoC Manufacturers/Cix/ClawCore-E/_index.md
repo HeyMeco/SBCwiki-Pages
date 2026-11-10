@@ -8,11 +8,11 @@ soc:
 - ClawCore-E
 tags:
 - SOC-Cix
-summary: Cix ClawCore-E (靈螯芯) — ultra-low-power Armv9.2 edge SoC with NPU and wake-on-voice/network for IoT-style OpenClaw edge devices.
+summary: Cix ClawCore-E (靈螯芯) — ultra-low-power Armv9.2-A edge SoC with NPU and wake-on-voice/network for IoT-style OpenClaw edge devices.
 ---
 # Cix ClawCore-E
 
-**ClawCore-E** (靈螯芯, “Efficient Claw”) is the **ultra-low-power** tier of Cix’s **ClawCore** Armv9.2 lineup. It combines an Armv9.2 CPU with an **NPU** and **voice / network wake** so devices can stay responsive on demand without running full workloads continuously.
+**ClawCore-E** (靈螯芯, “Efficient Claw”) is the **ultra-low-power** tier of Cix’s **ClawCore** Armv9.2-A lineup. It combines an Armv9.2-A CPU with an **NPU** and **voice / network wake** so devices can stay responsive on demand without running full workloads continuously.
 
 It is aimed at **edge** and **IoT** products that still participate in OpenClaw-style agent ecosystems.
 
@@ -43,7 +43,7 @@ No products were tied to ClawCore-E in the initial announcement round summarized
 
 {{% columns %}}
 - {{< card title="What is the Cix ClawCore-E?" >}}
-  The Cix ClawCore-E is an ultra-low-power Armv9.2 edge SoC featuring an integrated NPU and wake-on-voice/network capabilities for IoT and edge devices.
+  The Cix ClawCore-E is an ultra-low-power Armv9.2-A edge SoC featuring an integrated NPU and wake-on-voice/network capabilities for IoT and edge devices.
   {{< /card >}}
 
 - {{< card title="What makes the ClawCore-E ideal for IoT?" >}}

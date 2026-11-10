@@ -41,6 +41,8 @@ images:
 
 ## Benchmarks
 
+{{< all-benchmarks >}}
+
 ## Guides
 
 - [Getting Started with Rock 3A](https://docs.radxa.com/en/rock3/rock3a/getting-started)

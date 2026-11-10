@@ -43,7 +43,9 @@ images:
 
 ## Benchmarks
 
-- [GeekBench](https://browser.geekbench.com/v6/cpu/10409724) 6.4.0 Preview for Linux AArch64:<br> Single Core **1321**, Multi Core **6666**
+{{< all-benchmarks >}}
+
+- [Geekbench 6 CPU result](https://browser.geekbench.com/v6/cpu/10409724)
 - [Tkaiser's SBC-Bench](https://github.com/ThomasKaiser/sbc-bench/blob/master/results/reviews/Radxa-Orion-O6-1.0.md)
 
 ## Guides

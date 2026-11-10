@@ -7,7 +7,7 @@ parts:
     cpu:
       cores: 12
       max_ghz: 3.2
-      isa: "Armv9.2"
+      isa: "Armv9.2-A"
     memory:
       types: ["LPDDR5"]
       max_gb: 64

@@ -11,10 +11,15 @@ board-vendor:
 - NVIDIA
 release: "2018-09"
 summary: "NVIDIA Jetson AGX Xavier Developer Kit - 8-core Carmel, 512-core Volta GPU, 32 TOPS, 32 GB LPDDR4X, PCIe x16 slot (Gen4 x8), 2× USB-C with DisplayPort, eSATAp, HDMI 2.0."
+images:
+- images/nvidia-jetson-agx-xavier-devkit-01.jpg
 ---
 # NVIDIA Jetson AGX Xavier Developer Kit
 
 The AGX Xavier Developer Kit (2018, $1,299 at launch) puts the 32 GB AGX Xavier module into a 105 × 105 mm kit with a heatsink and fan. It was much smaller than the mini-ITX TX1 and TX2 kits. The AGX Orin Developer Kit replaced it.
+
+## Board Pictures
+{{< gallery match="images/*" sortOrder="asc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true >}}
 
 ## Hardware
 {{% details title="Specs" open=true %}}
@@ -34,6 +39,8 @@ The AGX Xavier Developer Kit (2018, $1,299 at launch) puts the 32 GB AGX Xavier 
 - [Jetson AGX Xavier Developer Kit now available (NVIDIA blog)](https://developer.nvidia.com/blog/nvidia-jetson-agx_xavier-developer-kit-now-available/)
 
 ## Benchmarks
+
+{{< all-benchmarks >}}
 
 ## Guides
 

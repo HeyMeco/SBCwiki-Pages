@@ -11,10 +11,16 @@ board-vendor:
 - LibreComputer
 release: "2018-10"
 summary: "Libre Computer La Frite AML-S805X-AC - Amlogic S805X quad Cortex-A53, 512 MB or 1 GB DDR4, UEFI in SPI NOR, HDMI 2.0, Fast Ethernet, low-profile Pi 3 A+ footprint."
+images:
+- images/libre-la-frite-01.jpg
+- images/libre-la-frite-02.jpg
 ---
 # Libre Computer La Frite (AML-S805X-AC)
 
 La Frite is Libre Computer's low-profile S805X board in the Raspberry Pi 3 A+ footprint, launched on Kickstarter in October 2018 from $10. It boots UEFI firmware from its SPI NOR flash and has no microSD slot. Storage is an eMMC module, or USB through UEFI. It is supported with mainline Linux until 2048. Its successor is the [Das Frite](../libre-das-frite/).
+
+## Board Pictures
+{{< gallery match="images/*" sortOrder="asc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true >}}
 
 ## Hardware
 {{% details title="Specs" open=true %}}
@@ -38,6 +44,8 @@ La Frite is Libre Computer's low-profile S805X board in the Raspberry Pi 3 A+ fo
 - [Libre Computer Hub](https://hub.libre.computer/)
 
 ## Benchmarks
+
+{{< all-benchmarks >}}
 
 ## Guides
 

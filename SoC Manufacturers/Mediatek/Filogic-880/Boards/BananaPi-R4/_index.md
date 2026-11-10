@@ -40,7 +40,9 @@ images:
 
 ## Benchmarks
 
-- [Geekbench](https://browser.geekbench.com/v6/cpu/7137136) 6.3.0 Preview for Linux AArch64:<br> Single Core **302**, Multi Core **854**
+{{< all-benchmarks >}}
+
+- [Geekbench 6 CPU result](https://browser.geekbench.com/v6/cpu/7137136)
 ## Guides
 
 - [Getting Started with BPI-R4](https://wiki.banana-pi.org/Getting_Started_with_BPI-R4) 

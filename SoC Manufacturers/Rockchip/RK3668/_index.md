@@ -9,15 +9,15 @@ soc:
 - RK3668
 tags: 
 - SOC-RK-Upcoming
-summary: Upcoming Rockchip RK3668 6nm SoC — octa-core Armv9.2 (6× Cortex-A725 + 2× A520), Mali-G2 Pro MC4 (1.23 TFLOPS), 44 TOPS sparse NPU, LPDDR5X/LPDDR6. Engineering samples Q1 2027.
+summary: Upcoming Rockchip RK3668 6nm SoC — octa-core Armv9.2-A (6× Cortex-A725 + 2× A520), Mali-G2 Pro MC4 (1.23 TFLOPS), 44 TOPS sparse NPU, LPDDR5X/LPDDR6. Engineering samples Q1 2027.
 ---
 # Rockchip RK3668
 
 > **Status:** Developing. Rockchip’s [application brief REL02](https://dl.radxa.com/rock6/6b/RK3668-SoC-Application-REL02-20261009.pdf) (9 October 2026) targets **engineering samples in Q1 2027**. Clocks and the comparison figures below are Rockchip’s estimates from that brief.
 
-RK3668 is the **6 nm** SoC on Rockchip’s flagship roadmap, above **RK3588**. **RK3688** is still the planned flagship above it. The brief specifies an octa-core **Armv9.2** CPU, a **Mali-G2 Pro MC4** GPU, and a **44 TOPS** sparse NPU.
+RK3668 is the **6 nm** SoC on Rockchip’s flagship roadmap, above **RK3588**. **RK3688** is still the planned flagship above it. The brief specifies an octa-core **Armv9.2-A** CPU, a **Mali-G2 Pro MC4** GPU, and a **44 TOPS** sparse NPU.
 
-The 2025 RKDC notes (10× Armv9.3 Cortex-A730/A530, Magni GPU, 16 TOPS, Q4 2026) are an earlier aggregation. This page follows the [October 2026 brief](https://dl.radxa.com/rock6/6b/RK3668-SoC-Application-REL02-20261009.pdf).
+The 2025 RKDC notes (10× Armv9.3-A Cortex-A730/A530, Magni GPU, 16 TOPS, Q4 2026) are an earlier aggregation. This page follows the [October 2026 brief](https://dl.radxa.com/rock6/6b/RK3668-SoC-Application-REL02-20261009.pdf).
 
 ## General Specifications
 {{% details title="Specs" open=true %}}
