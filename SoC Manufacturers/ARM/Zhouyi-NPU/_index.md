@@ -8,6 +8,7 @@ soc-vendors:
 keywords: ["Arm-China", "Zhouyi NPU", "Zhouyi Z1", "Zhouyi Z2", "Zhouyi X2", "Zhouyi X3", "AIPU", "Compass", "AI", "NPU", "Machine Learning", "SoC vendors"]
 summary: Overview of Arm-China's Zhouyi NPU (AIPU) family, including the Z1, Z2, X2 and X3 generations, the Compass software stack and the SoCs that use it.
 bookToc: true
+seoTitle: Arm-China Zhouyi NPU
 ---
 
 # Arm-China Zhouyi NPU

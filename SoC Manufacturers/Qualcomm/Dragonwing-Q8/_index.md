@@ -14,7 +14,11 @@ soc:
 tags:
 - SOC-Qualcomm
 - Dragonwing-Q
-summary: Qualcomm Dragonwing Q8 and IQ8. Commercial parts run from the Oryon Q-8750 at 77 dense TOPS down to SDA845. IQ8 is the industrial Monaco SoC, QCS8275 and QCS8300, at up to 40 dense TOPS.
+summary: "Qualcomm Dragonwing Q8 / IQ8 specs: Q-8750 (Oryon CPU, up to 77 TOPS), QCS8550 / QCM8550, QCS8250 and SDA845, plus the industrial IQ8 Monaco parts QCS8275 and QCS8300 (up to 40 dense TOPS). Boards and Linux support."
+seeAlso:
+- /news/articles/arduino-ventuno-q-first-look-ew26
+- /docs/soc-manufacturers/cix/cd8180-p1
+- /docs/soc-manufacturers/rockchip/rk3688
 ---
 # Dragonwing Q8 / IQ8
 

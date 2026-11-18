@@ -9,6 +9,8 @@ soc-vendors:
 - Texas Instruments
 bookCollapseSection: true
 summary: All Texas Instruments SoCs, boards, and development resources on sbcwiki.com
+vendorAliases:
+- TI
 ---
 
 # Texas Instruments

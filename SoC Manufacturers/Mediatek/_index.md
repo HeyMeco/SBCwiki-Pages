@@ -7,7 +7,8 @@ categories:
 soc-vendors:
 - Mediatek
 bookCollapseSection: true
-summary: All Mediatek SoC's, boards, and development resources on sbcwiki.com
+seoTitle: "MediaTek SoCs and SBCs: Genio, Kompanio and Filogic"
+summary: "MediaTek SoCs and single-board computers: Genio IoT and edge AI boards, Kompanio, and Filogic router boards such as the Banana Pi R4 and OpenWrt One. Specs, boards and Linux support."
 ---
 
 ![Mediatek Logo](assets/mediatek/MediaTek-Logo.png?h=100)
@@ -31,6 +32,12 @@ Genio is MediaTek's IoT and edge AI brand. Longevity windows are typically about
 Filogic is MediaTek's Wi-Fi router and gateway brand. OpenWrt targets these parts under the `mediatek/filogic` platform.
 
 {{< taglist SOC-MTK-Router >}}
+
+## MediaTek SBCs and boards
+
+Every board on SBCwiki with a MediaTek SoC, newest first.
+
+{{< vendor-boards soc-section="/docs/soc-manufacturers/mediatek" >}}
 
 ## Tutorials
 

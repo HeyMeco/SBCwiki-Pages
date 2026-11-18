@@ -3,13 +3,17 @@ weight: 1
 title: CD8180 / CD8160 / P1
 #bookCollapseSection: true
 soc-series:
-- Filogic
+- P1
 soc:
 - CD8180
 - CD8160
 tags: 
 - SOC-Cix
-summary: Cix CD8180/P1 - High-performance 12-core SoC with Immortalis G720 GPU and 30 TOPS NPU
+summary: "Cix P1 (CD8180 / CD8160) specs: 12-core Armv9 CPU (8x Cortex-A720 + 4x Cortex-A520, up to 2.6 GHz), Immortalis-G720 MC10 GPU, 30 TOPS NPU, LPDDR5 up to 64 GB. Boards, Linux and OS support."
+seeAlso:
+- /docs/soc-manufacturers/rockchip/rk3588
+- /docs/soc-manufacturers/rockchip/rk3688
+- /docs/soc-manufacturers/qualcomm/dragonwing-q8
 ---
 # CD8180 / CD8160 / P1
 

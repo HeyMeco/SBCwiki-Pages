@@ -9,7 +9,12 @@ soc:
 - RK3688
 tags: 
 - SOC-RK-Upcoming
-summary: Upcoming Rockchip RK3688 flagship — 12-core Armv9.3-A CPU (4–5nm), Arm Magni GPU (2+ TFLOPS), 32 TOPS NPU, 8-channel LPDDR5/5x/6, UFS 4.0. Expected Q1 2027.
+summary: "Rockchip RK3688 specs: upcoming flagship above the RK3588. 12-core Armv9.3-A CPU (8x Cortex-A730 + 4x Cortex-A530, 4–5 nm), Arm Magni GPU (2+ TFLOPS), 32 TOPS NPU, 8-channel LPDDR5/5X/6, UFS 4.0. Expected Q1 2027."
+seeAlso:
+- /docs/soc-manufacturers/rockchip/rk3588
+- /docs/soc-manufacturers/rockchip/rk3668
+- /docs/soc-manufacturers/cix/cd8180-p1
+- /docs/soc-manufacturers/arm/mali-gpu
 ---
 # Rockchip RK3688
 
