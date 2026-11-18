@@ -1,0 +1,18 @@
+# Allwinner/V883M specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+# Source: Allwinner launch post, 2026-11-06: https://mp.weixin.qq.com/s/_6GTz22fvzGd1CGJVk6TRw
+# Beyond the series-wide 4× RISC-V CPU + RISC-V MCU, Allwinner only states 3 TOPS, 4K@55fps
+# and pin-to-pin compatibility with V883P, so everything else is left out rather than copied from V883P.
+
+parts:
+  - name: "Allwinner V883M"
+    cpu:
+      clusters:
+        - { cores: 4, core: "XuanTie C907" }
+      notes: "Clock not published for V883M"
+    mcu: [{ cores: 1, core: "XuanTie E907" }]
+    npu:
+      tops: 3
+    vpu:
+      notes: "Codec up to 4K@55fps (per-codec figures not published)"
+    package: "Pin-to-pin compatible with V883P"

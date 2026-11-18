@@ -22,7 +22,7 @@ groups:
         display: "C907"
         isa: "RV64GCB[V] / RV32GCB[V]"
         class: "Application (Matrix extension)"
-        socs: "[Allwinner V883](/docs/soc-manufacturers/allwinner/v883/)"
+        socs: "[Allwinner V883P](/docs/soc-manufacturers/allwinner/v883p/) / [V883M](/docs/soc-manufacturers/allwinner/v883m/)"
       - name: "XuanTie C906"
         aliases: ["C906"]
         display: "C906"
@@ -34,4 +34,4 @@ groups:
         display: "E907"
         isa: "RV32IMA[F][D]C[P]"
         class: "MCU"
-        socs: "[Allwinner V883](/docs/soc-manufacturers/allwinner/v883/) (MCU)"
+        socs: "[Allwinner V883P](/docs/soc-manufacturers/allwinner/v883p/) / [V883M](/docs/soc-manufacturers/allwinner/v883m/) (MCU)"
