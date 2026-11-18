@@ -1,5 +1,5 @@
 ---
-weight: 2
+weight: 3
 title: Allwinner A527 / T527
 #bookCollapseSection: true
 soc-series:

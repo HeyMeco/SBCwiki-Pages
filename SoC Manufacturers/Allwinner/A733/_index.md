@@ -1,5 +1,5 @@
 ---
-weight: 1
+weight: 2
 title: Allwinner A733
 #bookCollapseSection: true
 soc-series:

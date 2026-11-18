@@ -1,0 +1,40 @@
+# Allwinner/A735 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+# Source: Allwinner, "A735 Android 17 product package released" (2026-11-13),
+# https://mp.weixin.qq.com/s/KuMFdHYmSAiRP0EJjCTRiQ. Allwinner gives a single 2.2 GHz peak
+# (no per-cluster clocks) and has not published process node, GPU APIs or package details.
+
+parts:
+  - name: "Allwinner A735"
+    cpu:
+      clusters:
+        - { cores: 2, core: "Cortex-A76" }
+        - { cores: 6, core: "Cortex-A55" }
+      max_ghz: 2.2
+    memory:
+      types: ["LPDDR4", "LPDDR4X", "LPDDR5"]
+      max_gb: 16
+      notes: "4 chip selects (4CS); 64-bit memory parts supported"
+    gpu:
+      name: "G310V5"
+      gflops: 130
+      notes: "Allwinner's name for the GPU; full IP name not published"
+    npu:
+      tops: 5
+    vpu:
+      decode:
+        - { res: "4K", fps: 60, codecs: ["H.265", "VP9", "AVS2"] }
+    display:
+      max: "2.5K@120Hz or 3.2K@60Hz on one MIPI DSI; three independent displays"
+      outputs: ["MIPI DSI", "eDP 1.4 / DP (up to 4K@60Hz)", "Dual-LVDS", "RGB", "E-paper (up to 3200×2400@75Hz)"]
+      notes: "Full-function USB Type-C: single-cable dual independent displays"
+    storage: ["UFS 3.0", "eMMC 5.1"]
+    pcie: [{ gen: 3, lanes: 2, note: "two devices, e.g. 2× SSD or SSD + 2T2R Wi-Fi 6" }]
+    usb:
+      - { version: "3.1" }
+      - { count: 2, version: "2.0" }
+    ethernet: [{ count: 1, gbps: 1, note: "GMAC" }]
+    os: ["Android 17 (GMS certified)", "Linux"]
+    package: "Pin-to-pin compatible with A733"
+    other:
+      - { name: "AnTuTu V11", value: "Up to 600,000 (8 GB + 256 GB configuration, Allwinner figure)" }

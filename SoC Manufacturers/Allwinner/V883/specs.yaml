@@ -1,0 +1,66 @@
+# Allwinner/V883 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+# Sources:
+# - Allwinner V883 product page (spec table): https://www.allwinnertech.com/index.php?c=product&a=index&id=151
+#   The table is published for "V883" and its headline figures (4 TOPS, 4K@75fps) are the V883P's.
+# - Allwinner launch post, 2026-11-06: https://mp.weixin.qq.com/s/_6GTz22fvzGd1CGJVk6TRw
+# V883M: beyond the series-wide 4× RISC-V CPU + RISC-V MCU, Allwinner only states 3 TOPS, 4K@55fps
+# and pin-to-pin compatibility with V883P, so everything else is left out of its part rather than copied from V883P.
+
+label: "Part"
+parts:
+  - name: "Allwinner V883P"
+    cpu:
+      clusters:
+        - { cores: 4, core: "XuanTie C907", max_ghz: 1.8 }
+    mcu: [{ cores: 1, core: "XuanTie E907", max_mhz: 600 }]
+    memory:
+      types: ["DDR3", "DDR3L", "LPDDR3", "DDR4", "LPDDR4", "LPDDR4X"]
+      bus_bits: 32
+    npu:
+      tops: 4
+      tops_precision: "INT8"
+    vpu:
+      encode:
+        - { res: "4K", fps: 75, codecs: ["H.265"] }
+        - { res: "4K", fps: 40, codecs: ["H.264"] }
+        - { res: "4K", fps: 60, codecs: ["JPEG"] }
+      decode:
+        - { res: "4K", fps: 60, codecs: ["H.265"] }
+        - { res: "4K", fps: 30, codecs: ["H.264", "JPEG"] }
+    isp:
+      notes:
+        - "4K@30fps AI-ISP; multi-spectral fusion acceleration"
+        - "EIS: 1× 4K@60fps or 2× 4K@30fps"
+        - "PDAF phase-detect autofocus, 4K@60fps total"
+        - "3F-WDR and LOFIC sensor support"
+        - "Multi-4K stitching; high-frame-rate modes up to 1080p@240fps"
+    camera:
+      - "MIPI CSI-2: 2× 4-lane or 4× 2-lane, 2.5 Gbps per lane"
+      - "16-bit parallel CSI"
+      - "Up to 16 cameras (edge vision solution)"
+    display:
+      max: "1× 4K@30fps, or 2× 1080p@60fps (dual independent displays)"
+      outputs: ["MIPI DSI (1× 4-lane or 2× 2-lane)"]
+    usb:
+      - { version: "3.1", note: "\"USB 3.0\" in the launch post" }
+      - { version: "2.0", note: "DRD" }
+    ethernet:
+      - { count: 1, gbps: 1, note: "RGMII" }
+      - { count: 1, gbps: 0.1, note: "RMII" }
+    can: { fd: true }
+    io: ["LocalBus", "10× UART, 11× TWI (I²C), 15× GPADC, 44× PWM"]
+    security: ["Secure boot", "Secure storage", "Secure system"]
+    temperature: "−40 °C to 85 °C (industrial)"
+    os: "Tina Linux"
+  - name: "Allwinner V883M"
+    cpu:
+      clusters:
+        - { cores: 4, core: "XuanTie C907" }
+      notes: "Clock not published for V883M"
+    mcu: [{ cores: 1, core: "XuanTie E907" }]
+    npu:
+      tops: 3
+    vpu:
+      notes: "Codec up to 4K@55fps (per-codec figures not published)"
+    package: "Pin-to-pin compatible with V883P"
