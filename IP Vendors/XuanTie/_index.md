@@ -1,6 +1,7 @@
 ---
 weight: 2
 title: XuanTie
+icon: /assets/xuantie/XuanTie-Logo.png
 categories:
 - ip-vendors
 ip-vendors:
@@ -9,6 +10,8 @@ bookCollapseSection: true
 keywords: ["XuanTie", "T-Head", "Alibaba DAMO Academy", "RISC-V", "C907", "C906", "E907", "CPU IP"]
 summary: XuanTie RISC-V CPU IP (Alibaba DAMO Academy, formerly T-Head) used in SoCs on sbcwiki.com.
 ---
+
+![XuanTie Logo](assets/xuantie/XuanTie-Logo.png?h=100)
 
 # XuanTie
 
