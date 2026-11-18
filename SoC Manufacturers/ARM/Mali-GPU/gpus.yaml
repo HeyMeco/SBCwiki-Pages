@@ -95,6 +95,7 @@ groups:
         arch: "Valhall (v10)"
         class: "Mid-Range"
       - name: "Mali-G310"
+        aliases: ["G310V5"]  # Allwinner's name (A735)
         arch: "Valhall (v10)"
         class: "Entry"
   - anchor: "2020"
