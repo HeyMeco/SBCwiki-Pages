@@ -1,0 +1,37 @@
+# XuanTie RISC-V CPU cores (Alibaba DAMO Academy, formerly T-Head): the single source for
+# the CPU core table on this page (rendered by {{< generation-table "cpu-cores" >}}) and for
+# CPU core links and tooltips in every SoC spec table (layouts/partials/soc/linkdb.html in
+# the SBCwiki repo, listed in `cpu_sources` of links.json).
+#
+# `name` is what SoC specs match against (longest prefix wins, so "XuanTie C906 (RISC-V)"
+# finds "XuanTie C906"). `isa` is the RISC-V ISA string XuanTie publishes for the core;
+# bracketed extensions are optional per licensee. Source: the core pages on
+# https://www.xrvm.com/product/xuantie/<core>.
+
+columns:
+  - { key: isa, label: "ISA" }
+  - { key: name, label: "Name" }
+  - { key: class, label: "Class" }
+  - { key: socs, label: "Used in" }
+
+groups:
+  - anchor: "cpu-cores"
+    entries:
+      - name: "XuanTie C907"
+        aliases: ["C907"]
+        display: "C907"
+        isa: "RV64GCB[V] / RV32GCB[V]"
+        class: "Application (Matrix extension)"
+        socs: "[Allwinner V883](/docs/soc-manufacturers/allwinner/v883/)"
+      - name: "XuanTie C906"
+        aliases: ["C906"]
+        display: "C906"
+        isa: "RV64GCV"
+        class: "Application (low cost)"
+        socs: "[Sophgo BM1688](/docs/soc-manufacturers/sophgo/bm1688/) (MCU)"
+      - name: "XuanTie E907"
+        aliases: ["E907"]
+        display: "E907"
+        isa: "RV32IMA[F][D]C[P]"
+        class: "MCU"
+        socs: "[Allwinner V883](/docs/soc-manufacturers/allwinner/v883/) (MCU)"
