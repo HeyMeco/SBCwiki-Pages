@@ -1,6 +1,6 @@
 ---
 menuStripPrefix: "SiEngine "
-weight: 11
+weight: 12
 title: SiEngine
 icon: /assets/siengine/SiEngine-Logo.png
 categories:

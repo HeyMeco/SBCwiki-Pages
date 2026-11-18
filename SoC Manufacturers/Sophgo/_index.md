@@ -1,6 +1,6 @@
 ---
 menuStripPrefix: "Sophgo "
-weight: 12
+weight: 13
 title: Sophgo
 icon: /assets/sophgo/Sophgo-Logo.png
 categories:

@@ -1,6 +1,6 @@
 ---
 menuStripPrefix: "Rockchip "
-weight: 10
+weight: 11
 title: Rockchip
 icon: /assets/rockchip/Rockchip-Logo.png
 categories:

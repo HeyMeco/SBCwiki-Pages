@@ -1,6 +1,6 @@
 ---
 menuStripPrefix: "TI "
-weight: 14
+weight: 15
 title: Texas Instruments
 icon: /assets/ti/TexasInstruments-Logo.png
 categories:

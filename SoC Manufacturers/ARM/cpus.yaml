@@ -202,6 +202,9 @@ groups:
       - name: "Cortex-M33"
         isa: "Armv8-M"
         class: "Microcontroller"
+      - name: "Cortex-R52"
+        isa: "Armv8-R"
+        class: "Real-Time"
   - anchor: "2015"
     year: 2015
     entries:
@@ -226,6 +229,16 @@ groups:
       - name: "Cortex-A53"
         isa: "Armv8-A"
         class: "Efficiency"
+  - anchor: "2011"
+    year: 2011
+    entries:
+      - name: "Cortex-A7"
+        isa: "Armv7-A"
+        class: "Efficiency (32-bit)"
+      - name: "Cortex-R5"
+        aliases: ["Cortex-R5F"]
+        isa: "Armv7-R"
+        class: "Real-Time"
   - anchor: "2010"
     year: 2010
     entries:
