@@ -2,6 +2,7 @@
 menuStripPrefix: "Renesas "
 weight: 10
 title: Renesas
+icon: /assets/renesas/Renesas-Logo.png
 categories:
 - soc-vendors
 soc-vendors:
@@ -9,6 +10,8 @@ soc-vendors:
 bookCollapseSection: true
 summary: All Renesas SoCs, boards, and development resources on sbcwiki.com
 ---
+
+![Renesas Logo](assets/renesas/Renesas-Logo.png?h=100)
 
 # Renesas
 
