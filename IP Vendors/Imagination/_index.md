@@ -8,7 +8,7 @@ ip-vendors:
 - Imagination
 bookCollapseSection: true
 keywords: ["Imagination Technologies", "PowerVR", "PowerVR GPU", "IMG", "GPU IP", "Mesa", "Vulkan"]
-summary: Imagination Technologies PowerVR GPU IP used in SoCs on sbcwiki.com, with open-source Mesa driver support.
+summary: Imagination Technologies PowerVR GPU IP, with open-source Mesa driver support.
 ---
 
 ![Imagination Logo](assets/imagination/Imagination-Logo.png?h=100)
