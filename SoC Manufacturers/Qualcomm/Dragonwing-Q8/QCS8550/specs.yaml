@@ -1,0 +1,18 @@
+# Qualcomm/Dragonwing-Q8/QCS8550 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+# DRAM speeds are data rates in MT/s. Qualcomm quotes LPDDR clocks in MHz, so their figures are doubled here.
+
+parts:
+  - name: "QCM8550 / QCS8550"
+    process_nm: 4
+    cpu:
+      clusters:
+        - { cores: 1, core: "Cortex-X3", max_ghz: 3.2 }
+        - { cores: 2, core: "Cortex-A715", max_ghz: 2.8 }
+        - { cores: 2, core: "Cortex-A710", max_ghz: 2.8 }
+        - { cores: 3, core: "Cortex-A510", max_ghz: 2.0 }
+    memory:
+      types: [{ type: "LPDDR5X", mts: 8400 }]
+    gpu:
+      name: "Adreno 740"
+      max_mhz: 680

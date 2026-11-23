@@ -1,6 +1,7 @@
 ---
 weight: 10
 title: Dragonwing Q8 / IQ8
+bookCollapseSection: true
 soc-series:
 - Dragonwing
 soc:
@@ -31,32 +32,21 @@ The Qualcomm Dragonwing Q8 series is the top of the commercial Q family. Qualcom
 
 {{% /details %}}
 
-### Variant Differences:
+### Chips
 
-- **Q-8750**: Android 15+ and Yocto Linux. Wi-Fi 7 and Bluetooth 6.0 need companion chips. Display outputs are 2x MIPI (up to 8K60) and 8x DisplayPort. Video decode goes to 8K60, encode to 8K30. Up to 12 cameras with triple 48 MP ISPs.
-- **QCM8550**: Same application processor as QCS8550, plus a Snapdragon X70 5G modem. Android, Linux, and Ubuntu. Wi-Fi 7 2x2 and Bluetooth 5.3. Four displays. 10-year longevity.
-- **QCS8550**: The standalone version of that processor, without the X70 modem.
-- **QCS8250**: Android. Wi-Fi 6 2x2 and Bluetooth 5.1. Three displays. 15-year longevity.
-- **SDA845**: The IoT SKU of SDM845. Wi-Fi 5 and Bluetooth 5.0.
-- **QCS8275**: Industrial grade. AI performance scales from 20 to 40 dense TOPS. Decode is 4K135 for AV1, H.265, H.264, and VP9. Encode is 4K85 for H.264 and H.265. 4x CAN FD and 1x GbE. Yocto Linux and Ubuntu. Rated -40°C to 125°C, supported until 2038.
-- **QCS8300**: Same Monaco SoC as QCS8275, with a safety island and planned SIL3 support. AI performance is 40 dense TOPS.
+Each chip has its own page with full specifications, Linux support, and boards.
+
+- [**Q-8750**](./q-8750/): Oryon Gen 2 CPU and up to 77 TOPS, the top of the commercial Q8 series.
+- [**QCS8550 / QCM8550**](./qcs8550/): The SM8550 cluster. QCM8550 adds a Snapdragon X70 5G modem.
+- [**QCS8275 / QCS8300**](./qcs8275/): The industrial IQ8 SoC, codename Monaco. QCS8300 adds a safety island.
+- [**QCS8250**](./qcs8250/): Cortex-A77 SoC with Adreno 650, 15-year longevity.
+- [**SDA845**](./sda845/): The IoT SKU of SDM845.
 
 ---
 
 ## Linux Support
 
-### Mainline kernel
-
-- **QCS8550 / QCM8550**: [SM8550 matrix](https://linux-msm.github.io/mainline-status/soc/sm8550). Both SKUs are listed there.
-- **QCS8250**: [SM8250 matrix](https://linux-msm.github.io/mainline-status/soc/sm8250).
-- **SDA845**: [SDM845 matrix](https://linux-msm.github.io/mainline-status/soc/sdm845). SDA845 is listed there.
-- **Q-8750**: The [SM8750 matrix](https://linux-msm.github.io/mainline-status/soc/sm8750) tracks the related Oryon platform. The SKU listed there is CQ8750S.
-- **QCS8275 / QCS8300**: [Monaco matrix](https://linux-msm.github.io/mainline-status/soc/monaco). Both SKUs are listed there. Untested on 6.18.
-
-### Mesa GPU support
-
-- [x] Adreno 650 and Adreno 630 are supported by [Freedreno](https://docs.mesa3d.org/drivers/freedreno.html)
-- [x] The SM8550 GPU is supported by Freedreno
+Mainline kernel and Mesa status differ per chip. See each chip page above.
 
 ---
 
@@ -75,15 +65,15 @@ The Qualcomm Dragonwing Q8 series is the top of the commercial Q family. Qualcom
 
 List of boards:
 
-{{< taglist tag="QCS8300" style="cards" >}}
-
-{{< taglist tag="QCS8275" style="cards" >}}
-
 {{< taglist tag="Q-8750" style="cards" >}}
+
+{{< taglist tag="QCS8550" style="cards" >}}
 
 {{< taglist tag="QCM8550" style="cards" >}}
 
-{{< taglist tag="QCS8550" style="cards" >}}
+{{< taglist tag="QCS8300" style="cards" >}}
+
+{{< taglist tag="QCS8275" style="cards" >}}
 
 {{< taglist tag="QCS8250" style="cards" >}}
 

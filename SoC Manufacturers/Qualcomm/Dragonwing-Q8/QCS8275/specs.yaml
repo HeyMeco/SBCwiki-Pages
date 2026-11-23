@@ -1,0 +1,28 @@
+# Qualcomm/Dragonwing-Q8/QCS8275 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+# DRAM speeds are data rates in MT/s. Qualcomm quotes LPDDR clocks in MHz, so their figures are doubled here.
+
+parts:
+  - name: "QCS8275 / QCS8300"
+    codename: "Monaco"
+    cpu:
+      clusters:
+        - { cores: 2, core: "Cortex-A78C", max_ghz: 2.35 }
+        - { cores: 2, core: "Cortex-A78C", max_ghz: 2.1 }
+        - { cores: 4, core: "Cortex-A55", max_ghz: 1.95 }
+      notes: "Sold as Kryo Gen 6"
+    memory:
+      types: [{ type: "LPDDR5", mts: 6400 }, { type: "LPDDR5X", mts: 6400 }]
+      bus_bits: 64
+      max_gb: 32
+      ecc: "inline"
+    gpu:
+      name: "Adreno 623"
+      max_mhz: 877
+    npu:
+      name: "Hexagon"
+      tops_dense: 40
+      tops_precision: "INT8"
+      notes: "Highest of a 20–40 TOPS range; can differ by binning"
+    isp:
+      notes: "Qualcomm Spectra 692"

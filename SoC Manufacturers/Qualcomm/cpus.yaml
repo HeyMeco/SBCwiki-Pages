@@ -28,7 +28,7 @@ groups:
         display: "Oryon (2nd Gen)"
         year: 2024
         isa: "Armv8.7-A"
-        socs: "Snapdragon 8 Elite, [Dragonwing Q-8750](/docs/soc-manufacturers/qualcomm/dragonwing-q8/)"
+        socs: "Snapdragon 8 Elite, [Dragonwing Q-8750](/docs/soc-manufacturers/qualcomm/dragonwing-q8/q-8750/)"
       - name: "Oryon Gen 1"
         display: "Oryon (1st Gen)"
         year: 2023

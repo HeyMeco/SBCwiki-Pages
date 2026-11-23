@@ -1,0 +1,17 @@
+# Qualcomm/Dragonwing-Q8/SDA845 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+# DRAM speeds are data rates in MT/s. Qualcomm quotes LPDDR clocks in MHz, so their figures are doubled here.
+
+parts:
+  - name: "SDA845"
+    process_nm: 10
+    cpu:
+      clusters:
+        - { cores: 4, core: "Cortex-A75", max_ghz: 2.8 }
+        - { cores: 4, core: "Cortex-A55", max_ghz: 1.8 }
+    memory:
+      types: [{ type: "LPDDR4X", mts: 3733 }]
+    gpu:
+      name: "Adreno 630"
+    npu:
+      name: "Hexagon 685"

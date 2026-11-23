@@ -1,0 +1,21 @@
+# Qualcomm/Dragonwing-Q8/Q-8750 specifications, rendered by {{< soc-specs >}} in _index.md.
+# Schema: layouts/shortcodes/soc-specs.html in the SBCwiki repo. Numbers are bare, in the unit the key names.
+# DRAM speeds are data rates in MT/s. Qualcomm quotes LPDDR clocks in MHz, so their figures are doubled here.
+
+parts:
+  - name: "Q-8750"
+    process_nm: 3
+    cpu:
+      clusters:
+        - { cores: 8, core: "Oryon Gen 2", max_ghz: 4.32 }
+      notes: "Custom Qualcomm cores"
+    memory:
+      types: [{ type: "LPDDR5X", mts: 9600 }]
+      bus_bits: 64
+      max_gb: 24
+    gpu:
+      name: "Adreno 830"
+      max_mhz: 1100
+    npu:
+      name: "Hexagon V79"
+      tops_dense: 77

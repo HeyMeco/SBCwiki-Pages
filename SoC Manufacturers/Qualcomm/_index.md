@@ -41,7 +41,7 @@ Snapdragon is Qualcomm's mobile phone SoC, and the brand on its PC processors, i
 | [IQ10](/docs/soc-manufacturers/qualcomm/dragonwing-iq10/) | Industrial |
 | [Snapdragon X Elite / IQ-X](/docs/soc-manufacturers/qualcomm/snapdragon-x-elite/) | Commercial and industrial. Same Hamoa SoC. IQ-X7181 is the industrial grade of X1E-78-100 |
 | [IQ9](/docs/soc-manufacturers/qualcomm/dragonwing-iq9/) | Industrial |
-| [Q8 / IQ8](/docs/soc-manufacturers/qualcomm/dragonwing-q8/) | Commercial and industrial. IQ8 is QCS8275 and QCS8300. The commercial parts are separate SoCs, from Q-8750 down to SDA845 |
+| [Q8 / IQ8](/docs/soc-manufacturers/qualcomm/dragonwing-q8/) | Commercial and industrial. IQ8 is [QCS8275 / QCS8300](/docs/soc-manufacturers/qualcomm/dragonwing-q8/qcs8275/). The commercial parts are separate SoCs: [Q-8750](/docs/soc-manufacturers/qualcomm/dragonwing-q8/q-8750/), [QCS8550 / QCM8550](/docs/soc-manufacturers/qualcomm/dragonwing-q8/qcs8550/), [QCS8250](/docs/soc-manufacturers/qualcomm/dragonwing-q8/qcs8250/), and [SDA845](/docs/soc-manufacturers/qualcomm/dragonwing-q8/sda845/) |
 | [Q7](/docs/soc-manufacturers/qualcomm/dragonwing-q7/) | Commercial |
 | [Q6 / IQ6](/docs/soc-manufacturers/qualcomm/dragonwing-q6/) | Commercial and industrial. Includes [QCS6490 / QCM6490](/docs/soc-manufacturers/qualcomm/dragonwing-6490/). IQ-615 is the industrial part |
 | [Q5](/docs/soc-manufacturers/qualcomm/dragonwing-q5/) | Commercial |
