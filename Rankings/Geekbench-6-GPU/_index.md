@@ -8,7 +8,7 @@ bookToC: false
 
 # Geekbench 6 GPU
 
-{{< benchmark-charts kind="board" benchmarks="geekbench6-gpu-opencl-overall,geekbench6-gpu-vulkan-overall,geekbench6-gpu-vulkan" >}}
+{{< benchmark-charts kind="board" benchmarks="geekbench6-gpu-opencl-overall,geekbench6-gpu-vulkan-overall" >}}
 
 ## SoC averages
 

@@ -1,5 +1,5 @@
 ---
-weight: 7
+weight: 9
 title: "KDiskMark"
 description: KDiskMark sequential and random disk rankings.
 summary: Sequential and random read and write speeds, in MB/s.

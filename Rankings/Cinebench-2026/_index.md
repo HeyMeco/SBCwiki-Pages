@@ -1,5 +1,5 @@
 ---
-weight: 5
+weight: 7
 title: "Cinebench 2026"
 description: Cinebench 2026 rankings.
 summary: Cinebench 2026 scores.

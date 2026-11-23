@@ -1,5 +1,5 @@
 ---
-weight: 4
+weight: 6
 title: "CPU-Z"
 description: CPU-Z single-thread and multi-thread rankings.
 summary: Single-thread and multi-thread scores.

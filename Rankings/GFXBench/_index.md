@@ -1,5 +1,5 @@
 ---
-weight: 3
+weight: 5
 title: "GFXBench"
 description: GFXBench Aztec Ruins and Manhattan 3.1 rankings.
 summary: Aztec Ruins High, Aztec Ruins Normal, and Manhattan 3.1 scores.

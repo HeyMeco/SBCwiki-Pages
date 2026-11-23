@@ -1,5 +1,5 @@
 ---
-weight: 6
+weight: 8
 title: "WebGL Aquarium"
 description: WebGL Aquarium frame-rate rankings.
 summary: Minimum and maximum frames per second.

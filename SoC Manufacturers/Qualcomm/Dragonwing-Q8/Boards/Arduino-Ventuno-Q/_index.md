@@ -45,8 +45,6 @@ images:
 
 {{< all-benchmarks >}}
 
-- Pre-release CPU and GPU benchmarks: [Arduino Ventuno Q First Look: Benchmarks](/news/articles/arduino-ventuno-q-first-look-ew26/)
-
 ## Guides
 *No guides available yet.*
 
