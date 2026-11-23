@@ -8,6 +8,8 @@ bookToC: false
 
 # Cinebench 2026
 
+Maxon's CPU render benchmark: it renders a 3D scene with the Redshift engine and scores how fast the CPU finishes. Higher is better.
+
 {{< benchmark-charts kind="board" benchmarks="cinebench-2026" >}}
 
 ## SoC averages
